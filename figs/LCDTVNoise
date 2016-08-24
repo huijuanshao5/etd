@@ -1,0 +1,14 @@
+\begin{figure}[ht]
+\centering{
+    \begin{tabular}{c}	
+	
+    \includegraphics[width=1.0\textwidth]{figs/noiseMasterLCDTV.pdf} \tabularnewline
+   % \includegraphics[width=0.3\textwidth,height=0.23\textheight]{figs/noiseMasterLCDTV.pdf} \hspace{1em}&
+    (a) \tabularnewline
+    \includegraphics[width=1.0\textwidth]{figs/noiseFeatureMasterLCDTV.pdf} \tabularnewline
+    (b) \tabularnewline 
+    \end{tabular}
+    }
+\caption{(a) Baseline noise with newly added noise. (b) Noise Feature of a device.}
+\label{fig_patel2007_lightNoise}
+\end{figure}

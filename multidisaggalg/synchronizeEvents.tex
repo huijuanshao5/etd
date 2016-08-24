@@ -1,0 +1,21 @@
+\begin{algorithm}
+\caption{Search Synchronized Events from Two-phase Aggregated Diffs Data}
+\label{alg_synchronizeEvents}
+\begin{algorithmic}[1]
+\REQUIRE $2$-phases aggregated diffs data $y_k=y_1^{(k)}, ..., y_n^{(k)}$ and $k=1,2$, %each device's power levels and standard deviation $P_m$, $P_m^{std}$, 
+big power consumption threshold $\theta$
+%\ENSURE $y = x^n$
+\FOR{$i=0: n-1$}
+\IF { $|y_i^{(1)}| > \theta$}
+\FOR{$j=i-5, i+5$}
+\IF{ $|y_j^{(1)}| \in [ |y_j^{(2)}| * 0.8, |y_j^{(2)}| *1.2]$}
+\STATE $e_i^{(1)}= e_i^{(1)} + y_j^{(1)}$
+\STATE $e_i^{(2)}= e_i^{(2)} + y_j^{(2)}$
+\ENDIF
+\ENDFOR
+\STATE $e_i = e_i^{(1)} +e_i^{(2)}$
+\ENDIF
+\ENDFOR
+\RETURN $e_1, ..., e_i, ..., e_{n'}, \forall e_i > 2*\theta$
+\end{algorithmic}
+\end{algorithm}

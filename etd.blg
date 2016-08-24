@@ -1,0 +1,135 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: etd.aux
+A level-1 auxiliary file: sec/introduction.aux
+A level-1 auxiliary file: sec/disagg.aux
+The style file: abbrv.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 196 of file references.bib
+ :   
+ :   _pages={58--63},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 281 of file references.bib
+ : @inproceedings{laxman2008stream
+ :                                ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 749 of file references.bib
+ :     
+ :     chapter={III},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 803 of file references.bib
+ :   
+ :   booktitle={Proceedings of The 1st KDD Workshop on Data Mining Applications in Sustainability (SustKDD)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 889 of file references.bib
+ :   
+ :   _volume={8050},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 916 of file references.bib
+ :   
+ :   note={\url{http://www.kaggle.com/c/belkin-energy-disaggregation-competition/forums/t/5672/unsupervised-learning-on-test-set/30317}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1199 of file references.bib
+ :   
+ :   _address={Hong Kong, China}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1334 of file references.bib
+ :     
+ :     school = {Massachusetts Institute of Technology},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1365 of file references.bib
+ :   
+ :   _volume={148},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1601 of file references.bib
+ : 
+ : _link={http://buildingsdatabook.eren.doe.gov/TableView.aspx?table=1.1.3}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "meterTED" isn't style-file defined
+--line 1624 of file references.bib
+Warning--entry type for "meterPico" isn't style-file defined
+--line 1631 of file references.bib
+Warning--entry type for "meterNI" isn't style-file defined
+--line 1638 of file references.bib
+Warning--entry type for "meterTrend" isn't style-file defined
+--line 1645 of file references.bib
+Warning--entry type for "meterEMF" isn't style-file defined
+--line 1652 of file references.bib
+Warning--entry type for "meterSound" isn't style-file defined
+--line 1659 of file references.bib
+Warning--entry type for "meterLight" isn't style-file defined
+--line 1666 of file references.bib
+Warning--entry type for "meterTemp" isn't style-file defined
+--line 1673 of file references.bib
+Warning--to sort, need author or key in book2014us
+Warning--empty author in book2014us
+Warning--empty publisher in bishop2006pattern
+Warning--empty title in kaggle2013energy
+Warning--empty booktitle in kaggle2013energy
+Warning--empty publisher in chen2014mining
+Warning--empty booktitle in gonccalves2011unsupervised
+Warning--empty chapter and pages in eebook
+Warning--empty publisher in eebook
+Warning--empty journal in kearns1990complexity
+Warning--empty journal in kelly2014metadata
+Warning--empty booktitle in hampden2012closure
+Warning--empty booktitle in lai2012database
+Warning--empty journal in luo2002monitoring
+Warning--empty publisher in onoda2000applying2
+Warning--empty journal in onoda2000applying
+Warning--empty publisher in schmidt2006nonnegative
+Warning--empty booktitle in shao2013temporal
+Warning--empty school in shaw2000PhdThesis
+Warning--empty journal in wang2013heirarchical
+Warning--empty journal in wytock2014contextually
+You've used 142 entries,
+            2118 wiz_defined-function locations,
+            1075 strings with 28575 characters,
+and the built_in function-call counts, 41618 in all, are:
+= -- 3619
+> -- 2551
+< -- 4
++ -- 1011
+- -- 858
+* -- 2521
+:= -- 7276
+add.period$ -- 420
+call.type$ -- 142
+change.case$ -- 849
+chr.to.int$ -- 0
+cite$ -- 163
+duplicate$ -- 1724
+empty$ -- 3321
+format.name$ -- 858
+if$ -- 8522
+int.to.chr$ -- 0
+int.to.str$ -- 142
+missing$ -- 134
+newline$ -- 703
+num.names$ -- 282
+pop$ -- 1209
+preamble$ -- 1
+purify$ -- 712
+quote$ -- 0
+skip$ -- 1070
+stack$ -- 0
+substring$ -- 875
+swap$ -- 228
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 564
+warning$ -- 21
+while$ -- 295
+width$ -- 145
+write$ -- 1394
+(There were 10 error messages)

@@ -1,0 +1,75 @@
+\section{Experiments}
+We apply the datasets from University of Virginia on both water and electricity disaggregation. 
+There are totally six data sets. The statistic of these six data sets are listed in Table \ref{table_datasets}. 
+Usually the interval of these datasets is 2 or 3 seconds. 
+A sensor is instrumented on each device to record its operations. 
+\input{multidisaggtab/datasets}
+
+\subsection{Electricity Disaggregation}
+For electricity data, we use aggregated data and the on/off events of the 
+ground truth to extract the power levels of each device. 
+
+In order to extract the power level of each device, 
+we use a window size of $w=30s$ ahead and behind to match 
+the aggregated data to the ground truth data.
+%%Getting the time stamp from the ground truth of each device, 
+%%then match the time of the aggregated data before $30s$ and after $30s$, 
+If there is only one power change during these $1$ minute duration, 
+this power level changes must come from this device. 
+Usually, it takes around $2-5$ seconds for an electric device to reach
+a steady power level  state. 
+The on and off events reflect different duration of a device to 
+turn to a steady state. 
+Therefore, we measure the minimal duration of the on event and off event 
+of each device. 
+
+After we go over all the aggregated data and on/off events from the sensor data, 
+we obtain the power levels of each device. 
+By applying normal distribution to the positive figures and negative figures 
+separately, we compute the mean value of the on/off event and
+get the power levels of each electric device. 
+The power levels and duration of each device are listed in Table \ref{table_study10results}.
+\input{multidisaggtab/study10results}
+By analyzing each device, we notice that sometimes the power levels and 
+on/off duration are insufficient to identify the electric devices. 
+For instance, it takes $2-5$ seconds for the device heatingIndoor to reach a steady state after starting,
+as shown in Figure \ref{fig_heatingDevices} (a).
+But when the combined device of heatingIndoor and heatingOutdoor 
+starts, the starting duration takes around $4-18$ seconds. 
+As shown in Figure \ref{fig_patterns} (b), before reaching a relatively stable state. 
+the power levels rapidly change 9 times within 15 seconds after this combined device starts
+If we accumulate these power levels together, it's not a fix number. Therefore, for this kind of device, 
+we can only compare the shape of the startup to decide the on events 
+from the aggregated data. 
+%\input{fig/patterns}
+
+We apply both episode mining and dynamic time warping approach on these six datasets. 
+At first, we find those devices which can be found by episode mining. 
+Then we use dynamic time warping to disaggregate the device indoorOutdoor unit. 
+The precision and recall results on the data set study 10 are listed in Table \ref{table_study10results}.
+
+The experiments results on the heatingIndoor are shown in Figure \ref{fig_heatingIndoorResults}.
+The on event of heatingIndoor lasts for around 10 seconds and the off event 50 seconds. 
+the power changes twice consecutively.  
+For both on/off events, 
+since each time the power changes more than $80W$, which is defined by us, 
+these two power changes are merged as one device. 
+Figure \ref{fig_heatingIndoorResults} (c) illustrates the disaggregated heatingIndoor device 
+over a period of time. 
+\input{multidisaggfig/heatingIndoorResults}
+\input{multidisaggfig/heatingOutdoorResults}
+%\input{fig/humidifierResults}
+ 
+%The on event of heating indoor and outdoor is hard to be found by searching the power levels and duration because it is a continuous variable load. 
+%We extract the vector event of on event of this device and compute its differential time series over around 50 seconds. 
+%There are two patterns as shown in Figure \ref{fig_patterns} (e) and (f).
+%Then we do dynamic time warping subsequence search to figure out the on events. 
+%The Figure \ref{fig_dtwHeatingIndoorOutdoor} (a), (b) and (c) displays two matched patterns. 
+%and the matched patterns for some time. 
+%Note that the off event of heating indoor and outdoor lasts for several seconds with power levels ranging from 1700W to 2100W. 
+%We still use motif mining approach to disaggregate this device. 
+%\input{fig/dtwHeatingIndoorOutdoor}
+
+%We apply the same approach to other data sets. 
+%.......
+

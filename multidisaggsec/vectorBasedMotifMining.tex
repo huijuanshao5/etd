@@ -1,0 +1,188 @@
+\subsection{Vector-based Motif Mining}
+Motif mining has been studied in previous research \cite{motif1} and \cite{motif2}. 
+After extracting the usage levels, standard deviation of usage levels,
+and on startup duration, 
+we apply a vector-based motif mining to 
+disaggregate each device from aggregated data. 
+This vector-based motif mining is comprised of two steps:  
+segmenting the piece-wise usage vector features from 
+the aggregated data, 
+and applying motif mining on those above vectors. 
+
+\subsubsection{Piece-wise Vector Selection}
+Algorithm \ref{alg_vectorSelection} describes how the process of 
+the usage levels of each device are selected from aggregated data. 
+The input is the output of Algorithm \ref{alg_extractFeatures}, 
+i.e. for device $m$, usage levels $P_m$,  
+the usage level's standard deviation $P_m^{std}$, 
+and on/off duration $D_m$. 
+During startup, the usage level of the same device may jump several times before 
+reaching a steady state. 
+We set a minimal usage level $P_{min}$ which satisfies the usage levels for all devices.  
+This minimal usage value $P_{min}$ is caused by the noise of device, 
+therefore it should be large enough to erase the influence of noise. 
+For specific dataset study10, $P_{min}$ sets to be $80W$ in aggregated power data. 
+Similarly, according to the sampling interval of the aggregated data, 
+we set a max time gap $D_{max}$ between any two points in the aggregated data. 
+
+To judge whether a vector, i.e. continuous usage level changes, 
+come from a single device, 
+we evaluate the values of consecutive usage elves changes and the duration gap between them. 
+The procedure is shown between line 3-10.
+For instance, if we have a piece-wise aggregated data as $y_1, y_2, y_3, y_4$, 
+the absolute diffs values between any two consecutive points 
+$y_2-y_1$, $y_3-y_2$, $y_4-y_3$ are greater than $P_{min}$, 
+and all the corresponding gaps between any two consecutive points $t_2-t_1$, $t_3-t_2$, $t4-t3$ 
+are less than $D_{max}$, 
+we assume that these piece-wise usage levels $y_1,..., y_4$ come 
+from a single device. 
+If any of the usage level changes such as $|y_2 - y_3| < P_{min}$ or 
+then, the usage level changes are separated into 
+two piece-wises $y_1, y_2$ and $y_2, y_3, y_4$. 
+On the other hand, 
+if the gap between any two consecutive points such as $y_3.{t}-y_2.{t} > D_{max}$, 
+we assume that data points between $y_2$ and $y_3$ are missing.
+Each discovered piece-wise vector is classified into the most similar group $l_m$ as 
+for device $m$. 
+Then we return all the piece-wise vectors list $(l_1,...,l_k)$.
+%The drawback of this assumption is that we cannot distinguish devices 
+%which power on and off for the same time. 
+
+This piece-wise vector calculation is different from the diffs calculation from other papers 
+such as \cite{shao2013temporal} and \cite{kolter2012aistat}. 
+Its merit is very obvious that many devices start up not at a fixed power level changes. 
+For instance, the heatingIndoor device may jumps to a steady state 
+$11000W$ once in two seconds, or jump twice to $8000W$ in 2 seconds then to 
+$11000W$ in five seconds. 
+These piece-wise vectors are especially useful for identifying continuously variable loads or 
+water end use.  
+
+\begin{algorithm}
+\caption{Piece-wise vector computation procedure}
+\begin{algorithmic}[1] 
+\label{alg_vectorSelection}
+\REQUIRE  aggregated power $y = (t_1, y_1),..., (t_N, y_N)$, usage level range $P_{min}$, gap range $D_{max}$
+%\ENSURE $y = x^n$
+\STATE $i \leftarrow 0$, $l_k \leftarrow \phi$
+\STATE $n \leftarrow 0$
+\WHILE{$n \neq N$}
+\IF{$t_{n+1}- t_{n} < D_{max}$ and $|y_n-y_{n+1}| > P_{min}$}
+\STATE classify $\{t_n, y_n, ..., t_{n+1}, y_{n+1}\}$ into the most similar category  $l_k$
+\ELSE
+\STATE $k \leftarrow k + 1$
+\ENDIF
+\STATE $n \leftarrow n+1$
+\ENDWHILE
+\RETURN $l_1,..., l_k$, where $l_k= [t_k, y_k, ..., t_{k+k'}, y_{k+k'}]$
+\end{algorithmic}
+\end{algorithm}
+
+After we get the piece-wise diffs data, which is composed of lists of consecutive time and usage levels 
+$[t_1, y_1, t_2, y_2], ..., [t_{k+k'}, ..., y_{k+k'}]$ where $t_k$ is the time stamp for 
+the corresponding aggregated value $y_k$, and $k$ is the number of diffs clusters, 
+$k'$ is the number of consecutive values in cluster $k$. 
+
+In order to disaggregate each device from the aggregated diffs usage levels clusters, 
+we apply vector-based classification approach as shown in Algorithm \ref{alg_disaggDevices}.
+We classify the vectors $l_k$ into device $m$ where the usage levels, and duration are most similar. 
+%It extends previous motif mining approach by adopting piece-wise vectors other than discrete events. 
+
+\begin{algorithm}
+\caption{Vector-based Classification Procedure}
+\begin{algorithmic}[1]
+\label{alg_disaggDevices}
+\REQUIRE piece-wise vectors $l_1,...l_k$ where $l_k= [t_k, y_k, ..., t_{k+k'}, y_{k+k'}]$, 
+usage level of device $m$, each device's power levels, standard deviation and startup duration $P_m$, $P_m^{std}$, $D_m$,
+%\ENSURE $y = x^n$
+\FOR{$m \in (1, M)$}
+\WHILE{$k \neq K$}
+\IF { \forall $y' \in{ (y_k,...y_{k+k'}) }$, $P_m - P_m^{std} < y' < P_m + P_m^{std}$ and $D_m < t_{k+k'}- t_k$}
+\STATE $S_m \leftarrow l_k $
+\ENDIF
+\STATE $ k \leftarrow k+1$
+\ENDWHILE
+\ENDFOR
+\RETURN diffs lists set for each device $S_m$
+\end{algorithmic}
+\end{algorithm}
+
+
+This matching process can disaggregate 
+continuously variable loads such as HVAC, 
+which are very difficult to disaggregate because 
+their power consumption is composed of several power level changes 
+other than individual discrete value. 
+Whenever it starts up, it will takes several seconds or minutes to stay in a 
+steady state. 
+As long as we input the startup duration $D_m$, 
+we can find them from the aggregated data. 
+
+Also, we integrate this classification algorithm with motif mining approach to these piece-wise vector lists.
+Motif mining gets the diffs vectors and 
+process the vector event, which is composed a series of point events and duration instead of the a single discrete point event. 
+%The match process is not discrete value, but diffs lists. 
+%In this paper, we propose a temporal mining approach to disaggregate 
+%such continuously variable loads which are mixed with 
+%discrete power levels. 
+%The results show that, this searching approach can help disaggregate 
+%HVAC. 
+
+\subsubsection{Dynamic Time Warping Subsequence Search or DTW-based Motif Mining}
+Dynamic time warping subsequence search has been studied well in previous work \cite{rakthanmanon2012searching}.
+We apply dynamic time warping subsequence search to find some continuously variable load which 
+starts up for more than 1 minutes, or water use end which uses water in different water flow rate. 
+Usually this kind of electric device shuts down in a very short period of time, 
+but it takes long time to start. 
+The pure power levels, startup duration features are not sufficient to 
+discover it especially when it is mixed with other devices. 
+To separate its feature from aggregated data, 
+we need to calculate the dynamic time warping distance between the startup shape $P_1, ...., P_{2\Delta t}$ and the 
+shape features of each device. 
+Dynamic time warping subsequence search helps us find the top-k similar startup shapes.
+
+%Figure \ref{fig_dtw} gives an example on how the 
+%device heatingIndoorUnit and heatingOutdoorUnit 
+%is discovered. 
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{figs/dtw.png}
+%\caption{Discover HeatingIndoorUnit and HeatingOutdoorUnit in Time Series. }
+%\label{fig_dtw}
+%\end{figure}
+
+%\subsection{Multivariate Motif Mining}
+%Water disaggregation is similar to electricity disaggregation. 
+%The difference is that the water usage comes from 
+%two main water pipe, cold water and hot water. 
+%Our problem becomes disaggregate several devices from 
+%two time series cold water flow rate and hot water flow rate. 
+
+%We use multivariate time series motif mining \cite{Deb KDD} approach to 
+%water disaggregation. 
+%An example of multivariate motif mining is shown in Figure \ref{fig_multivariateMotif}.
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{figs/multiMotif.png}
+%\caption{Multivariate Motif Mining Approach.}
+%\label{fig_multivariateMotif}
+%\end{figure}
+
+%The process of multivariate motif mining is described in Algorithm \ref{alg_multivariateDisagg}.
+%\begin{algorithm}
+%\caption{Disaggregate each device from diffs lists $l_1,...l_k$ where $l_k= [t_k, y_k, ..., t_{k+k'}, y_{k+k'}]$}
+%\begin{algorithmic} 
+%\label{alg_multivariateDisagg}
+%\REQUIRE aggregated power diffs lists $l_1,...l_k$ where $l_k= [t_k, y_k, ..., t_{k+k'}, y_{k+k'}]$, 
+%power level of device $m$, each device's power levels, standard deviation and startup duration $P_m$, $P_m^{std}$, $D_m$,
+%\ENSURE $y = x^n$
+%\FOR{$m \in (1, M)$}
+%\WHILE{$k \neq K$}
+%\IF { \forall $y' \in{ (y_k,...y_{k+k'}) }$, $P_m - P_m^{std} < y' < P_m + P_m^{std}$ and $D_m < t_{k+k'}- t_k$}
+%\STATE $S_m \leftarrow l_k $
+%\ENDIF
+%\STATE $ k \leftarrow k+1$
+%\ENDWHILE
+%\ENDFOR
+%\RETURN diffs lists set for each device $S_m$
+%\end{algorithmic}
+%\end{algorithm}

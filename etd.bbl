@@ -1,0 +1,848 @@
+\begin{thebibliography}{100}
+
+\bibitem{book2014us}
+Buildings energy data book.
+\newblock {\em Energy Efficiency and Renewable Energy}, 2014.
+
+\bibitem{abed1997blind}
+K.~Abed-Meraim, W.~Qiu, and Y.~Hua.
+\newblock Blind system identification.
+\newblock {\em Proceedings of the IEEE}, 1997.
+
+\bibitem{srikant-agrawal}
+R.~Agrawal and R.~Srikant.
+\newblock Mining sequential patterns.
+\newblock In {\em Proceedings of the Eleventh International Conference on Data
+  Engineering}, 1995.
+
+\bibitem{akbar2007modified}
+M.~Akbar and D.~Khan.
+\newblock Modified nonintrusive appliance load monitoring for nonlinear
+  devices.
+\newblock In {\em Proceedings of the IEEE International Conference on
+  Multitopic}, 2007.
+
+\bibitem{meterEMF}
+AlphaLab.
+\newblock Emf meter.
+
+\bibitem{alrazgan2011learning}
+A.~Alrazgan, A.~Nagarajan, A.~Brodsky, and N.~Egge.
+\newblock Learning occupancy prediction models with decision-guidance query
+  language.
+\newblock In {\em Proceedings of the 44th Hawaii International Conference on
+  System Sciences (HICSS)}, 2011.
+
+\bibitem{meterTemp}
+Amprobe.
+\newblock Temperature meter.
+
+\bibitem{anderson2012event}
+K.~Anderson, M.~Berges, A.~Ocneanu, D.~Benitez, and J.~Moura.
+\newblock Event detection for non intrusive load monitoring.
+\newblock In {\em Proceedings of the IEEE Industrial Electronics
+  Convferene(IECON)}, 2012.
+
+\bibitem{anderson2012blued}
+K.~Anderson, A.~Ocneanu, D.~Benitez, D.~Carlson, A.~Rowe, and M.~Berges.
+\newblock {BLUED:} a fully labeled public dataset for {event-based}
+  {non-intrusive} load monitoring research.
+\newblock In {\em Proceedings of the 2nd {KDD} Workshop on Data Mining
+  Applications in Sustainability {(SustKDD)}}, 2012.
+
+\bibitem{baranski2003nonintrusive}
+M.~Baranski and J.~Voss.
+\newblock Nonintrusive appliance load monitoring based on an optical sensor.
+\newblock In {\em Proceedings of the IEEE Power Tech Conference}, 2003.
+
+\bibitem{baranski2004detecting}
+M.~Baranski and J.~Voss.
+\newblock Detecting patterns of appliances from total load data using a dynamic
+  programming approach.
+\newblock In {\em Proceedings of the 4th IEEE International Conference on Data
+  Mining}, 2004.
+
+\bibitem{baranski2004genetic}
+M.~Baranski and J.~Voss.
+\newblock Genetic algorithm for pattern detection in nialm systems.
+\newblock In {\em Proceedings of the IEEE International Conference on Systems,
+  Man and Cybernetics}, 2004.
+
+\bibitem{barker2012smart}
+S.~Barker, A.~Mishra, D.~Irwin, E.~Cecchet, and P.~Shenoy.
+\newblock Smart\*\: an open data set and tools for enabling research in
+  sustainable homes.
+\newblock In {\em Proceedings of the 2nd {KDD} Workshop on Data Mining
+  Applications in Sustainability {(SustKDD)}}, 2012.
+
+\bibitem{batra2013different}
+N.~Batra, M.~Gulati, A.~Singh, and M.~B. Srivastava.
+\newblock It's different: Insights into home energy consumption in india.
+\newblock In {\em Proceedings of the 5th ACM Workshop on Embedded Systems For
+  Energy-Efficient Buildings}, 2013.
+
+\bibitem{beltran2014optimal}
+A.~Beltran and A.~Cerpa.
+\newblock Optimal hvac building control with occupancy prediction.
+\newblock In {\em Proceedings of the 1st ACM Conference on Embedded Systems for
+  Energy-Efficient Buildings}, 2014.
+
+\bibitem{berges2009learning}
+M.~Berges, E.~Goldman, H.~Matthews, and L.~Soibelman.
+\newblock Learning systems for electric consumption of buildings.
+\newblock In {\em ASCI International Workshop on Computing in Civil
+  Engineering}, 2009.
+
+\bibitem{berges2010enhancing}
+M.~Berges, E.~Goldman, H.~Matthews, and L.~Soibelman.
+\newblock Enhancing electricity audits in residential buildings with
+  nonintrusive load monitoring.
+\newblock {\em Journal of Industrial Ecology}, 2010.
+
+\bibitem{berges2011user}
+M.~Berges, E.~Goldman, L.~Soibelman, and K.~Anderson.
+\newblock User-centric non-intrusive electricity load monitoring for
+  residential buildings.
+\newblock {\em Journal of Industrial Ecology}, 2010.
+
+\bibitem{bishop2006pattern}
+C.~Bishop and N.~Nasrabadi.
+\newblock {\em Pattern recognition and machine learning}.
+\newblock 2006.
+
+\bibitem{kaggle2013energy}
+Blekin.
+\newblock 2013.
+
+\bibitem{blumensath2005shift}
+T.~Blumensath and M.~Davies.
+\newblock Shift-invariant sparse coding for single channel blind source
+  separation.
+\newblock {\em SPARS}, 2005.
+
+\bibitem{chan2000harmonics}
+W.~Chan, A.~So, and L.~Lai.
+\newblock Harmonics load signature recognition by wavelets transforms.
+\newblock In {\em Proceedings of the IEEE International Conference on Electric
+  Utility Deregulation and Restructuring and Power Technologies}, 2000.
+
+\bibitem{chang2010newmethod}
+C.~Chang, H.and~Lin.
+\newblock A new method for load identification of nonintrusive energy
+  management system in smart home.
+\newblock In {\em Proceedings of the IEEE 7th International Conference on
+  e-Business Engineering (ICEBE)}, 2010.
+
+\bibitem{chang2008load}
+H.~Chang, C.~Lin, and H.~Yang.
+\newblock Load recognition for different loads with the same real power and
+  reactive power in a non-intrusive load-monitoring system.
+\newblock In {\em Proceedings of the 12th International Conference on Computer
+  Supported Cooperative Work in Design}, 2008.
+
+\bibitem{chang2008load2}
+H.~Chang, H.~Yang, and C.~Lin.
+\newblock Load identification in neural networks for a non-intrusive monitoring
+  of industrial electrical loads.
+\newblock {\em Computer Supported Cooperative Work in Design IV}, 2008.
+
+\bibitem{chen2013non}
+D.~Chen, S.~Barker, A.~Subbaswamy, D.~Irwin, and P.~Shenoy.
+\newblock Non-intrusive occupancy monitoring using smart meters.
+\newblock In {\em Proceedings of the 5th ACM Workshop on Embedded Systems For
+  Energy-Efficient Buildings}, 2013.
+
+\bibitem{chen2014mining}
+Y.~Chen, C.~Chen, W.~Peng, and W.~Lee.
+\newblock Mining correlation patterns among appliances in smart home
+  environment.
+\newblock In {\em Advances in Knowledge Discovery and Data Mining}. 2014.
+
+\bibitem{chen2013novel}
+Y.~Chen, W.~Peng, and W.~Lee.
+\newblock A novel system for extracting useful correlation in smart home
+  environment.
+\newblock In {\em Proceedings of the IEEE 13th International Conference on Data
+  Mining Workshops (ICDMW)}, 2013.
+
+\bibitem{motif1}
+B.~Chiu, E.~Keogh, and S.~Lonardi.
+\newblock {Probabilistic discovery of time series motifs}.
+\newblock In {\em Proceedings of the 9th ACM SIGKDD International Conference on
+  Knowledge discovery and Data Mining}, 2003.
+
+\bibitem{chow1989complexity}
+C.~Chow and J.~N. Tsitsiklis.
+\newblock The complexity of dynamic programming.
+\newblock {\em Journal of Complexity}, 1989.
+
+\bibitem{collins2012smart}
+K.~Collins, M.~Mallick, G.~Volpe, and W.~Morsi.
+\newblock Smart energy monitoring and management system for industrial
+  applications.
+\newblock In {\em Proceedings of the IEEE Electrical Power and Energy
+  Conference (EPEC)}, 2012.
+
+\bibitem{cook2011sensor}
+D.~Cook and L.~Holder.
+\newblock Sensor selection to support practical use of health-monitoring smart
+  environments.
+\newblock {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+  Discovery}, 2011.
+
+\bibitem{cook2013CASAS}
+D.~J. Cook, A.~S. Crandall, B.~L. Thomas, and N.~Krishnan.
+\newblock Casas: a smart home in a box.
+\newblock {\em Computer}, 2013.
+
+\bibitem{cox2006transient}
+R.~Cox, S.~Leeb, S.~Shaw, and L.~Norford.
+\newblock Transient event detection for nonintrusive load monitoring and demand
+  side management using voltage distortion.
+\newblock In {\em Proceedings of the 21st Annual IEEE Applied Power Electronics
+  Conference and Exposition}, 2006.
+
+\bibitem{dai2011multi}
+J.~Dai, M.~Li, S.~Sahu, M.~Naphade, and F.~Chen.
+\newblock Multi-granular demand forecasting in smarter water.
+\newblock In {\em Proceedings of the 13th International Conference on
+  Ubiquitous Computing}, 2011.
+
+\bibitem{davies2007source}
+M.~E. Davies and C.~J. James.
+\newblock Source separation using single channel ica.
+\newblock {\em Signal Processing}, 2007.
+
+\bibitem{Dong2013deep}
+H.~Dong, B.~Wang, and C.~Lu.
+\newblock Deep sparse coding based recursive disaggregation model for water
+  conservation.
+\newblock In {\em Proceedings of the 23rd international Joint Conference on
+  Artificial Intelligence}, 2013.
+
+\bibitem{dong2013dynamical}
+R.~Dong, L.~Ratliff, H.~Ohlsson, and S.~Sastry.
+\newblock A dynamical systems approach to energy disaggregation.
+\newblock In {\em Proceedings of the IEEE 52nd Annual Conference on Decision
+  and Control (CDC)}, 2013.
+
+\bibitem{drenker1999nonintrusive}
+S.~Drenker and A.~Kader.
+\newblock Nonintrusive monitoring of electric loads.
+\newblock {\em IEEE Computer Applications in Power}, 1999.
+
+\bibitem{duan2004neural}
+J.~Duan, D.~Czarkowski, and Z.~Zabar.
+\newblock Neural network approach for estimation of load composition.
+\newblock In {\em Proceedings of the International Symposium on Circuits and
+  Systems(ISCAS)}, 2004.
+
+\bibitem{meterSound}
+L.~Engineering.
+\newblock Mindstorms.
+
+\bibitem{erickson2014occupancy}
+V.~Erickson, M.~Carreira-Perpi{\~n}{\'a}n, and A.~Cerpa.
+\newblock Occupancy modeling and prediction for building energy management.
+\newblock {\em ACM Transactions on Sensor Networks (TOSN)}, 2014.
+
+\bibitem{erickson2010occupancy}
+V.~Erickson and A.~Cerpa.
+\newblock Occupancy based demand response hvac control strategy.
+\newblock In {\em Proceedings of the 2nd ACM Workshop on Embedded Sensing
+  Systems for Energy-Efficiency in Building}, 2010.
+
+\bibitem{farinaccio1999using}
+L.~Farinaccio and R.~Zmeureanu.
+\newblock Using a pattern recognition approach to disaggregate the total
+  electricity consumption in a house into the major end-uses.
+\newblock {\em Energy and Buildings}, 1999.
+
+\bibitem{figueiredo2014electrical}
+M.~Figueiredo, B.~Ribeiro, and A.~de~Almeida.
+\newblock Electrical signal source separation via nonnegative tensor
+  factorization using on site measurements in a smart home.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 2014.
+
+\bibitem{froehlich2011disaggregated}
+J.~Froehlich, E.~Larson, S.~Gupta, G.~Cohn, M.~Reynolds, and S.~Patel.
+\newblock Disaggregated end-use energy sensing for the smart grid.
+\newblock {\em IEEE Pervasive Computing}, 2011.
+
+\bibitem{giri_study_2012}
+S.~Giri and M.~Berges.
+\newblock A study on the feasibility of automated data labeling and training
+  using an {EMF} sensor in {NILM} platforms.
+\newblock In {\em Proceedings of the 2012 International {EG-ICE} Workshop on
+  Intelligent Computing}, 2012.
+
+\bibitem{gonccalves2011unsupervised}
+H.~Gon{\c{c}}alves, A.~Ocneanu, and M.~Berg{\'e}s.
+\newblock Unsupervised disaggregation of appliances using aggregated
+  consumption data.
+\newblock 2011.
+
+\bibitem{gorur2010dirichlet}
+D.~G{\"o}r{\"u}r and C.~Rasmussen.
+\newblock {Dirichlet process Gaussian mixture models: choice of the base
+  distribution}.
+\newblock {\em Journal of Computer Science and Technology}, 2010.
+
+\bibitem{gupta2010electrisense}
+S.~Gupta, M.~Reynolds, and S.~Patel.
+\newblock Electrisense: single-point sensing using emi for electrical event
+  detection and classification in the home.
+\newblock In {\em Proceedings of the 12th ACM International Conference on
+  Ubiquitous computing}, 2010.
+
+\bibitem{eebook}
+A.~Hambley.
+\newblock {\em Electrical engineering principles and applications}.
+\newblock 2006.
+
+\bibitem{hart1992}
+G.~Hart.
+\newblock Nonintrusive appliance load monitoring.
+\newblock {\em Proceedings of the {IEEE}}, 1992.
+
+\bibitem{hassan2014empirical}
+T.~Hassan, F.~Javed, and N.~Arshad.
+\newblock An empirical investigation of vi trajectory based load signatures for
+  non-intrusive load monitoring.
+\newblock {\em IEEE Transactions on Smart Grid}, 2014.
+
+\bibitem{huang2013designing}
+D.~Huang, M.~Thottan, and F.~Feather.
+\newblock Designing customized energy services based on disaggregation of
+  heating usage.
+\newblock In {\em Proceedings of the IEEE Innovative Smart Grid Technologies
+  (ISGT)}, 2013.
+
+\bibitem{meterLight}
+E.~Instruments.
+\newblock Light sensor.
+
+\bibitem{meterNI}
+N.~Instruments.
+\newblock Ni-9239.
+
+\bibitem{jain1999data}
+A.~Jain, M.~Murty, and P.~Flynn.
+\newblock Data clustering: a review.
+\newblock {\em ACM computing surveys (CSUR)}, 1999.
+
+\bibitem{jin2011robust}
+Y.~Jin, E.~Tebekaemi, M.~Berges, and L.~Soibelman.
+\newblock Robust adaptive event detection in non-intrusive load monitoring for
+  energy aware smart facilities.
+\newblock In {\em IEEE International Conference on Acoustics, Speech and Signal
+  Processing (ICASSP)}, 2011.
+
+\bibitem{jin2011time}
+Y.~Jin, E.~Tebekaemi, M.~Berges, and L.~Soibelman.
+\newblock A time-frequency approach for event detection in non-intrusive load
+  monitoring.
+\newblock In {\em Proceedings of SPIE}, 2011.
+
+\bibitem{johnson2012bayesian}
+M.~Johnson and A.S.
+\newblock Bayesian nonparametric hidden semi-markov models.
+\newblock {\em CoRR}, 2012.
+
+\bibitem{kearns1990complexity}
+M.~Kearns.
+\newblock Computational complexity of machine learning.
+\newblock 1990.
+
+\bibitem{kelly2012disaggregating}
+J.~Kelly and W.~Knottenbelt.
+\newblock Disaggregating multi-state appliances from smart meter data.
+\newblock {\em SIGMETRICS}, 2012.
+
+\bibitem{kelly2014metadata}
+J.~Kelly and W.~Knottenbelt.
+\newblock Metadata for energy disaggregation.
+\newblock 2014.
+
+\bibitem{kim2011unsupervised}
+H.~Kim, M.~Marwah, M.~Arlitt, G.~Lyon, and J.~Han.
+\newblock Unsupervised disaggregation of low frequency power measurements.
+\newblock In {\em Proceedings of the SIAM International Conference on Data
+  Mining}, pages 747--758, 2011.
+
+\bibitem{kim2009viridiscope}
+Y.~Kim, T.~Schmid, Z.~Charbiwala, and M.~Srivastava.
+\newblock Viridiscope: design and implementation of a fine grained power
+  monitoring system for homes.
+\newblock In {\em Proceedings of the 11th International Conference on
+  Ubiquitous computing}, 2009.
+
+\bibitem{kleiminger2014predicting}
+W.~Kleiminger, F.~Mattern, and S.~Santini.
+\newblock Predicting household occupancy for smart heating control: A
+  comparative performance analysis of state-of-the-art approaches.
+\newblock {\em Energy and Buildings}, 2014.
+
+\bibitem{koehler2013therml}
+C.~Koehler, B.~Ziebart, J.~Mankoff, and A.~Dey.
+\newblock Therml: occupancy prediction for thermostat control.
+\newblock In {\em Proceedings of the 2013 ACM international Joint Conference on
+  Pervasive and Ubiquitous Computing}, 2013.
+
+\bibitem{kolda2009tensor}
+T.~Kolda and B.~Bader.
+\newblock Tensor decompositions and applications.
+\newblock {\em SIAM review}, 2009.
+
+\bibitem{kolter2010sparse}
+J.~Kolter, S.~Batra, and A.~Ng.
+\newblock Energy disaggregation via discriminative sparse coding.
+\newblock In {\em Proceedings of Neural Information Processing Systems}, 2010.
+
+\bibitem{kolter2012aistat}
+J.~Kolter and T.~Jaakkola.
+\newblock Approximate inference in additive factorial hmms with application to
+  energy disaggregation.
+\newblock In {\em International Conference on Artificial Intelligence and
+  Statistics}, 2012.
+
+\bibitem{kolter2010redd}
+J.~Kolter and M.~Johnson.
+\newblock Redd: a public data set for energy disaggregation research.
+\newblock In {\em Proceedings of the Workshop on Data Mining Applications in
+  Sustainability (SIGKDD)}, 2011.
+
+\bibitem{hampden2012closure}
+H.~Kuhns, M.~Roberts, and B.~Bastami.
+\newblock Closure rules for energy load disaggregation.
+\newblock Pittsburg, U.S.A., 2012.
+
+\bibitem{lai2012database}
+P.~Lai, M.~Trayer, S.~Ramakrishna, and Y.~Li.
+\newblock Database establishment for machine learning in nilm.
+\newblock Pittsburg, U.S.A., 2012.
+
+\bibitem{lam2007novel}
+H.~Lam, G.~Fung, and W.~Lee.
+\newblock A novel method to construct taxonomy electrical appliances based on
+  load signatures.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 2007.
+
+\bibitem{laughman2003power}
+C.~Laughman, K.~Lee, R.~Cox, S.~Shaw, S.~Leeb, L.~Norford, and P.~Armstrong.
+\newblock Power signature analysis.
+\newblock {\em IEEE Power and Energy Magazine}, 2003.
+
+\bibitem{laxman2005discovering}
+S.~Laxman, P.~Sastry, and K.~Unnikrishnan.
+\newblock Discovering frequent episodes and learning hidden markov models: A
+  formal connection.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering}, 2005.
+
+\bibitem{vatsan-paper}
+S.~Laxman, V.~Tankasali, and R.~White.
+\newblock {Stream prediction using a generative model based on frequent
+  episodes in event sequences}.
+\newblock In {\em Proceedings of the 14th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, 2008.
+
+\bibitem{laxman2008stream}
+S.~Laxman, V.~Tankasali, and R.~White.
+\newblock {Stream prediction using a generative model based on frequent
+  episodes in event sequences}.
+\newblock In {\em Proceeding of the 14th ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining}, 2008.
+
+\bibitem{lee2003PhdThesis}
+K.~Lee.
+\newblock {\em Electric load information system based on non-intrusive power
+  monitoring}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2003.
+
+\bibitem{lee2005estimation}
+K.~Lee, S.~Leeb, L.~Norford, P.~Armstrong, J.~Holloway, and S.~Shaw.
+\newblock Estimation of variable-speed-drive power consumption from harmonic
+  content.
+\newblock {\em IEEE Transactions on Energy Conversion}, 2005.
+
+\bibitem{lee2014personalized}
+S.~Lee, D.~Ahn, S.~Lee, R.~Ha, and H.~Cha.
+\newblock Personalized energy auditor: Estimating personal electricity usage.
+\newblock In {\em IEEE International Conference on Pervasive Computing and
+  Communications (PerCom)}, 2014.
+
+\bibitem{lee1999blindsource}
+T.~Lee, M.~Lewicki, M.~Girolami, and T.~Sejnowski.
+\newblock Blind source separation of more sources than mixtures using
+  overcomplete representations.
+\newblock {\em IEEE Signal Processing Letters}, 1999.
+
+\bibitem{leeb1995transient}
+S.~Leeb, S.~Shaw, and J.~Kirtley~Jr.
+\newblock Transient event detection in spectral envelope estimates for
+  nonintrusive load monitoring.
+\newblock {\em IEEE Transactions on Power Delivery}, 1995.
+
+\bibitem{lewicki2000learning}
+M.~Lewicki and T.~Sejnowski.
+\newblock Learning overcomplete representations.
+\newblock {\em Neural computation}, 2000.
+
+\bibitem{li2009coordinate}
+Y.~Li and S.~Osher.
+\newblock Coordinate descent optimization for l1 minimization with application
+  to compressed sensing; a greedy algorithm.
+\newblock {\em Inverse Problem Imaging}, 2009.
+
+\bibitem{liang2010load}
+J.~Liang, S.~Ng, G.~Kendall, and J.~Cheng.
+\newblock Load signature study part i: Basic concept, structure, and
+  methodology.
+\newblock {\em IEEE Transactions on Power Delivery}, 2010.
+
+\bibitem{lukaszewski2013methods}
+R.~Lukaszewski, K.~Liszewski, and W.~Winiecki.
+\newblock Methods of electrical appliances identification in systems monitoring
+  electrical energy consumption.
+\newblock In {\em Proceedings of the IEEE 7th International Conference on
+  Intelligent Data Acquisition and Advanced Computing Systems (IDAACS)}, 2013.
+
+\bibitem{luo2002monitoring}
+D.~Luo, L.~Norford, S.~Leeb, and S.~Shaw.
+\newblock Monitoring hvac equipment electrical loads from a centralized
+  location- methods and field test results.
+\newblock 2002.
+
+\bibitem{mahmoud2010occupancy}
+S.~Mahmoud, A.~Lotfi, and C.~Langensiepen.
+\newblock Occupancy pattern extraction and prediction in an inhabited
+  intelligent environment using narx networks.
+\newblock In {\em Intelligent Environments}, 2010.
+
+\bibitem{mahmoud2013behavioural}
+S.~Mahmoud, A.~Lotfi, and C.~Langensiepen.
+\newblock Behavioural pattern identification and prediction in intelligent
+  environments.
+\newblock {\em Applied Soft Computing}, 2013.
+
+\bibitem{makonin2013ampds}
+S.~Makonin, F.~Popowich, L.~Bartram, B.~Gill, and I.~Bajic.
+\newblock {AMPds: A public dataset for load disaggregation and eco-feedback
+  research}.
+\newblock In {\em Proceedings of the IEEE Electrical Power and Energy
+  Conference (EPEC)}, 2013.
+
+\bibitem{mambayashi1997noise}
+G.~Mambayashi.
+\newblock Noise measurements of the residential power line.
+\newblock In {\em Proceedings of the IEEE International Symposium on Power Line
+  Communications and Its Applications}, 1997.
+
+\bibitem{manna2013learning}
+C.~Manna, D.~Fay, K.~Brown, and N.~Wilson.
+\newblock Learning occupancy in single person offices with mixtures of
+  multi-lag markov chains.
+\newblock In {\em Proceedings of the IEEE 25th International Conference on
+  Tools with Artificial Intelligence (ICTAI)}, 2013.
+
+\bibitem{mannila1997discovery}
+H.~Mannila, H.~Toivonen, and A.~Verkamo.
+\newblock Discovery of frequent episodes in event sequences.
+\newblock {\em Data Mining and Knowledge Discovery}, 1997.
+
+\bibitem{marceau2000nonintrusive}
+M.~Marceau and R.~Zmeureanu.
+\newblock Nonintrusive load disaggregation computer program to estimate the
+  energy consumption of major end uses in residential buildings.
+\newblock {\em Energy Conversion and Management}, 2000.
+
+\bibitem{matthews2008auto}
+H.~Matthews, L.~Soibelman, M.~Berges, and E.~Goldman.
+\newblock Automatically disaggregating the total electrical load in residential
+  buildings: a profile of the required solution.
+\newblock {\em Proceedings of the Intelligent Computing in Engineering
+  (ICE08)}, 2008.
+
+\bibitem{milioudis2013event}
+A.~Milioudis, G.~Andreou, V.~Katsanou, K.~Sgouras, and D.~Labridis.
+\newblock Event detection for load disaggregation in smart metering.
+\newblock In {\em Proceedings of the IEEE/PES Innovative Smart Grid
+  Technologies Europe (ISGT EUROPE)}, 2013.
+
+\bibitem{minnen2007improving}
+D.~Minnen, T.~Starner, I.~Essa, and C.~Isbell~Jr.
+\newblock Improving activity discovery with automatic neighborhood estimation.
+\newblock In {\em IJCAI}, volume~7, pages 2814--2819, 2007.
+
+\bibitem{monacchi2014greend}
+A.~Monacchi, D.~Egarter, W.~Elmenreich, S.~D'Alessandro, and A.~Tonello.
+\newblock Greend: an energy consumption dataset of households in italy and
+  austria.
+\newblock In {\em Proceedings of the IEEE International Conference on Smart
+  Grid Communications}, 2014.
+
+\bibitem{onoda2000applying2}
+H.~Murata and T.~Onoda.
+\newblock Applying kernel based subspace classification to a non-intrusive
+  monitoring for household electric appliances.
+\newblock In {\em Artificial Neural Networks?ICANN}. 2001.
+
+\bibitem{nakano2007non}
+Y.~Nakano and H.~Murata.
+\newblock Non-intrusive electric appliances load monitoring system using
+  harmonic pattern recognition-trial application to commercial building.
+\newblock In {\em Proceedings of the International Conference on Electrical
+  Engineering}, 2007.
+
+\bibitem{nguyen2013development}
+K.~Nguyen, H.~Zhang, and R.~Stewart.
+\newblock Development of an intelligent model to categorise residential water
+  end use events.
+\newblock {\em Journal of Hydro-Environment Research}, 7(3):182--201, 2013.
+
+\bibitem{norford1996non}
+L.~Norford and S.~Leeb.
+\newblock Non-intrusive electrical load monitoring in commercial buildings
+  based on steady-state and transient load-detection algorithms.
+\newblock {\em Energy and Buildings}, 1996.
+
+\bibitem{onoda2000applying}
+T.~Onoda, G.~R{\"a}tsch, and K.~M{\"u}ller.
+\newblock Applying support vector machines and boosting to a non-intrusive
+  monitoring system for household electric appliances with inverters.
+\newblock 2000.
+
+\bibitem{pardo2002temperature}
+A.~Pardo, V.~Meneu, and E.~Valor.
+\newblock Temperature and seasonality influences on spanish electricity load.
+\newblock {\em Energy Economics}, 2002.
+
+\bibitem{parson2012nonintrusive}
+O.~Parson, S.~Ghosh, M.~Weal, and A.~Rogers.
+\newblock Non-intrusive load monitoring using prior models of general appliance
+  types.
+\newblock In {\em Proceedings of the 26th AAAI Conference on Artificial
+  Intelligence}, Toronto, Canada, 2012.
+
+\bibitem{patel2007flick}
+S.~Patel, T.~Robertson, J.~Kientz, M.~Reynolds, and G.~Abowd.
+\newblock At the flick of a switch: detecting and classifying unique electrical
+  events on the residential power line.
+\newblock In {\em Proceedings of the 9th International Conference on Ubiquitous
+  computing}, 2007.
+
+\bibitem{motifgoal}
+D.~Patnaik, M.~Marwah, R.~Sharma, and N.~Ramakrishnan.
+\newblock {Sustainable operation and ,anagement of data center chillers using
+  temporal data mining}.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international Conference
+  on Knowledge Discovery and Data Mining}, 2009.
+
+\bibitem{patnaik2008inferring}
+D.~Patnaik, P.~Sastry, and K.~Unnikrishnan.
+\newblock Inferring neuronal network connectivity from spike data: A temporal
+  data mining approach.
+\newblock {\em Scientific Programming}, 2008.
+
+\bibitem{powers1991using}
+J.~Powers, B.~Margossian, and B.~Smith.
+\newblock Using a rule-based algorithm to disaggregate end use load profiles
+  from premise-level data.
+\newblock {\em Computer Applications in Power}, 1991.
+
+\bibitem{rakthanmanon2012searching}
+T.~Rakthanmanon, B.~Campana, A.~Mueen, G.~Batista, B.~Westover, Q.~Zhu,
+  J.~Zakaria, and E.~Keogh.
+\newblock Searching and mining trillions of time series subsequences under
+  dynamic time warping.
+\newblock In {\em Proceedings of the 18th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 262--270. ACM, 2012.
+
+\bibitem{rollins2014using}
+S.~Rollins and N.~Banerjee.
+\newblock Using rule mining to understand appliance energy consumption
+  patterns.
+\newblock In {\em Proceedings of the IEEE International Conference on Pervasive
+  Computing and Communications (PerCom)}, 2014.
+
+\bibitem{roos1994using}
+J.~Roos, I.~Lane, E.~Botha, and G.~Hancke.
+\newblock Using neural networks for non-intrusive monitoring of industrial
+  electrical loads.
+\newblock In {\em Proceedings of the IEEE 10th Anniversary Advanced
+  Technologies in Instrumentation and Measurement Technology}, 1994.
+
+\bibitem{schmidt2006nonnegative}
+M.~Schmidt and M.~M{\o}rup.
+\newblock Nonnegative matrix factor 2-d deconvolution for blind single channel
+  source separation.
+\newblock In {\em Independent Component Analysis and Blind Signal Separation}.
+  2006.
+
+\bibitem{scott2011preheat}
+J.~Scott, A.~Brush, J.~Krumm, B.~Meyers, M.~Hazas, S.~Hodges, and N.~Villar.
+\newblock Preheat: controlling home heating using occupancy prediction.
+\newblock In {\em Proceedings of the 13th International Conference on
+  Ubiquitous Computing}, 2011.
+
+\bibitem{shao2012temporal}
+H.~Shao, M.~Marwah, and N.~Ramakrishnan.
+\newblock A temporal motif mining approach to unsupervised energy
+  disaggregation.
+\newblock In {\em Proceedings of the 1st International Workshop on
+  Non-Intrusive Load Monitoring}, 2012.
+
+\bibitem{shao2013temporal}
+H.~Shao, M.~Marwah, and N.~Ramakrishnan.
+\newblock A temporal motif mining approach to unsupervised energy
+  disaggregation: Applications to residential and commercial buildings.
+\newblock Bellevue, U.S.A., 2013.
+
+\bibitem{shaw2000PhdThesis}
+S.~Shaw.
+\newblock {\em System identification techniques and modeling for nonintrusive
+  load diagnositics}.
+\newblock PhD thesis, 2000.
+
+\bibitem{shaw2008nonintrusive}
+S.~Shaw, S.~Leeb, L.~Norford, and R.~Cox.
+\newblock Nonintrusive load monitoring and diagnostics in power systems.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 2008.
+
+\bibitem{song2014short}
+H.~Song, G.~Kalogridis, and Z.~Fan.
+\newblock Short paper: Time-dependent power load disaggregation with
+  applications to daily activity monitoring.
+\newblock In {\em Proceedings of the IEEE World Forum on the Internet of Things
+  (WF-IoT)}, 2014.
+
+\bibitem{srinivasan2006neural}
+D.~Srinivasan, W.~Ng, and A.~Liew.
+\newblock Neural-network-based signature recognition for harmonic source
+  identification.
+\newblock {\em IEEE Transactions on Power Delivery}, 2006.
+
+\bibitem{srinivasan2013fixturefinder}
+V.~Srinivasan, J.~Stankovic, and K.~Whitehouse.
+\newblock Fixturefinder: Discovering the existence of electrical and water
+  fixtures.
+\newblock In {\em Proceedings of the 12th International Conference on
+  Information Processing in Sensor Networks}, 2013.
+
+\bibitem{su2011feature}
+Y.~Su, K.~Lian, and H.~Chang.
+\newblock Feature selection of non-intrusive load monitoring system using stft
+  and wavelet transform.
+\newblock {\em Proceedings of the IEEE 8th International Conference on
+  e-Business Engineering}, 2011.
+
+\bibitem{sultanem1991using}
+F.~Sultanem.
+\newblock Using appliance signatures for monitoring residential loads at meter
+  panel level.
+\newblock {\em IEEE Transactions on Power Delivery}, 1991.
+
+\bibitem{suzuki2008nonintrusive}
+K.~Suzuki, S.~Inagaki, T.~Suzuki, H.~Nakamura, and K.~Ito.
+\newblock Nonintrusive appliance load monitoring based on integer programming.
+\newblock In {\em Proceedings of the IEEE SICE Annual Conference}, 2008.
+
+\bibitem{tanaka2005discovery}
+Y.~Tanaka, K.~Iwamoto, and K.~Uehara.
+\newblock Discovery of time-series motif from multi-dimensional data based on
+  mdl principle.
+\newblock {\em Machine Learning}, 58(2-3):269--300, 2005.
+
+\bibitem{meterPico}
+P.~Technology.
+\newblock Ta041.
+
+\bibitem{meterTED}
+TED.
+\newblock Ct products, 2010.
+
+\bibitem{meterTrend}
+TrendPoint.
+\newblock Power meter.
+
+\bibitem{uttama2013sustainable}
+S.~Uttama-Nambi, T.~Papaioannou, D.~Chakraborty, K.~Aberer, et~al.
+\newblock Sustainable energy consumption monitoring in residential settings.
+\newblock In {\em Proceedings of the 2nd IEEE INFOCOM Workshop on
+  Communications and Control for Smart Energy Systems (CCSES)}, 2013.
+
+\bibitem{vogiatzis2013real}
+E.~Vogiatzis, G.~Kalogridis, and S.~Denic.
+\newblock Real-time and low cost energy disaggregation of coarse meter data.
+\newblock In {\em Proceedings of the 4th IEEE/PES Innovative Smart Grid
+  Technologies Europe}, 2013.
+
+\bibitem{wang2013heirarchical}
+B.~Wang, H.~Dong, A.~Boedihardjo, and C.~Lu.
+\newblock A hierarchical probabilistic model for low sample rate home-use
+  energy disaggregation.
+\newblock 2013.
+
+\bibitem{wichakool2009modeling}
+W.~Wichakool, A.~Avestruz, R.~Cox, and S.~Leeb.
+\newblock Modeling and estimating current harmonics of variable electronic
+  loads.
+\newblock {\em IEEE Transactions on Power Electronics}, 2009.
+
+\bibitem{wu2012low}
+T.~Wu and M.~Srivastava.
+\newblock Low-cost appliance state sensing for energy disaggregation.
+\newblock In {\em Proceedings of the 4th ACM Workshop on Embedded Sensing
+  Systems for Energy-Efficiency in Buildings}, 2012.
+
+\bibitem{wytock2014contextually}
+M.~Wytock and J.~Kolter.
+\newblock Contextually supervised source separation with application to energy
+  disaggregation.
+\newblock 2014.
+
+\bibitem{yang2007design}
+H.~Yang, H.~Chang, and C.~Lin.
+\newblock Design a neural network for features selection in non-intrusive
+  monitoring of industrial electrical loads.
+\newblock In {\em Proceedings of the 11th International Conference on Computer
+  Supported Cooperative Work in Design}, 2007.
+
+\bibitem{motif2}
+D.~Yankov, E.~Keogh, J.~Medina, B.~Chiu, and V.~Zordan.
+\newblock {Detecting time series motifs under uniform scaling}.
+\newblock In {\em Proceedings of the 13th ACM SIGKDD international Conference
+  on Knowledge Discovery and Data Mining}, 2007.
+
+\bibitem{zeifman2012disaggregation}
+M.~Zeifman.
+\newblock Disaggregation of home energy display data using probabilistic
+  approach.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 2012.
+
+\bibitem{zeifman2011nonintrusive}
+M.~Zeifman and K.~Roth.
+\newblock Nonintrusive appliance load monitoring: review and outlook.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 2011.
+
+\bibitem{zeifman2011viterbi}
+M.~Zeifman and K.~Roth.
+\newblock Viterbi algorithm with sparse transitions (vast) for nonintrusive
+  load monitoring.
+\newblock In {\em IEEE Symposium on Computational Intelligence Applications In
+  Smart Grid (CIASG)}, 2011.
+
+\bibitem{zeifman2013automatic}
+M.~Zeifman, K.~Roth, and J.~Stefan.
+\newblock Automatic recognition of major end-uses in disaggregation of home
+  energy display data.
+\newblock In {\em IEEE International Conference on Consumer Electronics
+  (ICCE)}, 2013.
+
+\bibitem{zoha2012survey}
+A.~Zoha, A.~Gluhak, M.~Imran, and S.~Rajasegarar.
+\newblock Non-intrusive load monitoring approaches for disaggregated energy
+  sensing: A survey.
+\newblock {\em Sensors}, 2012.
+
+\end{thebibliography}

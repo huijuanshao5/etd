@@ -1,0 +1,72 @@
+\begin{table}[h]%
+\caption{Energy Disaggregation Algorithms Categories.}
+\label{tab_algSummary}
+\begin{center}
+\makebox[\textwidth]{
+\begin{tabular} {|l|l|l|l|l|}
+\hline
+Category & Sub-category&Algorithm Name & Example & Features Adopted  \\
+\hline
+\hline
+\multirow{18}{*}{supervised}  & \multirow{12}{*}{Classification}&Pair-wise match & \cite{hart1992} & real reactive power \\
+\cline{3-5}
+&&Neural Network & \cite{roos1994using} & real power, reactive power \\
+\cline{3-5}
+& &SVM & \cite{patel2007flick} & startup of $I_{AC}$ and voltage noise \\
+\cline{3-5}
+& &SVM, AdaBoost, RBF, NN & \cite{onoda2000applying} & startup of $I_{AC}$ \\
+\cline{3-5}
+& &SVM, KSC & \cite{onoda2000applying2} & startup of $I_{AC}$ \\
+\cline{3-5}
+& &SVM, RBFN & \cite{nakano2007non} & real power, harmonics of $I_{AC}$ \\
+\cline{3-5}
+&&Bayesian Classifier & \cite{berges2010enhancing} & real power \\
+\cline{3-5}
+& &Genetic algorithm & \cite{baranski2004genetic} & startup of $I_{AC}$, on duration \\
+\cline{3-5}
+& &Rule-based & \cite{powers1991using} & real power \\
+\cline{3-5}
+& &Dynamic Bayesian network & \cite{froehlich2011disaggregated} & real power \\
+\cline{3-5}
+& &Decision Tree & \cite{berges2009learning} & startup of $I_{AC}$ \\
+\cline{3-5}
+& &AdaBoost & \cite{berges2009learning} & startup of $I_{AC}$ \\
+\cline{2-5}
+& \multirow{2}{*}{Nearest Neighbor}&KNN & \cite{shaw2000PhdThesis} & startup of $I_{AC}$ \\
+\cline{3-5}
+&& Duration PDF & \cite{zeifman2011viterbi} & real power, on duration \\
+\cline{2-5}
+& \multirow{1}{*}{Statistical Model}&General likelihood ratio & \cite{anderson2012event} & real reactive power, duration \\
+\cline{2-5}
+& \multirow{5}{*}{Optimization}& Dynamic Programming & \cite{baranski2004detecting} & $I_{AC}$ \\
+\cline{3-5}
+&& Dynamic Model & \cite{dong2013dynamical} & real power \\
+\cline{3-5}
+&& Integer Programming & \cite{suzuki2008nonintrusive} & $I_{AC}$ \\
+\cline{3-5}
+&&Sparse Coding & \cite{kolter2010sparse} & real power \\
+\cline{3-5}
+&& Nonnegative Tensor Factorization & \cite{figueiredo2014electrical} & real power \\
+\hline
+\hline
+\multirow{5}{*}{unsupervised}  &\multirow{1}{*}{Clustering} & Hierarchical Clustering & \cite{gonccalves2011unsupervised} & real power, reactive power\\
+\cline{2-5}
+& \multirow{3}{*}{HMM-based}  &FHMM & \cite{kim2011unsupervised} & real power, time, duration\\
+\cline{3-5}
+& &AFAMAP & \cite{kolter2012aistat} & real power, startup of $I_{AC}$ \\
+\cline{3-5}
+& &Difference FHMM & \cite{parson2012nonintrusive}& real power \\
+\cline{2-5}
+&\multirow{1}{*}{Temporal mining}  & Motif Mining & \cite{shao2013temporal} & real power \\
+\hline
+\hline
+\multirow{3}{*}{Semi-supervised}  & Clustering&Hierarchical Clustering & \cite{lam2007novel} & startup of $I_{AC}$, $I_{AC}$, $V_{AC}$ \\
+\cline{2-5}
+& HMM &HDP-HSMM & \cite{johnson2012bayesian} & real power \\
+\cline{2-5}
+& Optimization&Contextually supervised & \cite{wytock2014contextually} & real power \\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}

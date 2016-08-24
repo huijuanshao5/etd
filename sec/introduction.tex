@@ -1,0 +1,94 @@
+\chapter{Introduction}
+\markright{Huijuan Shao \hfill Chapter 1. Introduction \hfill}
+
+Electricity usage permeates all aspects of modern society.
+Its most conspicuous
+uses include urban contexts such as
+lighting, air conditioning, refrigeration, heating, and, powering
+appliances and gadgets but its penetration is pervasive across rural
+and industrial sectors.
+In 2014, the residential and commercial sector
+comprised nearly 40\% of all the electricity generated in the U.S. \cite{book2014us}.
+Furthermore, our dependence on electricity will continue to grow
+as emphasis shifts away from fossil fuel based vehicles to electric
+vehicles.
+
+While people generally agree on the importance of conservation and
+usage curtailment, they are often at difficulties to quantify 
+{\em where, when} and {\em how much} electricity is consumed.
+Typically, residences and businesses receive
+monthly electricity bills indicating aggregate usage, with no information on
+the breakdown of consumption by appliances/devices, time of day, or day of
+week (this is an area in great flux, however). Research has 
+shown that simply making such feedback available to users
+can reduce consumption by up to 50\%, although typical saving 
+are in the 9\% to 20\% range \cite{book2014us}.%\cite{energydatabook2011}.
+
+One obvious approach to determining the breakdown of consumption is to install
+power meters in every circuit (and sub-circuit)
+to capture consumption of individual devices in homes and
+offices. Such installation is costly and intrusive, making 
+this option unviable in practice. 
+An alternate
+solution, called energy disaggregation or non-intrusive load monitoring
+(NILM),
+first proposed by Hart~\cite{hart1992}, is to use analytics to 
+{\em infer} the breakdown of consumption from an aggregate 
+power measurement of a
+site. This drastically reduces the number of meters required per 
+home/installation, typically to just one. Furthermore, depending on the analytics desired, it is possible to
+use the measurements already being recorded by a utility meter for
+disaggregation, especially in cases where utility companies have deployed
+smart meters.
+Energy disaggregation is hence today a booming area offering both
+challenging problems for data analytics and having practical relevance in a
+number of areas including sensor networks and building analytics.
+
+Another approach to save energy in homes is to 
+efficiently use electricity devices.  
+In residential buildings, 
+the biggest consumer of electricity is usually the HVAC 
+(heating, ventilation, and cooling) system, which generally accounts for ~54\% 
+of the buildings electricity consumption~\cite{book2014us}. 
+How to automatically start up and shut down the HVAC unit 
+is thus a key problem. 
+One solution is to predict the occupancy at home 
+is to begin by analyzing the activities of daily life 
+inside the building. 
+Based on the occupancy information, 
+an automatic control system can be installed
+to operate the HVAC. 
+
+In this work we make efforts to resolve these smart building research with 
+temporal mining approaches.
+\begin{enumerate}
+	\item We take a survey on energy disaggregation from the perspective of data mining features and supervised, semi-supervised and unsupervised algorithms. 
+	\item The temporal mining approach motif mining works effectively for energy disaggregation. 
+	\item We utilize multivariate piecewise motif mining algorithm for both energy disaggregation and water disaggregation. 
+	\item The episode-based model Episode Generating HMM (EGH) and a mixture of EGHs performs well for event prediction in occupancy prediction. 
+	%\item It can be used for supervised learning disaggregation and semi-supervised learning approach, even for un-supervised learning approach. 
+\end{enumerate}
+
+
+
+%A related problem pertains to
+%non-invasive indoor activities tracking.
+%The goal here is to predict the locations of people inside a building
+%without the use of invasive cameras.
+
+%\section{Timeline}
+%The first proposed
+%research problem
+%on energy disaggregation has been completed although 
+%the work will be extended to time-based motif mining and 
+%a new probabilistic models.
+%The second task of activity of daily life patterns is underway. 
+%The third subject on non-invasive indoor activities tracking 
+%will start in this Oct.. 
+%A timeline of activities is shown in Figure~\ref{fig_PhDtimeline}. 
+
+%\begin{figure}[!hbtp]
+%\centering
+%\includegraphics[width=0.8\textwidth]{fig/PhDTimeline.pdf}
+%\caption{Timeline.\label{fig_PhDtimeline}}
+%x\end{figure}

@@ -1,0 +1,40 @@
+
+\begin{table*}[!t]
+%\vspace{0.2cm}
+\hfill
+\begin{minipage}[t]{1.0\linewidth}%
+
+\caption{Precision Recall F-measure of Individual and Whole House Occupancy Prediction on Study 14.}
+\label{tab_resultsLimitation}
+\begin{center}
+\makebox[\textwidth]{
+\begin{tabular} {|l|l|l|l|l|l|l|l|l|}
+\hline
+\multirow{2}{*}{Dataset}&\multirow{2}{*}{Date}&\multirow{2}{*}{Person} & \multicolumn{3}{|c|}{EGH}&\multicolumn{3}{|c|}{kNN}  \\
+\cline{4-9}
+&&& precision & recall &fmeasure &precision & recall & fmeasure  \\
+\hline
+\multirow{3}{*}{study14}  & 12/18/2013 & person2&  \textbf{0.91} &  \textbf{0.91} &  \textbf{0.89} & 0.87 & 0.87 & 0.84\\
+\cline{2-9}
+& 12/18/2013 & person1&  \textbf{0.92} &  \textbf{0.92} &  \textbf{0.91} & 0.90 & 0.90 & 0.89 \\
+\cline{2-9}
+& 12/19/2014 & person2& 0.86 & 0.86 & 0.85  & \textbf{0.90} & \textbf{0.90} & \textbf{0.88} \\
+\cline{2-9}
+& 12/19/2014 & person1& 0.85 & 0.84 & 0.84  & \textbf{0.86} & \textbf{0.86} & \textbf{0.85} \\
+\cline{2-9}
+& 12/20/2014 & person2& 0.92 & 0.94 & 0.92  & \textbf{0.98} & \textbf{0.97} & \textbf{0.97} \\
+\cline{2-9}
+& 12/20/2014 & person1& 0.90 & 0.91 & 0.90  & \textbf{0.95} & \textbf{0.95} & \textbf{0.95} \\
+\cline{2-9}
+& 12/18/2013 & \textbf{wholehouse}&  \textbf{0.91}& \textbf{0.91} & \textbf{0.90} & 0.88	& 0.88 & 0.86 \\
+\cline{2-9}
+& 12/19/2013 & \textbf{wholehouse} & 0.841	& 0.845 & 0.838&  \textbf{0.848}& \textbf{0.853} & \textbf{0.842} \\
+\cline{2-9}
+& 12/20/2013 & \textbf{wholehouse} & 0.92	& 0.90 & 0.90&  \textbf{0.94}& \textbf{0.93} & \textbf{0.93} \\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{minipage}%
+%\hfill%
+\end{table*}

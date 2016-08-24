@@ -1,0 +1,94 @@
+\section{Evaluation}
+%The evaluation tools has been discussed in prior work \cite{liang2010load}.
+%
+%To evaluate whether each devices is disaggregated or not,
+%we need to evaluate two parts, one is how much energy
+%is evaluated compared to the ground truth. Another is
+%among those disaggregated energy, how much percentage
+%are disaggregated right.
+%
+We use precision, recall and F-measure in our evaluation. The standard
+definition of these metrics are:
+%\begin{equation}
+$\textrm{precision}=\frac{TP}{TP+FP}$, 
+%\end{equation}
+%\begin{equation}
+$\textrm{recall}=\frac{TP}{TP+FN}$,
+%\end{equation}
+%\begin{equation}
+$\textrm{F-measure}=\frac{1}{\frac{1}{\textrm{precision}}+\frac{1}{\textrm{recall}}}$
+%\end{equation}
+
+We need to define the notions of true/false positives
+and negatives in the context of disaggregation.
+
+Now suppose there is a ground truth time series $X$ with length T.
+Denote the corresponding disaggregated time series by $X^*$.
+For any time $t \in (0, T)$, there are two values: the
+ground truth value $X_i(t)$ and the disaggregated value
+$X_i^*(t)$. We define a parameter $\rho$ for the range of
+true values $X_i(t)$ and another parameter $\theta$
+as the noise.
+For any given measurement, 
+there are four total power values or water usage values at
+each point: true positive $\Psi_{TPi}$,  false negative $\Psi_{FNi}$,
+true negative $\Psi_{TNi}$, and false positive $\Psi_{FPi}$.
+
+\noindent
+1. When $X_i(t) > \theta$ and  $X_i^*(t)> \theta  $,
+at this point the disaggregation is a true positive.
+There are three situations in turn:
+
+\noindent
+1.1. When $  X_i(t) \times (1-\rho) <  X_i^*(t) <  X_i(t) \times (1+\rho)  $, then
+\begin{eqnarray*}
+ {\Psi}_{TPi} &=& X_i^*(t) \\
+ \Psi_{FNi}&=&\Psi_{FPi} =\Psi_{TNi}=0
+\end{eqnarray*}
+
+\noindent
+1.2. When $ X_i^*(t) < X_i(t) \times (1-\rho)$ , then only
+the disaggregated power or water usage is considered as true positive and
+the power or water usage that is not disaggregated is regarded as a false negative:
+\begin{eqnarray*}
+\Psi_{TPi}&=&X_i^*(t) \\
+\Psi_{FNi}&=&X_i(t) - X_i^*(t) \\
+\Psi_{FPi}&=&\Psi_{TNi}=0
+\end{eqnarray*}
+1.3 When $ X_i^*(t)>  X_i(t) \times (1+\rho) $, then
+the disaggregated power or water usage is a true positive, and those values
+which are greater than the truth values are treated as false positive.
+\begin{eqnarray*}
+\Psi_{TPi}&=&X_i^*(t) \\
+\Psi_{FPi}&=&X_i^*(t) - X_i(t) \\
+\Psi_{FNi}&=&\Psi_{TNi}=0
+\end{eqnarray*}
+2. When $X_i(t) > \theta$ and  $X_i^*(t)< \theta  $,
+at this point the disaggregation is a false positive.  Then,
+\begin{eqnarray*}
+\Psi_{FPi}&=&X_i(t) \\
+\Psi_{TPi}&=&\Psi_{FNi} =\Psi_{TNi}=0
+\end{eqnarray*}
+3. When $X_i(t) < \theta$ and  $X_i^*(t) > \theta  $,
+at this point the disaggregation is a false negative. Then,
+\begin{eqnarray*}
+\Psi_{FNi}&=&X_i(t) \\
+\Psi_{TPi}&=&\Psi_{FPi} =\Psi_{TNi}=0
+\end{eqnarray*}
+4. When $X_i(t) < \theta$ and  $X_i^*(t) < \theta  $,
+at this point the disaggregation is a true negative.  Then,
+\begin{eqnarray*}
+\Psi_{TPi}&=&\Psi_{FNi} =\Psi_{FPi} =\Psi_{TNi}=0
+\end{eqnarray*}
+%In practice, we use different
+%$\rho$ and $\theta$ values depending on the
+%dataset. For instance, considering the datasets described below,
+
+In our experimental dataset, we set
+$\theta=100$ and $\rho=0.2$. 
+Although the maximal power consumption of all these devices is 11000W, 
+we can still state $\theta < 11000 * 0.1$. 
+The reason is that we apply multivariate piecewise motif mining recursively, 
+the devices which consume big power are deleted in the first a few rounds. 
+Therefore the power noise which is brought by the big power electronic devices 
+is greatly decreased. 

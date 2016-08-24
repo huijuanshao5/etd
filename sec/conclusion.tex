@@ -1,0 +1,31 @@
+\chapter{Conclusion}
+
+Smart buildings research involves many topics. 
+We focus on two of them energy/water disaggregation and occupancy prediction. 
+In this work, we utilize temporal mining algorithms 
+frequent episode mining to discover the usage patterns 
+of electrical devices and water use ends. 
+Based on these frequent episodes, 
+we can disaggregate individual devices from the multi-phases 
+or single-phase aggregated data. 
+
+Also, we mine the frequent episodes from the room position of a 
+person in a residential building. 
+Then we connect these frequent episodes with HMM 
+to build Episode Generating HMM for target event unoccupancy prediction. 
+
+In the future work, 
+regarding energy disaggregation, we will incorporate more feature 
+when a device starts up and improve this temporal mining 
+approach to disaggregate more devices. 
+For water disaggregation, since there's limitation in 
+discovering specific water use ends, 
+we will explore temporal mining approach, 
+and integrate the dynamic time warping with motif mining. 
+
+As to occupancy prediction, 
+the hybrid approach by integrating kNN and a mixture of EGH 
+performs best on sensor data set. 
+Next step, we will apply this approach to GPS dataset 
+on occupancy prediction. 
+

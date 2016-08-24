@@ -1,0 +1,107 @@
+\chapter{Proposal: Indoor Activities Tracking}
+\markright{Huijuan Shao \hfill Chapter 5. Proposal: Indoor Activities Tracking \hfill}
+
+\section{Indoor Activities Tracking}
+In the previous work, 
+episode mining was applied in energy disaggregation and 
+time-gap constrained episode mining and a corresponding EGH model is utilized 
+to predict occupancy. 
+Episode mining and its extension can be widely used in the area of
+sustainability for mining patterns and special prediction target.  
+
+%Motivation 
+Non-invasive indoor activities tracking is an interesting topic. 
+It's a basis for smart home applications, 
+such as monitoring the patient or elderly people, 
+controlling the electrical devices based on the room occupancy. 
+Most of such tracking system reply on installed cameras or microphones, 
+or carried powered devices, such as ultrasonic RF transceiver. 
+These devices are considered by some people to be invasive on the privacy. 
+Non-invasive resident identification and indoor activity tracking was 
+studied in the papers of\cite{srinivasan2010using, hnat2012doorjamb}. 
+In the paper of \cite{srinivasan2010using}, 
+the authors
+install a ultrasonic distance sensor on the 
+beam of the door to capture the height of a person 
+when he/she walking through the door. 
+According to the difference of height, 
+each person can be identified at which room 
+when staying at home. 
+Based on it, \cite{hnat2012doorjamb} installs 
+ultrasonic sensors above each doorway to 
+estimate which room the person will go. 
+The author utilizes the height of a person and walking direction. 
+The challenges lies in two problems. 
+The person identification is based on the height. 
+Therefore the height difference among people at home 
+is supposed to be greater than 7cm. 
+The walking direction estimation based on the gait is 
+not so accurate because there are maybe 
+multiple paths instead of one. 
+
+So far, the research on noninvasive indoor activities tracking just begins. 
+There are still a lot of questions that need to be answered.
+First is on how to estimate the room occupancy of each person at home more effectively?
+Second, how to improve the room occupancy prediction accuracy?
+Third, how to model a probabilistic time series model for prediction?
+
+\section{Approach}
+To solve the above indoor activities tracking problem, 
+we propose to use the episode mining approach 
+for the room location prediction. 
+Each person inside the home is identified by one feature height. 
+And he/she generates a time series with 
+walking direction and doorway ID. 
+Then we can apply the time or gap episode mining 
+by constraints on the walking direction events. 
+The order of mined episodes can be defined by us. 
+For instance, if the door is closed. 
+The door should be opened before a person goes through it. 
+After that, the episode mining approach is applied to mine the frequent episodes. 
+These frequent patterns with time give us the training data 
+for target event prediction. 
+
+Unlike the occupancy prediction problem, 
+there are several target events instead of one. 
+We apply the mixture episode generative HMM model and 
+calculate the probability of staying in each room. 
+Since a person can only be in one room at home, 
+we can select the room with the highest probability as the result. 
+
+We can briefly describe the problem as below. 
+Each doorway has an ID. On it, an ultrasonic distance sensor is installed. 
+Therefore for each doorway over a period of time, 
+a time series data on height measurement and walking direction 
+is recorded.  
+The events in the doorjamb are of four types
+$e_i \in E=\{t_i, d_i, h_i, v_i\}$, where 
+$t_i$ is the timestamp, 
+$d_i$ is the doorway ID, 
+$h_j$ is the height measurement and 
+$v_i$ is the walking direction at the time of $t$. 
+The target is to estimate the room occupancy of each person inside the home 
+over a period of time 
+$s_i \in S = (r1_i, r2_i)$ where $r1_i$ denotes that person 1 is at the room location at time $i$. 
+
+\section{Evaluation}
+We already know the ground truth,  which is when a person stays in each room in the building. 
+We can compare the results of our approach and other approaches 
+presented in \cite{hnat2012doorjamb} with the ground truth data. 
+After calculating the precision, recall, and f-measure values of these two approaches, 
+we can judge which method performs better. 
+
+
+\iffalse
+In the first step, 
+we can define the discrete event types. 
+There are totally three types of events as below. 
+\begin{enumerate}
+\item When a person walks through a doorway using data from the 
+?doorjamb? sensor. 
+\item When a person performs a particular hand gesture using data from 
+a smart watch.
+\item When an appliance turns on using power meter data.
+\end{enumerate}
+\fi
+
+

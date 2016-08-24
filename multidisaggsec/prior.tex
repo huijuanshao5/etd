@@ -1,0 +1,157 @@
+\section{Prior Work}
+Though electricity disaggregation has been researched over decade, 
+researches on water disaggregation just emerges in recent years. 
+Supervised, semi-supervised and unsupervised learning approaches have been intensively
+studied in electricity disaggregation. In contrast, the research on water disaggregated 
+is still limited to supervised disaggregation so far. 
+
+%%% electricity disaggregation prior work
+Electricity disaggregation uses the electricity consumption level at main entry into a building or house 
+to infer whether a device inside the building is on or off. 
+The features used includes initial real power and reactive power~\cite{hart1992}. 
+With advances in electrical meter technology and availability of less expensive meters, 
+more and more features are used, such as 
+the transient state generated when a device turns on or off~\cite{shaw2000PhdThesis},
+the raw current waveform~\cite{srinivasan2006neural}, voltage waveform~\cite{lam2007novel}, 
+the transform of the current waveform~\cite{chan2000harmonics}, 
+harmonics of non-linear devices~\cite{chan2000harmonics}. 
+Even on-AC power features such as power line noises~\cite{patel2007flick}
+are exploited jointly with AC power features like  
+time of day, and device correlations~\cite{kim2011unsupervised}
+in modern systems. 
+
+%Algorithms applicable to energy disaggregation
+%can be categorized into supervised learning algorithms, 
+Nowadays, 
+unsupervised learning and semi-supervised learning algorithms 
+become the research trend.
+%The applied data mining algorithms are composed of
+%supervised learning algorithms, unsupervised learning algorithms
+%and semi-supervised learning algorithms.
+%The supervised learning algorithms include
+%kNN methods~\cite{shaw2000PhdThesis},
+%support vector machines~\cite{patel2007flick},
+%neural networks~\cite{roos1994using},
+%genetic programming~\cite{baranski2004genetic},
+%sparse coding~\cite{kolter2010sparse}, 
+%as well as
+%combinations of supervised learning algorithms~\cite{nakano2007non}. 
+%Optimization algorithms used in the area of energy disaggregation have
+%been drawn from integer programming~\cite{suzuki2008nonintrusive}, 
+%dynamic programming~\cite{baranski2004detecting}, and
+%the Viterbi algorithm~\cite {zeifman2011viterbi}.
+Unsupervised learning algorithms
+have only been recently used in
+ the last few years, such as include
+hierarchical clustering~\cite{gonccalves2011unsupervised},
+factorial hidden Markov models (FHMMs)~\cite{kim2011unsupervised},
+additive factorial approximate MAP (AFAMAP)~\cite{kolter2012aistat}, 
+difference FHMM~\cite{parson2012nonintrusive}, 
+and motif mining~\cite{shao2013temporal}.
+Semi-supervised learning 
+algorithms~\cite{lam2007novel,johnson2012bayesian} have also
+been proposed.
+
+The field of energy disaggregation has evolved
+over the last twenty years. While
+some applications have achieved
+qualified success, there are several challenging
+problems to be addressed before energy disaggregation can be
+used more widely. Some of these problems include:
+
+\begin{enumerate}
+\item The number of devices is typically unknown and can only be
+approximately estimated based on background information.
+
+\item The number of power level states of each device is unknown.
+%Some devices such as lights may have only two steady states, viz. on and off.
+%Other devices  have several steady states.
+%For example, a microwave can operate in the states of defrost,
+%heat with low power, or heat with high power. Estimating
+%the exact number of states of a device is a hard problem.
+
+\item Several devices may share the same real power and
+it is hard to distinguish these devices with only the recorded aggregated
+power time stamp.
+%For example, a light and a monitor could consume the same amount of real
+%power (e.g., around 38W). With more devices that share the same real power,
+%additional features are necessary to disambiguate among them.
+
+\item Many devices may turn on or off at the same time.
+%A PC and printer likely turn on and off together,
+%thus making it difficult to separate them from the aggregated power profile.
+
+\item Instead of having a discrete range of power
+levels, there are devices whose power consumption levels
+   vary gradually, e.g.,
+  variable speed devices (VSD) and lights with dimmers.
+Once their power usage is aggregated with that from other devices, the
+disaggregation problem becomes increasingly difficult.
+
+%\item Some devices are always on and seldom operated by
+%users. Because the operations on these devices are
+%rare, it is hard to identify these devices from prior historical data.
+\end{enumerate}
+
+In this chapter, we assume  the number of devices and their real power 
+levels are known in advance. We formalize this energy disaggregation as a semi-supervised problem
+and provide solutions to the above three sub-problems 2-5. 
+
+
+%%%%water disaggregation prior work
+\begin{comment}
+Similar to electricity disaggregation, water disaggregation uses the total cold water and hot water 
+usage at home to deduce when an water end uses. 
+Sensors are installed on the whole house cold water and hot water pipes to record the water pressure or water flow rate \cite{carboni2016contextualising}. 
+Prior work on water disaggregation focuses on supervised disaggregation. 
+ HydroSense \cite{froehlich2009hydrosense} firstly proposed to exploit water pressure for non-intrusive water 
+ disaggregate. Later \cite{larson2012disaggregated} extends its approach as hidden Markov model. 
+
+%The water flow rate data are collected by installing sensors contacting water directly and logs the 
+%data in the unit of liter per minute. The disaggregation approaches are similar to the approaches for 
+%water pressure data. 
+Features such as a water usage cycle of a device, total amount of water, 
+the usage duration of a device,  the interval between two usages of the same device, 
+time of the day, weekend or not are extracted in the research of \cite{fontdecaba2013approach}. 
+Then a probabilistic model which computes the likelihood of water end use categories is applied 
+for classification. 
+
+A combination approach of hidden Markov model and dynamic time warp is 
+proposed in \cite{nguyen2013development} for water end use classification. 
+Majority of the water end uses are identify by hidden Markov model 
+after supplying their water usage changes. 
+Additional, dynamic time warping is applied to categorize certain devices such as dish washer 
+ and clothes washer. 
+ A deep sparse coding-based recursive disaggregation model is proposed in \cite{dong2013deep}. 
+ It uses the water consumption feature as the base for supervised disaggregation. 
+ This approach is highly related to the deep sparse coding approach to electricity disaggregation \cite{kolter2010sparse}.
+ A convex optimization approach is introduced for both electricity and water disaggregation in \cite{pigaconvex}. 
+ It utilizes piece-wise water consumption as a feature as input, then applies the convex optimization approach 
+ to minimize the euclidean distance between the aggregated data and sum of disaggregated data. 
+ In the work of \cite{seppelt2012analysis}, 
+ the on operations of each water end use are split into several segments as features.
+ Then a hidden Markov model uses each feature as an event for deciding which device an event from 
+ aggregated data it should classify into. 
+ 
+The challenges we are facing for supervised water disaggregation are similar to electricity disaggregation as following. 
+\begin{enumerate}
+\item Variable water usage pattern for the same water end use: for example, 
+a sink in a kitchen uses both cold water and hot water. Its water usage varies 
+in a great range, a large amount of water to wash foods or a very small amount to wash hands. 
+This variety of water usage makes it difficult to find a fixed pattern in kitchen. 
+Note that this variable water usage device is similar to some electric devices like continuous variable load in electricity disaggregation. 
+\item The overlapped usage of different water end uses: 
+For instance, people may use toilet sink before or after toilet. 
+The overlap of the these two devices causes difficulty in separating them 
+especially when the sink water usage is very irregular. 
+\item Similar water usage patterns from different water end uses: for instance, two sinks are located in different rooms. 
+Even if they are often used in different periods of time, 
+it is very hard to distinguish them. 
+\end{enumerate}
+For unsupervised water disaggregation, more challenges exist, 
+such as the number of water end uses, and the water usage of each water end use. 
+
+This is the first work to disaggregate electricity and water under the same framework. 
+
+\end{comment}
+ 

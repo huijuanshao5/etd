@@ -1,0 +1,74 @@
+% algorithm 22, an extention of algorithm 2
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{ Target Event Occurs Time Prediction Algorithm}
+\label{alg22}
+\begin{algorithmic} [1]
+\REQUIRE 
+partial day cut point $pIndex$, $s[1:pIndex]$ is known,  and $s[pIndex:96]$ for prediction;
+partial day event stream $s=\langle E_1,..., E_{pIndex} \rangle$;
+all the episodes $epis$, $\forall E \in \alpha$ and $\forall \alpha \in epis$, E has $E.{start}$ 
+and $E.{end}$; 
+frequent episodes $F=\langle \alpha_1,..., \alpha_J \rangle$ inside $s[1:pIndex]$;
+EGH model $\Lambda_{\alpha_j}$ with noise parameter $\eta_j$ where $j=1...J$
+EGH mixture model coefficients $\Theta=\langle \theta_1,...,\theta_J \rangle$;
+the slot number noise parameter $\epsilon$  ; 
+target event $Z$
+\ENSURE Predict target event leaving time $Z_{leave}$ and back time $Z_{back}$
+ 
+\COMMENT{predict before the person leaves home}
+\IF{$Z  \notin s $}
+\STATE choose episodes $\alpha.ev={'SZ'}$ 
+\STATE $Z_{leave} = \frac{\sum_1^K Z.start}{|\alpha|} $
+\STATE $Z_{back} = \frac{\sum_1^K  Z.end}{|\alpha|}  $
+
+\COMMENT{if there are several episodes to predict 'Z'}
+\IF{$len(F)>1$}
+\FOR{$\alpha_j \langle e_1,..., e_j \rangle \in F$}
+\IF{$\alpha_j.ev='SZ'$} % 'SZ' has been calculated,no need to calculate again
+\STATE break
+\ENDIF
+\IF{$pIndex \in ( \alpha_j. ev[-2].start - \epsilon, \alpha_j.ev[-2].start+ \epsilon )$}
+\STATE $leaveMap[\alpha_j.ev]=\alpha_j.leave$
+\ENDIF
+\IF{$pIndex \in ( \alpha_j. ev[-2].end - \epsilon, \alpha_j.ev[-2].end+ \epsilon )$}
+\STATE $backMap[\alpha_j.ev]=\alpha_j.back$
+\ENDIF 
+\ENDFOR
+\IF{$len(leavingMap) !=0 $} % for the average
+\STATE $leaveSlotMap[\alpha_j.ev] =\frac{\sum_1^K leavingMap.get(k)}{K}$
+\STATE $backSlotMap[\alpha_j.ev] = \frac{\sum_1^K backMap.get(k)}{K}$
+\ENDIF % this is for the len
+\\
+\COMMENT{There are other frequent episodes except 'SZ'}
+\IF{$K=len(leaveSlotMap)>1$}
+\STATE $Z_{leave}= \frac { \sum_{k=1}^K leaveSlotMap.get(k) * \theta_k } {K}$
+\STATE $Z_{back}= \frac { \sum_{k=1}^K backSlotMap.get(k) * \theta_k } {K}$
+\ENDIF
+\ENDIF %this is for len(F)>1 
+
+\ENDIF %this is for if Z \notin S \\
+
+\COMMENT{if the person has left home}
+\IF{$Z  \in s $}
+\STATE $Z_{leave}=s.firstindex[Z]$ % the position where $Z$ first appears
+\STATE $Z_{back}=s.lastindex[Z]$ % the position when $Z$ lastly appears
+\\
+\COMMENT{The person hasn't come back}
+%\STATE backSlotMap=\{\}
+\IF{$Z_{leave}=Z_{back}$} % the person hasn't come back
+% get the average of those time
+\FOR{$\alpha_j \langle e_1,..., e_j \rangle \in F$}
+\IF{$Z_{leave} \in [\alpha_j.ev[-2].end - \epsilon, \alpha_j.ev[-2].end + \epsilon ]$}
+\STATE $backSlotMap[\alpha_j.ev] = \alpha_j.leave$
+\ENDIF
+\ENDFOR
+\STATE $Z_{back}= \frac { \sum_{k=1}^K backSlotMap.get(k) * \theta_k } {K}$
+\ENDIF
+\ENDIF
+
+\STATE Output the slot number when the person leaves $Z_{leave}$ and comes back $Z_{back}$
+\end{algorithmic}
+\end{algorithm}

@@ -1,0 +1,28 @@
+\section{Disaggregation Formalism}
+We propose a semi-supervised approach for disaggregation, i.e.
+we assume that we know the on/off events for a short period of time of all devices %and water end uses, 
+to deduce the power levels %or water end use 
+or startup vectors of every device.
+
+%Our disaggregation algorithm assumes that we know the features of each device from semi-supervised learning. 
+
+For our purpose, we redefine the energy disaggregation problem as follows:
+Given $K$-phase aggregated power 
+%or $K$ total water consumption time series 
+$Y_k=y_1^{(k)}, ..., y_T^{(k)}$, and a set of
+power related and contextual features, $f=f_1, ..., f_T$ over a period of time T, 
+the problem is to estimate the disaggregated power consumption of $M$ devices 
+$\hat{X_m }= \hat{x}_{1}^{(m)}, ...\hat{x}_{t}^{(m)}, ... \hat{x}_{T}^{(m)}, m\in[1, M]$, 
+such that a loss function on the sum of the power consumption of the $M$
+devices and the sum of $K$-phases aggregated power consumption is minimized. 
+\begin{equation}
+\label{eq_powerObj}
+\min_{\hat{x}_{t}^{(m)}} \{ \sum_{t=1}^T \mathscr{L}_t(\sum_{m=1}^M \hat{x}_{t}^{(m)}, \sum_{k=1}^Ky_t^{(k)}) \},
+\end{equation}
+where $\mathscr{L}_t$ is the loss function between 
+the sum of $M$ estimated time series at $t$, 
+and $y_t^{(k)}$ is the ground truth phase $k$ aggregated power feature at time $t$. 
+$\mathscr{L}$ is usually the $\mathscr{L}1$-norm $|\sum_{m=1}^M \hat{x}_{t}^{(m)} -\sum_{k=1}^K y_t^{(k)}|$
+or the $\mathscr{L}2$-norm $(\sum_{m=1}^M \hat{x}_{t}^{(m)}-\sum_{k=1}^Ky_t^{(k)})^2$.
+
+

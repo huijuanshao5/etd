@@ -1,0 +1,957 @@
+\subsection{Supervised Learning Algorithms}
+\subsubsection{Classification-Based}
+\label{sec:supervised}
+%Supervised learning based energy disaggregation algorithms have been an area of research since %since this topic was first proposed by Hart~\cite{hart1992} and over the last couple of decades %significant progress has been made in this field. 
+Supervised learning based energy disaggregation algorithms focus on distinguishing devices from aggregated data 
+%by training a model using data from another time period combined with data from each circuit/device.
+%Essentially these algorithms 
+by treating the problem as one of device classification.
+%Some classification algorithms are utilized standalone,
+%others combine several classification algorithms together.
+These classification algorithms include
+simple pair-wise match, rule-based algorithm,
+%KNN,
+SVM, Kernel Based Subspace Classification,
+Bayesian classifier, neural network,
+genetic algorithm,
+dynamic bayesian network,
+sparse coding,
+AdaBoost,
+decision tree,
+a combination of SVM and AdaBoost etc.
+
+Classification-based energy disaggregation operate under 
+the following general assumption: 
+
+Assumption: \textit{A classifier that can distinguish devices 
+can be learned in the given feature space.}
+
+Since there are more than one device inside a building or house,  
+this is actually a  {\em multiclass} classification problem.  
+
+
+%\subsubsubsection{Neural network}
+\textbf{Neural network}
+%Algorithms using neural network essentially take a device feature classification approach to energy %disaggregation. 
+%Neural network is adopted by several papers in energy disaggregation area
+A basic energy disaggregation technique utilizing a neural network 
+is implemented in two steps. 
+First in the training stage, a neural network is trained 
+to learn several features of multiple devices. 
+Second in the test stage, each feature extracted from the aggregated data 
+is provided as an input to the neural network. 
+If the neural network recognizes the input by associating it with one of the features learned in the training phase, then the device that generated that input is classified accordingly. 
+%for single feature over all features, 
+%it's to compare the whether the error rate becomes the lowest. 
+
+%For the purpose of testing, 10% or 20% deviation at one
+%harmonic parameter (amplitude or phase angle) was
+%applied to the harmonic content table of typical
+%commercial area. The evaluation of the calculation results
+%is compared with Percentage Relative Error (PRE):
+%NA/CRefrigeratorr
+%(%) = [
+%( Pti − Pi ) 2 ]0.5
+%i =1
+%where N is the number of devices. Pti is the load i
+%percentage calculated from ANN model and Pi is the
+%actual percentage of load i.
+A neural network example is 
+illustrated in Figure~\ref{fig_neuralNetwork}. %, roos1994using, baranski2003nonintrusive}. 
+There are $d$ features in the input and 
+$M$ number of devices on the output. 
+The neural network defines $K$ hidden states. 
+\input{figs/neuralNetwork}
+
+Generally the evaluation for a neural network based classifier is 
+to compare the relative error percentage.
+%Neural network has the advantage over detect the interaction between
+%the disaggregated features and ground truth
+%but it works very slow.
+
+%Several papers have adopted basic neural network for device classification. 
+Roos et al. initially proposed to adopt
+neural network for classification based on real
+power and reactive power by 
+transforming the aggregated data into images for processing~\cite{roos1994using}.
+Next,~\cite{baranski2003nonintrusive} employs backpropagation (BP)
+neural networks with attributes as number of states,
+duration time and average energy consumption. %to identify devices.
+Furthermore, 
+the training stage of~\cite{duan2004neural} and~\cite{srinivasan2006neural} is based on the current waveform
+and harmonics. %to extract signatures by Fourier transform thus identify devices.
+The latter paper treats eight odd-numbered harmonics as a vector event feature 
+for classification and chooses 16 hidden nodes.
+Note that~\cite{srinivasan2006neural} compares several neural network approaches, 
+namely multilayer perception (MLP), radial basis function (RBF) network,
+support vector machine (SVM) with linear and polynomial and
+RBF kernels.
+The results indicate that these MLP and RBF-based approaches have high classification accuracy. 
+
+%neural network
+Chang et al. extends the back propagation approach
+by employing electromagnetic transient program (EMTP) with
+transient real power when devices start up~\cite{chang2008load2}. 
+The transient shape is a vector event rather than a point event. 
+In order to identify devices from aggregated data adaptively,
+a window size %$\Delta t $ 
+$w$
+is adopted to enhance the algorithm
+as an adaptive neural network. 
+Initially, the differential values $dP_{transient}$ for a period time %$\Delta t$ 
+$w$
+represent the characteristics of a class of devices. During the training process,
+the time period value %$\Delta t$ 
+$w$ increases by $\delta$ from $1$ to %$\Delta t$
+$w$.
+The $\delta$ which achieves highest recognition accuracy is retained.
+
+Recently basic adaptive neural network (ANN) applied to energy disaggregation was presented in ~\cite{liang2010load}. 
+The paper selects backpropagation ANN (BPANN) to
+train a model. 
+Based on a combination of features,
+such as real, reactive power,
+transient shapes, harmonics, eigenvalue of current waveform,
+voltage waveform, etc., 
+this paper establishes a committee decision system based on 
+three rules: most common occurrence (MCO), least unified residue (LUR), and
+maximum-likelihood estimation (MLE), to classify devices. 
+As a result, the disaggregation accuracy is high. 
+
+%The system work flow is Figure\ref{fig_system_srinivasan2006neural}.
+%In the first step, the distorted waveform generated by non-linear
+%devices is transformed by Fourier analysis.
+%\input{figs/system_srinivasan2006neural.tex}
+
+%Then the eight odd-numbered harmonics are extracted as vectors as
+%illustrated. %in Figure\ref{fig_harmonics_srinivasan2006neural}.
+%The real part and imaginary part are separated as the input of
+%ANN.
+%Since there are 8 devices, the output number of nodes is 8.
+%The number of hidden nodes is chosen as 16.
+
+Two variants of the basic neural network 
+were proposed. %LVQ neural network
+\cite{yang2007design} classified the transient events by way of
+back propagation (BP) and 
+and \cite{chang2008load} adopted learning vector quantization (LVQ) to
+recognize devices. % combination with GA
+Neural networks have also been combined with other approaches. For example,~\cite{chang2010newmethod} combines multi-layer feed-forward neural network with genetic algorithm to 
+to analyze the device turn-on transient signatures. 
+%%%%%%%%%%%%%%%end of neural network
+
+%\subsubsubsection{Support vector machine}
+\textbf{Support vector machine}
+SVMs attack the problem using multiclass learning techniques by learning the
+event features only from the training data as opposed to unsupervised methods that learn
+features from the entire dataset. 
+%\manishc{that is in general true for all classifiers} \huijuanc{Yes. unsupervised disaggregation approaches learn the features from the entire dataset other than part of the dataset. I add unsupervised.}
+Kernels such as radial basis function (RBF) kernel are adopted to learn complex features such as harmonics. At first, SVMs were employed to classify devices by 13 odd-order harmonic current 
+and phase angles from on and off events~\cite{onoda2000applying}. 
+Later, a kernel based subspace classification (KSC) approach is used for 
+events classification in SVM~\cite{onoda2000applying2}. 
+%%% the following is needed or not? 10-08-2014
+%The RBF kernel is introduced as Equation (\ref{eqn_rbfSubspace}). %for both KSC and SVM.
+%\begin{equation}
+%\label{eqn_rbfSubspace}
+%k(x,y)=exp(\frac{{\lVert x-y \rVert}^2}{\sigma ^2})
+%\end{equation}
+%Where $x$ is the dimensional patterns,
+%$y$ represents the classified devices,
+%$k(x, y)$ is the kernel matrix. 
+% and its $(i, j)$ element is $k(x_i, y_j)$.
+
+SVM was widely utilized with  noisy datasets although it do not scale well for large data sets. 
+%because 
+%the size of these datasets is much larger than 
+%that of AC power features and SVM has the ability to perform fast computations on
+%large data sets. 
+%\manishc{svm's don't scale well for large data sets}
+%\huijuanc{SVM does scale for large data sets according to the following two references. "Classifying large data sets using SVMs with hierarchical clusters", "Making SVMs scalable to large data sets using hierarchical cluster indexing".}
+%\huijuanc{delete the sentences related to scalability.}
+ SVM was adopted by~\cite{patel2007flick}
+to classify transient pulses noise from various homes.
+%During processing, transient events from noise data are isolated and
+%then the disaggregated events are classified into these transient events.
+%The test is done for the residential buildings.
+%The author figures out it could be applied to commercial buildings
+%which may include more compound devices and complex noises.
+In~\cite{froehlich2011disaggregated}, 
+SVM is applied to transient and continuous voltage noise data.
+Noisy voltage generally produced by devices influences
+the power wiring.
+According to Gen Marubayashi~\cite{mambayashi1997noise},
+there are three types of voltage noise: 
+on-off transient noise,
+steady-state line voltage noise which is produced at $60$ Hz or
+integer times of $60$ Hz (e.g. harmonics),
+and steady-state continuous noise which is generated beyond
+$60$ Hz.
+Voltage noise data are sampled with very high frequency.
+During pre-processing, the noisy recorded voltage data
+is transformed by a Fourier analysis. 
+Then, three to five transient voltage noise signatures are labeled
+and a threshold is pre-defined.
+During the training phase,
+by sliding a window on the aggregated voltage noise,
+a part of the data with continuous voltage noise
+is extracted and compared with the pre-stored voltage noise data by measuring the
+Euclidean distance.
+If the distance is larger than the pre-defined
+threshold, then the feature vector is exerted from
+this window.
+After sliding over aggregated voltage noise data,
+all these feature vectors are classified
+by the SVM.
+
+Besides used by themselves as a standalone classifier, SVM is also utilized in energy disaggregation 
+by combining with other approaches. 
+In~\cite{nakano2007non}, 
+both stand-alone SVM and combination of SVM and radial basis function network (RBFN)
+are implemented to compare the disaggregated data with the ground truth harmonics.
+%Then parameters for KSC and SVM are estimated and tested.
+%The results shows that KSC performs with lower error rate
+%for some devices and a bit higher error rate for other devices.
+%However, the computation cost of KSC is much lower than SVM.
+
+%Support vector machine is to find a large margin between
+%two classes thus minimize the distances of each plate.
+%Figure\ref{fig_svmClassifier} shows the work flow to classify ON/OFF events
+%for different devices.
+%\input{figs/svmClassifier.tex}
+
+%%%%%%%%%%%%%%%%%end of SVM
+
+
+%\subsubsubsection{Bayesian network}
+\textbf{Bayesian network}
+A combination of SVM and Dynamic Bayesian Network was demonstrated in ~\cite{froehlich2011disaggregated}.
+Initially a threshold value for the Euclidean distance between new data and
+basic noise data is predefined. 
+Then a window slides on to determine whether the distance
+exceeds the threshold. According to the Euclidean distance,
+the feature vectors which characterize the devices are classified by the SVM.
+Then the Dynamic Bayesian Network is utilized to classify the devices based on
+prior information, such as washing machines, dryers, and
+HVAC.
+
+%%%%%%%%%%%%%%%%%%%%%end of Baysian Network based
+
+%\subsubsubsection{Rule based}
+\textbf{Rule based}
+Rule based algorithms use the different operating rules of the various devices to solve the classification problem. 
+The training dataset comprises of various rules that describe the operation of a device. If a test event presents one of these rules, the device that produces that event is classified accordingly. Rule based techniques have been primarily used in multiple-state devices. 
+
+Closure-rules with maximal length of four for real power with transition states was used by~\cite{hampden2012closure} to classify devices.
+The principle of closure rules is that
+if only one device change its state,
+the baseline signature is the same before the occurrence of the state
+change.
+Rules of many devices can become complex for each device 
+if the vector events feature is introduced. 
+
+Rule mining is also proposed in~\cite{rollins2014using}. 
+The first step is to identify candidate rules. 
+For each time slot of an hour, 
+a co-occurrence matrix is derived by detecting the device states. 
+Through this, we know when the devices are probably turned on for each 
+hour of a day and each day of a week. 
+In the second step, those significant rules are chosen by a \textit{JMeasure}. 
+And only those rules with values greater than 0.01 are selected. 
+
+%%%%%%%%%%%%%%%%%%%%%end of Rule based
+
+%\subsubsubsection{Naive Bayes classifier}
+\textbf{Naive Bayes classifier}
+%Besides aforementioned KNN,
+%\cite{berges2010enhancing} also employs Gaussian Bayes Classifier
+%to classify the on and off events. (???more explanation)
+
+Algorithms that use the Naive Bayes classifier (NBC) was proposed in ~\cite{zeifman2012disaggregation} to distinguish devices. 
+Based on that approach,~\cite{zeifman2013automatic} uses power and time as features to automatically disaggregate the major residential electronic devices. 
+
+%\subsubsubsection{AdaBoost, decision tree}
+\textbf{AdaBoost, decision tree}
+\cite{berges2009learning} tests with four approaches:
+k-nearest neighbor, Gaussian naive Bayes (GNB),
+decision trees (DT) and multi-class AdaBoost (MultiBoost)
+for high frequency data.
+
+\cite{onoda2000applying} integrates SVM with AdaBoost to classify devices
+based on odd-number harmonics.
+In this case, AdaBoost helps SVM to classify those unclear points.
+Suppose in support vector machine,
+the margin $Q$ is defined as
+\begin{equation}
+Q= \min_{i=1,...,l}\rho(z_i,f)
+\end{equation}
+where
+\begin{equation}
+\rho(z_i,f)= y_i f(x_i)
+\end{equation}
+AdaBoost is used to minimize the margin
+$\rho(z_i,\alpha):=\rho(z_i, f_\alpha)$ on the training set
+\begin{equation}
+\mathscr{G}(a)= \sum_{i=1}^l exp\{-\lVert \alpha \rVert_1 (\rho(z_i, \alpha)-\phi)\}
+\end{equation}
+To achieve this goal, every example $z_i$ is
+given a weight $w^t(z_i)$.
+Applying bootstrap on the weighted sample distribution,
+we can find $\alpha_t$ to minimize $\mathscr{G}(\alpha)$, 
+where $t=1,...,T$. 
+
+%\textbf{Summary of Energy Disaggregation Classification Algorithms}
+
+\textbf{Computational Complexity}
+The computational complexity is a function of the classification approach used. 
+Kearns~\cite{kearns1990complexity} presents a comprehensive discussion on this matter. 
+Generally for training, decision trees tend to be faster than 
+techniques which requires quadratic optimization such as SVMs. 
+The testing phase is usually very fast 
+Real power is a uni-dimensional feature and real reactive power is a two dimensional feature. 
+If harmonics, waveform and wavelet are introduced, the feature becomes multi-dimensional.
+The computation time and complexity increases with higher dimensionality. 
+Neural network has the advantage over detecting interactions between
+the disaggregated features and output time series data
+but it works very slow.
+
+
+\iffalse
+\textbf{Advantages and Disadvantages of Classification Based Techniques}
+
+The \textit{advantages} of classification based techniques are as follows:
+\begin{enumerate} 
+\item Compared to unsupervised learning approaches, the disaggregation accuracy is higher 
+when using the same dataset as input. 
+\item Compared to unsupervised learning approaches, it requires less data set to build a disaggregation model. 
+%\item Classification based techniques can make use of powerful algorithms to distinguish features belonging to different devices. 
+%The classification accuracy rate increases with multiple features. 
+\item Compared to unsupervised learning approaches, once the model is trained, 
+it has faster operation to obtain the output with input. 
+%The test phase works very fast since each test instance needs to be compared against the pre-computed model.
+\end{enumerate}
+
+The \textit{disadvantages} of classification based techniques are: \manishc{I
+  would think the main disadvantage of supervised methods is that labelled
+  data is hard to get}\huijuanc{updated.}
+\begin{enumerate}
+\item The labelled data of each device is hard to get because the cost would be very high if installing meters to monitor each device. 
+%\item The classification based techniques rely on the accuracy of  the extracted features of each device. 
+%However these features  are hard to access in practice because of the meters that capture these measurements have a very high installation cost.
+\end{enumerate}
+
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Nearest Neighbor-Based}
+Several energy disaggregation algorithms have been designed using the nearest neighbor (NN) techniques have been used in energy. These techniques generally make the the following assumption:
+
+Assumption: \textit{Feature instances from the same device occur in dense neighborhoods, 
+whereas different device feature instances occur further away from their nearest neighbors.}
+
+For all these NN techniques, obviously, a distance or similarity measure between two instances 
+must be defined in order to perform device classification. 
+There are different ways to compute the distance (or similarity) between two data instances.
+For single feature disaggregation, viz. point event or vector event, 
+Euclidean distance is a common choice~\cite{gupta2010electrisense}.
+For multiple features disaggregation, that is, several point events or vector events, 
+the distance between two instances is computed as the Euclidian distance across the dimensions of the vector event as in~\cite{shaw2000PhdThesis}. 
+
+Nearest neighbor based energy disaggregation techniques can be grouped into 
+two categories: 
+\begin{enumerate}
+\item Techniques that use the distance of a data instance to its $k^{th}$ nearest neighbor 
+as the measurement. 
+\item Techniques that use the relative density of each data instance as the measurement. 
+\end{enumerate}
+
+%\subsubsubsection{Using distance to $k^{th}$ nearest neighbor}
+\textbf{Using distance to $k^{th}$ nearest neighbor}
+The basic nearest neighbor technique has been applied to detect the 
+multiple feature such as transient power shape~\cite{shaw2000PhdThesis,lee2005estimation,berges2009learning,berges2010enhancing}.
+
+%makes use of
+%K-Nearest Neighbor (K=1)
+%to classify the ON/OFF events created by all devices with features real power, 
+%reactive power, harmonics and other features. 
+%In the experiment, refrigerator is tested by comparing with the plug-level
+%data which is installed to monitor the monitor.
+%Event classification error rate is the evaluation metric.
+%The experimental results show that other two devices with similar power levels of
+%refrigerator increase the predicting error rate of events produced
+%by refrigerator.
+
+
+
+%The comparison of this approach just makes use of the
+%Euclidean distance to measure the similarity of
+%identify events with the pre-defined spectral envelop
+%of device.
+\cite{shaw2000PhdThesis} describes how transient shapes of power consumed by devices over time are discovered.
+Transient shapes exemplar for each device are summarized and recorded 
+in form of real and reactive power P-Q by analyzing the data from each device. 
+%The P-Q power of the aggregated data is discrete.
+A pre-defined window size of 100 data points is used.
+As the aggregated data flow comes, consequently 
+the data points in each window is compared with 
+the pre-stored exemplar. 
+If the Euclidean distance is smaller than the pre-defined threshold, 
+an event is said to have occurred in this window and 
+it matches a pre-stored exemplar. 
+%Hence, this event should be grouped into the corresponding device's attribute set. 
+Based on this grouping,~\cite{shaw2008nonintrusive} decomposes the 
+real power transient shape into two vectors, shape vector and time vector 
+instead of setting the whole transient shape as a device feature. 
+Figure~\ref{fig_kNN} depicts an exemplar
+with two shape vectors $s_1$ and $s_2$.
+\input{figs/kNN}
+To identify which device the disaggregate signature belongs to,
+it is to compare with this exemplar
+by least square criteria.
+After that, a similar exemplar comparison approach is applied to identify devices. 
+The advantage of real power shape decomposition is that 
+ when comparing the transient shapes,
+only some characteristic parts are needed
+rather than entire transient shapes in the data.
+This helps cut computational cost for the exemplar comparison phase. 
+Although this paper doesn't mention K-NN algorithm explicitly,
+the description in this paper exactly matches what kNN algorithms do to search for closest shapes.
+
+A variant of the KNN approach measures the Euclidean distance with inverse weighting~\cite{gupta2010electrisense}. 
+The variant KNN is employed to identify devices
+with switch mode power supplies (SMPS) that have power line noise features. 
+These power baseline noise signatures of each device are stored as vectors 
+and 8dB is set as the power threshold above the noise baseline.
+In order to classify events from aggregated data into 25 noise events corresponding to 
+25 devices, a window is set to calculate the difference vector. 
+After a new event is added on a particular power line,
+the distance between the vector of the newly-added event and 
+baseline noise vector is calculated. 
+If there is a peak above the pre-defined threshold, 
+a Gaussian function is applied to calculate 
+the mean, standard deviation of the difference vector. 
+
+%\cite{berges2009learning} tests with four approaches,
+%K-Nearest Neighbor, Gaussian Naive Bayes(GNB),
+%Decision Trees(DT) and Multiclass Adaboost(MultiBoost).
+
+Another variant KNN, discussed in~\cite{lee2005estimation},  
+identifies variable speed devices (VSDs).
+It builds a table to store
+the real power, reactive power and harmonics for each device.
+Then the signatures extracted from the aggregated power
+are compared with the stored features.
+The disaggregated signature is assigned to the device,
+whose feature is most similar to the stored feature.
+Since this process essentially replicates the K-nearest neighbor mechanism,
+~\cite{lee2005estimation} is classified into KNN category.
+
+
+%\subsubsubsection{Using relative density}
+\textbf{Using relative density}
+Techniques that estimate density of the neighborhood of each data instance are also popular in device classification.
+The classification is based on whether the instance lies in a neighborhood of high or low density.  If an instance lies in a neighborhood with high density, it is declared to be in the device group corresponding to that neighborhood. 
+%On the other hand, an instance that lies in a low density neighborhood does not belong to the %device's featuredgroup.  
+
+Given an instance as a center, circles with varying radii are drawn around it.
+The distance to its $k^{th}$ nearest neighbor is equivalent 
+to the radius of a hyper-sphere. 
+In a probability density graph, 
+this distance represents the inverse of 
+the dataset's density~\cite{kolter2010redd}.
+Real power probability density function is used 
+as a feature to classify two-state devices in~\cite{zeifman2011viterbi}.
+The number of device is indexed by the power 
+as shown in Figure~\ref{fig_realPowerPDF}.
+\input{figs/realPowerPDF}
+In the training step, 
+the real power probability density function of each device 
+is obtained by analyzing each device's actual power consumption. 
+In the classifying phase,
+the negative values are first clustered and the $mth$ cluster
+represents device $m$.
+Then the positive values are clustered to match the negative clusters.
+The real-power probability density function is used to match the negative values to their corresponding positive counterparts.
+
+%\textbf{Summary of Energy Disaggregation Nearest Neighbor Algorithms}
+
+\textbf{Computational Complexity}
+
+A drawback of basic nearest neighbor approaches is that the 
+time complexity is $O(N^2)$.
+%because all the instances are compared pairwise.
+If multiple attributes are employed with window size $w$ instead of only 
+real power, the computation cost is even higher than $O(N^2)$. 
+
+\textbf{Advantages and Disadvantages of Nearest Neighbor Based Techniques}
+
+The \textit{advantage} of nearest neighbor based devices classification is 
+that it's straight-forward and primarily requires a proper distance measure for the given features. 
+
+The \textit{disadvantages} of nearest neighbor based devices classification techniques are as follows:
+\begin{enumerate}
+\item The computational complexity at the test stage is high, 
+especially for the high frequency data with vector features. 
+The algorithms require comparison between all device features at each window from the aggregated data to obtain the nearest instance. 
+\item When multiple features are applied, the definition of distance measure becomes challenging because different features have different units of distance.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistical Model-Based}
+Statistical approaches to devices classification assume that \textit{a device instance belongs to a high probability region of 
+a stochastic model, while not belonging to a region at low probability.}
+
+Statistical techniques fit a stochastic model given the event features from all devices. 
+A statistical inference test is applied to determine whether an 
+unseen event extracted from the aggregated data belongs to this model. 
+Instances with low probability generated from the learnt model 
+are declared as wrong event classification. 
+Both parametric and non-parametric techniques are used to fit a statistical model. 
+Parametric techniques assume that the underlying distribution of 
+events are known whereas non-parametric techniques posits that this 
+underlying distribution is unknown. 
+
+
+%\subsubsubsection{Parametric models}
+\textbf{Parametric models}
+%Goodness-of-fit
+As mentioned before, parametric techniques assume that 
+the device's features follow a parametric distribution 
+with parameter $\theta$ and probability density function $F(y,\theta)$, 
+where $y$ is the observation. 
+The score of a test instance is the inverse of the probability density function. 
+%(Ziefman paper??probability density function)
+
+An alternate approach is the hypothesis test.
+The $null$ hypothesis ($H_0$) is that a test instance $x$ has been generated 
+using the estimated distribution with $\theta$. 
+If the statistical test rejects $H_0$, 
+$x$ is declared to not belong to this device's distribution. 
+
+\cite{jin2011robust,jin2011time} use Goodness-of-fit (GOF) Chi-squared
+to detect the transient events generated by
+the first harmonics of power consumption.
+GOF utilizes the hypothesis approach.
+At first, a change point in time series data is detected.
+%\cite{jin2011robust} has good definition in window definition
+%some idea: Bayesian to find the events detection instead of Chi-square tests
+For $i$ independent and identically distributed (iid) data points $y_t,t=1,2,...,T$
+drawn from a distribution $G(y)$ and the supposed distribution $F(y)$.
+The binary hypothesis testing problem is defined as
+\begin{eqnarray}
+H_1: G(y) \ne F(y) \\
+H_0: G(y) = F(y)
+\end{eqnarray}
+Then the $\chi^2$ test for goodness-of-fit(GOF) is defined. 
+If the $\chi^2$ hypothesis condition is satisfied, 
+then the feature is classified into the supposed device. 
+
+%%%%%% such long discussion is not needed. 10-08-2014 Huijuan
+%\begin{equation}
+%\mathscr{l}_{GOF} = \sum_{i=1}^{n} \frac{(y_i - x_i)^2}{x_i}
+%\end{equation}
+%When the condition in Equation (\ref{eq_chisquare}) is satisfied,
+%e.g. with $100(1-\alpha)\%$ confidence interval,
+%$H_0$ hypothesis is rejected.
+%\begin{equation}
+%\label{eq_chisquare}
+%\mathscr{l}_{GOF} > \chi_{\alpha,n-1}^2
+%\end{equation}
+%This means this feature can be classified into the supposed device.
+%%%%%%%%%%% 10-08-2014 Huijuan
+
+Generalized likelihood ratio is applied in~\cite{anderson2012event}, ~\cite{berges2011user} and ~\cite{luo2002monitoring}. 
+They use the generalized likelihood ratio to classify
+the events generated by different devices.
+
+First, the mean power value before and after a time $t$ is calculated. 
+Given the aggregated data,  
+the log ratio of probability distribution before and after each event 
+is calculated as follows. 
+\begin{equation}
+R= \prod_{t=j}^{k}\frac{F_{u_t}(y_t)}{F_{u_{t-1}}(y_t)}
+\end{equation}
+where $y_t$ is the sampled variable at time $t$, 
+$u_t$ is the mean value of the sampled sequence at time $t$, 
+and $F_{u}(y_t)$ is the probability density function of the sampled sequence 
+$y_t(t=j...k)$ about the mean value $u$. 
+The greater the probability, the data points belongs 
+to a specified device. 
+
+%\subsubsubsection{Non-parametric models}
+\textbf{Non-parametric models}
+The non-parametric techniques in this category does not 
+define a  prior assumption such as smoothness of density, etc.
+The model is driven directly by the data.
+
+A hierarchical probabilistic is proposed in~\cite{wang2013heirarchical}.
+It aims to find devices with multiple states. 
+It utilizes the device-on distribution and real power features. 
+In the hierarchical probabilistic model, a three layered model is applied. 
+The first layer is a feature layer, the second layer is a state layer, 
+and the last layer is a consumption layer. 
+The objective function estimates the Maximum-a-Posteriori (MAP) 
+that an event belongs to a device. 
+Since the computation cost is high, it 
+utilizes a heuristic approach. 
+
+% not sure what spare coding belongs
+%\textbf{Summary of Energy Disaggregation Statistical Algorithms}
+
+\textbf{Computational Complexity}
+The computational complexity of statistical techniques 
+depends on the nature of the fitted statistical model.
+Fitting single parametric distributions from the exponential family, 
+e.g. Gaussian, is linear in data size as well as number of attributes. 
+Fitting complex distributions such as Gamma distribution~\cite{kim2011unsupervised} 
+using iterative 
+estimation techniques such as expectation maximization (EM) are 
+typically linear per iteration though they might be slow 
+in converging depending on the problem and convergence criterion. 
+
+\textbf{Advantages and Disadvantages of Statistical Model-Based Techniques}
+The \textit{advantage} of statistical techniques is :
+\begin{enumerate}
+\item If the assumption regarding the underlying data distribution 
+holds true, statistical techniques provide a sound device classification. 
+\end{enumerate}
+The \textit{disadvantages} of statistical techniques are as below:
+\begin{enumerate}
+\item The device classification primarily relies on the assumption 
+that the data is generated from a particular distribution. 
+But this assumption often does not hold true, especially for multiple-state 
+devices. 
+\item Even if the distribution assumption is true, 
+there are several hypothesis tests for devices classification. 
+It is difficult to choose a proper hypothesis test when dealing with a complex distribution. 
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Optimization-Based}
+There are several techniques that cast device classification as an optimization problem. In this formulation, energy disaggregation is specified as an objective function that minimizes the error.
+
+% or maximize the likelihood function of ??
+
+%The detailed algorithm is describe in Figure\ref{fig_DDSC_kolter2010sparse}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=5in]{figs/DDSC_kolter2010sparse}
+%\caption{Discriminative Disaggregation Sparse Coding:\cite{kolter2010sparse})}
+%\label{fig_DDSC_kolter2010sparse}
+%\end{figure}
+%\begin{equation}
+%\tilde{E}_{reg}(X_{1:k},B_{1:k},\tilde{B}_{1:k}) \equiv \sum_{i=1}^{k}()
+%\end{equation}
+
+%\subsubsubsection{Dynamic programming}
+\textbf{Dynamic programming}
+
+\cite{baranski2004detecting} utillizes mathematical dynamic programming
+with the genetic algorithm to find the multiple-state device that are represented as finite state machines (FSM).
+%A  variant solution for dynamic programmining is to solve with 
+%heuristic solutins such as genetic programmining.
+In this paper, 
+the genetic algorithm is integrated with clustering and 
+dynamic programming as an approach to solve the devices classification 
+problem.% in \cite{baranski2004genetic}. 
+The whole procedure is broken down into four steps. 
+In the initial step, a finite state machine is used to describe the real power change events for each device.
+The real power change events are detected from the aggregated data. 
+All the on and off events shown in the time series 
+are represented as $\Delta y_t =y_t - y_{t-1}$.
+In the second step, fuzzy clustering is used to cluster all the 
+detected real power change events. 
+In the third step, all finite state machines are 
+created by a genetic algorithm. 
+%(input?output?)
+At the final stage, dynamic programming is applied to 
+discover the shortest path in those finite state machines. 
+
+The qualification of disaggregated finite state machines
+is evaluated as follows. 
+Shannons entropy is introduced to compare 
+the shortest path 
+to the pre-stored path of finite state machines.
+Assume a shortest path $\Gamma_l={S_{l1},...,S_{lk}}$
+and a device's finite state machine path $\Gamma_m={S_{m1},...,S_{mk}}$, 
+the Shannon entropy is calculated as Equation (\ref{eq_shannon}).
+\begin{equation}
+Q_l=  - \sum_i \Delta e_i log|\Delta e_i|
+\label{eq_shannon}
+\end{equation}
+and
+where 
+$\Delta e_i = |\frac{\sigma_i(\Gamma_l)-\sigma_i(\Gamma_m) }{\sigma_i(\Gamma_m)}|+e_0 $
+and $\sigma_i$ represents either ON duration between state changes or real power standard deviation of
+the state $S_i$.
+The shortest path with least entropy belongs to device $m$ which has the characteristics of 
+state machine $\Gamma_m$.
+This genetic programming based optimization approach 
+is applied to the features of three current and voltage features. 
+%For instance, power levels such as (150W, 50W, -200W) can be found 
+%in the aggregated data. 
+%Genetic programming reduces the number of finite state machines.
+
+In~\cite{chang2010newmethod},
+genetic programming is integrated with the neural network
+to identify devices. In~\cite{vogiatzis2013real} clustering is integrated with finite state machine 
+and dynamic programming to disaggregate the devices in real time with low cost.
+%the cost computation?
+
+%\subsubsubsection{Dynamic model}
+\textbf{Dynamic model}
+\cite{dong2013dynamical} assumes that each device has an input and an output then 
+applies a dynamic approach to simulate the disaggregation process. 
+Each device is represented as linear time-variant state-space model over the 
+entire time series. 
+The problem is formalized as Equation~\eqref{eqn_dynmodel}.
+\begin{equation}
+\label{eqn_dynmodel}
+\begin{aligned}
+\argmin_{\hat{y},x} \mathcal{L}(\hat{y},y) + g(x) \\
+s.t. \hat{y_m} = h_m(x_m)\\
+\hat{y}=\sum_{m=1}^{M} \hat{y_m}
+\end{aligned}
+\end{equation}
+where $m\in{1,...,M}$, $M$ is the number of devices, $x_m$ is the input to the device $m$, 
+$h_m$ is a function which denotes the underlying dynamics. 
+To estimate $x[\cdot]$, blind system identification techniques~\cite{abed1997blind} are used. 
+%integer programming
+%\subsubsubsection{Integer programming}
+\textbf{Integer programming}
+Integer programming~\cite{suzuki2008nonintrusive} is applied
+to the current waveform in a supervised learning setting.
+Each device's waveform which spans $T$, where $T$ is 1/50 or 1/60 seconds.  
+is stored in the database,
+then a disaggregation process moves on to identify the
+devices according to the pre-stored current waveform.
+This paper supposes there are $N$ kind of devices, 
+and there are $C_n$ appliances for each kind of device. 
+
+Suppose there is an aggregated load \textit{current} $y$,
+\begin{equation}
+y_t= \sum_{m=1}^{M}c_m(s_m)x_{t}^{(m)}+\epsilon
+\end{equation}
+where $c_m \in \{0,...,C_m\}$ is integer variable for $m\in\{1,...,M\}$, 
+$t \in \{1,..., T\}$, 
+$x_{t}^{(m)}$ represents the current of  $m$ kinds of devices at time $t$, 
+$M$ denotes the number of device types, 
+$c_m(s_m)$ is the operation states of one appliance $c_m$ belong to kind $m$ if 
+eace device has only one operating mode. 
+%If each device has multiple operating modes $S_m$, 
+
+$\epsilon$ represents noise. 
+To estimate $c_m$ from the aggregated $y_t$,
+then this problem is abstracted as an integer
+quadratic programming problem
+\begin{equation}
+\min \sum_{t=0}^{T-1}(y_t- \sum_{m=1}^{M}c_m(s)x_{t}^{(m)})^2
+\end{equation}
+subject to
+\begin{displaymath}
+c_m \in \mathcal{Z}, 0 \leq c_m \leq C_m, \forall m \in \{1,...,M \}.
+\end{displaymath}
+
+%viberbi algorith
+%The problem of positive and negative real power matching is 
+%that devices with close real  power levels would overlap. 
+%That is, device $i$ overlap may be mixed with device $i-1$ and $i+1$ as illustrated 
+%in Figure\ref{fig_realPowerPDF}.
+
+%In order to separate devices from the PDF,
+%only the PDF relationship of $(i-1, i)$ and
+%$(i, i+1)$ need to be considered.
+%The Viterbi-type algorithm can greatly
+%decrease the computational cost compared
+%to brute-force Viterbi algorithm.
+%Its computation complexity is linear
+%to the number of devices.
+
+%The on duration of each device and its 
+%It applies viterbi algorithm to
+%devices with several two-states with Probability Density Function of
+%the real power.
+
+%\subsubsubsection{Viterbi algorithm}
+\textbf{Viterbi algorithm}
+Another paper~\cite{zeifman2012disaggregation} 
+employs real power probability density functions (PDFs) by a conjunction of Semi-Markov and Viterbi-type algorithms to distinguish devices. % without training.
+%Figure\ref{fig_pdf_ziefman2012} shows a device with many power levels which
+%overlap with five devices.
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=3in]{figs/pdf_ziefman2012.png}
+%\caption{Possible PDFs of power draw of appliances i and its neighbors (courtesy: \cite{zeifman2012disaggregation})}
+%\label{fig_pdf_ziefman2012}
+%\end{figure}
+The standard Viterbi algorithm is used to maximize the likelihood of power
+draws of appliance $m$ and its neighbors. 
+
+%appliance $i$ to
+%be turned on or off on the power change ΔP can be expressed
+%through the probability density function (PDF), conditional for
+%a given appliance.
+
+\begin{equation}
+\{\hat{S}_t \} = {argmax}_{s_t}[\{S_t\}|\{\omega_t\}]
+\end{equation}
+Where $\{S_t\}$ is the state sequence and
+$\{\omega_t\}$ is the transition observations.
+
+It adopts a similar approach to the one mentioned in~\cite{baranski2004genetic}.
+The difference of this method is that they introduce the probability density function of real power of each device. 
+
+%\subsubsubsection{Sparse coding}
+\textbf{Sparse coding}
+\cite{kolter2010sparse} introduces non-negative sparse coding to solve the energy disaggregation problem. 
+It is composed of three major steps. 
+The first step is the sparse-coding pre training step and it aims to 
+model each source using nonnegative sparse coding by solving 
+Equation (\ref{eq_sparsepretraining}).
+\begin{equation}
+\min_{A_m\geq0,B_m\geq0}\frac{1}{2}\lVert X_m- B_mA_m\rVert_F^2 + \lambda\sum_{p=1,q=1}^{r,s}E(A_m)_{pq}
+%subject \qquad to \qquad \lVert B_i^{(j)} \rVert_2 \leq 1, j=1,...,n
+\label{eq_sparsepretraining}
+\end{equation}
+such that $A_m \in R_{+}^{r\times s} $ and
+ $B_m \in R_{+}^{T\times r}$, 
+where 
+$X_m \in R^{T \times s}$ represent the $s$th power level associated with device $m$. 
+the columns of $B_m$ represent $r$ basic functions corresponding to features, 
+the columns of $A_m$ represent the activation, i.e. sparse codes of these basic functions set, 
+$\lambda$ represents the sparseness degree, 
+and $F$ denotes the Frobenius norm. 
+This optimization is solved by a coordinate descent approach but without computing 
+the bases of each model. 
+
+The second step is the discriminative disaggregation training step. 
+It incorporate the aggregated $Y$ in the bases $B_m, m=1,..,M$. 
+\begin{equation}
+\hat{A}_{1:M} = arg min_{A_{1:M}} \parallel Y- [B_1...B_M][A_1...A_M]^T \parallel^2_F + \lambda\sum_{p=1,q=1,m=1}^{r,s,M}E(A_m)_{pq}
+\end{equation}
+
+where $M$ is the number of devices, 
+$\hat{A}_1,...,\hat{A}_M$ are the activations related to aggregated power. 
+Each column of $Y \in R^{T \times s}$ represents the $s$th power consumption 
+associated with the device $m$. 
+The target of the sparse coding approach is to find the best $\hat{A}^*_m$ . 
+Therefore the difference between $\hat{A}_{1:M}$ and $A^*_{1:M}$ should be 
+as small as possible.
+
+To achieve this goal, a regularized disaggregation error is defined. 
+$B_{1:M}$ is optimized at each iteration during
+discriminative training phase. 
+Then in the same iteration,
+the base of $B_{1:M}$ is updated to calculate $\hat{A}_{1:M}$ again.
+By updating $A_{1:M}^\star$ and $B_{1:M}$ alternatively,
+the sparse code and the real power consumption of each device 
+is calculated.
+\begin{equation}
+ \hat{B}_{1:M} \leftarrow \hat{B}_{1:M} - \alpha ((Y_{1:M}-\hat{B}_{1:M}\hat{A}_{1:M}) \hat{A}^T_{1:M} - (Y_{1:M}-\hat{B}_{1:M}A^*_{1:M}){A^*_{1:M}}^T) 
+ \end{equation}
+where $\alpha$ is the step size. 
+
+
+%The goal of sparse coding is to learn the basic function for each class.
+%Based upon structured prediction methods,
+%a regularized disaggregation error is defined.
+%\begin{equation}
+%\label{eq_regError_kolterNips}
+%E_{reg}(X_{1:k},B_{1:k}) \equiv E(X_{1:k},B_{1:k})+ \lambda \sum_{i,p,q}(\hat{A}_i)_pq
+%\end{equation}
+%Then a sparse set of coefficients are iteratively calculated by
+%minimizing this regularized disaggregation error as Equation (\ref{eq_regError_kolterNips}).
+%The best solution for $\hat{A}_i$ becomes
+%\begin{equation}
+%A_i^\star = arg \min_{A_i\geq0} \frac{1}{2} \lVert X_i-B_iA_i \rVert_F^2 + \lambda \sum_{p,q}(A_i)_pq
+%\end{equation}
+%where $X_i$ is the data matrix.
+%In order to get the best value of $A_{1:k}^\star$,
+%$B_{1:k}$ is optimized in each iteration during
+%discriminative training phase.
+%Then in the same iteration,
+%the base of $B_{1:k}$ is updated to calculate $\hat{A}_{1:k}$ again.
+%By updating $A_{1:k}^\star$ and $B_{1:k}$ alternatively,
+%the real power of each device can be predicted by Equation (\ref{eq_results_kolterNips}).
+%\begin{equation}
+%\label{eq_results_kolterNips}
+%$\hat{A}_{1:k}^{\prime}= arg\min_{A_{1:k}\geq 0 } F(X, )
+%\hat{X}_i^{\prime}= B_i\hat{A}_i^{\prime}
+%\end{equation}
+
+Note that sparse coding is also extended to water disaggregation~\cite{Dong2013deep}.
+
+%\subsubsubsection{Nonnegative tensor factorization}
+\textbf{Nonnegative tensor factorization}
+\cite{figueiredo2014electrical} applies a nonnegative tensor factorization and compares it with 
+nonnegative sparse coding. 
+The power consumption of each device is represented as a tensor. 
+For each device, the power usage over a period of time $T$ can be cast as 
+a matrix factorization problem. 
+\begin{equation}
+Y_t^{(m)} \approx \sum_{l=1}^r A_l S_t^{(l)}
+\end{equation}
+where $S^{(l)}$ is the main features or power levels of each device and $A_l$ is the corresponding activation, 
+$r$ is the number of bases used by sparse coding, and $t=1,...,T$.
+
+Given the aggregated data, using a supervised learning approach, one can formulate the energy disaggregation as a nonnegative matrix factorization problem. 
+
+Furthermore, to solve this problem,~\cite{figueiredo2014electrical} implements two solutions: one is based on nonnegative 
+sparse coding, another is multidimensional representation and factorization method. 
+Nonnegative sparse coding has been introduced in paper~\cite{kolter2010sparse}. 
+For tensor decomposition, this paper adopts the approach PARAFAC~\cite{kolda2009tensor} with nonnegative constraints. 
+
+\textbf{Computational Complexity}
+The computational cost of dynamic programming for classifying devices 
+is polynomial.
+Assume $m$ is the number of FSMs, 
+$n$ is the number of "diff" data.
+The computational time cost of the dynamic programming step to 
+classify devices is $O(mn)$~\cite{chow1989complexity}. 
+However, the computational cost of the whole procedure in  
+~\cite{baranski2004detecting} is higher because 
+it contains the steps 
+of fuzzy clustering and genetic programming. 
+
+\cite{suzuki2008nonintrusive} formulates the energy disaggregation 
+problem as a linear integer programming problem. 
+Therefore the computational cost is polynomial i.e. $O(TM)$, %(?), 
+where $T$ is the number of aggregated data in the form of 
+current waveform and 
+$M$ is the number of devices. 
+However, the total computational cost in  
+~\cite{suzuki2008nonintrusive} is relatively high 
+because it utilizes the high frequency data with large data size. 
+
+The computational cost of viterbi algorithm is 
+linear i.e. $O(T)$, 
+where $T$ is the number of aggregated power points~\cite{bishop2006pattern}.
+
+The computational cost of sparse coding is high. 
+Therefore the energy disaggregation is formulated as $\ell^1$ 
+minimization optimization problem. 
+The computational cost decreases and becomes linear to the 
+data points and number of devices $O(TM)$~\cite{li2009coordinate}, %(?),
+where $T$ is the aggregated data points 
+and $M$ is the number of devices. 
+
+\textbf{Advantages and Disadvantages of Optimization-based Techniques}
+The \textit{advantage} of optimization solution is as follows:
+\begin{enumerate}
+\item The device classification problem is formally proposed 
+to minimize the error or entropy.% or maximize the likelihood. 
+\item The solution for the optimization problems is straightforward. 
+\end{enumerate}
+The \textit{disadvantage} of optimization-based technique is given below:
+\begin{enumerate}
+%\item The computational cost is high. Therefore, heuristic approaches 
+%such as genetic programmining (?)
+%are used instead to find the direct optimal solution. 
+\item If more features are introduced such as harmonics, 
+it's hard to formulate an optimization problem because the 
+distance measurements of these features 
+are non-uniform. 
+
+\end{enumerate}
+
+

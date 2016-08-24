@@ -1,0 +1,127 @@
+\section{Experiments}
+We run experiments on a dataset Study10 from University of Virginia on electricity disaggregation. 
+This dataset collects data from 02/10/2014 to 02/21/2014, lasting for 12 days in a residential building. 
+Both the two-phase aggregated data and each device's data are collected at an interval 2-3 seconds.
+Totally 25 devices connect to two-phase at the entry of the house. 
+Five of these devices are seldom operated, less than 5 times. 
+Fourteen devices consume power less than 100W and majority of are lights. 
+The largest power consumption of these devices is 11000W by heating indoor. 
+The noise caused by device heatingIndoor is large, greater than 100W. 
+Therefore we focus on disaggregation the six major electronic devices 
+with power level larger than 100W. 
+ 
+% the datasets from University of Virginia on both water and electricity disaggregation. 
+%There are totally six data sets. The statistic of these six data set is listed in Table \ref{table_datasets}. 
+%The recording interval of these datasets is 2 or 3 seconds. 
+%A sensor is instrumented on each device to trace its ground truth operations. 
+%\input{tab/datasets}
+
+\subsection{Electricity Disaggregation}
+We assume that we know the power levels of each device. 
+If the power levels of each device are unknown, 
+we can use the sum of two-phase aggregated data and the on/off events of the 
+ground truth to extract them. 
+%In order to extract the power level of each device, 
+We set a window size $w=30s$ ahead and behind of the ground truth events to match 
+the aggregated data.
+If there is only one power change in the aggregated data during these 60-seconds, 
+this power level change must come from this event of a corresponding device. 
+Usually, it takes around 2-5 seconds for an electrical device to reach
+a steady power level state. 
+The on and off events reflect different duration of a device to 
+turn to a steady state. 
+Therefore, we measure the minimal duration of the on event and off event 
+of each device. 
+After we go over all the aggregated data and ground truth on/off events, 
+we run a Gaussian mixture model to the positive power changes and negative power changes
+independently. The means and standard deviations correspond to  the on/off event of each device. 
+The power levels, standard deviation, and on/off duration of each device of dataset study10 are listed in Table \ref{table_study10results}.
+\input{multidisaggtab/study10results}
+
+%By analyzing each device, we notice that sometimes the power levels and 
+%on/off duration are insufficient to identify the electric devices. 
+%For instance, when the device heatingIndoor starts alone, 
+%it takes $2-5$ seconds to go to a steady state as shown in Figure \ref{fig_heatingDevices} (a).
+%But when the combined device of heatingIndoor and heatingOutdoor 
+%starts, the starting duration takes around $4-18$ seconds. 
+%In Figure \ref{fig_patterns} (b), after this combined device 
+%starts for15 seconds, the power levels changes 
+%for 9 times then to a relatively stable state. 
+%During this period of 15 seconds, the power changes very rapidly. 
+%If we accumulate these power levels together, 
+%it's not a fix number. Therefore, for this kind of device, 
+%we can only compare the shape of the startup to decide the on events 
+%from the aggregated data. 
+
+We apply recursive multivariate piecewise motif mining to dataset study10 
+and compute the precision, recall and F-measure. 
+Devices which draw power from both phases are separated first. 
+They are heatingIndoor, waterheater and dryer.
+\input{multidisaggfig/heatingIndoorResults}
+Figure \ref{fig_heatingIndoorResults} (a) gives an example of 
+on event in two-phase Mains1 and Mains2. 
+Mains1.diff denotes the diffs data from Mains1 and Mains2.diff represents 
+the diffs data from Mains2. 
+Mains1.2.diff marks blue when Mains1 and Mains2 share the similar power changes. 
+We can see that 
+the power consumption of a specific device jumps twice in two-phase simultaneously.
+At the first time, both phases jump 2572W. After nine seconds, 
+the power of both phases increase  2520W. 
+The sum of these four changes is 10184W. 
+Comparing with the power levels of all devices, 
+we speculate that these power changes are caused 
+by device heatingIndoor. 
+%By applying multivariate piecewise motif mining, 
+%we match the power consumption with $11000W$ and 
+%categorize this on event into heating indoor. 
+Figure \ref{fig_heatingIndoorResults} (b) shares the same snippet in time series as Figure \ref{fig_heatingIndoorResults} (a). 
+The red line indicate that the on event of heatingIndoor is recognized.    
+\input{multidisaggfig/dryerResults}
+Similarly, the off event plunges twice in two seconds -2877W and -1759W in both phases as shown in Figure \ref{fig_heatingIndoorResults} (c).
+The sum of this off event is -9272W. 
+After matching the power levels, we categorize it as the off event of heatingIndoor Figure \ref{fig_heatingIndoorResults} (d). 
+
+Dryer shares the same power level with waterheater at around 4800W. 
+If disaggregating these two devices from the sum of two phases, 
+it's hard to distinguish them. 
+But with multivariate piecewise motif mining, these two devices 
+are distinguished. 
+
+Figure \ref{fig_dryerResults} (a) and (b) shows the on event of dryer from sum of phase 1 and phase 2, 
+and these two phases separately. 
+From \ref{fig_dryerResults} (c) and (d) are the diffs data of dryer and waterheater. 
+We can see that waterheater draws power from phase 1 and phase at the same time. 
+But dryer shows a different pattern. It draws power from phase 1 at a lower power 1093W then jumps to 1830W.
+and at the same time, it draws power from phase 2 jumping to 1946W directly. 
+We encode them as shown in Figure \ref{fig_eventEncoding} then apply motif mining to disaggregate them. 
+ 
+After deleting the power consumption from both aggregated phases, 
+we apply piecewise motif mining again to single phase. 
+Then we discover devices humidifier from phase 1 
+and device microwave from phase 2. 
+%Note that the power consumption of humidifier and microwave overlaps sometimes, 
+%which makes it hard to separate them. 
+%But they draw power from different phases separately. 
+%Multivariate motif mining can separate them. 
+When we only disaggregate with the sum of phase 1 and phase 2, 
+the precision recall result on microwave and humidifier is not so good 
+because sometimes their power consumptions are similar. 
+But with multivariate motif mining, we can separate them very clearly 
+with good precision and recall. 
+The precision and recall results on the data set study10 are listed in Table \ref{table_study10results}.
+
+Recursive multivariate motif mining is capable of disaggregating continuous variable load. 
+\input{multidisaggfig/heatingOutdoorResults}
+Figure \ref{fig_heatingOutdoorResults} (a) illustrates the startup of heatingOutdoor.
+During this on event, its power levels change for 9 times then to a relatively stable state as shown in 
+Figure \ref{fig_heatingOutdoorResults} (b) and (c). 
+By applying piecewise motif mining, 
+we can successfully identify this heatingOutdoor device 
+after matching its power level. 
+The disaggregated result is displayed in Figure \ref{fig_heatingOutdoorResults}.
+Note that this continuous variable load startup snippet can be discovered by dynamic time warping 
+subsequence search as well if this device is on without the intervene of other devices.
+If another device  $D$ which draws from phase 1 or phase 2 is turned on or off during this period, 
+multivariate piece-wise motif mining can still identify this heatingOutdoor device. 
+The reason is that $D$ only uses on phase's power, 
+its power change is Not counted in our piecewise event. 
