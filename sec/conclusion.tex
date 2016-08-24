@@ -12,7 +12,7 @@ or single-phase aggregated data.
 Also, we mine the frequent episodes from the room position of a 
 person in a residential building. 
 Then we connect these frequent episodes with HMM 
-to build Episode Generating HMM for target event unoccupancy prediction. 
+to build Episode Generating HMM for target event un-occupancy prediction. 
 
 In the future work, 
 regarding energy disaggregation, we will incorporate more feature 
@@ -29,3 +29,115 @@ performs best on sensor data set.
 Next step, we will apply this approach to GPS dataset 
 on occupancy prediction. 
 
+\subsection{Survey Conclusion}
+Significant increase in energy usage worldwide and the consequent impact
+on the environment has pushed energy disaggregation research to the
+forefront in recent years. 
+While energy disaggregation primarily refers to electricity disaggregation,
+similar algorithms are being explored for natural gas and water disaggregation. 
+%Majority of algorithms used in energy disaggregation
+%can also be applied to gas, water disaggregation.
+We have surveyed features, algorithms, evaluation metrics, and 
+instrumentation required for energy disaggregation 
+from the perspective of data mining. 
+Initially, disaggregation algorithms focused on features
+of real power and reactive power, which 
+can be easily obtained from low frequency data.
+With decreasing cost of meters to record data,
+high frequency consumption data can be recorded these days. 
+Therefore, rich features such as harmonics, transient shapes, 
+noise data, and electromagnetic fields are available which increase accuracy. 
+While supervised algorithms were first used in energy disaggregation, 
+it is becoming more common to use unsupervised algorithms.
+Although there is no unified evaluation metric for energy disaggregation 
+so far, there are two types: 
+event-based and time-series based. An important need for the research community is to 
+agree on a standardized evaluation metric. This will assist researchers in
+comparing and improving
+their algorithms' performance.
+In addition, we describe the setup of experiments on 
+how to record data.  
+In the near future, 
+more data mining algorithms will be designed and invented in the 
+energy disaggregation area, thus improving the disaggregation accuracy and
+scalability, and enabling its widespread use. 
+
+\subsection{Energy Disaggregation Conclusion}
+We have described an intuitive motif-based approach to disaggregation that performs
+well relative to more complex algorithms that perform detailed modeling of temporal
+profiles.
+More importantly,
+we have demonstrated how our approach is not just an aid to disaggregation
+but, as a byproduct, also extracts temporal episodic relationships that shed
+insight into consumption patterns. In this sense, our work goes further
+than past work into addressing the real goal of disaggregation research,
+namely, to understand systematic trends in consumption patterns with a view
+toward identifying opportunities for savings.
+
+\subsection{Multivariate Energy Disaggregation Conclusion}
+This chapter proposes an semi-supervised recursive multivariate piecewise motif mining approach 
+to electricity disaggregation. 
+%Before unsupervised disaggregation, 
+We use a period of time's data to find the features of individual devices, 
+including the power level and standard deviation.
+Based on these features, 
+we recursively utilize multivariate motif mining to uncover devices 
+which draw power from both phases equally or unequally, 
+then separate devices from each phase with motif mining. 
+Large power devices are removed from two phases in the first a few rounds, 
+which brings the benefit of decreasing the noise caused by large power devices 
+during the process of disaggregating from single phase. 
+Therefore more devices with small power consumption are separated 
+in the piecewise motif mining from single phase. 
+Also, this piecewise motif mining approach can identify
+continuously variable loads such as heatingOutdoor. 
+Besides, we apply motif mining approach to water disaggregation, 
+it can separate water use ends which has a steady water usage state such as shower device, 
+but cannot disaggregate those water use ends which consumes water variable for the whole 
+cycle like toilet. 
+
+In the future, 
+on energy disaggregation we will use more features from the multiple phases' aggregated data, 
+such as startup shape of individual devices.
+For water disaggregation, we will explore on how to integrate the 
+dynamic time warping with multivariate piecewise motif mining. 
+
+\subsection{Occupancy Prediction Conclusion}
+Residential occupancy prediction is a hot research topic on controlling the HVAC. 
+The accuracy of occupancy prediction influences the comfortability of persons inside 
+the home and energy saving. 
+In order to achieve the highest prediction result, 
+we propose to integrate the mixture EGH model and 
+kNN together as a hydrate approach.
+
+Our work differs from previous research based on the main contributions listed below:
+\begin{enumerate}
+\item We formulate the problem as one of temporal mining: the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model.
+\item We mine the activity patterns according to the time and gap: both the duration of each type of 
+activity, and the gap between two consecutive events are limited in a proper range. 
+This range is extracted from the historical data according to the weekday and holidays.
+\item Our hydrate prediction solution performs best on the workday occupancy prediction: 
+in case of normal activities, we apply mixture EGH model; 
+in case of abnormal events, we utilize kNN,  
+which is generally considered a benchmark in occupancy prediction problem. 
+\end{enumerate}
+%In this paper, we propose the mixture EGH model and compare it with two other 
+%benchmark models, probability density function and kNN approach. 
+%The results show that it generally performs better than kNN to predict the 
+%occupancy and un-occupancy states in the workdays. 
+%The mixture model predicts well for the period of after person getting up and before person 
+%going out. 
+%The coefficient of the episode generative HMM models helps 
+%predict the exact leaving time. 
+%However in the case of abnormal events, 
+%kNN performs good because it can average the 
+%historical data. 
+%Even if there is an abnormal day, 
+%kNN can leverage it. 
+
+In the future work, we will continue working on the holiday occupancy prediction. 
+The occupancy patterns for these days are completely different. 
+For example, in certain weekdays, a person may never goes out. 
+Therefore the occupancy prediction probably depend more on date other than the indoor activities. 
+Further, we will apply this temporal mining approach on the GPS datasets~\cite{koehler2013therml}
+to check the effectiveness of occupancy prediction with different kinds of data. 

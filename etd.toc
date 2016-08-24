@@ -85,3 +85,7 @@
 \contentsline {section}{\numberline {5.6}Conclusion}{94}
 \contentsline {section}{\numberline {5.7}Appendix}{95}
 \contentsline {chapter}{\numberline {6}Conclusion}{103}
+\contentsline {subsection}{\numberline {6.0.1}Survey Conclusion}{103}
+\contentsline {subsection}{\numberline {6.0.2}Energy Disaggregation Conclusion}{104}
+\contentsline {subsection}{\numberline {6.0.3}Multivariate Energy Disaggregation Conclusion}{104}
+\contentsline {subsection}{\numberline {6.0.4}Occupancy Prediction Conclusion}{105}
