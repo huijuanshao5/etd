@@ -1,14 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 AUG 2016 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  26 AUG 2016 09:30
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **etd.tex
 (./etd.tex
-LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/report.cls
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,31 +25,31 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -56,7 +57,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count89
 \float@exts=\toks15
@@ -64,41 +65,41 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen105
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -139,13 +140,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
 Package: algcompatible 
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -162,10 +163,10 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - algorithmic compatible environments for the `algorithmicx' sty
 le
-) (/Users/huijuans/Library/texmf/tex/latex/multirow/multirow.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen114
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -177,15 +178,15 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip51
 \dth@everypar=\toks27
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/mdwtools/mdwlist.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mdwtools/mdwlist.sty
 Package: mdwlist 1996/05/02 1.1 Various list-related things
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 
 
@@ -197,33 +198,33 @@ Package natbib Warning: The `cite' package should not be used
 LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citenum on input line 708.
 \c@NAT@ctr=\count109
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/epsfig.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen115
 \epsfysize=\dimen116
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -232,11 +233,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -250,33 +251,33 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/enumerate.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/comment/comment.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(/usr/local/texlive/2013/texmf-dist/tex/latex/algorithms/algorithm.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks29
 \c@algorithm=\count110
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen117
 \extrarowheight=\dimen118
@@ -314,10 +315,10 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 74.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen119
@@ -332,7 +333,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks32
 ) [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 170.
@@ -346,7 +347,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [3
 
@@ -354,23 +355,22 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write4
 \openout4 = `etd.toc'.
 
- [5] [6] (./etd.lof [7
+ [5] (./etd.lof [6
 
-] [8])
+] [7])
 \tf@lof=\write5
 \openout5 = `etd.lof'.
 
- [9] (./etd.lot)
+ [8] (./etd.lot)
 \tf@lot=\write6
 \openout6 = `etd.lot'.
 
- [10
+ [9
 
 ]
 \openout2 = `sec/introduction.aux'.
 
-
-(./sec/introduction.tex
+ (./sec/introduction.tex
 Chapter 1.
 [1
 
@@ -387,13 +387,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
 
-<figs/truth_agg.pdf, id=49, 1348.03625pt x 738.76pt>
+<figs/truth_agg.pdf, id=45, 1348.03625pt x 738.76pt>
 File: figs/truth_agg.pdf Graphic file (type pdf)
  <use figs/truth_agg.pdf>
 Package pdftex.def Info: figs/truth_agg.pdf used on input line 97.
 (pdftex.def)             Requested size: 234.87749pt x 128.71002pt.
 
-<figs/truth_disagg.pdf, id=50, 1348.03625pt x 738.76pt>
+<figs/truth_disagg.pdf, id=46, 1348.03625pt x 738.76pt>
 File: figs/truth_disagg.pdf Graphic file (type pdf)
 
 <use figs/truth_disagg.pdf>
@@ -406,21 +406,21 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 96--103
 
 [4 <./figs/truth_agg.pdf> <./figs/truth_disagg.pdf>] [5] [6])
 (./surveysec/basic.tex (./figs/powerConnection.tex
-<figs/powerConnection.pdf, id=67, 1300.86pt x 1084.05pt>
+<figs/powerConnection.pdf, id=64, 1300.86pt x 1084.05pt>
 File: figs/powerConnection.pdf Graphic file (type pdf)
 
 <use figs/powerConnection.pdf>
 Package pdftex.def Info: figs/powerConnection.pdf used on input line 3.
 (pdftex.def)             Requested size: 325.215pt x 271.01184pt.
 ) (./figs/residentialCommercialBG.tex
-<figs/residentialBG.pdf, id=68, 542.025pt x 325.215pt>
+<figs/residentialBG.pdf, id=65, 542.025pt x 325.215pt>
 File: figs/residentialBG.pdf Graphic file (type pdf)
 
 <use figs/residentialBG.pdf>
 Package pdftex.def Info: figs/residentialBG.pdf used on input line 4.
 (pdftex.def)             Requested size: 201.9912pt x 121.19608pt.
 
-<figs/commercialBG.pdf, id=69, 650.43pt x 361.35pt>
+<figs/commercialBG.pdf, id=66, 650.43pt x 361.35pt>
 File: figs/commercialBG.pdf Graphic file (type pdf)
 
 <use figs/commercialBG.pdf>
@@ -430,7 +430,7 @@ Package pdftex.def Info: figs/commercialBG.pdf used on input line 5.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] (./figs/draw3phase.tex <figs/draw3phase.pdf, id=73, 1300.86pt x 686.565pt>
+[7] (./figs/draw3phase.tex <figs/draw3phase.pdf, id=70, 1300.86pt x 686.565pt>
 File: figs/draw3phase.pdf Graphic file (type pdf)
 
 <use figs/draw3phase.pdf>
@@ -441,7 +441,7 @@ Package pdftex.def Info: figs/draw3phase.pdf used on input line 3.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./figs/powerConnection.pdf>] (./figs/threebasicloads.tex
-<figs/threebasicloads.pdf, id=98, 1517.67pt x 361.35pt>
+<figs/threebasicloads.pdf, id=95, 1517.67pt x 361.35pt>
 File: figs/threebasicloads.pdf Graphic file (type pdf)
 
 <use figs/threebasicloads.pdf>
@@ -449,7 +449,7 @@ Package pdftex.def Info: figs/threebasicloads.pdf used on input line 3.
 (pdftex.def)             Requested size: 238.49121pt x 56.7806pt.
 ) [9 <./figs/residentialBG.pdf> <./figs/commercialBG.pdf> <./figs/draw3phase.pd
 f>] (./figs/realReactive_hart1992.tex
-<figs/realReactive_hart1992.pdf, id=173, 1373.13pt x 939.51pt>
+<figs/realReactive_hart1992.pdf, id=169, 1373.13pt x 939.51pt>
 File: figs/realReactive_hart1992.pdf Graphic file (type pdf)
 
 <use figs/realReactive_hart1992.pdf>
@@ -457,7 +457,7 @@ Package pdftex.def Info: figs/realReactive_hart1992.pdf used on input line 3.
 (pdftex.def)             Requested size: 289.07999pt x 197.79033pt.
 ) [10 <./figs/threebasicloads.pdf>]
 (./figs/powerTriangle.tex
-<figs/powerTriangle.pdf, id=183, 939.51pt x 433.62pt>
+<figs/powerTriangle.pdf, id=180, 939.51pt x 433.62pt>
 File: figs/powerTriangle.pdf Graphic file (type pdf)
 
 <use figs/powerTriangle.pdf>
@@ -465,10 +465,11 @@ Package pdftex.def Info: figs/powerTriangle.pdf used on input line 3.
 (pdftex.def)             Requested size: 130.08621pt x 60.03812pt.
 ) [11 <./figs/realReactive_hart1992.pdf> <./figs/powerTriangle.pdf
 
-pdfTeX warning: pdflatex (file ./figs/powerTriangle.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/Distributions/TeXLive-2014.texdist/Contents/Progra
+ms/texbin/pdflatex (file ./figs/powerTriangle.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
 >] (./figs/harmonicsexample.tex
-<figs/Circuit4TransientSingle.pdf, id=209, 569.12625pt x 569.12625pt>
+<figs/Circuit4TransientSingle.pdf, id=206, 569.12625pt x 569.12625pt>
 File: figs/Circuit4TransientSingle.pdf Graphic file (type pdf)
 
 <use figs/Circuit4TransientSingle.pdf>
@@ -476,7 +477,7 @@ Package pdftex.def Info: figs/Circuit4TransientSingle.pdf used on input line 11
 .
 (pdftex.def)             Requested size: 187.89908pt x 184.29515pt.
 
-<figs/circuit4TransientFFT.pdf, id=210, 569.12625pt x 569.12625pt>
+<figs/circuit4TransientFFT.pdf, id=207, 569.12625pt x 569.12625pt>
 File: figs/circuit4TransientFFT.pdf Graphic file (type pdf)
 
 <use figs/circuit4TransientFFT.pdf>
@@ -488,7 +489,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 19.
  [12 <./figs/Circuit4TransientSingle.pdf> <./figs/circuit4TransientFFT.pdf, pag
-e is rotated 90 degrees>] [13] <figs/timeline.pdf, id=225, 2095.83pt x 1351.047
+e is rotated 90 degrees>] [13] <figs/timeline.pdf, id=222, 2095.83pt x 1351.047
 5pt>
 File: figs/timeline.pdf Graphic file (type pdf)
 
@@ -497,13 +498,13 @@ Package pdftex.def Info: figs/timeline.pdf used on input line 269.
 (pdftex.def)             Requested size: 361.34999pt x 232.93225pt.
 ) (./surveysec/features.tex [14]
 (./figs/ACPowerFeatures.tex
-<figs/fig_acpower.pdf, id=232, 1228.59pt x 722.7pt>
+<figs/fig_acpower.pdf, id=229, 1228.59pt x 722.7pt>
 File: figs/fig_acpower.pdf Graphic file (type pdf)
  <use figs/fig_acpower.pdf>
 Package pdftex.def Info: figs/fig_acpower.pdf used on input line 19.
 (pdftex.def)             Requested size: 211.3883pt x 124.34608pt.
 
-<figs/NonPowerFeatures.pdf, id=233, 1084.05pt x 382.42876pt>
+<figs/NonPowerFeatures.pdf, id=230, 1084.05pt x 382.42876pt>
 File: figs/NonPowerFeatures.pdf Graphic file (type pdf)
 
 <use figs/NonPowerFeatures.pdf>
@@ -516,14 +517,14 @@ Overfull \hbox (26.99998pt too wide) in paragraph at lines 18--23
 
 ) [15 <./figs/timeline.pdf> <./figs/fig_acpower.pdf> <./figs/NonPowerFeatures.p
 df>] [16] (./figs/realTransient.tex
-<figs/refrigeratorTransient.pdf, id=316, 569.12625pt x 569.12625pt>
+<figs/refrigeratorTransient.pdf, id=313, 569.12625pt x 569.12625pt>
 File: figs/refrigeratorTransient.pdf Graphic file (type pdf)
 
 <use figs/refrigeratorTransient.pdf>
 Package pdftex.def Info: figs/refrigeratorTransient.pdf used on input line 4.
 (pdftex.def)             Requested size: 136.22578pt x 136.22835pt.
 
-<figs/refrigeratorTransientRealPower.pdf, id=317, 569.12625pt x 569.12625pt>
+<figs/refrigeratorTransientRealPower.pdf, id=314, 569.12625pt x 569.12625pt>
 File: figs/refrigeratorTransientRealPower.pdf Graphic file (type pdf)
 
 <use figs/refrigeratorTransientRealPower.pdf>
@@ -531,7 +532,7 @@ Package pdftex.def Info: figs/refrigeratorTransientRealPower.pdf used on input
 line 5.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/refrigeratorTransientInstantPower.pdf, id=318, 569.12625pt x 569.12625pt>
+<figs/refrigeratorTransientInstantPower.pdf, id=315, 569.12625pt x 569.12625pt>
 File: figs/refrigeratorTransientInstantPower.pdf Graphic file (type pdf)
 <use figs/refrigeratorTransientInstantPower.pdf>
 Package pdftex.def Info: figs/refrigeratorTransientInstantPower.pdf used on inp
@@ -539,7 +540,7 @@ ut line 6.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 ) [17 <./figs/refrigeratorTransient.pdf> <./figs/refrigeratorTransientRealPower
 .pdf> <./figs/refrigeratorTransientInstantPower.pdf>] (./figs/waveformTraj.tex
-<figs/refrigeratorTransientSingle.pdf, id=334, 569.12625pt x 569.12625pt>
+<figs/refrigeratorTransientSingle.pdf, id=331, 569.12625pt x 569.12625pt>
 File: figs/refrigeratorTransientSingle.pdf Graphic file (type pdf)
 
 <use figs/refrigeratorTransientSingle.pdf>
@@ -547,7 +548,7 @@ Package pdftex.def Info: figs/refrigeratorTransientSingle.pdf used on input lin
 e 4.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/refrigeratorTransientCurrentVoltageSingle.pdf, id=335, 569.12625pt x 569.
+<figs/refrigeratorTransientCurrentVoltageSingle.pdf, id=332, 569.12625pt x 569.
 12625pt>
 File: figs/refrigeratorTransientCurrentVoltageSingle.pdf Graphic file (type pdf
 )
@@ -556,7 +557,7 @@ Package pdftex.def Info: figs/refrigeratorTransientCurrentVoltageSingle.pdf use
 d on input line 5.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/refrigeratorCurrentAgainstVoltageSingle.pdf, id=336, 569.12625pt x 569.12
+<figs/refrigeratorCurrentAgainstVoltageSingle.pdf, id=333, 569.12625pt x 569.12
 625pt>
 File: figs/refrigeratorCurrentAgainstVoltageSingle.pdf Graphic file (type pdf)
  <use figs/refrigeratorCurrentAgainstVoltageSingle.pdf>
@@ -564,7 +565,7 @@ Package pdftex.def Info: figs/refrigeratorCurrentAgainstVoltageSingle.pdf used
 on input line 6.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/airCompressorTransientSingle.pdf, id=337, 569.12625pt x 569.12625pt>
+<figs/airCompressorTransientSingle.pdf, id=334, 569.12625pt x 569.12625pt>
 File: figs/airCompressorTransientSingle.pdf Graphic file (type pdf)
 
 <use figs/airCompressorTransientSingle.pdf>
@@ -572,7 +573,7 @@ Package pdftex.def Info: figs/airCompressorTransientSingle.pdf used on input li
 ne 9.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/airCompressorTransientCurrentVoltageSingle.pdf, id=338, 569.12625pt x 569
+<figs/airCompressorTransientCurrentVoltageSingle.pdf, id=335, 569.12625pt x 569
 .12625pt>
 File: figs/airCompressorTransientCurrentVoltageSingle.pdf Graphic file (type pd
 f)
@@ -581,7 +582,7 @@ Package pdftex.def Info: figs/airCompressorTransientCurrentVoltageSingle.pdf us
 ed on input line 10.
 (pdftex.def)             Requested size: 140.92792pt x 140.92648pt.
 
-<figs/airCompressorCurrentAgainstVoltageSingle.pdf, id=339, 569.12625pt x 569.1
+<figs/airCompressorCurrentAgainstVoltageSingle.pdf, id=336, 569.12625pt x 569.1
 2625pt>
 File: figs/airCompressorCurrentAgainstVoltageSingle.pdf Graphic file (type pdf)
 
@@ -594,7 +595,7 @@ Package pdftex.def Info: figs/airCompressorCurrentAgainstVoltageSingle.pdf used
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./figs/eigenValue.tex
-<figs/EigenValuesDevices.pdf, id=340, 569.12625pt x 569.12625pt>
+<figs/EigenValuesDevices.pdf, id=337, 569.12625pt x 569.12625pt>
 File: figs/EigenValuesDevices.pdf Graphic file (type pdf)
 
 <use figs/EigenValuesDevices.pdf>
@@ -605,7 +606,7 @@ Package pdftex.def Info: figs/EigenValuesDevices.pdf used on input line 3.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18] (./figs/harmonicsFeature.tex
-<figs/refrigeratorTransientFFT.pdf, id=344, 569.12625pt x 569.12625pt>
+<figs/refrigeratorTransientFFT.pdf, id=341, 569.12625pt x 569.12625pt>
 File: figs/refrigeratorTransientFFT.pdf Graphic file (type pdf)
 
 <use figs/refrigeratorTransientFFT.pdf>
@@ -613,7 +614,7 @@ Package pdftex.def Info: figs/refrigeratorTransientFFT.pdf used on input line 5
 .
 (pdftex.def)             Requested size: 155.02pt x 155.02086pt.
 
-<figs/airCompressorTransientFFT.pdf, id=345, 569.12625pt x 569.12625pt>
+<figs/airCompressorTransientFFT.pdf, id=342, 569.12625pt x 569.12625pt>
 File: figs/airCompressorTransientFFT.pdf Graphic file (type pdf)
 
 <use figs/airCompressorTransientFFT.pdf>
@@ -621,7 +622,7 @@ Package pdftex.def Info: figs/airCompressorTransientFFT.pdf used on input line
 6.
 (pdftex.def)             Requested size: 155.02pt x 155.02086pt.
 
-<figs/realImagHarmonicsRefrigerator.pdf, id=346, 569.12625pt x 569.12625pt>
+<figs/realImagHarmonicsRefrigerator.pdf, id=343, 569.12625pt x 569.12625pt>
 File: figs/realImagHarmonicsRefrigerator.pdf Graphic file (type pdf)
 
 <use figs/realImagHarmonicsRefrigerator.pdf>
@@ -642,7 +643,7 @@ ntVoltageSingle.pdf> <./figs/refrigeratorCurrentAgainstVoltageSingle.pdf> <./fi
 gs/airCompressorTransientSingle.pdf> <./figs/airCompressorTransientCurrentVolta
 geSingle.pdf> <./figs/airCompressorCurrentAgainstVoltageSingle.pdf>]
 (./figs/switchingFun.tex
-<figs/switchingFunction.png, id=374, 236.46744pt x 145.11816pt>
+<figs/switchingFunction.png, id=371, 236.46744pt x 145.11816pt>
 File: figs/switchingFunction.png Graphic file (type png)
 
 <use figs/switchingFunction.png>
@@ -652,14 +653,14 @@ Package pdftex.def Info: figs/switchingFunction.png used on input line 3.
 e is rotated 90 degrees> <./figs/airCompressorTransientFFT.pdf, page is rotated
  90 degrees> <./figs/realImagHarmonicsRefrigerator.pdf>] (./figs/LCDTVNoise.tex
 
-<figs/noiseMasterLCDTV.pdf, id=392, 569.12625pt x 569.12625pt>
+<figs/noiseMasterLCDTV.pdf, id=389, 569.12625pt x 569.12625pt>
 File: figs/noiseMasterLCDTV.pdf Graphic file (type pdf)
 
 <use figs/noiseMasterLCDTV.pdf>
 Package pdftex.def Info: figs/noiseMasterLCDTV.pdf used on input line 5.
 (pdftex.def)             Requested size: 234.87749pt x 234.88037pt.
 
-<figs/noiseFeatureMasterLCDTV.pdf, id=393, 569.12625pt x 569.12625pt>
+<figs/noiseFeatureMasterLCDTV.pdf, id=390, 569.12625pt x 569.12625pt>
 File: figs/noiseFeatureMasterLCDTV.pdf Graphic file (type pdf)
 
 <use figs/noiseFeatureMasterLCDTV.pdf>
@@ -672,7 +673,7 @@ Overfull \hbox (26.99998pt too wide) in paragraph at lines 3--11
  []
 
 ) (./figs/timeofday.tex
-<figs/timeofday.pdf, id=394, 569.12625pt x 569.12625pt>
+<figs/timeofday.pdf, id=391, 569.12625pt x 569.12625pt>
 File: figs/timeofday.pdf Graphic file (type pdf)
 
 <use figs/timeofday.pdf>
@@ -689,7 +690,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25]) (./surveysec/supervised.tex (./figs/neuralNetwork.tex
-<figs/neuralNetwork.pdf, id=421, 1300.86pt x 867.24pt>
+<figs/neuralNetwork.pdf, id=418, 1300.86pt x 867.24pt>
 File: figs/neuralNetwork.pdf Graphic file (type pdf)
 
 <use figs/neuralNetwork.pdf>
@@ -700,13 +701,13 @@ Package pdftex.def Info: figs/neuralNetwork.pdf used on input line 3.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26] [27 <./figs/neuralNetwork.pdf>] [28] [29] (./figs/kNN.tex
-<figs/kNN.pdf, id=440, 867.24pt x 722.7pt>
+<figs/kNN.pdf, id=437, 867.24pt x 722.7pt>
 File: figs/kNN.pdf Graphic file (type pdf)
  <use figs/kNN.pdf>
 Package pdftex.def Info: figs/kNN.pdf used on input line 11.
 (pdftex.def)             Requested size: 216.81pt x 180.67455pt.
 ) [30 <./figs/kNN.pdf>] (./figs/realPowerPDF.tex
-<figs/pdfRedd.pdf, id=453, 569.12625pt x 569.12625pt>
+<figs/pdfRedd.pdf, id=450, 569.12625pt x 569.12625pt>
 File: figs/pdfRedd.pdf Graphic file (type pdf)
  <use figs/pdfRedd.pdf>
 Package pdftex.def Info: figs/pdfRedd.pdf used on input line 3.
@@ -717,13 +718,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [31] [32 <./figs/pdfRedd.pdf>] [33] [34] [35] [36])
 (./surveysec/unsupervised.tex [37] (./figs/fhmm.tex [38]
-<figs/fhmm.pdf, id=484, 1084.05pt x 650.43pt>
+<figs/fhmm.pdf, id=481, 1084.05pt x 650.43pt>
 File: figs/fhmm.pdf Graphic file (type pdf)
  <use figs/fhmm.pdf>
 Package pdftex.def Info: figs/fhmm.pdf used on input line 11.
 (pdftex.def)             Requested size: 234.87749pt x 140.92151pt.
 
-<figs/difference_fhmm.pdf, id=485, 1084.05pt x 722.7pt>
+<figs/difference_fhmm.pdf, id=482, 1084.05pt x 722.7pt>
 File: figs/difference_fhmm.pdf Graphic file (type pdf)
 
 <use figs/difference_fhmm.pdf>
@@ -744,7 +745,7 @@ t/12 ^^^[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y; x\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/
  []
 
 (./figs/AFAMAP_boxDiagram.tex
-<figs/AFAMAP_Boxdiagram.pdf, id=486, 433.62pt x 346.89601pt>
+<figs/AFAMAP_Boxdiagram.pdf, id=483, 433.62pt x 346.89601pt>
 File: figs/AFAMAP_Boxdiagram.pdf Graphic file (type pdf)
 
 <use figs/AFAMAP_Boxdiagram.pdf>
@@ -755,7 +756,7 @@ Package pdftex.def Info: figs/AFAMAP_Boxdiagram.pdf used on input line 3.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [39 <./figs/fhmm.pdf> <./figs/difference_fhmm.pdf>] [40 <./figs/AFAMAP_Boxdia
-gram.pdf>] <figs/motifSample.pdf, id=539, 722.7pt x 289.08pt>
+gram.pdf>] <figs/motifSample.pdf, id=536, 722.7pt x 289.08pt>
 File: figs/motifSample.pdf Graphic file (type pdf)
 
 <use figs/motifSample.pdf>
@@ -763,7 +764,7 @@ Package pdftex.def Info: figs/motifSample.pdf used on input line 206.
 (pdftex.def)             Requested size: 216.81pt x 86.72466pt.
  [41] [42 <./figs/motifSample.pdf>] [43])
 (./surveysec/evaluation.tex [44] [45]) (./surveysec/setup.tex [46]
-<figs/metersConnection.pdf, id=646, 1156.32pt x 722.7pt>
+<figs/metersConnection.pdf, id=643, 1156.32pt x 722.7pt>
 File: figs/metersConnection.pdf Graphic file (type pdf)
 
 <use figs/metersConnection.pdf>
@@ -782,28 +783,28 @@ Chapter 3.
 [52
 
 
-] <disaggfigs/background.pdf, id=679, 650.43pt x 361.35pt>
+] <disaggfigs/background.pdf, id=676, 650.43pt x 361.35pt>
 File: disaggfigs/background.pdf Graphic file (type pdf)
 
 <use disaggfigs/background.pdf>
 Package pdftex.def Info: disaggfigs/background.pdf used on input line 108.
 (pdftex.def)             Requested size: 234.87749pt x 130.4884pt.
  [53]
-<disaggfigs/washdryer.pdf, id=683, 419.166pt x 303.534pt>
+<disaggfigs/washdryer.pdf, id=680, 419.166pt x 303.534pt>
 File: disaggfigs/washdryer.pdf Graphic file (type pdf)
 
 <use disaggfigs/washdryer.pdf>
 Package pdftex.def Info: disaggfigs/washdryer.pdf used on input line 139.
 (pdftex.def)             Requested size: 140.92792pt x 102.05156pt.
 
-<disaggfigs/refrigerator.pdf, id=684, 1300.86pt x 758.835pt>
+<disaggfigs/refrigerator.pdf, id=681, 1300.86pt x 758.835pt>
 File: disaggfigs/refrigerator.pdf Graphic file (type pdf)
 
 <use disaggfigs/refrigerator.pdf>
 Package pdftex.def Info: disaggfigs/refrigerator.pdf used on input line 140.
 (pdftex.def)             Requested size: 328.82706pt x 191.81564pt.
 
-<disaggfigs/energyDisaggDefinition.pdf, id=685, 1345.025pt x 667.49374pt>
+<disaggfigs/energyDisaggDefinition.pdf, id=682, 1345.025pt x 667.49374pt>
 File: disaggfigs/energyDisaggDefinition.pdf Graphic file (type pdf)
 
 <use disaggfigs/energyDisaggDefinition.pdf>
@@ -813,17 +814,18 @@ ne 171.
  [54 <./disaggfigs/background.pdf>]
 [55 <./disaggfigs/washdryer.pdf> <./disaggfigs/refrigerator.pdf
 
-pdfTeX warning: pdflatex (file ./disaggfigs/refrigerator.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/Distributions/TeXLive-2014.texdist/Contents/Progra
+ms/texbin/pdflatex (file ./disaggfigs/refrigerator.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
 > <./disaggfigs/energyDisaggDefinition.pdf>] [56]
-<disaggfigs/arch.pdf, id=741, 1589.94pt x 650.43pt>
+<disaggfigs/arch.pdf, id=738, 1589.94pt x 650.43pt>
 File: disaggfigs/arch.pdf Graphic file (type pdf)
  <use disaggfigs/arch.pdf>
 Package pdftex.def Info: disaggfigs/arch.pdf used on input line 344.
 (pdftex.def)             Requested size: 455.6629pt x 186.40665pt.
 
 [57 <./disaggfigs/arch.pdf>]
-<disaggfigs/steadyevents.pdf, id=832, 578.16pt x 325.215pt>
+<disaggfigs/steadyevents.pdf, id=828, 578.16pt x 325.215pt>
 File: disaggfigs/steadyevents.pdf Graphic file (type pdf)
 
 <use disaggfigs/steadyevents.pdf>
@@ -837,14 +839,14 @@ e-ries: $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]; e[]; e[]; e[]; e[]; e[]; e[]; e
  []
 
 [58 <./disaggfigs/steadyevents.pdf>]
-<disaggfigs/cst.png, id=914, 717.882pt x 158.5122pt>
+<disaggfigs/cst.png, id=911, 717.882pt x 158.5122pt>
 File: disaggfigs/cst.png Graphic file (type png)
  <use disaggfigs/cst.png>
 Package pdftex.def Info: disaggfigs/cst.png used on input line 457.
 (pdftex.def)             Requested size: 328.82706pt x 72.6069pt.
 
 [59 <./disaggfigs/cst.png>]
-<disaggfigs/motifSample.png, id=919, 818.5782pt x 255.8358pt>
+<disaggfigs/motifSample.png, id=916, 818.5782pt x 255.8358pt>
 File: disaggfigs/motifSample.png Graphic file (type png)
 
 <use disaggfigs/motifSample.png>
@@ -856,28 +858,28 @@ Overfull \hbox (18.18433pt too wide) in paragraph at lines 863--878
  dif-fer-ent com-bi-na-tions of de-vices/circuits
  []
 
-[62] <disaggfigs/14Precisions.pdf, id=930, 1418.85086pt x 695.59875pt>
+[62] <disaggfigs/14Precisions.pdf, id=927, 1418.85086pt x 695.59875pt>
 File: disaggfigs/14Precisions.pdf Graphic file (type pdf)
 
 <use disaggfigs/14Precisions.pdf>
 Package pdftex.def Info: disaggfigs/14Precisions.pdf used on input line 911.
 (pdftex.def)             Requested size: 230.18251pt x 112.8477pt.
 
-<disaggfigs/14Recalls.pdf, id=931, 1451.10135pt x 794.97pt>
+<disaggfigs/14Recalls.pdf, id=928, 1451.10135pt x 794.97pt>
 File: disaggfigs/14Recalls.pdf Graphic file (type pdf)
 
 <use disaggfigs/14Recalls.pdf>
 Package pdftex.def Info: disaggfigs/14Recalls.pdf used on input line 912.
 (pdftex.def)             Requested size: 230.18251pt x 126.09395pt.
 
-<disaggfigs/14Fmeasures.pdf, id=932, 1425.325pt x 794.97pt>
+<disaggfigs/14Fmeasures.pdf, id=929, 1425.325pt x 794.97pt>
 File: disaggfigs/14Fmeasures.pdf Graphic file (type pdf)
 
 <use disaggfigs/14Fmeasures.pdf>
 Package pdftex.def Info: disaggfigs/14Fmeasures.pdf used on input line 914.
 (pdftex.def)             Requested size: 230.18251pt x 128.37444pt.
 
-<disaggfigs/weightedPreRecall.pdf, id=933, 1345.025pt x 701.62125pt>
+<disaggfigs/weightedPreRecall.pdf, id=930, 1345.025pt x 701.62125pt>
 File: disaggfigs/weightedPreRecall.pdf Graphic file (type pdf)
 
 <use disaggfigs/weightedPreRecall.pdf>
@@ -963,10 +965,10 @@ Chapter 4.
 (./multidisaggsec/introduction.tex) (./multidisaggsec/prior.tex [67
 
 
-])
-(./multidisaggsec/formalism.tex [68]) (./multidisaggsec/approach.tex
-(./multidisaggfig/multivariateMotifmining.tex
-<multidisaggfig/RecursiveMultivariateMotifMining.pdf, id=1018, 650.43pt x 794.9
+]
+Excluding 'comment' comment.) (./multidisaggsec/formalism.tex [68])
+(./multidisaggsec/approach.tex (./multidisaggfig/multivariateMotifmining.tex
+<multidisaggfig/RecursiveMultivariateMotifMining.pdf, id=1015, 650.43pt x 794.9
 7pt>
 File: multidisaggfig/RecursiveMultivariateMotifMining.pdf Graphic file (type pd
 f)
@@ -975,7 +977,7 @@ Package pdftex.def Info: multidisaggfig/RecursiveMultivariateMotifMining.pdf us
 ed on input line 3.
 (pdftex.def)             Requested size: 328.82706pt x 401.91156pt.
 )
-<multidisaggfig/multivariatePiecewiseMotifMining.pdf, id=1019, 1084.05pt x 216.
+<multidisaggfig/multivariatePiecewiseMotifMining.pdf, id=1016, 1084.05pt x 216.
 81pt>
 File: multidisaggfig/multivariatePiecewiseMotifMining.pdf Graphic file (type pd
 f)
@@ -997,14 +999,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 50.
 [69] (./multidisaggalg/synchronizeEvents.tex
-! Undefined control sequence.
+./multidisaggalg/synchronizeEvents.tex:19: Undefined control sequence.
 <recently read> \RETURN 
                         
 l.19 \RETURN
              $e_1, ..., e_i, ..., e_{n'}, \forall e_i > 2*\theta$
 ? 
 ) [70 <./multidisaggfig/RecursiveMultivariateMotifMining.pdf>]
-<multidisaggfig/synchronizeDifferentEventEncoding.pdf, id=1065, 519.9425pt x 38
+<multidisaggfig/synchronizeDifferentEventEncoding.pdf, id=1062, 519.9425pt x 38
 9.455pt>
 File: multidisaggfig/synchronizeDifferentEventEncoding.pdf Graphic file (type p
 df)
@@ -1021,7 +1023,7 @@ Overfull \hbox (64.19902pt too wide) in paragraph at lines 8--41
  []
 
 ) (./multidisaggfig/heatingIndoorResults.tex
-<multidisaggfig/heatingIndoorPhase12On.png, id=1170, 309.3156pt x 260.8947pt>
+<multidisaggfig/heatingIndoorPhase12On.png, id=1167, 309.3156pt x 260.8947pt>
 File: multidisaggfig/heatingIndoorPhase12On.png Graphic file (type png)
 
 <use multidisaggfig/heatingIndoorPhase12On.png>
@@ -1029,7 +1031,7 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorPhase12On.png used on inpu
 t line 4.
 (pdftex.def)             Requested size: 231.26378pt x 195.06145pt.
 
-<multidisaggfig/heatingIndoorUp.png, id=1171, 310.761pt x 263.7855pt>
+<multidisaggfig/heatingIndoorUp.png, id=1168, 310.761pt x 263.7855pt>
 File: multidisaggfig/heatingIndoorUp.png Graphic file (type png)
 
 <use multidisaggfig/heatingIndoorUp.png>
@@ -1037,14 +1039,15 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorUp.png used on input line
 5.
 (pdftex.def)             Requested size: 231.26378pt x 196.30911pt.
 
-! Extra alignment tab has been changed to \cr.
+./multidisaggfig/heatingIndoorResults.tex:5: Extra alignment tab has been chang
+ed to \cr.
 <recently read> \endtemplate 
                              
 l.5 ....2in]{multidisaggfig/heatingIndoorUp.png} &
                                                   
 ? 
 
-<multidisaggfig/heatingIndoorPhase12Off.png, id=1172, 309.3156pt x 260.8947pt>
+<multidisaggfig/heatingIndoorPhase12Off.png, id=1169, 309.3156pt x 260.8947pt>
 File: multidisaggfig/heatingIndoorPhase12Off.png Graphic file (type png)
 
 <use multidisaggfig/heatingIndoorPhase12Off.png>
@@ -1052,7 +1055,7 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorPhase12Off.png used on inp
 ut line 7.
 (pdftex.def)             Requested size: 231.26378pt x 195.06145pt.
 
-<multidisaggfig/heatingIndoorDown.png, id=1173, 310.761pt x 263.7855pt>
+<multidisaggfig/heatingIndoorDown.png, id=1170, 310.761pt x 263.7855pt>
 File: multidisaggfig/heatingIndoorDown.png Graphic file (type png)
 
 <use multidisaggfig/heatingIndoorDown.png>
@@ -1065,7 +1068,7 @@ Overfull \hbox (16.77257pt too wide) in paragraph at lines 3--13
  []
 
 ) (./multidisaggfig/dryerResults.tex
-<multidisaggfig/dryerPhase_sum.png, id=1174, 309.3156pt x 263.7855pt>
+<multidisaggfig/dryerPhase_sum.png, id=1171, 309.3156pt x 263.7855pt>
 File: multidisaggfig/dryerPhase_sum.png Graphic file (type png)
 
 <use multidisaggfig/dryerPhase_sum.png>
@@ -1073,7 +1076,7 @@ Package pdftex.def Info: multidisaggfig/dryerPhase_sum.png used on input line 4
 .
 (pdftex.def)             Requested size: 231.26378pt x 197.2228pt.
 
-<multidisaggfig/dryerPhase12On.png, id=1175, 311.4837pt x 262.3401pt>
+<multidisaggfig/dryerPhase12On.png, id=1172, 311.4837pt x 262.3401pt>
 File: multidisaggfig/dryerPhase12On.png Graphic file (type png)
 
 <use multidisaggfig/dryerPhase12On.png>
@@ -1081,7 +1084,7 @@ Package pdftex.def Info: multidisaggfig/dryerPhase12On.png used on input line 5
 .
 (pdftex.def)             Requested size: 231.26378pt x 194.78511pt.
 
-<multidisaggfig/dryerPhase12OnDiff.png, id=1176, 310.761pt x 261.6174pt>
+<multidisaggfig/dryerPhase12OnDiff.png, id=1173, 310.761pt x 261.6174pt>
 File: multidisaggfig/dryerPhase12OnDiff.png Graphic file (type png)
 
 <use multidisaggfig/dryerPhase12OnDiff.png>
@@ -1089,7 +1092,7 @@ Package pdftex.def Info: multidisaggfig/dryerPhase12OnDiff.png used on input li
 ne 7.
 (pdftex.def)             Requested size: 231.26378pt x 194.6956pt.
 
-<multidisaggfig/waterHeaterPhase12OnDiff.png, id=1177, 312.2064pt x 261.6174pt>
+<multidisaggfig/waterHeaterPhase12OnDiff.png, id=1174, 312.2064pt x 261.6174pt>
 File: multidisaggfig/waterHeaterPhase12OnDiff.png Graphic file (type png)
 <use multidisaggfig/waterHeaterPhase12OnDiff.png>
 Package pdftex.def Info: multidisaggfig/waterHeaterPhase12OnDiff.png used on in
@@ -1101,7 +1104,7 @@ Overfull \hbox (16.77257pt too wide) in paragraph at lines 3--16
  []
 
 ) [74] [75] (./multidisaggfig/heatingOutdoorResults.tex
-<multidisaggfig/heatingIndoorOutdoorPattern1_sum.png, id=1185, 280.4076pt x 227
+<multidisaggfig/heatingIndoorOutdoorPattern1_sum.png, id=1181, 280.4076pt x 227
 .6505pt>
 File: multidisaggfig/heatingIndoorOutdoorPattern1_sum.png Graphic file (type pn
 g)
@@ -1110,7 +1113,7 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorOutdoorPattern1_sum.png us
 ed on input line 4.
 (pdftex.def)             Requested size: 231.26378pt x 187.75143pt.
 
-<multidisaggfig/heatingIndoorOutdoorPattern1.png, id=1186, 311.4837pt x 261.617
+<multidisaggfig/heatingIndoorOutdoorPattern1.png, id=1182, 311.4837pt x 261.617
 4pt>
 File: multidisaggfig/heatingIndoorOutdoorPattern1.png Graphic file (type png)
  <use multidisaggfig/heatingIndoorOutdoorPattern1.png>
@@ -1118,7 +1121,7 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorOutdoorPattern1.png used o
 n input line 5.
 (pdftex.def)             Requested size: 231.26378pt x 194.2485pt.
 
-<multidisaggfig/heatingIndoorOutdoorPhase12On_1.png, id=1187, 310.761pt x 262.3
+<multidisaggfig/heatingIndoorOutdoorPhase12On_1.png, id=1183, 310.761pt x 262.3
 401pt>
 File: multidisaggfig/heatingIndoorOutdoorPhase12On_1.png Graphic file (type png
 )
@@ -1127,7 +1130,7 @@ Package pdftex.def Info: multidisaggfig/heatingIndoorOutdoorPhase12On_1.png use
 d on input line 7.
 (pdftex.def)             Requested size: 231.26378pt x 195.23344pt.
 
-<multidisaggfig/heatingIndoorOutdoorFittedPattern1.png, id=1188, 278.9622pt x 2
+<multidisaggfig/heatingIndoorOutdoorFittedPattern1.png, id=1184, 278.9622pt x 2
 27.6505pt>
 File: multidisaggfig/heatingIndoorOutdoorFittedPattern1.png Graphic file (type 
 png)
@@ -1154,14 +1157,14 @@ Overfull \hbox (31.444pt too wide) in paragraph at lines 6--29
  []
 
 ) (./multidisaggfig/waterDisaggResults.tex
-<multidisaggfig/showerFitted.png, id=1210, 280.4076pt x 229.0959pt>
+<multidisaggfig/showerFitted.png, id=1207, 280.4076pt x 229.0959pt>
 File: multidisaggfig/showerFitted.png Graphic file (type png)
 
 <use multidisaggfig/showerFitted.png>
 Package pdftex.def Info: multidisaggfig/showerFitted.png used on input line 4.
 (pdftex.def)             Requested size: 234.87749pt x 191.8974pt.
 
-<multidisaggfig/washingMachineWaterFitted.png, id=1211, 275.3487pt x 229.0959pt
+<multidisaggfig/washingMachineWaterFitted.png, id=1208, 275.3487pt x 229.0959pt
 >
 File: multidisaggfig/washingMachineWaterFitted.png Graphic file (type png)
  <use multidisaggfig/washingMachineWaterFitted.png>
@@ -1169,7 +1172,7 @@ Package pdftex.def Info: multidisaggfig/washingMachineWaterFitted.png used on i
 nput line 5.
 (pdftex.def)             Requested size: 234.87749pt x 195.42458pt.
 
-<multidisaggfig/UpToiletFitted.png, id=1212, 276.7941pt x 227.6505pt>
+<multidisaggfig/UpToiletFitted.png, id=1209, 276.7941pt x 227.6505pt>
 File: multidisaggfig/UpToiletFitted.png Graphic file (type png)
 
 <use multidisaggfig/UpToiletFitted.png>
@@ -1177,7 +1180,7 @@ Package pdftex.def Info: multidisaggfig/UpToiletFitted.png used on input line 7
 .
 (pdftex.def)             Requested size: 234.87749pt x 193.18425pt.
 
-<multidisaggfig/DownToiletFitted.png, id=1213, 278.2395pt x 226.2051pt>
+<multidisaggfig/DownToiletFitted.png, id=1210, 278.2395pt x 226.2051pt>
 File: multidisaggfig/DownToiletFitted.png Graphic file (type png)
 
 <use multidisaggfig/DownToiletFitted.png>
@@ -1190,14 +1193,14 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 3--17
  []
 
 )) (./multidisaggsec/electricityWaterExp.tex
-<multidisaggfig/bathroomBehavior.png, id=1214, 339.669pt x 281.853pt>
+<multidisaggfig/bathroomBehavior.png, id=1211, 339.669pt x 281.853pt>
 File: multidisaggfig/bathroomBehavior.png Graphic file (type png)
 
 <use multidisaggfig/bathroomBehavior.png>
 Package pdftex.def Info: multidisaggfig/bathroomBehavior.png used on input line
  13.
 (pdftex.def)             Requested size: 328.82706pt x 272.86378pt.
- [79])
+ [79] Excluding 'comment' comment.)
 (./multidisaggsec/conclusion.tex [80 <./multidisaggfig/showerFitted.png> <./mul
 tidisaggfig/washingMachineWaterFitted.png> <./multidisaggfig/UpToiletFitted.png
 > <./multidisaggfig/DownToiletFitted.png>]) [81 <./multidisaggfig/bathroomBehav
@@ -1208,7 +1211,7 @@ Chapter 5.
 ]) (./adlsec/related.tex
 [83]) (./adlsec/formulation.tex) (./adlsec/algorithm.tex [84]
 (./adlfigs/durationgapconstraint.tex
-<adlfigs/durationgapconstraint.pdf, id=1239, 433.62pt x 180.675pt>
+<adlfigs/durationgapconstraint.pdf, id=1236, 433.62pt x 180.675pt>
 File: adlfigs/durationgapconstraint.pdf Graphic file (type pdf)
 
 <use adlfigs/durationgapconstraint.pdf>
@@ -1216,7 +1219,7 @@ Package pdftex.def Info: adlfigs/durationgapconstraint.pdf used on input line 3
 .
 (pdftex.def)             Requested size: 328.82706pt x 137.01666pt.
 ) (./adlfigs/MingExample.tex
-<adlfigs/MingExample.pdf, id=1240, 542.025pt x 469.755pt>
+<adlfigs/MingExample.pdf, id=1237, 542.025pt x 469.755pt>
 File: adlfigs/MingExample.pdf Graphic file (type pdf)
 
 <use adlfigs/MingExample.pdf>
@@ -1224,7 +1227,7 @@ Package pdftex.def Info: adlfigs/MingExample.pdf used on input line 3.
 (pdftex.def)             Requested size: 469.75499pt x 407.1353pt.
 ) [85 <./adlfigs/durationgapconstraint.pdf>]
 [86 <./adlfigs/MingExample.pdf>] (./adlfigs/egh.tex
-<adlfigs/egh.pdf, id=1519, 650.43pt x 433.62pt>
+<adlfigs/egh.pdf, id=1515, 650.43pt x 433.62pt>
 File: adlfigs/egh.pdf Graphic file (type pdf)
  <use adlfigs/egh.pdf>
 Package pdftex.def Info: adlfigs/egh.pdf used on input line 3.
@@ -1237,7 +1240,7 @@ Package pdftex.def Info: adlfigs/egh.pdf used on input line 3.
 LaTeX Warning: Float too large for page by 55.08214pt on input line 63.
 
 [89])) (./adlsec/result.tex (./adltabs/individualResults.tex) [90] [91]
-<adlfigs/study10person12014-02-20occupied.png, id=1672, 738.5994pt x 762.4485pt
+<adlfigs/study10person12014-02-20occupied.png, id=1669, 738.5994pt x 762.4485pt
 >
 File: adlfigs/study10person12014-02-20occupied.png Graphic file (type png)
  <use adlfigs/study10person12014-02-20occupied.png>
@@ -1254,7 +1257,7 @@ Overfull \hbox (2.4743pt too wide) in paragraph at lines 173--173
 id Ap-proach 
  []
 
-<adlfigs/study10ROC_02202014.png, id=1680, 394.5942pt x 379.4175pt>
+<adlfigs/study10ROC_02202014.png, id=1676, 394.5942pt x 379.4175pt>
 File: adlfigs/study10ROC_02202014.png Graphic file (type png)
 
 <use adlfigs/study10ROC_02202014.png>
@@ -1265,7 +1268,7 @@ Package pdftex.def Info: adlfigs/study10ROC_02202014.png used on input line 194
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<adlfigs/study11ROC_02042014.png, id=1681, 388.0899pt x 374.3586pt>
+<adlfigs/study11ROC_02042014.png, id=1677, 388.0899pt x 374.3586pt>
 File: adlfigs/study11ROC_02042014.png Graphic file (type png)
 
 <use adlfigs/study11ROC_02042014.png>
@@ -1276,7 +1279,7 @@ Package pdftex.def Info: adlfigs/study11ROC_02042014.png used on input line 207
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<adlfigs/study14ROC_12202013.png, id=1682, 394.5942pt x 377.2494pt>
+<adlfigs/study14ROC_12202013.png, id=1678, 394.5942pt x 377.2494pt>
 File: adlfigs/study14ROC_12202013.png Graphic file (type png)
 
 <use adlfigs/study14ROC_12202013.png>
@@ -1298,7 +1301,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (./adlalgs/alg03.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 21.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
@@ -1320,34 +1323,34 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4848 strings out of 493315
- 80776 string characters out of 6137904
- 137965 words of memory out of 5000000
- 7894 multiletter control sequences out of 15000+600000
+ 4842 strings out of 493117
+ 80723 string characters out of 6135433
+ 139027 words of memory out of 5000000
+ 7899 multiletter control sequences out of 15000+600000
  34328 words of font info for 68 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 42i,15n,27p,514b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw
-/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/ut
-mr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on etd.pdf (126 pages, 5163475 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 42i,15n,27p,1149b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on etd.pdf (125 pages, 5162792 bytes).
 PDF statistics:
- 1820 PDF objects out of 2073 (max. 8388607)
- 1014 compressed objects within 11 object streams
+ 1817 PDF objects out of 2073 (max. 8388607)
+ 1012 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
  391 words of extra memory for PDF output out of 10000 (max. 10000000)
 
