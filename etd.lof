@@ -1,53 +1,53 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces (a) Aggregate power. (b) Disaggregated information about devices and their power usage patterns.}}{5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Electricity generation and transmission to residential and commercial buildings.}}{9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a circuit in (a) residential building and (b) commercial building.}}{10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Three phase power waveform.}}{10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces AC Circuit of basic loads: resistor, inductor, and capacitor (courtesy: \cite {eebook}).}}{11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Real and reactive power for different devices (courtesy: \cite {hart1992}).}}{12}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Power Triangle.}}{12}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Circuit 4 (a) Current Waveform and (b) Harmonics.}}{13}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Energy Disaggregation Definition Example.}}{16}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Category of (a) AC Power Features and (b) Non-AC Power Features. }}{16}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces (a) Transient and Steady State of a Sinusoidal Current from a Refrigerator. Transient Shapes for a Refrigerator (b) Real Power and (c) Instantaneous Real Power.}}{18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Current waveform of (a) a refrigerator and (b) an air compressor. The current and voltage of (c) a refrigerator and (c) an air compressor. The V-I trajectories of (e) a refrigerator and (f) an air compressor. }}{20}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The eigenvalue of a circuit and dining room light. }}{21}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Harmonics Feature of (a) a refrigerator and (b) an air compressor (c) real and imaginary part of odd number of harmonics of a refrigerator. }}{21}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Switching-function for VSDs disaggregation (Courtesy:\cite {wichakool2009modeling}).}}{22}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces (a) Baseline noise with newly added noise. (b) Noise Feature of a device.}}{23}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Day of Week of Feature.}}{23}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Neural Network Approach for Energy Disaggregation.}}{28}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Transient Shape Decomposition and KNN Search}}{31}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces PDFs of three neighboring by power draw appliances.}}{33}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Graphical model with $M$ devices. (a) FHMM and (b) Difference FHMM.}}{40}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces AFAMAP Flowchart.}}{41}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Motif Mining Example (\cite {shao2012temporal}). }}{43}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Four Types of Meters in a Building.}}{48}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces (a) Aggregate power. (b) Disaggregated information about devices and their power usage patterns.}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Electricity generation and transmission to residential and commercial buildings.}}{10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a circuit in (a) residential building and (b) commercial building.}}{11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Three phase power waveform.}}{11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces AC Circuit of basic loads: resistor, inductor, and capacitor (courtesy: \cite {eebook}).}}{12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Real and reactive power for different devices (courtesy: \cite {hart1992}).}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Power Triangle.}}{13}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Circuit 4 (a) Current Waveform and (b) Harmonics.}}{14}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Energy Disaggregation Definition Example.}}{17}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Category of (a) AC Power Features and (b) Non-AC Power Features. }}{17}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces (a) Transient and Steady State of a Sinusoidal Current from a Refrigerator. Transient Shapes for a Refrigerator (b) Real Power and (c) Instantaneous Real Power.}}{19}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Current waveform of (a) a refrigerator and (b) an air compressor. The current and voltage of (c) a refrigerator and (c) an air compressor. The V-I trajectories of (e) a refrigerator and (f) an air compressor. }}{21}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The eigenvalue of a circuit and dining room light. }}{22}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Harmonics Feature of (a) a refrigerator and (b) an air compressor (c) real and imaginary part of odd number of harmonics of a refrigerator. }}{22}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Switching-function for VSDs disaggregation (Courtesy:\cite {wichakool2009modeling}).}}{23}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces (a) Baseline noise with newly added noise. (b) Noise Feature of a device.}}{24}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Day of Week of Feature.}}{24}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Neural Network Approach for Energy Disaggregation.}}{29}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Transient Shape Decomposition and KNN Search}}{32}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces PDFs of three neighboring by power draw appliances.}}{34}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Graphical model with $M$ devices. (a) FHMM and (b) Difference FHMM.}}{41}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces AFAMAP Flowchart.}}{42}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Motif Mining Example (\cite {shao2012temporal}). }}{44}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Four Types of Meters in a Building.}}{49}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A residential setup for data collection.}}{55}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Steady state transitions and transient features at startup.}}{56}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of energy disaggregation.}}{56}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Temporal motif mining framework for disaggregation.}}{58}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Mining episodes from a symbolic time series.}}{59}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Episode constraints.}}{60}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of motif mining. Note that there are 3 non-overlapped occurrences of Episode 3.}}{61}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces We increase the number of synthesized circuits from 2 to 11 and calculate performance measures for disaggregation of each device. (a) Precision (b) Recall (c) F-measure (d) The precision, recall and F-measure of all the devices are combined weighed by their average power levels. }}{64}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A residential setup for data collection.}}{56}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Steady state transitions and transient features at startup.}}{57}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of energy disaggregation.}}{57}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Temporal motif mining framework for disaggregation.}}{59}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Mining episodes from a symbolic time series.}}{60}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Episode constraints.}}{61}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of motif mining. Note that there are 3 non-overlapped occurrences of Episode 3.}}{62}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces We increase the number of synthesized circuits from 2 to 11 and calculate performance measures for disaggregation of each device. (a) Precision (b) Recall (c) F-measure (d) The precision, recall and F-measure of all the devices are combined weighed by their average power levels. }}{65}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Recursive Multivariate Motif Mining Approach.}}{71}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Multivariate Piecewise Motif Mining.}}{72}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Encoding Events from Multiple Phases.}}{73}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces (a) on piecewise event and (c) off piecewise event of heating indoor. heating indoor is disaggregated by motif mining the on event (b) and off event (d).}}{77}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Disaggregating dryer with multivariate motif mining. (a) the startup in the sum of aggregated power (b) the startup in two phases (c) the diffs in two phases on event of dryer. (d) the diffs in two phases on event of water heater which shares same power level as dryer but different patterns when drawing power from two-phases. }}{78}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Disaggregating continuous variable load heating outdoor. (a) the startup in the sum of aggregated power (b) the startup in two phases (c) the diffs in two phases (d) the disaggregated on event of heating outdoor.}}{79}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces X-axis is the duration to a specific time in seconds, Y-axis is water flow rate in 10000*liter/minute. (a) and (b) denote the water disaggregation of shower and washing machine. The fitted red line denotes the on event of water, and the fitted yellow line denotes the off event of water. (c) and (d) are the disaggregated two toilets of complete usage cycle by dynamic time warping subsequence search. }}{81}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Human behavior in bathroom by using down toilet, down sink and shower. The dashed lines denote a series of events: light L007 on, down toilet on, down toilet off, down sink on, down sink off, shower on, shower off, light L007 off. }}{82}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Recursive Multivariate Motif Mining Approach.}}{72}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Multivariate Piecewise Motif Mining.}}{73}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Encoding Events from Multiple Phases.}}{74}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces (a) on piecewise event and (c) off piecewise event of heating indoor. heating indoor is disaggregated by motif mining the on event (b) and off event (d).}}{78}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Disaggregating dryer with multivariate motif mining. (a) the startup in the sum of aggregated power (b) the startup in two phases (c) the diffs in two phases on event of dryer. (d) the diffs in two phases on event of water heater which shares same power level as dryer but different patterns when drawing power from two-phases. }}{79}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Disaggregating continuous variable load heating outdoor. (a) the startup in the sum of aggregated power (b) the startup in two phases (c) the diffs in two phases (d) the disaggregated on event of heating outdoor.}}{80}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces X-axis is the duration to a specific time in seconds, Y-axis is water flow rate in 10000*liter/minute. (a) and (b) denote the water disaggregation of shower and washing machine. The fitted red line denotes the on event of water, and the fitted yellow line denotes the off event of water. (c) and (d) are the disaggregated two toilets of complete usage cycle by dynamic time warping subsequence search. }}{82}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Human behavior in bathroom by using down toilet, down sink and shower. The dashed lines denote a series of events: light L007 on, down toilet on, down toilet off, down sink on, down sink off, shower on, shower off, light L007 off. }}{83}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of Duration-gap Constraint Episode.}}{86}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Time-gap constraint episode mining example.}}{87}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces States Transition of Episode Generating HMM (EGH).}}{89}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Occupancy prediction precision, recall and f-measure comparison of three approaches of person1 on 02/20/2014 on Study10.}}{98}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces ROC curve of house occupancy prediction on Study10 (02/20/2014).}}{99}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces ROC curve of house occupancy prediction on Study11 (02/04/2014). }}{100}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces ROC curve of house occupancy prediction on (c) Study14 (12/20/2013). }}{101}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of Duration-gap Constraint Episode.}}{87}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Time-gap constraint episode mining example.}}{88}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces States Transition of Episode Generating HMM (EGH).}}{90}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Occupancy prediction precision, recall and f-measure comparison of three approaches of person1 on 02/20/2014 on Study10.}}{99}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces ROC curve of house occupancy prediction on Study10 (02/20/2014).}}{100}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ROC curve of house occupancy prediction on Study11 (02/04/2014). }}{101}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces ROC curve of house occupancy prediction on (c) Study14 (12/20/2013). }}{102}
 \addvspace {10\p@ }

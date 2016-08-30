@@ -1,89 +1,92 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}State of the art}{3}
-\contentsline {chapter}{\numberline {2}Survey of Energy Disaggregation}{4}
-\contentsline {section}{\numberline {2.1}Introduction}{4}
-\contentsline {subsection}{\numberline {2.1.1}What is Energy Disaggregation?}{5}
-\contentsline {subsection}{\numberline {2.1.2}Challenges}{6}
-\contentsline {subsection}{\numberline {2.1.3}Scope of This Survey}{7}
-\contentsline {subsection}{\numberline {2.1.4}Organization}{8}
-\contentsline {section}{\numberline {2.2}A Primer on AC power}{8}
-\contentsline {subsection}{\numberline {2.2.1}Electricity Transmission}{8}
-\contentsline {subsection}{\numberline {2.2.2}Circuits and Devices}{8}
-\contentsline {subsection}{\numberline {2.2.3}Voltage and Current}{9}
-\contentsline {subsection}{\numberline {2.2.4}Real Power and Reactive Power}{11}
-\contentsline {subsection}{\numberline {2.2.5}Harmonics}{13}
-\contentsline {section}{\numberline {2.3}Definition of Energy Disaggregation}{14}
-\contentsline {subsection}{\numberline {2.3.1}Technology Timeline}{15}
-\contentsline {section}{\numberline {2.4}Disaggregation Features}{16}
-\contentsline {subsection}{\numberline {2.4.1}AC Power Features}{17}
-\contentsline {subsection}{\numberline {2.4.2}Features Beyond Current and Voltage}{22}
-\contentsline {section}{\numberline {2.5}Disaggregation Algorithms}{24}
-\contentsline {subsection}{\numberline {2.5.1}Pre-processing: Event Types and Feature Extraction Algorithms}{25}
-\contentsline {subsubsection}{Event types of device features}{25}
-\contentsline {subsubsection}{Feature extraction algorithms}{25}
-\contentsline {subsection}{\numberline {2.5.2}Overview of Disaggregation Algorithms}{26}
-\contentsline {subsection}{\numberline {2.5.3}Supervised Learning Algorithms}{27}
-\contentsline {subsubsection}{Classification-Based}{27}
-\contentsline {subsubsection}{Nearest Neighbor-Based}{30}
-\contentsline {subsubsection}{Statistical Model-Based}{33}
-\contentsline {subsubsection}{Optimization-Based}{35}
-\contentsline {subsection}{\numberline {2.5.4}Unsupervised Learning Algorithms}{39}
-\contentsline {subsubsection}{Hierarchical clustering-based}{39}
-\contentsline {subsubsection}{FHMM-based}{40}
-\contentsline {subsubsection}{Temporal mining-based}{43}
-\contentsline {subsubsection}{Probabilistic graph-based}{44}
-\contentsline {subsection}{\numberline {2.5.5}Semi-supervised Learning Algorithms}{44}
-\contentsline {subsubsection}{Clustering-based}{44}
-\contentsline {subsubsection}{HMM-based}{44}
-\contentsline {subsubsection}{Optimization-based}{45}
-\contentsline {section}{\numberline {2.6}Evaluation Metric}{45}
-\contentsline {subsection}{\numberline {2.6.1}Evaluation Based on Events}{46}
-\contentsline {subsection}{\numberline {2.6.2}Evaluation Based on Time Series}{46}
-\contentsline {subsection}{\numberline {2.6.3}Evaluation Based on Combinational Metrics}{47}
-\contentsline {subsection}{\numberline {2.6.4}Data Collection and Public Data Sets}{47}
-\contentsline {subsubsection}{Meters}{48}
-\contentsline {subsubsection}{Low frequency data and high frequency data}{48}
-\contentsline {subsubsection}{Public datasets}{49}
-\contentsline {section}{\numberline {2.7}Ongoing Research}{49}
-\contentsline {section}{\numberline {2.8}Conclusion}{50}
-\contentsline {chapter}{\numberline {3}Energy Disaggregation}{53}
-\contentsline {section}{\numberline {3.1}Abstract}{53}
-\contentsline {section}{\numberline {3.2}Introduction}{53}
-\contentsline {section}{\numberline {3.3}Background}{54}
-\contentsline {section}{\numberline {3.4}Temporal Motif Mining}{57}
-\contentsline {section}{\numberline {3.5}Evaluation}{62}
-\contentsline {section}{\numberline {3.6}Experiments on REDD dataset}{63}
-\contentsline {subsection}{\numberline {3.6.1}Disaggregation experiments}{63}
-\contentsline {subsection}{\numberline {3.6.2}Comparison of Motif Mining and AFAMAP}{65}
-\contentsline {section}{\numberline {3.7}Commercial Building Dataset}{66}
-\contentsline {section}{\numberline {3.8}Discussion}{66}
-\contentsline {chapter}{\numberline {4}Multivariate Motif Mining to Energy Disaggregation}{68}
-\contentsline {section}{\numberline {4.1}Prior Work}{68}
-\contentsline {section}{\numberline {4.2}Disaggregation Formalism}{69}
-\contentsline {section}{\numberline {4.3}Recursive Multivariate Piecewise Motif Mining}{70}
-\contentsline {subsection}{\numberline {4.3.1}Piecewise Motif Mining}{70}
-\contentsline {subsection}{\numberline {4.3.2}Encoding Events From Multiple Phases}{73}
-\contentsline {section}{\numberline {4.4}Evaluation}{74}
-\contentsline {section}{\numberline {4.5}Experiments}{75}
-\contentsline {subsection}{\numberline {4.5.1}Electricity Disaggregation}{75}
-\contentsline {subsection}{\numberline {4.5.2}Water Disaggregation and Constraints}{79}
-\contentsline {subsection}{\numberline {4.5.3}Electricity and Water Usage Correlation}{81}
-\contentsline {section}{\numberline {4.6}Conclusion}{82}
-\contentsline {chapter}{\numberline {5}Occupancy Prediction}{83}
-\contentsline {section}{\numberline {5.1}Introduction}{83}
-\contentsline {section}{\numberline {5.2}Related Work}{84}
-\contentsline {section}{\numberline {5.3}Problem Formulation}{85}
-\contentsline {section}{\numberline {5.4}Constraint Episode Mining and Mixture EGH}{86}
-\contentsline {subsection}{\numberline {5.4.1}Time-gap Constraint Episode Mining}{86}
-\contentsline {subsection}{\numberline {5.4.2}Episode Generating HMM}{88}
-\contentsline {subsection}{\numberline {5.4.3}Mixture EGH}{89}
-\contentsline {subsection}{\numberline {5.4.4}Predict When the Target Event Occurs}{90}
-\contentsline {section}{\numberline {5.5}Experiment Results}{91}
-\contentsline {subsection}{\numberline {5.5.1}Occupancy Prediction of Individuals}{91}
-\contentsline {subsection}{\numberline {5.5.2}Occupancy Prediction of Residential Buildings}{94}
-\contentsline {subsection}{\numberline {5.5.3}Limitations of Mixture EGH Model}{94}
-\contentsline {subsection}{\numberline {5.5.4}30 minutes Ahead House Occupancy Prediction with Hybrid Approach}{95}
-\contentsline {section}{\numberline {5.6}Conclusion}{95}
-\contentsline {section}{\numberline {5.7}Appendix}{96}
-\contentsline {chapter}{\numberline {6}Conclusion}{104}
-\contentsline {section}{\numberline {6.1}Future Work}{105}
+\contentsline {section}{\numberline {1.2}Temporal Mining}{3}
+\contentsline {subsection}{\numberline {1.2.1}Motif Mining}{3}
+\contentsline {subsection}{\numberline {1.2.2}Episode Generating Hidden Markov Model}{4}
+\contentsline {chapter}{\numberline {2}Survey of Energy Disaggregation}{5}
+\contentsline {section}{\numberline {2.1}Introduction}{5}
+\contentsline {subsection}{\numberline {2.1.1}What is Energy Disaggregation?}{6}
+\contentsline {subsection}{\numberline {2.1.2}Challenges}{7}
+\contentsline {subsection}{\numberline {2.1.3}Scope of This Survey}{8}
+\contentsline {subsection}{\numberline {2.1.4}Organization}{9}
+\contentsline {section}{\numberline {2.2}A Primer on AC power}{9}
+\contentsline {subsection}{\numberline {2.2.1}Electricity Transmission}{9}
+\contentsline {subsection}{\numberline {2.2.2}Circuits and Devices}{9}
+\contentsline {subsection}{\numberline {2.2.3}Voltage and Current}{10}
+\contentsline {subsection}{\numberline {2.2.4}Real Power and Reactive Power}{12}
+\contentsline {subsection}{\numberline {2.2.5}Harmonics}{14}
+\contentsline {section}{\numberline {2.3}Definition of Energy Disaggregation}{15}
+\contentsline {subsection}{\numberline {2.3.1}Technology Timeline}{16}
+\contentsline {section}{\numberline {2.4}Disaggregation Features}{17}
+\contentsline {subsection}{\numberline {2.4.1}AC Power Features}{18}
+\contentsline {subsection}{\numberline {2.4.2}Features Beyond Current and Voltage}{23}
+\contentsline {section}{\numberline {2.5}Disaggregation Algorithms}{25}
+\contentsline {subsection}{\numberline {2.5.1}Pre-processing: Event Types and Feature Extraction Algorithms}{26}
+\contentsline {subsubsection}{Event types of device features}{26}
+\contentsline {subsubsection}{Feature extraction algorithms}{26}
+\contentsline {subsection}{\numberline {2.5.2}Overview of Disaggregation Algorithms}{27}
+\contentsline {subsection}{\numberline {2.5.3}Supervised Learning Algorithms}{28}
+\contentsline {subsubsection}{Classification-Based}{28}
+\contentsline {subsubsection}{Nearest Neighbor-Based}{31}
+\contentsline {subsubsection}{Statistical Model-Based}{34}
+\contentsline {subsubsection}{Optimization-Based}{36}
+\contentsline {subsection}{\numberline {2.5.4}Unsupervised Learning Algorithms}{40}
+\contentsline {subsubsection}{Hierarchical clustering-based}{40}
+\contentsline {subsubsection}{FHMM-based}{41}
+\contentsline {subsubsection}{Temporal mining-based}{44}
+\contentsline {subsubsection}{Probabilistic graph-based}{45}
+\contentsline {subsection}{\numberline {2.5.5}Semi-supervised Learning Algorithms}{45}
+\contentsline {subsubsection}{Clustering-based}{45}
+\contentsline {subsubsection}{HMM-based}{45}
+\contentsline {subsubsection}{Optimization-based}{46}
+\contentsline {section}{\numberline {2.6}Evaluation Metric}{46}
+\contentsline {subsection}{\numberline {2.6.1}Evaluation Based on Events}{47}
+\contentsline {subsection}{\numberline {2.6.2}Evaluation Based on Time Series}{47}
+\contentsline {subsection}{\numberline {2.6.3}Evaluation Based on Combinational Metrics}{48}
+\contentsline {subsection}{\numberline {2.6.4}Data Collection and Public Data Sets}{48}
+\contentsline {subsubsection}{Meters}{49}
+\contentsline {subsubsection}{Low frequency data and high frequency data}{49}
+\contentsline {subsubsection}{Public datasets}{50}
+\contentsline {section}{\numberline {2.7}Ongoing Research}{50}
+\contentsline {section}{\numberline {2.8}Conclusion}{51}
+\contentsline {chapter}{\numberline {3}Energy Disaggregation}{54}
+\contentsline {section}{\numberline {3.1}Abstract}{54}
+\contentsline {section}{\numberline {3.2}Introduction}{54}
+\contentsline {section}{\numberline {3.3}Background}{55}
+\contentsline {section}{\numberline {3.4}Temporal Motif Mining}{58}
+\contentsline {section}{\numberline {3.5}Evaluation}{63}
+\contentsline {section}{\numberline {3.6}Experiments on REDD dataset}{64}
+\contentsline {subsection}{\numberline {3.6.1}Disaggregation experiments}{64}
+\contentsline {subsection}{\numberline {3.6.2}Comparison of Motif Mining and AFAMAP}{66}
+\contentsline {section}{\numberline {3.7}Commercial Building Dataset}{67}
+\contentsline {section}{\numberline {3.8}Discussion}{67}
+\contentsline {chapter}{\numberline {4}Multivariate Motif Mining to Energy Disaggregation}{69}
+\contentsline {section}{\numberline {4.1}Prior Work}{69}
+\contentsline {section}{\numberline {4.2}Disaggregation Formalism}{70}
+\contentsline {section}{\numberline {4.3}Recursive Multivariate Piecewise Motif Mining}{71}
+\contentsline {subsection}{\numberline {4.3.1}Piecewise Motif Mining}{71}
+\contentsline {subsection}{\numberline {4.3.2}Encoding Events From Multiple Phases}{74}
+\contentsline {section}{\numberline {4.4}Evaluation}{75}
+\contentsline {section}{\numberline {4.5}Experiments}{76}
+\contentsline {subsection}{\numberline {4.5.1}Electricity Disaggregation}{76}
+\contentsline {subsection}{\numberline {4.5.2}Water Disaggregation and Constraints}{80}
+\contentsline {subsection}{\numberline {4.5.3}Electricity and Water Usage Correlation}{82}
+\contentsline {section}{\numberline {4.6}Conclusion}{83}
+\contentsline {chapter}{\numberline {5}Occupancy Prediction}{84}
+\contentsline {section}{\numberline {5.1}Introduction}{84}
+\contentsline {section}{\numberline {5.2}Related Work}{85}
+\contentsline {section}{\numberline {5.3}Problem Formulation}{86}
+\contentsline {section}{\numberline {5.4}Constraint Episode Mining and Mixture EGH}{87}
+\contentsline {subsection}{\numberline {5.4.1}Time-gap Constraint Episode Mining}{87}
+\contentsline {subsection}{\numberline {5.4.2}Episode Generating HMM}{89}
+\contentsline {subsection}{\numberline {5.4.3}Mixture EGH}{90}
+\contentsline {subsection}{\numberline {5.4.4}Predict When the Target Event Occurs}{91}
+\contentsline {section}{\numberline {5.5}Experiment Results}{92}
+\contentsline {subsection}{\numberline {5.5.1}Occupancy Prediction of Individuals}{92}
+\contentsline {subsection}{\numberline {5.5.2}Occupancy Prediction of Residential Buildings}{95}
+\contentsline {subsection}{\numberline {5.5.3}Limitations of Mixture EGH Model}{95}
+\contentsline {subsection}{\numberline {5.5.4}30 minutes Ahead House Occupancy Prediction with Hybrid Approach}{96}
+\contentsline {section}{\numberline {5.6}Conclusion}{96}
+\contentsline {section}{\numberline {5.7}Appendix}{97}
+\contentsline {chapter}{\numberline {6}Conclusion}{105}
+\contentsline {section}{\numberline {6.1}Future Work}{106}
