@@ -9,14 +9,9 @@ To improve upon our initial work, we proposed a semi-supervised recursive multiv
 Solving energy disaggregation is an important practical problem which results in a highly monetizable insight - consumption patterns. As a result policy makers and energy distributors can design packages for consumers based on their needs. This will enable both the consumers and the distributors to effectively and \emph{smartly} buy/sell power, which is highly customized to the needs of a home.
 
 The second aspect of this thesis tackles occupancy prediction. This problem's larger impact on the energy industry primarily involves the automated turning on/off of the HVAC, which is one of the biggest energy consuming appliances. Moreover, occupancy prediction can assist in several IoT applications such as bandwidth allocation of wireless signals based on locality and energy saving applications.
-In order to achieve the highest prediction result, 
-we propose to integrate the mixture EGH model and 
-kNN together as a hydrate approach. We formulate the problem as one of temporal mining: the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model. We mine the activity patterns according to the time and gap: both the duration of each type of 
-activity, and the gap between two consecutive events are limited in a proper range. 
-This range is extracted from the historical data according to the weekday and holidays. Our hydrate prediction solution performs best on the workday occupancy prediction: 
-in case of normal activities, we apply mixture EGH model; 
-in case of abnormal events, we utilize kNN,  
-which is generally considered a benchmark in occupancy prediction problem. 
+We demonstrate that by integrating the mixture EGH model and 
+kNN together as a hybrid approach, we get the best prediction result. In our work, we formulate the problem as one of temporal mining: the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model. We mine the activity patterns according to the time and gap: both the duration of each type of activity, and the gap between two consecutive events are limited in a proper range. 
+This range is extracted from the historical data according to the weekday and holidays. Since we utilize the effectiveness of the EGH and kNN, where in the normal activities are modeled and predicted by EGH and the abnormalities are modeled by kNN, our hybrid approach is the best possible prediction to occupancy.
 
 One of the critical problems to ensure that we can reduce high energy consumption by automatically controlling the temperature regulation systems. Moreover with the advent of more mainstream technologies like \emph{Nest} and other intelligent automatic control systems that remotely control the thermostat, occupancy prediction is a crucial parameter in determining the settings. Moreover, comfort levels based on individuals can determine what temperature different parts of the residence should be set at. Thus to optimize energy usage and maximize user comfort is a very important and immediate problem to solve.
 
