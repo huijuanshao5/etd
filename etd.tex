@@ -134,23 +134,24 @@ Huijuan Shao
 \end{center}
 With the advent of modern sensor technologies, 
 significant opportunities have opened up to help conserve energy in 
-residential and commercial buildings. 
-This dissertation focuses on two sub-problems. 
-The first is energy disaggregation, i.e., 
-separating the energy usage 
+residential and commercial buildings. Moreover the rapid \emph{urbanization} we are witnessing requires optimized energy distribution. 
+This dissertation focuses on two sub-problems viz. \emph{energy disaggregation and occupancy prediction}. 
+Energy disaggregation attempts to 
+separatE the energy usage 
 of each circuit or each electric device in a building 
 using only aggregate electricity usage information from 
 the whole house meter. 
 The second problem, non-invasive indoor activities tracking, aims to 
 predict the locations of people inside a building. 
-These problems are approached using the methods of 
-temporal data mining. 
-Motif mining with constraints is exploited to distinguish devices with multiple states 
-thus tackle the energy disaggregation problem.
-Time-gap constrained episode mining is used to detect 
+We cast both problems as \emph{temporal mining problems}. We exploit motif mining with constraints to distinguish devices with multiple states 
+thus tackle the energy disaggregation problem. Our
+results reveal that motif mining is adept at distinguishing
+devices with multiple power levels and at disentangling the
+combinatorial operation of devices.
+For the second problem we propose time-gap constrained episode mining to detect 
 activity patterns followed by the use of a mixture of episode generating HMM (EGH) model 
 to predict home occupancy.  
-Finally, the mixture EGH
+Finally, we demonstrate that the mixture EGH
 model can also help predict the location of a person to 
 address non-invasive indoor activities tracking. 
 
