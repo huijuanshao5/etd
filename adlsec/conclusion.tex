@@ -1,14 +1,14 @@
 \section{Conclusion}
-Residential occupancy prediction is a hot research topic on controlling the HVAC. 
-The accuracy of occupancy prediction influences the comfortability of persons inside 
-the home and energy saving. 
+Residential occupancy prediction is a hot research topic in controlling HVAC systems. 
+The accuracy of occupancy prediction influences the comfort of the persons inside 
+the home and energy savings. 
 In order to achieve the highest prediction result, 
 we propose to integrate the mixture EGH model and 
-kNN together as a hydrate approach.
+kNN together as a hybrid approach.
 
 Our work differs from previous research based on the main contributions listed below:
 \begin{enumerate}
-\item We formulate the problem as one of temporal mining: the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model.
+\item We formulate the problem as one of temporal mining; the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model.
 \item We mine the activity patterns according to the time and gap: both the duration of each type of 
 activity, and the gap between two consecutive events are limited in a proper range. 
 This range is extracted from the historical data according to the weekday and holidays.
@@ -33,7 +33,7 @@ which is generally considered a benchmark in occupancy prediction problem.
 
 In the future work, we will continue working on the holiday occupancy prediction. 
 The occupancy patterns for these days are completely different. 
-For example, in certain weekdays, a person may never goes out. 
-Therefore the occupancy prediction probably depend more on date other than the indoor activities. 
-Further, we will apply this temporal mining approach on the GPS datasets~\cite{koehler2013therml}
+For example, on certain weekdays, a person may never go out. 
+Therefore the occupancy prediction probably depends more on date than the indoor activities. 
+Furthermore, we will apply this temporal mining approach to the GPS datasets~\cite{koehler2013therml}
 to check the effectiveness of occupancy prediction with different kinds of data. 

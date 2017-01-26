@@ -1,0 +1,131 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: etd.aux
+A level-1 auxiliary file: sec/introduction.aux
+A level-1 auxiliary file: sec/disagg.aux
+The style file: abbrv.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 176 of file references.bib
+ :   
+ :   _pages={58--63},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 261 of file references.bib
+ : @inproceedings{laxman2008stream
+ :                                ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 729 of file references.bib
+ :     
+ :     chapter={III},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 783 of file references.bib
+ :   
+ :   booktitle={Proceedings of The 1st KDD Workshop on Data Mining Applications in Sustainability (SustKDD)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 869 of file references.bib
+ :   
+ :   _volume={8050},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 896 of file references.bib
+ :   
+ :   note={\url{http://www.kaggle.com/c/belkin-energy-disaggregation-competition/forums/t/5672/unsupervised-learning-on-test-set/30317}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1179 of file references.bib
+ :   
+ :   _address={Hong Kong, China}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1314 of file references.bib
+ :     
+ :     school = {Massachusetts Institute of Technology},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1345 of file references.bib
+ :   
+ :   _volume={148},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "meterTED" isn't style-file defined
+--line 1565 of file references.bib
+Warning--entry type for "meterPico" isn't style-file defined
+--line 1572 of file references.bib
+Warning--entry type for "meterNI" isn't style-file defined
+--line 1579 of file references.bib
+Warning--entry type for "meterTrend" isn't style-file defined
+--line 1586 of file references.bib
+Warning--entry type for "meterEMF" isn't style-file defined
+--line 1593 of file references.bib
+Warning--entry type for "meterSound" isn't style-file defined
+--line 1600 of file references.bib
+Warning--entry type for "meterLight" isn't style-file defined
+--line 1607 of file references.bib
+Warning--entry type for "meterTemp" isn't style-file defined
+--line 1614 of file references.bib
+Warning--to sort, need author or key in energydatabook2011
+Warning--empty author in energydatabook2011
+Warning--empty publisher in bishop2006pattern
+Warning--empty title in kaggle2013energy
+Warning--empty booktitle in kaggle2013energy
+Warning--empty publisher in chen2014mining
+Warning--empty booktitle in gonccalves2011unsupervised
+Warning--empty chapter and pages in eebook
+Warning--empty publisher in eebook
+Warning--empty journal in kearns1990complexity
+Warning--empty journal in kelly2014metadata
+Warning--empty booktitle in hampden2012closure
+Warning--empty booktitle in lai2012database
+Warning--empty journal in luo2002monitoring
+Warning--empty publisher in onoda2000applying2
+Warning--empty journal in onoda2000applying
+Warning--empty publisher in schmidt2006nonnegative
+Warning--empty booktitle in shao2013temporal
+Warning--empty school in shaw2000PhdThesis
+Warning--empty publisher in srinivasan2010using
+Warning--empty journal in wang2013heirarchical
+Warning--empty journal in wytock2014contextually
+You've used 141 entries,
+            2118 wiz_defined-function locations,
+            1059 strings with 28144 characters,
+and the built_in function-call counts, 40559 in all, are:
+= -- 3497
+> -- 2497
+< -- 1
++ -- 990
+- -- 838
+* -- 2421
+:= -- 7120
+add.period$ -- 416
+call.type$ -- 141
+change.case$ -- 836
+chr.to.int$ -- 0
+cite$ -- 163
+duplicate$ -- 1694
+empty$ -- 3271
+format.name$ -- 838
+if$ -- 8298
+int.to.chr$ -- 0
+int.to.str$ -- 141
+missing$ -- 132
+newline$ -- 697
+num.names$ -- 280
+pop$ -- 1213
+preamble$ -- 1
+purify$ -- 700
+quote$ -- 0
+skip$ -- 1034
+stack$ -- 0
+substring$ -- 748
+swap$ -- 206
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 560
+warning$ -- 22
+while$ -- 283
+width$ -- 144
+write$ -- 1376
+(There were 9 error messages)

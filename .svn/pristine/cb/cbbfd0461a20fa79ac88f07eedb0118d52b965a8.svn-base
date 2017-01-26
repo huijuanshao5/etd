@@ -1,0 +1,44 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Timeline.}}{2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces (a) Aggregate power. (b) Disaggregated information about devices and their power usage patterns.}}{4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Electricity generation and transmission to residential and commercial buildings.}}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a circuit in (a) residential building and (b) commercial building.}}{9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Three phase power waveform.}}{9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces AC Circuit of basic loads: resistor, inductor, and capacitor (courtesy: \cite {eebook}).}}{10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Real and reactive power for different devices (courtesy: \cite {hart1992}).}}{11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Power Triangle.}}{11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Circuit 4 (a) Current Waveform and (b) Harmonics.}}{12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Energy Disaggregation Definition Example.}}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Category of (a) AC Power Features and (b) Non-AC Power Features. }}{15}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces (a) Transient and Steady State of a Sinusoidal Current from a Refrigerator. Transient Shapes for a Refrigerator (b) Real Power and (c) Instantaneous Real Power.}}{17}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Current waveform of (a) a refrigerator and (b) an air compressor. The current and voltage of (c) a refrigerator and (c) an air compressor. The V-I trajectories of (e) a refrigerator and (f) an air compressor. }}{19}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The eigenvalue of a circuit and dining room light. }}{20}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Harmonics Feature of (a) a refrigerator and (b) an air compressor (c) real and imaginary part of odd number of harmonics of a refrigerator. }}{20}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Switching-function for VSDs disaggregation (Courtesy:\cite {wichakool2009modeling}).}}{21}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces (a) Baseline noise with newly added noise. (b) Noise Feature of a device.}}{22}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Day of Week of Feature.}}{22}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Neural Network Approach for Energy Disaggregation.}}{27}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Transient Shape Decomposition and KNN Seach}}{30}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces PDFs of three neighboring by power draw appliances.}}{32}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Graphical model with $M$ devices. (a) FHMM and (b) Difference FHMM.}}{39}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces AFAMAP Flowchart.}}{40}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Motif Mining Example (\cite {shao2012temporal}). }}{42}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Four Types of Meters in a Building.}}{47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A residential setup for data collection.}}{54}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Steady state transitions and transient features at startup.}}{55}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of energy disaggregation.}}{55}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Temporal motif mining framework for disaggregation.}}{57}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Mining episodes from a symbolic time series.}}{58}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Episode constraints.}}{59}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of motif mining. Note that there are 3 non-overlapped occurrences of Episode 3.}}{60}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces We increase the number of synthesized circuits from 2 to 11 and calculate performance measures for disaggregation of each device. (a) Precision (b) Recall (c) F-measure (d) The precision, recall and F-measure of all the devices are combined weighed by their average power levels. }}{63}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of Duration-gap Constraint Episode.}}{70}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Time-gap constraint episode mining example.}}{71}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces States Transition of Episode Generating HMM (EGH).}}{72}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Study 10 Precision recall and f-measure comparison of three approaches. (a) person1 occupied 02/20/2014 (b) person1 unoccupied 02/20/2014 (c) person2 occupied 02/17/2014 (b) person2 unoccupied 02/17/2014}}{77}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Study 11 Precision recall and f-measure comparison of three approaches. (a) person2 occupied 02/04/2014 (b) person2 unoccupied 02/04/2013 }}{78}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Study 14 Precision recall and f-measure comparison of three approaches. (a) person1 occupied 12/18/2014 (b) person1 unoccupied 12/18/2013 }}{79}
+\addvspace {10\p@ }

@@ -1,0 +1,56 @@
+% algorithm 02
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{Prediction Algorithm}
+\label{alg2}
+\begin{algorithmic} [1]
+\REQUIRE Partial day's event stream, $s=<E_1, ..., E_t, ...>$; 
+target event type Z; size of symbols $\varepsilon$ M; 
+window size  \textit{W} preceding the target event Z;
+generative model $\Lambda_Z=\{  (\Lambda_{\alpha_j}, \theta_j ) , j=1,...,J \}$;
+threshold $\gamma$
+
+\ENSURE Predict $Z_{leave}$ and $Z_{back}$ if $E_{t+1}=Z$ or $E_{t+1}\neq Z$ 
+
+\FOR{$W \leq t \leq len(s)$}
+% get the stream inside a window W
+\STATE set $X=<E_{t-W}, ..., E_t>$
+\STATE $t_Z=0$
+
+\COMMENT{the probability of X given the mixture model } \\
+\IF{$P[X|\Lambda_Z] =\sum_1^J \theta_j\Lambda_{\alpha_j} \geq \gamma$} 
+
+\IF{ $Z \in X$ }
+\STATE Set $t_Z$ to largest  t, where $E_{t_{max}}=Z$ and $ t-W \leq t_{max} \leq t$
+\ENDIF
+
+\IF{$\exists \alpha \in \{\alpha_1,..., \alpha_J\}$ in X after $t_{max}$}
+\STATE Predict $E_{t+1}=Z$
+\STATE Record time of each symbol in these frequent episodes \\
+%\COMMENT{calculate $\Delta t$ in Algorithm \ref{alg22}}
+\ELSE
+\STATE Predict $E_{t+1} !=Z$
+\ENDIF
+\ENDIF %end of the gamma
+\ENDFOR
+
+\IF{$E_{t+1} =Z$}
+
+\IF{$t_Z$ happens before a person gets up}
+\STATE $S_{leave}= \frac{\sum_1^J Z_{leave}}{J}$ where $Z_{leave}= t_{Z_{first}} \in \alpha_j$
+\STATE $S_{back}= \frac{\sum_1^J Z_{back}}{J}$ where $Z_{back}= t_{Z_{last}} \in \alpha_j$
+\ELSIF{$t_Z$ happens before a person gets up}
+\STATE $S_{leave}$ and $_{back}$ are predicted by mixture models
+\ELSE
+\STATE $S_{back}= \frac{\sum_1^K Z_{back}}{K}$ where $Z_{leave}= t_{Z_{last}} \in \alpha_j$ 
+and $Z_{leave}$ has a noise $\epsilon$
+
+\ENDIF
+
+\ENDIF
+\STATE Output $E_{t+1}$, $S_{leave}$, $S_{back}$
+
+\end{algorithmic}
+\end{algorithm}

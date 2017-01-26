@@ -1,34 +1,47 @@
 \section{Related Work}
-Most of the approaches that model and predict occupancy primarily use sensor data 
+Accurately predicting whether a home is occupied is a difficult task. 
+People in the same home have different daily schedules; 
+some go to work and others stay at home for a period of time.  
+%Figure~\ref{fig_occupiedexample} illustrates an example of home occupancy. 
+%The light is on. Is there any person at home? 
+%When will she go out and come back? 
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.35\textwidth]{adlfigs/occupied.pdf}
+%\caption{Home Occupancy Example. \label{fig_occupiedexample}}
+%\end{figure}
+A great deal of research has been done to track the activities of people 
+to infer the home occupancy. 
+Researchers have made efforts to collect data by sensors, smart phones, 
+the calendar, and weather information. 
+Most of the approaches that model and predict occupancy primarily use sensor data to detect conditions 
 such as room occupancy, use of electrical appliances, water usage, etc.
-Several supervised learning approaches like kNN, neural networks, rule-based, 
+Several supervised learning approaches, such as kNN, neural networks, rule-based models, 
 and Markov chain models have been used to model and predict building occupancy 
-\cite{scott2011preheat, alrazgan2011learning, mahmoud2010occupancy, mahmoud2013behavioural, erickson2014occupancy, beltran2014optimal}.  
+\cite{scott2011preheat,alrazgan2011learning,mahmoud2013behavioural,erickson2010occupancy,beltran2014optimal}.  
 Using the kNN supervised learning algorithm and monitoring sensor data 
-for portion of the day, 
-\cite{scott2011preheat} predicts the entire day's occupancy. 
-A neural network approach using binary time series based on 
-occupancy/unoccupancy along with exogenous input network (NARX) was 
-proposed in \cite{mahmoud2010occupancy, mahmoud2013behavioural}. 
+for a portion of the day, 
+Scott et al. predict an entire day's occupancy in~\cite{scott2011preheat}. 
+A neural network approach using a binary time series based on 
+occupancy/unoccupancy along with exogenous input network (NARX) is 
+proposed in \cite{mahmoud2013behavioural}. 
 Mahmoud et al. tackle the problem by presenting a non-linear autoregressive 
-with exogenous input (NARX) network. 
-Several Markov chain models like blended Markov chain, 
+model with an exogenous input (NARX) network. 
+Several Markov chain models, like the blended Markov chain, 
 closest distance Markov chain, 
-and moving-window Markov chains were presented in \cite{erickson2014occupancy}. 
-A mixture of multi-lag Markov chains was used to predict occupancy of 
-single person offices \cite{manna2013learning}. 
-In that work, the authors also compare their model with Input Output Hidden Markov Model, 
+and moving-window Markov chains are presented in \cite{erickson2010occupancy}. 
+A mixture of multi-lag Markov chains was used to predict the occupancy of 
+single-person offices \cite{manna2013learning}. 
+In that work, the authors also compare their model with the Input Output Hidden Markov Model, 
 First Order Markov Chain and the NARX neural network. 
 
-Our work differs from previous research based on the main contributions listed below:
-\begin{enumerate}
-\item We formulate the problem as one of temporal mining: the activities inside the building are abstracted as episodes, and each episode is connected with an episode generative HMM model.
-\item We mine the activity patterns according to the time and gap: both the duration of each type of 
-activity, and the gap between two consecutive events are limited in a proper range. 
-This range is extracted from the historical data according to the weekday and holidays.
-\item Our prediction solution performs better than the kNN approach mentioned before, 
-which is generally considered a benchmark in occupancy prediction problem. 
-\end{enumerate}
+A recent survey~\cite{kleiminger2014predicting} compares major occupancy 
+predictions algorithms against the LDCC dataset~\cite{kiukkonen2010towards}, which was collected by 
+GPS and other sensors. 
+It shows that time-based presence probability~\cite{krumm2011learning} performs slightly better than the preheat kNN approach~\cite{scott2011preheat}. 
+Since the preheat kNN approach~\cite{scott2011preheat} is more widely applicable,  
+in that it can be used against both GPS and sensor datasets, 
+we set it as a baseline method for comparison. 
 
 %%%%%comment several paragraphs
 \iffalse
@@ -52,10 +65,10 @@ The last are models related to Markov chains.
 Several Markov Chains have been compared in the paper of \cite{erickson2014occupancy}, including blended Markov Chain, closest distance Markov Chain, and the moving window Markov Chain with respect to modeling occupancy. 
 \cite{erickson2010occupancy} uses moving-window markov chain for occupancy prediction. 
 \cite{erickson2013poem} utilizes the markov chain model and blend markov chain model for prediction. 
-\cite{beltran2014optimal} uses a blend-Markov chain model for prediction. 
-\cite{manna2013learning} uses mixture of multi-lag Markov chains to predict the occupancy in single person offices. It compares with other previous approaches Input Output Hidden Markov Model, First order Markov Chain and NARX Neural Network. 
+\cite{beltran2014optimal} uses a blend-markov chain model for prediction. 
+\cite{manna2013learning} uses mixture of multi-lag markov chains to predict the occupancy in single person offices. It compares with other previous approaches Input Output Hidden Markov Model, First order Markov Chain and NARX Neural Network. 
 
-This work contributes the follows:
+This paper contributes the follows:
 1) formulate the problem as a temporal mining problem;
 2) mine the activity patterns according to time and gap;
 3) the occupancy prediction performance of this temporal mining approach works better than kNN for most cases.

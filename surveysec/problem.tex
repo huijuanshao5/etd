@@ -1,5 +1,5 @@
 %\section{Defining disaggregation}
-\section{Definition of Energy Disaggregation}
+\section{Formalisms}
 \label{sec:problem}
 
 %Different research efforts define the problem of energy disaggregation
@@ -12,23 +12,23 @@ about what information is given.
 The bare bones version of disaggregation, as originally proposed
 by Hart~\cite{hart1992}, assumes that only
 aggregated current and voltage data is available as features. Other
-researchers assume additional information is known, such as,  
+researchers assume additional information is known, such as, 
 the total number of devices\footnote{Disaggregation can only be meaningfully
   performed for devices/appliances whose power consumption is over a minimal
   threshold, typically 50 to 200 W. The number of devices here refer to those above this
   threshold.}, the number of steady power consumption states of 
-devices and their corresponding power levels, non AC power features. 
+devices and their corresponding power levels, and non AC power features. 
 There are thus numerous formulations of the energy disaggregation problem and
-these distinctions need to be considered while their performance is compared. 
+these distinctions need to be considered while performances of
+algorithms are compared. 
 Broadly, the disaggregation problem can be solved in supervised,
-unsupervised or semi-supervised settings.
-
+unsupervised, or semi-supervised settings.
 
 %\subsection{Definition of Supervised Energy Disaggregation}
 In supervised learning approaches, labeled data is available for a period of
-time, that is, the on/off state of each device is known. 
-For instance, \cite{liang2010load} assumes that all devices are known
-and formulates the objective function as one of 
+time, i.e., the on/off state of each device is known. 
+For instance, \cite{liang2010load} assume that all devices are known
+and formulate the objective function as one of 
 minimizing error between the disaggregated devices and 
 the corresponding ground truth devices. 
 In~\cite{kolter2012aistat} it is
@@ -36,10 +36,14 @@ assumed that the power levels of individual devices are known.
 The problem then is to find the on/off events
 for different devices over a period of time.
 The input to supervised learning methods is thus training data consisting of
-aggregated power and non-power features over time T, each device's power
+aggregated power and non-power features over time T, and each device's power
 consumption over T.
 Once a model is trained, given new data over
 time T', the output is the disaggregated power for each device over T'.
+In addition to 
+power related features such as current, voltage, 
+or the non-powers features such as time of day, day of week, month season,
+weather information, may be given. 
 
 \iffalse
 Unsupervised or semi-supervised energy disaggregation is a harder problem since 
@@ -58,13 +62,14 @@ and~\cite{wytock2014contextually},
   unsupervised/supervised approaches} \huijuanc{agree. The follows is the revised paragraph}
  \fi 
 Unsupervised or semi-supervised energy disaggregation is a harder problem because, 
-comparing to supervised learning approaches, the only known information is the aggregated data. 
-The number of devices/circuits or the characteristic of each device, 
-such as power levels are unknown~\cite{gonccalves2011unsupervised,wytock2014contextually}
-or assumed by the researchers to be known
-\cite{kim2011unsupervised,kolter2012aistat,parson2012nonintrusive,johnson2012bayesian,shao2013temporal}.  
-In spite of the difficulties, the disaggregation results of unsupervised approaches 
-may achieve as good as that of supervised approaches. 
+comparing to supervised learning approaches, the only known information is the aggregated 
+data. 
+The number of devices/circuits or the characteristics of each device, 
+such as power levels are either unknown~\cite{gonccalves2011unsupervised,wytock2014contextually}
+or assumed by the researchers to be fixed~\cite{kim2011unsupervised,kolter2012aistat,parson2012nonintrusive,johnson2012bayesian,shao2013temporal}.  
+In spite of these difficulties, the
+disaggregation performance of unsupervised approaches 
+may approach that of supervised approaches. 
 %
 %In particular, it is assumed that 
 %the detailed devices information is unavailable, 
@@ -72,7 +77,7 @@ may achieve as good as that of supervised approaches.
 % the power value of each level, and the 
 %exact time when it is turned on or off. 
 Note that evaluation of any method, whether supervised or unsupervised, requires that
-ground truth information is available (number of devices and their on/off power states).
+ground truth information be available (number of devices and their on/off power states).
 
 %In the evaluation phase, 
 %even if we do not know the number of devices,
@@ -101,16 +106,9 @@ ground truth information is available (number of devices and their on/off power 
 %$\min_{\hat{x_{ij}}} \sum_{i=1}^T \sum_{j=1}^N (\hat{x_{ij}} - x_{ij})^2$ 
 %for L2 norm. 
 
-In addition to 
-power related features such as current, voltage, 
-or the non-powers features such as time of day, day of week, month season,
-weather information, may be given. 
-The definition of energy disaggregation regarding power features
-is generalized as follows. 
-
-\textit{Energy Disaggregation}:
-
-Given the aggregate power consumption, $Y=y_1, ..., y_T$, and a set of
+\subsection{Definition}
+For our purposes, we will assume the following definition of the problem:
+Given an aggregate power consumption time series $Y=y_1, ..., y_T$, and a set of
 power related and contextual features, $f=f_1, ..., f_T$ over a period of time T, 
 the problem is to estimate the disaggregated power consumption of $M$ devices 
 $\hat{X_m }= \hat{x}_{1}^{(m)}, ...\hat{x}_{t}^{(m)}, ... \hat{x}_{T}^{(m)}, m\in[1, M]$, 
@@ -123,8 +121,8 @@ devices and the aggregate power consumption is minimal.
 where $\mathscr{L}_t$ is the loss function between 
 the sum of $M$ estimated time series at $t$, 
 and $y_t$ is the ground truth aggregated power feature at time $t$. 
-$\mathscr{L}$ is usually $\mathscr{L}1$-norm $\sum_{m=1}^M |\hat{x}_{t}^{(m)} - y_t|$
-or $\mathscr{L}2$-norm $\sum_{m=1}^M (\hat{x}_{t}^{(m)}-y_t)^2$.
+$\mathscr{L}$ is usually the $\mathscr{L}1$-norm $\sum_{m=1}^M |\hat{x}_{t}^{(m)} - y_t|$
+or the $\mathscr{L}2$-norm $\sum_{m=1}^M (\hat{x}_{t}^{(m)}-y_t)^2$.
 
 For supervised learning, 
 the ground truth of $M$ time series 
@@ -134,7 +132,6 @@ corresponding to $M$ circuits or devices is also given.
 %$\min_{\hat{x}_{t}^{(m)}} \{ \mathscr{L}_{t}^{(m)}(\sum_{t=1}^T \sum_{m=1}^M \hat{x}_{t}^{(m)}, y_t) \}$.
 %\manishc{pushing the sum over T into the loss function is not correct; also y
 %  still depends on t} \huijuanc{already deleted.}
-
 
 %% Given a set of time series $Y=y_1, ..., y_T$, 
 %% the aggregated power feature over a period of time T, 
@@ -217,10 +214,10 @@ corresponding to $M$ circuits or devices is also given.
 The evolution of approaches to energy disaggregation is summarized in Figure~\ref{fig_timeline}.  
 The algorithms for this problem  have developed through several stages by incorporating 
 features of increasing levels of sophistication. 
-In the first stage of development, algorithms were based
+In the early stages of disaggregation research, algorithms were based
 on the features of real and reactive power, transient startup of current or power, and 
 harmonics. In the next stage of development, algorithms were based on wavelet
-transform of current, 
+transforms of current, 
 duration time of specific steady state of real power, the waveform of current or voltage, 
 and current/voltage noise. 
 \iffalse
@@ -235,13 +232,12 @@ In the current stage of development, algorithms use electromagnetic
   reported, but there may be other reasons like having to install sensors etc that
   everbody may not adopt them.} \huijuanc{the last sentence of this paragraph is rewritten as follows.}
   \fi
-  In the current stage of development, algorithms use eigenvalues of current, devices correlation. 
-  As people have been trying different
-  features - the ones used recently say EMI are not necessarily better, nor
-  are most people using them. They are just novel, and good results were
-  reported, but there may be other reasons like having to install sensors etc that
-  everybody may not adopt them.
-  
+In recent studies, algorithms have used eigenvalues of current, and
+device correlation information. As researchers explore new features to use
+for disaggregation, we must keep in mind that good results are not necessarily
+the only yardstick but ease of instrumenting sensors to capture such features
+is also a key objective.
+
 \iffalse
 An evolution of approaches to 
 energy disaggregation 
@@ -266,43 +262,42 @@ recently used.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figs/timeline.pdf}
-\caption{Energy Disaggregation Definition Example.}
+\includegraphics[width=5in]{figs/algo-timeline.pdf}
+\caption{Timeline of features and algorithms proposed for energy disaggregation.}
 \label{fig_timeline}
 \end{figure}
 
-At the same time,
-algorithms adopted in this area experience an accelerating progress;
+Concomitantly,
+algorithms adopted in this area have experienced an accelerating progress;
 from supervised learning algorithms, including optimization algorithms 
 and statistical models; 
-until unsupervised learning and semi-supervised learning.
+to unsupervised learning and semi-supervised learning 
+(see Fig.~\ref{fig_timeline}).
 Supervised learning employs each circuit/device's data
 as training data, which is laborious to collect.
-These algorithms are marked in yellow in Figure~\ref{fig_timeline}. 
-The green boxes in Figure~\ref{fig_timeline} represent unsupervised or semi-supervised disaggregation algorithms.
 %\manishc{what are the green ones?}\huijuanc{add the green ones' explanation.}
-They include rule-based approach; pair-wise match
-and neural  network which were proposed in 1990s;
-k-nearest neighbor (KNN); support vector machine (SVM) and kernel based
-subspace classification (KSC); general likelihood ratio;
-genetic algorithm; auto-regression and moving average; 
-radial basis function network (RBFN);
-decision tree; adaBoost; Bayesian classifier;
-space coding; dynamic bayesian network; closure rules;
-Viterbi algorithm; dynamic programming, integer programming, 
+They include rule-based approaches; pair-wise matching
+and neural  networks which were proposed in 1990s;
+k-nearest neighbor algorithms (kNN); support vector machines (SVM) and kernel based
+subspace classification (KSC); general likelihood ratio-based methods;
+auto-regression and moving average methods; 
+radial basis function network methods (RBFN);
+decision trees; adaBoost; Bayesian classifiers;
+space coding; dynamic Bayesian networks; closure rules;
+Viterbi algorithms; dynamic programming, integer programming, 
 and nonnegative tensor factorization.
-Also, the algorithm which is often employed in
-information processing area, wavelet transform,
-was used in 2000~\cite{chan2000harmonics}.
+%Also, the algorithm which is often employed in
+%information processing area, wavelet transform,
+%was used in 2000~\cite{chan2000harmonics}.
 Since 2006, unsupervised and semi-supervised algorithms
 have become the preferred approach to identify devices.
 These include hierarchical clustering,
-factorial HMM, duration probability density function (PDF),
+factorial HMMs, 
 approximate factorial additive MAP (AFAMAP),
-difference FHMM which adds prior knowledge of device, 
-hierarchical Dirichlet process hidden semi-Markov model,
+difference FHMM which adds prior knowledge of the device, 
+hierarchical Dirichlet process hidden semi-Markov models,
 motif mining, and contextually supervised source separation. 
-In the next two sections, we explain the features and algorithms in detail.
+In the next two sections, we explain the features and the algorithms in detail.
 
 
 

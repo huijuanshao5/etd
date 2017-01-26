@@ -1,0 +1,5 @@
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{adlfigs/durationgapconstraint.pdf}
+\caption{Example of Duration-gap Constraint Episode.\label{fig_durationgapconstraint}}
+\end{figure}

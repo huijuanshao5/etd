@@ -1,6 +1,6 @@
 \chapter{Energy Disaggregation}
 \markright{Huijuan Shao \hfill Chapter 3. Motif Mining Approach to Energy Disaggregation \hfill}
-\section{Abstract}
+%\section{Abstract}
 Non-intrusive appliance load monitoring has emerged as an attractive
 approach to study energy consumption patterns without instrumenting every
 device in a building.
@@ -136,13 +136,24 @@ after a period of time, the power consumption stabilizes to a certain level.
 %\vspace{-2mm}
 \begin{figure}[!hbp]
 \centering
-\includegraphics[width=0.3\textwidth]{disaggfigs/washdryer.pdf}
-\includegraphics[width=0.7\textwidth]{disaggfigs/refrigerator.pdf}
+\includegraphics[width=0.25\textwidth]{disaggfigs/washdryer.pdf}
+\includegraphics[width=0.5\textwidth]{disaggfigs/refrigerator.pdf}
 %\vspace{-2mm}
 \caption{Steady state transitions and transient features at startup.}
 %\vspace{-2mm}
 \label{fig_sample}
 \end{figure}
+
+
+%\begin{figure}[!hbtp]
+%	\centering{
+%		\begin{tabular}{ccc}		
+%		\includegraphics[width=0.49\textwidth]{disaggfigs/washdryer.pdf} &
+%		\includegraphics[width=0.49\textwidth]{disaggfigs/refrigerator.pdf}\tabularnewline
+%		}
+%	\caption{Steady state transitions and transient features at startup.}
+%	\label{fig_sample}
+%\end{figure}
 
 %Electronic devices are very different from its intrinsic characteristics, including
 %power consumption magnitude, number of steady states and transient states mode.
@@ -341,7 +352,7 @@ Gray box in Figure~\ref{fig_fw} denotes that the step can be neglected
 %\vspace{-3mm}
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[width=0.97\textwidth]{disaggfigs/arch.pdf}
+\includegraphics[width=0.7\textwidth]{disaggfigs/arch.pdf}
 %\vspace{-3mm}
 \caption {Temporal motif mining framework for disaggregation.}
 %\vspace{-3mm}
@@ -392,7 +403,7 @@ record only the differences in successive power levels, and use this
 %\vspace{-3mm}
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[width=0.93\textwidth]{disaggfigs/steadyevents.pdf}
+\includegraphics[width=0.6\textwidth]{disaggfigs/steadyevents.pdf}
 \caption{Mining episodes from a symbolic time series.}
 \label{fig_tevents}
 \end{figure}
@@ -454,7 +465,7 @@ there are no always on devices.
 %\vspace{-3mm}
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[width=0.7\textwidth]{disaggfigs/cst.png}
+\includegraphics[width=0.5\textwidth]{disaggfigs/cst.png}
 \caption{Episode constraints.}
 \label{fig_cst}
 \end{figure}
@@ -514,7 +525,7 @@ the sequence of power levels as motif mining.
 
 \begin{figure}[!hbtp]
         \centering
-\includegraphics[width=0.67\textwidth]{disaggfigs/motifSample.png}
+\includegraphics[width=0.55\textwidth]{disaggfigs/motifSample.png}
         \caption{Illustration of motif mining. Note that there are 3 non-overlapped
 occurrences of Episode 3.}
         \label{fig_motifsample}
@@ -905,15 +916,39 @@ a key role in determining accurate disaggregation.
 When true power levels are supplied, the average precision, recall and F-measure of motif mining
 fare slightly better than AFAMAP.
 
+\iffalse
 \begin{figure*}[!hbtp]
 	\centering{
 		\begin{tabular}{ccc}		
-		\includegraphics[width=0.49\textwidth]{disaggfigs/14Precisions.pdf} &
-		\includegraphics[width=0.49\textwidth]{disaggfigs/14Recalls.pdf}\tabularnewline
+		\includegraphics[width=0.55\textwidth]{disaggfigs/14Precisions.pdf} &
+		\includegraphics[width=0.55\textwidth]{disaggfigs/14Recalls.pdf}\tabularnewline
 		(a) & (b)\tabularnewline
-		\includegraphics[width=0.49\textwidth]{disaggfigs/14Fmeasures.pdf} &
-		\includegraphics[width=0.49\textwidth]{disaggfigs/weightedPreRecall.pdf} \tabularnewline
+		\includegraphics[width=0.55\textwidth]{disaggfigs/14Fmeasures.pdf} &
+		\includegraphics[width=0.55\textwidth]{disaggfigs/weightedPreRecall.pdf} \tabularnewline
 		(c) & (d)\tabularnewline
+		\end{tabular}
+		}
+	\caption{
+	We increase the number of synthesized circuits from 2 to 11 and
+calculate performance measures for disaggregation of each device.
+(a) Precision (b) Recall (c) F-measure (d) The precision, recall and F-measure
+of all the devices are combined weighed by their average power levels.
+}
+	\label{fig_synresults}
+\end{figure*}
+\fi
+
+\begin{figure*}[!hbtp]
+	\centering{
+		\begin{tabular}{c}		
+		\includegraphics[width=0.54\textwidth]{disaggfigs/14Precisions.pdf} \tabularnewline
+		(a) \tabularnewline
+		\includegraphics[width=0.54\textwidth]{disaggfigs/14Recalls.pdf}\tabularnewline
+		(b)\tabularnewline
+		\includegraphics[width=0.54\textwidth]{disaggfigs/14Fmeasures.pdf} \tabularnewline
+		(c)\tabularnewline
+		\includegraphics[width=0.54\textwidth]{disaggfigs/weightedPreRecall.pdf} \tabularnewline
+		(d)\tabularnewline
 		\end{tabular}
 		}
 	\caption{
@@ -952,19 +987,23 @@ we use the power levels from generated episodes as an input to AFAMAP.
 Table~\ref{tab_bcmp} lists the results of the comparison.
 
 \begin{table*}[!t]
-%\vspace{0.2cm}
+\vspace{0.2cm}
 \hfill
 \begin{minipage}[t]{1.0\linewidth}%
  \centering
 \caption {Comparing Motif mining against AFAMAP on the REDD dataset.} \label{tab_bcmp}
-%\vspace{0.2cm}
+\centering
+%\small
+\footnotesize
+\setlength\tabcolsep{2pt}
+\vspace{0.2cm}
 %\begin{center}
 \makebox[\textwidth]{\small
 \begin{tabular} {|l|p{7mm}|l|l|l|l|l|l|l|l|l|}
 \hline
-\multirow{2}{*}{device} & True Power (W)& \multicolumn{3}{c|}{Motif mining} & \multicolumn{3}{c|}{AFAMAP (true power levels supplied)}  & \multicolumn{3}{c|}{Motif mining \& AFAMAP}  \\  \cline{3-11}
+\multirow{2}{*}{device} & \multirow{2}{*}{True}& \multicolumn{3}{c|}{Motif mining} & \multicolumn{3}{c|}{AFAMAP (True PL)}  & \multicolumn{3}{c|}{Motif mining \& AFAMAP}  \\  \cline{3-11}
 %\hline
-               & &Precision & Recall & F-Measure &  Precision &  Recall & F-Measure & Precision & Recall & F-measure\\
+      & Power (W) &Precision & Recall & F-Measure &  Precision &  Recall & F-Measure & Precision & Recall & F-measure\\
 \hline
 oven1\&2 &4000& 0.9297 & 0.5209  & 0.6677 &  0.4902 & 0.6750 & 0.5680 &  0.4008 & 0.6708 & 0.5018\\
 \hline

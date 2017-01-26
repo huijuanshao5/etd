@@ -1,14 +1,30 @@
-%\section{Introduction}
-
-In this chapter we re-define energy disaggregation to identify electrical devices from 
-several phases aggregated data instead of the sum of all phases' data. 
-To make full use of each phase's data and the power drawing correlation of devices 
-enable us to uncover more devices.
-
+\section{Introduction}
+With the advent of modern sensor technologies, 
+significant opportunities have emerged to help conserve energy in 
+residential and commercial buildings. Moreover, the rapid \emph{urbanization} we are witnessing requires optimized energy distribution. 
+Energy disaggregation attempts to 
+separate the energy usage 
+of each circuit or each electric device in a building 
+using only aggregate electricity usage information from 
+the whole house meter. 
+Usually two-phase or three-phase electric power is 
+connected to residential and commercial buildings. 
+Similarly, water disaggregation aims to discover each 
+water use end by only knowing the 
+hot and cold water usage from the whole house water meter.
+We generalize these two problems, energy disaggregation and 
+water disaggregation, as a multiple-phase data disaggregation problem. 
+The aim of this chapter is to identify electrical devices or water use ends from 
+two phases of aggregated data. 
+Unlike previous work which disaggregate devices
+from the sum of multiple phases, 
+the time series information from each phase and the correlation of a device between/among phases 
+are fully used.  
+All of this information enables us to characterize more devices. 
 %Our multivariate temporal mining approach extends previous work by combining both electricity and water disaggregation. 
-This work has the following contributions in the field of disaggregation.
+This work makes the following contributions in the field of disaggregation:
 \begin{enumerate}
-\item It can disaggregate multiple phases' aggregated data.
+\item It can disaggregate aggregate data from multiple phases.
 \item It can separate the continuously variable loads which are mixed in electricity. 
 \item This approach can be used for both electricity disaggregation and water disaggregation.
 %\item It can be used for supervised learning disaggregation and semi-supervised learning approach, even for un-supervised learning approach. 

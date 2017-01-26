@@ -63,6 +63,7 @@
 \usepackage{algorithmicx}
 \usepackage{algorithm} % http://ctan.org/pkg/algorithms
 \usepackage{array}
+\usepackage[nottoc]{tocbibind}
 %\setlength{\extrarowheigtht}{2pt}
 %\usepackage[noend]{algpseudocode} 
 \newcommand{\argmin}{\arg\!\min}
@@ -74,7 +75,7 @@
 \begin{document}
 
 \thispagestyle{empty}
-\pagenumbering{roman}
+%\pagenumbering{roman}
 \begin{center}
 
 % TITLE
@@ -96,31 +97,30 @@ in partial fulfillment of the requirements for the degree of
 
 Doctor of Philosophy \\
 in \\
-Computer Science
+Computer Science and Applications
 
 \vfill
 
-Naren Ramakrishnan, Chair \\
-B. Aditya Prakash \\
-Chang-Tien Lu \\
+Narendran Ramakrishnan, Chair \\
+Manish Marwah \\
 Anil Vullkanti \\
-Manish Marwah
+Chang-Tien Lu \\
+Bodicherla Aditya Prakash \\
 
 \vfill
 
-Sep. 7, 2016 \\
+September 20, 2016 \\
 Arlington, Virginia
 
 \vfill
 
-Keywords: Computer Science
+Keywords: Data mining, Sustainability, Energy disaggregation, Occupancy prediction. 
 \\
 Copyright 2016, Huijuan Shao
 
 \end{center}
 
 \pagebreak
-
 \thispagestyle{empty}
 \begin{center}
 
@@ -134,22 +134,21 @@ Huijuan Shao
 \end{center}
 With the advent of modern sensor technologies, 
 significant opportunities have opened up to help conserve energy in 
-residential and commercial buildings. Moreover the rapid \emph{urbanization} we are witnessing requires optimized energy distribution. 
-This dissertation focuses on two sub-problems viz. \emph{energy disaggregation and occupancy prediction}. 
+residential and commercial buildings. Moreover, the rapid \emph{urbanization} we are witnessing requires optimized energy distribution. 
+This dissertation focuses on two sub-problems in improving energy conservation; \emph{energy disaggregation and occupancy prediction}. 
 Energy disaggregation attempts to 
-separatE the energy usage 
+separate the energy usage 
 of each circuit or each electric device in a building 
 using only aggregate electricity usage information from 
-the whole house meter. 
-The second problem, non-invasive indoor activities tracking, aims to 
+the meter for the whole house. 
+The second problem of occupancy prediction can be accomplished using non-invasive indoor activity tracking to 
 predict the locations of people inside a building. 
-We cast both problems as \emph{temporal mining problems}. We exploit motif mining with constraints to distinguish devices with multiple states 
-thus tackle the energy disaggregation problem. Our
+We cast both problems as \emph{temporal mining problems}. We exploit motif mining with constraints to distinguish devices with multiple states, which helps tackle the energy disaggregation problem. Our
 results reveal that motif mining is adept at distinguishing
 devices with multiple power levels and at disentangling the
 combinatorial operation of devices.
 For the second problem we propose time-gap constrained episode mining to detect 
-activity patterns followed by the use of a mixture of episode generating HMM (EGH) model 
+activity patterns followed by the use of a mixture of episode generating HMM (EGH) models 
 to predict home occupancy.  
 Finally, we demonstrate that the mixture EGH
 model can also help predict the location of a person to 
@@ -159,15 +158,77 @@ address non-invasive indoor activities tracking.
 
 % GRANT INFORMATION
 
-That this work received support from the HP labs is purely
-coincidental.
+This work is supported in part by Virginia Tech and HP Labs. 
 
 \pagebreak
 
-% Dedication and Acknowledgments are both optional
-% \chapter*{Dedication}
-% \chapter*{Acknowledgments}
+\thispagestyle{empty}
+\begin{center}
 
+{\large Temporal Mining Approaches for Smart Buildings Research }
+
+\vfill
+Huijuan Shao
+\vfill
+(GENERAL AUDIENCE ABSTRACT)
+\vfill
+\end{center}
+This dissertation uses data analytics techniques to address energy problems in commercial and residential buildings. 
+
+One topic is energy disaggregation, which is to discover electricity usage of each device by only analyzing data from existing installed power meters. This research provides the following results: what devices use majority of power; how much electricity is used for each device; when each device is turned on or off.  With this technique, no extra monitor is needed thus the installing cost is low, which makes it applicable to millions of office buildings and homes. This work can benefit electricity companies and all electricity customers. 
+
+Another research topic occupancy prediction is to forecast when a house will be occupied. Since heating, venting, and air conditioner (HVAC) consumes the largest power usage at home, automatic operations of HVAC according to house occupancy are crucial for saving electricity without sacrificing the comfort of people inside the building. By analysis, I can predict whether a home will be occupied in the next thirty minutes. Then the HVAC can be turned off before its vacancy and turned on ahead of its occupancy. By integrating this technique with an automatic HVAC device, any home installed with it can lead a more energy-saving, convenient and comfortable life. 
+
+In conclusion, this research contributes to saving energy and protecting environment. 
+\vfill
+
+\pagebreak
+\pagenumbering{roman}
+% Dedication and Acknowledgments are both optional
+\chapter*{Dedication}
+To my parents Yuncheng Shao and Congxiu Zou, my beloved husband Yaowei Li, and my kids Elaine, Franklin and George.
+
+\chapter*{Acknowledgments}
+First, I would like to give thanks to my advisor Dr. Naren Ramakrishnan. 
+Under his wise direction and continuous encouragement, 
+I have been able to persevere with this research and complete my dissertation. 
+Dr. Ramakrishnan often gave me excellent advice on my research, 
+which inspired me to gather courage to push my research forward. 
+He has also provided insightful and thoughtful ideas on many things and 
+has given me sound advice on several key problems 
+that arose during my PhD program. 
+It has been my honor to study under him at the Discovery Analytics Center. 
+
+Second, I want to thank Dr. Manish Marwah from HP labs. 
+He is an expert in sustainability and 
+has tons of experience in the research of smart buildings.
+He directed me on how to conduct research step by step until 
+I achieved the correct results. During my work for this project, 
+some of the most exciting and happiest times were while I was working with Dr. Marwah. 
+
+In addition, I appreciate much on the opportunity to cooperate with 
+Dr. B. Aditya Prakash from the Discovery Analytics Center and Dr. Madhav Marathe, 
+Dr. Anil Vullkanti,  and Dr. Maleq Khan from VBI, Virginia Tech. 
+Their advice on my research has been quite useful and 
+impressive. Furthermore, I would thank my committee member Dr. Chang-tien Lu for 
+giving me advice on energy disaggregation, 
+especially the great help with two important exams for my PhD degree. 
+I would not have been as successful without his help.  
+Furthermore, I am thankful for Dr. Xinwei Deng and Dr. Hui Yi for giving me 
+suggestions on my research from the perspective of statistics. 
+
+I am very grateful to have been able to study with my lab-mates. 
+Their passionate discussion about research, their physical help and their spiritual encouragement during hard times 
+has enabled me to appreciate the preciousness of friendship and the merits of human nature. 
+
+Most important of all, I have much appreciation for my husband, my parents, 
+my dear sister Huirong Shao, 
+my parents-in-law, and my friend Xiaoyan Yu's comprehensive support. 
+It is only with their enthusiastic help and warm company that
+everything in my life was able to go smoothly 
+so I could focus on my research and complete this dissertation.
+
+\pagebreak
 \tableofcontents
 \pagebreak
 
@@ -177,12 +238,11 @@ coincidental.
 \listoftables
 \pagebreak
 
-\pagenumbering{arabic}
+%\pagenumbering{arabic}
 \pagestyle{myheadings}
 
-
+\pagenumbering{arabic}
 \include{sec/introduction}
-
 \chapter{Survey of Energy Disaggregation}
 \markright{Huijuan Shao \hfill Chapter 2. Survey of Energy Disaggregation\hfill}
 \input{surveysec/introduction.tex}
@@ -200,8 +260,8 @@ coincidental.
 \include{sec/disagg}
 %%%for survey paper
 
-\chapter{Multivariate Motif Mining to Energy Disaggregation}
-\markright{Huijuan Shao \hfill Chapter 4. Multivariate Motif Mining to Energy Disaggregation \hfill}
+\chapter{Recursive Multivariate Piecewise Motif Mining to Disaggregation}
+\markright{Huijuan Shao \hfill Chapter 4. Recursive Multivariate Piecewise Motif Mining to Disaggregation \hfill}
 \input{multidisaggsec/introduction.tex}
 \input{multidisaggsec/prior.tex}
 %\input{sec/background.tex}
@@ -210,7 +270,7 @@ coincidental.
 \input{multidisaggsec/evaluation.tex}
 \input{multidisaggsec/electricityExp.tex}
 \input{multidisaggsec/waterExp.tex}
-\input{multidisaggsec/electricityWaterExp.tex}
+%\input{multidisaggsec/electricityWaterExp.tex}
 \input{multidisaggsec/conclusion.tex} 
 
 \chapter{Occupancy Prediction}
@@ -235,6 +295,8 @@ coincidental.
 %\bigskip
 %
 % Otherwise, uncomment the following:
+%\chapter{Bibliography}
+%\chapter*{Bibliography}
 %\chapter*{Bibliography}
 \bibliographystyle{abbrv}
 \bibliography{references}

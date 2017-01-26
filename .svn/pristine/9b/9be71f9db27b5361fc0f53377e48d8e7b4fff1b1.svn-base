@@ -1,0 +1,11 @@
+\begin{figure*}[h]
+	\centering{
+    \begin{tabular}{cc}	
+	\includegraphics[width=0.43\textwidth]{figs/residentialBG.pdf} \hspace{1em}&
+	\includegraphics[width=0.5\textwidth]{figs/commercialBG.pdf}\tabularnewline
+    (a) & (b) \tabularnewline
+    \end{tabular}
+    }
+	\caption{Example of a circuit in (a) residential building and (b) commercial building.}
+    \label{fig_residentialCommercialBG}
+\end{figure*}

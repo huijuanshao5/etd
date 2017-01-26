@@ -1,6 +1,6 @@
 \section{Recursive Multivariate Piecewise Motif Mining}
-To solve the problem of separating multi-dimensional time series into several time series, 
-we propose the approach of recursive multivariate piecewise motif mining. 
+To solve the problem of separating a multi-dimensional time series into several time series, 
+I propose the approach of recursive multivariate piecewise motif mining. 
 Motif mining has been well studied in previous work \cite{motif1} and \cite{motif2}. 
 Multivariate or multidimensional motif mining is further extended in \cite{minnen2007improving} and \cite{tanaka2005discovery} and \cite{motifgoal}. 
 
@@ -9,82 +9,81 @@ in which discrete on/off events are exploited.
 This research enhances previous work by piecewise motif mining, 
 where the on/off event is comprised of several consecutive data points, 
 i.e. piecewise, other than individual discrete one.
-Also, we use multivariate motif mining to make full use of two or three phases aggregated data. 
+Also, I use multivariate motif mining to make full use of two- or three-phase aggregated data. 
 
-The framework of recursive multivariate piecewise motif mining to disaggregation is illustrated in Figure \ref{fig_multivariateMotifming}. 
-The input includes the multiple phases aggregated data such as two-phases Mains1 and Mains2, 
-and power levels of each device. 
-Then we recursively apply piecewise motif mining to two-phases and single phase diffs data.
-The first step is to identify electric devices which draw power from both phases.
-Generally these devices consume large amount power, such as water heater in blue line.
-For devices which draw equal power or disparate power from both phases synchronously. 
+The framework of recursive multivariate piecewise motif mining to energy disaggregation is illustrated in Figure \ref{fig_multivariateMotifming}. 
+The input includes multiple-phase aggregated data, such as two-phase data Mains1 and Mains2, 
+and the power levels of each device. 
+During the whole procedure, I recursively apply piecewise motif mining to two-phases and single phase diffs data.
+The first step is to identify electrical devices which draw power from both phases.
+Generally these devices consume a large amount of power, such as the water heater indicated by the blue line.
+These devices draw equal power or disparate power from both phases synchronously. 
 %draws equal power from both phases. 
 %By comparing the diffs of these two phases, 
 %we discover the same power changes during the on/off events. 
 %With multivariate motif mining, 
 %we can identify these large power consumption devices. 
-Secondly, we remove the power consumption of the devices which draw power from both phases.
-This procedure decreases the noise interference caused by large power consumption 
+Secondly, I remove the power consumption of the devices which draw power from both phases.
+This action decreases the noise interference caused by large power consumption 
 and increases the possibility to disaggregate more devices with low-power consumption. 
-Then we apply piecewise motif mining to single phase data to separate 
-devices which draw power only from it, 
-such as humidifier in green. 
+Then we apply piecewise motif mining to single-phase data to separate 
+the devices that draw power only from that phase, 
+such as the humidifier indicated by the green line. 
 \input{multidisaggfig/multivariateMotifmining}
-Generally multivariate piecewise motif mining is divided into four steps as shown in Figure \ref{fig_multivariatePiecewiseMotifMining}.
+Generally, multivariate piecewise motif mining is divided into four steps, as shown in Figure \ref{fig_multivariatePiecewiseMotifMining}.
 Step 1 is to search for piecewise events from the two-phase or three-phase data.
-Next step 2 is to encode events from multiple phases. 
+Step 2 is to encode events from multiple phases. 
 Step 3 aims to mine frequent motifs from the encoded events list.
 The last step targets to recover devices from mined motifs. 
 \begin{figure}[h]
 \centering
-\includegraphics[width=6.6in]{multidisaggfig/multivariatePiecewiseMotifMining.pdf}
+\includegraphics[width=0.7\textwidth]{multidisaggfig/multivariatePiecewiseMotifMining.pdf}
 \caption{Multivariate Piecewise Motif Mining.}
 \label{fig_multivariatePiecewiseMotifMining}
 \end{figure}
 
 \subsection{Piecewise Motif Mining}
-Motif mining aims to uncover the repetitive patterns in time series data. 
-It works best for discrete events. Piecewise motif mining is proposed 
+Motif mining aims to uncover the repetitive patterns in time series data, and works best for discrete events. Piecewise motif mining is proposed 
 for energy disaggregation to detect on/off events. 
 
 \begin{definition}{\textbf{Piecewise Event}}
 Given a time series diffs data $y_1, ...., y_{n'}$, where $\forall$ $|y_i| < \eta$. 
-A piecewise event is the sum of these $n'$ diffs data, $e= \sum_{i=1}^{n'} y_i$. 
+A piecewise event is the sum of these $n'$ number of diffs data, $e= \sum_{i=1}^{n'} y_i$. 
 \end{definition}
 Each piecewise event corresponds to an on/off event of an electric device. 
 The value of $\eta$ is the noise range of each device, 
 which is usually less than the 10\% of $|e|$.  
 
 \textbf{Piecewise Events Search from Multiple Phases} \\
-Majority of electrical devices which draw power from multiple phases consume larger amount of power, compared to 
-electronic devices which connect to single phase. 
-To disaggregate such a device, we need to separate on/off events which are yielded by this single device from two-phase or three-phase aggregated data. 
-Generally such an electric device draws power from multiple phases synchronously 
+The majority of electrical devices which draw power from multiple phases consume larger amounts of power than electrical devices which connect to single phase. 
+To disaggregate such a device, we need to 
+discover specific on/off events features to separate them. 
+%on/off events which are yielded by this single device from two-phase or three-phase aggregated data. 
+Generally such an electrical device draws power from multiple phases synchronously 
 and constructs a  pattern. 
-Some devices may expend equal power from both phases all the time and the power consumption patterns of both phases are the same.
-Others may show different power consumption patterns when drawing power from these two phases. 
+Some devices may consume equal power from both phases all the time,  and so their power consumption patterns from both phases keep the same.
+Other devices may show different power usage patterns when drawing power from two phases. 
 %The power consumption from both phases may be exactly synchronized and keep the same all the time. 
 %Either, the power consumption drawn from a single device differs much. 
 \input{multidisaggalg/synchronizeEvents}
 Algorithm~\ref{alg_synchronizeEvents} describes how synchronized events from two phases are revealed.  
 This input include the two-phase aggregated diffs data and big power consumption threshold $\theta$. 
-This threshold guarantees to discover big power consumption devices firstly. 
-We check over the phase-1 diffs data. 
+This threshold guarantees we only discover big power consumption devices. 
+We review the phase-1 diffs data. 
 If any absolute value $|y_i^{(1)}|$ is greater than $\theta$, 
-both previous and posterior 5 diffs data points from time $i$ are checked. 
+both previous and posterior five diffs data points from time $i$ are checked. 
 For these 10 points values, 
 at each time $j$, if the difference between phase-1 $y_i^{(1)}$ and phase-2 $y_i^{(2)}$ is in the range of $0.2*|y_i^{(1)}|$,  
 we assert that the diffs data points from these two phases are relatively the same and synchronized. 
 The synchronization implies that 
-these two same power consumption comes from a single device. 
+these two identical amounts power consumption comes from a single device. 
 Therefore we sum the synchronized power level diffs data and compute the power consumption at time $i$ as $e_i$.  
-$e_i>0$ denotes an on event and $e_i<0$ means an off event of certain device.
+When $e_i>0$ that denotes an on event, and $e_i<0$ means an off event for a certain device.
 
-Now we transfer these two-phase diffs data into 
-an ordered on/off events list $e_1, ..., e_{n'}$.
-
-Next we apply motif mining to this events list. 
-By matching the devices which consume power bigger than $2*\theta$, 
+Next we transfer these two-phase diffs data into 
+an ordered on/off event list $e_1, ..., e_{n'}$,
+then we apply motif mining to this events list. 
+By matching the devices which consume power greater than $2*\theta$, 
 we can separate all devices which draw equal amount of power from two phases.  
 %Since we already know the power levels of each device, 
 %we just choose those devices which include power levels bigger than $2*\theta$. 
@@ -95,34 +94,34 @@ we can separate all devices which draw equal amount of power from two phases.
 %All of the on/off events of these two devices are found out. 
 
 \subsection{Encoding Events From Multiple Phases}
-After deleting all the synchronized events from the phase-1 and phase-2, 
-we apply multivariate piecewise motif mining to the remaining phase-1 and phase-2 diffs data. 
-These devices consume large power 
-yet they draw power from two phases synchronously but unequally. 
-They show different power drawing patterns from these two phases.  
-We encode these two-phase diffs data which occur at the same as a new event $e$. 
-Figure \ref{fig_eventEncoding} gives an example on how the events from two-phase 
+After deleting all the synchronized events from phase-1 and phase-2, 
+we apply multivariate piecewise motif mining to the remaining phase-1 and phase-2 diffs data, 
+to detect devices which consume large amounts of power 
+and draw power from two phases synchronously yet unequally. 
+There are different power drawing patterns from these two phases.  
+We encode these two-phase diffs data, which occur at the same time, as a new event $e$. 
+Figure \ref{fig_eventEncoding} gives an example of how the events from two-phase circuits
 are encoded. 
 We extract an event which consumes power greater than $\theta$, 
-then we check 5 more data points before and after it. 
-The total 11 data points relevant to this event in Main1.diff are [0, 0, -18, 18, 1093, 1830, -196, -68, -37, -36, 0]. 
+then we check five more data points before and after it. 
+The values of the 11 data points relevant to this event in Main1.diff are [0, 0, -18, 18, 1093, 1830, -196, -68, -37, -36, 0]. 
 The concurrent events listed in Main2.diff are [0, 0, 0, 18, 9, 1946, 440, -51,-36,-36,0]. 
-Since the events at the peak occur in two-phase as $(1830, 1946)$, 
-and the difference of these two powers are in the $0.2*1830$ range, 
+Since the events at the peak occur in the two phases as $(1830, 1946)$, 
+and the difference of these two powers $1946-1830=116$ is in the $0.2*1830$ range, 
 we consider that these two changes may come from a single device. 
-When looking insight into these two vectors, 
+When looking for insight into these two vectors, 
 we observe that the sum of the changes of phase 1 is 2604W, and the sum of the changes of phase 2 is 2290W. 
 They are in the same range, i.e. $2604*0.8 < 2290$. 
-Therefore, we declare that the power changes from these two phases should definitely come from a single device. 
-We select two of them and encode them as $e_{1'}=(1093, 9)$, $e_{2'}= (1830, 1946)$
+Therefore, we declare that the power changes from these two phases definitely come from a single device. 
+We select two of these values and encode them as $e_{1'}=(1093, 9)$, $e_{2'}= (1830, 1946)$
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth]{multidisaggfig/synchronizeDifferentEventEncoding.pdf}
+\includegraphics[width=0.5\textwidth]{multidisaggfig/synchronizeDifferentEventEncoding.pdf}
 \caption{Encoding Events from Multiple Phases.}
 \label{fig_eventEncoding}
 \end{figure}
 
-The piecewise events for this single device is $e= [e_{1'}, e_{2'}]$. 
+The piecewise events for this single device are $e= [e_{1'}, e_{2'}]$. 
 Applying frequent motif mining, 
 we separate this large power consumption device which draw power from two phases unequally. 
 

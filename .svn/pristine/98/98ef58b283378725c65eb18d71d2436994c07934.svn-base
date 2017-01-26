@@ -1,0 +1,14 @@
+\section{Abstract}
+Conserving energy and optimizing its use has been a long 
+standing challenge. 
+Apart from the monetary benefits associated with tackling these problems, 
+saving energy has significant positive environmental impact. 
+For instance, can the HVAC of residential buildings be adjusted 
+automatically based on occupancy?
+In our work, we mine the people's energy activity profile to 
+predict the occupancy of residential buildings. 
+We show that our method, which uses episode mining for target event 
+detection and a mixture of episode generating HMM (EGH), 
+generally performs better than the standard kNN approaches used 
+for this problem. 
+

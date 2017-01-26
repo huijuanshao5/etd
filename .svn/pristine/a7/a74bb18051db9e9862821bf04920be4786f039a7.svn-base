@@ -1,0 +1,32 @@
+\section{Ongoing Research}
+\label{sec:ongoing}
+Current data mining research in energy disaggregation focusses on two areas: 
+feature discovery and developing learning algorithms for disaggregation.
+Feature discovery is mainly explored by electrical engineering specialists 
+who have a better understanding of device or electricity features.
+There is a lot of scope for data scientists to extend the research in developing
+learning techniques as this part of research is still in its nascent stages. 
+For learning algorithms, unsupervised ones have a distinct advantage since
+labelled data is not required. 
+%Maybe the number of devices or device types can be assumed, 
+%but generally unsupervised disaggregation will become 
+%the most widely used in the near future as it relaxes the assumptions made by supervised
+%learning techniques.
+The introduction of more new statistical models 
+will improve the disaggregation accuracy.
+
+As more electric companies join this field, 
+software tools have been developed to analyze data on power consumption. 
+Smart!\cite{barker2012smart} provides an interface tool 
+so that users can monitor their power consumption. 
+A database has been built for REDD~\cite{lai2012database}.
+These tools benefit both the developers and customers. 
+
+Non-intrusive load monitoring paves the way for many other research problems. 
+One of them is occupancy research, which infers whether there are people living in the home~\cite{chen2013non}.
+The second one is demand response. Inferring activities of daily life~\cite{song2014short}, 
+personal energy usage~\cite{lee2014personalized}, efficient energy management~\cite{collins2012smart} are all topics of research.
+
+
+
+

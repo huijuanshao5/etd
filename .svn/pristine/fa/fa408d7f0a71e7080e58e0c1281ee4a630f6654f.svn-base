@@ -1,0 +1,6 @@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3 in]{figs/commercialBG.pdf}
+\caption{Commercial Circuits Connection Example.}
+\label{fig_commercialBG}
+\end{figure}

@@ -1,0 +1,18 @@
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=3in]{figs/fhmm_kim2010unsupervised.pdf}
+%\caption{Graph Model of FHMM with $N$ Devices.}
+%\label{fig_fhmm_kim2010unsupervised}
+%5\end{figure}
+
+\begin{figure*}[ht]
+	\centering{
+    \begin{tabular}{cc}	
+    \includegraphics[width=0.5\textwidth]{figs/fhmm.pdf}\hspace{1em}&
+	\includegraphics[width=0.5\textwidth]{figs/difference_fhmm.pdf}\tabularnewline
+   (a) & (b) \tabularnewline
+    \end{tabular}
+    }
+	\caption{ Graphical model with $M$ devices. (a) FHMM and (b) Difference FHMM.}
+	\label{fig_fhmm}
+\end{figure*}

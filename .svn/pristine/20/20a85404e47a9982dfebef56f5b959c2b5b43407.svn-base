@@ -1,0 +1,1621 @@
+@article{eamonn-kais,
+  title={{Exact indexing of dynamic time warping}},
+  author={Keogh, E. and Ratanamahatana, C.A.},
+  journal={Knowledge and Information Systems},
+  _volume={7},
+  _number={3},
+  _pages={358--386},
+  year={2005},
+  _xpublisher={Springer}
+}
+
+@inproceedings{eamon-icdm,
+  title={{Hot sax: efficiently finding the most unusual time series
+      Subsequence}},
+  author={Keogh, E. and Lin, J. and Fu, A.},
+  booktitle={Proceedings of the 5th IEEE international Conference on Data Mining},
+   year={2005},
+  _pages={8--pp},
+  _xorganization={Ieee}
+}
+
+@inproceedings{motif1,
+  title={{Probabilistic discovery of time series motifs}},
+  author={Chiu, B. and Keogh, E. and Lonardi, S.},
+  booktitle={Proceedings of the 9th ACM SIGKDD International Conference on
+      Knowledge discovery and Data Mining},
+   year={2003},
+  _pages={493--498},
+  _xorganization={ACM}
+}
+
+@inproceedings{motif2,
+  title={{Detecting time series motifs under uniform scaling}},
+  author={Yankov, D. and Keogh, E. and Medina, J. and Chiu, B. and Zordan, V.},
+  booktitle={Proceedings of the 13th ACM SIGKDD international Conference on Knowledge Discovery and Data Mining},
+  year={2007},
+  _pages={844--853},
+  _xorganization={ACM}
+}
+
+@inproceedings{motifgoal,
+  title={{Sustainable operation and ,anagement of data center chillers using temporal data mining}},
+  author={Patnaik, D. and Marwah, M. and Sharma, R. and Ramakrishnan, N},
+  booktitle={Proceedings of the 15th ACM SIGKDD international Conference on
+      Knowledge Discovery and Data Mining},
+  year={2009},
+  _pages={1305--1314},
+  _xorganization={ACM}
+}
+
+@inproceedings{laxman2008stream,
+  title={{Stream prediction using a generative model based on frequent episodes
+      in event sequences}},
+  author={Laxman, S. and Tankasali, V. and White, R.W.},
+  booktitle={Proceeding of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+   year={2008},
+  _pages={453--461},
+  _xorganization={ACM}
+}
+
+@inproceedings{srikant-agrawal,
+  title={Mining sequential patterns},
+  author={Agrawal, R. and Srikant, R.},
+  booktitle={Proceedings of the Eleventh International Conference on Data Engineering},
+  _pages={3--14},
+  year={1995},
+  _organization={IEEE}
+}
+
+@inproceedings{vatsan-paper,
+  title={{Stream prediction using a generative model based on frequent episodes
+      in event sequences}},
+  author={Laxman, S. and Tankasali, V. and White, R.W.},
+  booktitle={Proceedings of the 14th ACM SIGKDD International Conference on Knowledge
+      Discovery and Data Mining},
+  _pages={453--461},
+  year={2008},
+  _xorganization={ACM}
+}
+
+@article{rasmussen2000infinite,
+  title={{The Infinite Gaussian mixture model}},
+  author={Rasmussen, C.E.},
+  journal={Advances in Neural Information Processing Systems}},
+  _volume={12},
+  _number={5.2},
+  _pages={2},
+  year={2000}
+}
+
+@article{gorur2010dirichlet,
+  title={{Dirichlet process Gaussian mixture models: choice of the base
+      distribution}},
+  author={G{\"o}r{\"u}r, D. and Rasmussen, C.E.},
+  journal={Journal of Computer Science and Technology},
+  _volume={25},
+  _number={4},
+  _pages={653--664},
+  year={2010},
+  _xpublisher={Springer}
+}
+
+%%% the following are for ADL
+@article{erickson2014occupancy,
+  title={Occupancy modeling and prediction for building energy management},
+  author={Erickson, V.L. and Carreira-Perpi{\~n}{\'a}n, M. and Cerpa, A.E.},
+  journal={ACM Transactions on Sensor Networks (TOSN)},
+  year={2014},
+  _volume={10},
+  _number={3},
+  _pages={42},
+  _publisher={ACM}
+}
+
+@inproceedings{kleiminger2014smart,
+  title={Smart heating control with occupancy prediction: how much can one save?},
+  author={Kleiminger, W. and Santini, S. and Mattern, F.},
+  booktitle={Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct Publication},
+  year={2014},
+  _pages={947--954},
+  _organization={ACM}
+}
+
+@inproceedings{koehler2013therml,
+  title={TherML: occupancy prediction for thermostat control},
+  author={Koehler, C. and Ziebart, B.D. and Mankoff, J. and Dey, A.K.},
+  booktitle={Proceedings of the 2013 ACM international Joint Conference on Pervasive and Ubiquitous Computing},
+  year={2013},
+  _pages={103--112},
+  _organization={ACM}
+}
+
+@inproceedings{scott2011preheat,
+  title={PreHeat: controlling home heating using occupancy prediction},
+  author={Scott, J. and Brush, A.J.B. and Krumm, J. and Meyers, B. and Hazas, M. and Hodges, S. and Villar, N.},
+  booktitle={Proceedings of the 13th International Conference on Ubiquitous Computing},
+  year={2011},
+  _pages={281--290},
+  _organization={ACM}
+}
+
+@inproceedings{beltran2014optimal,
+  title={Optimal HVAC building control with occupancy prediction},
+  author={Beltran, A. and Cerpa, A.E.},
+  booktitle={Proceedings of the 1st ACM Conference on Embedded Systems for Energy-Efficient Buildings},
+  year={2014},
+  _pages={168--171},
+  _organization={ACM}
+}
+
+@article{huang2014wireless,
+  title={Wireless spectrum occupancy prediction based on partial periodic pattern mining},
+  author={Huang, P. and Liu, C. and Yang, X. and Xiao, L. and Chen, J.},
+  journal={ IEEE Transactions on Parallel and Distributed Systems},
+  year={2014},
+  _volume={25},
+  _number={7},
+  _pages={1925--1934},
+  _publisher={IEEE}
+}
+
+@inproceedings{alrazgan2011learning,
+  title={Learning occupancy prediction models with decision-guidance query language},
+  author={Alrazgan, A. and Nagarajan, A. and Brodsky, Al. and Egge, N.E.},
+  booktitle={Proceedings of the 44th Hawaii International Conference on System Sciences (HICSS)},
+  year={2011},
+  _pages={1--10},
+  _organization={IEEE}
+}
+
+@inproceedings{mahmoud2010occupancy,
+  title={Occupancy pattern extraction and prediction in an inhabited intelligent environment using NARX networks},
+  author={Mahmoud, S.M. and Lotfi, A. and Langensiepen, C.S.},
+  booktitle={Intelligent Environments},
+  year={2010}
+  _pages={58--63},
+}
+
+@inproceedings{manna2013learning,
+  title={Learning occupancy in single person offices with mixtures of multi-lag Markov chains},
+  author={Manna, C. and Fay, D. and Brown, K.N. and Wilson, N.},
+  booktitle={Proceedings of the IEEE 25th International Conference on Tools with Artificial Intelligence (ICTAI)},
+  year={2013},
+  _pages={151--158},
+  _organization={IEEE}
+}
+
+@inproceedings{erickson2013poem,
+  title={POEM: Power-efficient occupancy-based energy management system},
+  author={Erickson, V.L. and Achleitner, S. and Cerpa, A.E.},
+  booktitle={Proceedings of the ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)},
+  year={2013},
+  _pages={203--216},
+  _organization={IEEE}
+}
+
+@article{mahmoud2013behavioural,
+  title={Behavioural pattern identification and prediction in intelligent environments},
+  author={Mahmoud, Sawsan and Lotfi, Ahmad and Langensiepen, Caroline},
+  journal={Applied Soft Computing},
+  year={2013},
+  _volume={13},
+  _number={4},
+  _pages={1813--1822},
+  _publisher={Elsevier}
+}
+
+@inproceedings{kleiminger2013occupancy,
+  title={Occupancy detection from electricity consumption data},
+  author={Kleiminger, W. and Beckel, C. and Staake, T. and Santini, S.},
+  booktitle={Proceedings of the 5th ACM Workshop on Embedded Systems For Energy-Efficient Buildings},
+  year={2013},
+  _pages={1--8},
+  _organization={ACM}
+}
+
+@inproceedings{erickson2010occupancy,
+  title={Occupancy based demand response HVAC control strategy},
+  author={Erickson, V.L. and Cerpa, A.E.},
+  booktitle={Proceedings of the 2nd ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Building},
+  year={2010},
+  _pages={7--12},
+  _organization={ACM}
+}
+
+@inproceedings{baumann2013influence,
+  title={The influence of temporal and spatial features on the performance of next-place prediction algorithms},
+  author={Baumann, P. and Kleiminger, W. and Santini, S.},
+  booktitle={Proceedings of the 2013 ACM International Joint Conference on Pervasive and Ubiquitous Computing},
+  year={2013},
+  _pages={449--458},
+  _organization={ACM}
+}
+
+@inproceedings{baumann2013long,
+  title={How long are you staying?: predicting residence time from human mobility traces},
+  author={Baumann, P.  and Kleiminger, W. and Santini, S.},
+  booktitle={Proceedings of the 19th Annual International Conference on Mobile Computing \& Networking},
+  year={2013},
+  _pages={231--234},
+  _organization={ACM}
+}
+
+@article{kleiminger2013inferring,
+  title={Inferring household occupancy patterns from unlabelled sensor data},
+  author={Kleiminger, W. and Beckel, C. and Dey, A. and Santini, S.},
+  year={2013},
+  _journal={month},
+  _publisher={ETH Zurich}
+}
+
+@incollection{tominaga2012unified,
+  title={A unified framework for modeling and predicting going-out behavior},
+  author={Tominaga, S. and Shimosaka, M. and Fukui, R. and Sato, T. },
+  booktitle={Pervasive Computing},
+  year={2012},
+  _pages={73--90},
+  _publisher={Springer}
+}
+
+@inproceedings{laxman2008stream,
+  title={Stream prediction using a generative model based on frequent episodes in event sequences},
+  author={Laxman, S. and Tankasali, V. and White, R.W.},
+  booktitle={Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year={2008},
+  _pages={453--461},
+  _organization={ACM}
+}
+
+@article{laxman2005discovering,
+  title={Discovering frequent episodes and learning hidden markov models: A formal connection},
+  author={Laxman, S. and Sastry, P.S. and Unnikrishnan, K.P.},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2005},
+  _volume={17},
+  _number={11},
+  _pages={1505--1517},
+  _publisher={IEEE}
+}
+
+@article{mannila1997discovery,
+  title={Discovery of frequent episodes in event sequences},
+  author={Mannila, H. and Toivonen, H. and Verkamo, A.I.},
+  journal={Data Mining and Knowledge Discovery},
+  year={1997},
+  _volume={1},
+  _number={3},
+  _pages={259--289},
+  _publisher={Springer}
+}
+
+@article{patnaik2008inferring,
+  title={Inferring neuronal network connectivity from spike data: A temporal data mining approach},
+  author={Patnaik, D. and Sastry, P.S. and Unnikrishnan, K.P.},
+  journal={Scientific Programming},
+  year={2008},
+  _volume={16},
+  _number={1},
+  _pages={49--77},
+  _publisher={Hindawi Publishing Corporation}
+}
+
+@article{energydatabook2011, 
+title={Buildings Energy Data Book}, 
+journal={Energy Efficiency and Renewable Energy},
+year={2011},
+_publisher={U.S. Department of Energy}
+}
+
+@inproceedings{ranjan2013rf,
+  title={An RF doormat for tracking people's room locations},
+  author={Ranjan, J. and Yao, Y. and Whitehouse, K.},
+  booktitle={Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing},
+  year={2013},
+  _pages={797--800},
+  _organization={ACM}
+}
+
+@inproceedings{hnat2012doorjamb,
+  title={Doorjamb: unobtrusive room-level tracking of people in homes using doorway sensors},
+  author={Hnat, T.W. and Griffiths, E. and Dawson, R. and Whitehouse, K.},
+  booktitle={Proceedings of the 10th ACM Conference on Embedded Network Sensor Systems},
+  year={2012},
+  _pages={309--322},
+  _organization={ACM}
+}
+
+@incollection{srinivasan2010using,
+  title={Using height sensors for biometric identification in multi-resident homes},
+  author={Srinivasan, V. and Stankovic, J. and Whitehouse, K.},
+  booktitle={Pervasive Computing},
+  year={2010},
+  _pages={337--354},
+  _publisher={Springer}
+}
+
+%%% the following are from survey paper
+@article{abed1997blind,
+  title={Blind system identification},
+  author={Abed-Meraim, Karim and Qiu, Wanzhi and Hua, Yingbo},
+  journal={Proceedings of the IEEE},
+  _volume={85},
+  _number={8},
+  _pages={1310--1322},
+  year={1997},
+  _publisher={IEEE}
+}
+
+@inproceedings{akbar2007modified,
+  title={Modified nonintrusive appliance load monitoring for nonlinear devices},
+  author={Akbar, M. and Khan, DZA},
+  booktitle={Proceedings of the IEEE International Conference on Multitopic},
+  year={2007},
+  _pages={1--5},
+  _organization={IEEE}
+}
+
+@inproceedings{albert2013building,
+  title={Building dynamic thermal profiles of energy consumption for individuals and neighborhoods},
+  author={Albert, A. and Rajagopal, R.},
+  booktitle={Proceedings of the IEEE International conference on Big Data},
+  year={2013},
+  _pages={723--728},
+  _organization={IEEE}
+}
+
+@inproceedings{anderson2012blued,
+  title = {{BLUED:} A fully labeled public dataset for {event-based} {non-intrusive} load monitoring Research},
+  booktitle = {Proceedings of the 2nd {KDD} Workshop on Data Mining Applications in Sustainability {(SustKDD)}},
+  author = {Anderson, K. and Ocneanu, A. and Benitez, D. and Carlson, D. and Rowe, A. and Berges, M.},
+  year = {2012},
+ _month ={Aug.},
+ _address = {Beijing, China}
+}
+
+@inproceedings{anderson2012event,
+  title = {Event detection for non intrusive load monitoring},
+  booktitle = {Proceedings of the IEEE Industrial Electronics Convferene(IECON)},
+  author = {Anderson, K. and Berges, M. and Ocneanu, A. and Benitez, D. and Moura, J.M.F},
+  _month ={Aug},
+  _address = {Montreal, Canada},
+  year = {2012},
+}
+
+
+@inproceedings{baranski2003nonintrusive,
+  title={Nonintrusive appliance load monitoring based on an optical sensor},
+  author={Baranski, M. and Voss, J.},
+  booktitle={Proceedings of the IEEE Power Tech Conference},
+   year={2003},
+  _volume={4},
+  _pages={8--pp},
+  _organization={IEEE}
+}
+
+@inproceedings{baranski2004detecting,
+  title={Detecting patterns of appliances from total load data using a dynamic programming approach},
+  author={Baranski, M. and Voss, J.},
+  booktitle={Proceedings of the 4th IEEE International Conference on Data Mining},
+  year={2004},
+  _pages={327--330},
+  _organization={IEEE}
+}
+
+@inproceedings{baranski2004genetic,
+  title={Genetic algorithm for pattern detection in NIALM systems},
+  author={Baranski, M. and Voss, J.},
+  booktitle={Proceedings of the IEEE International Conference on Systems, Man and Cybernetics},
+  year={2004},
+  _volume={4},
+  _pages={3462--3468},
+  _organization={IEEE}
+}
+
+@inproceedings{barker2012smart,
+  title = {Smart\*\: an open data set and tools for enabling research in sustainable homes},
+  booktitle = {Proceedings of the 2nd {KDD} Workshop on Data Mining Applications in Sustainability {(SustKDD)}},
+  author = {Barker, S. and Mishra, A. and Irwin, D. and Cecchet, E. and Shenoy, P.},
+  year = {2012}, 
+  _month = {Aug.}, 
+  _address = {Beijing, China},
+}
+
+@inproceedings{barker2013empirical,
+  title={Empirical characterization and modeling of electrical loads in smart homes},
+  author={Barker, S. and Kalra, S. and Irwin, D. and Shenoy, P.},
+  booktitle={Proceedings of the IEEE International Green Computing Conference (IGCC)},
+   year={2013},
+  _pages={1--10},
+  _organization={IEEE}
+}
+
+@inproceedings{batra2013different,
+  title={It's different: Insights into home energy consumption in India},
+  author={Batra, N. and Gulati, M. and Singh, A. and Srivastava, M. B},
+  booktitle={Proceedings of the 5th ACM Workshop on Embedded Systems For Energy-Efficient Buildings},
+   year={2013},
+  _pages={1--8},
+  _organization={ACM}
+}
+
+@inproceedings{bellala2011towards,
+  title={Towards an understanding of campus-scale power consumption},
+  author={Bellala, G. and Marwah, M. and Arlitt, M. and Lyon, G. and Bash, C.E.},
+  booktitle={Proceedings of the 3rd ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings},
+  year={2011},
+  _pages={73--78},
+  _organization={ACM}
+  }
+
+@article{berges2008training,
+  title={Training load monitoring algorithms on highly sub-metered home electricity consumption data},
+  author={Berges, M. and Goldman, E. and Matthews, H.S. and Soibelman, L.},
+  journal={Tsinghua Science \& Technology},
+  year={2008},
+  _volume={13},
+  _pages={406--411},
+  _publisher={Elsevier}
+}
+
+@inproceedings{berges2009learning,
+  title={Learning systems for electric consumption of buildings},
+  author={Berges, M. and Goldman, E. and Matthews, H.S. and Soibelman, L.},
+  booktitle={ASCI International Workshop on Computing in Civil Engineering},
+  year={2009}
+}
+
+@article{berges2010enhancing,
+  title={Enhancing electricity audits in residential buildings with nonintrusive load monitoring},
+  author={Berges, M. and Goldman, E. and Matthews, H.S. and Soibelman, L.},
+  journal={Journal of Industrial Ecology},
+  year={2010},
+  _volume={14},
+  _number={5},
+  _pages={844--858}, 
+  _publisher={Wiley Online Library}
+}
+
+@article{berges2011user,
+  title={User-centric non-intrusive electricity load monitoring for residential buildings},
+  author={Berges, M. and Goldman, E. and Soibelman, L. and Anderson, K.},
+  journal={Journal of Industrial Ecology},
+  year={2010},
+  _volume={14},
+  _number={5},
+  _pages={844--858},
+  _publisher={Wiley Online Library}
+}
+
+@book{bishop2006pattern,
+  title={Pattern recognition and machine learning},
+  author={Bishop, C.M. and Nasrabadi, N.M.},
+  year={2006},
+  _volume={1},
+  _publisher={springer New York}
+}
+
+@article{blumensath2005shift,
+  title={Shift-invariant sparse coding for single channel blind source separation},
+  author={Blumensath, T. and Davies, M.},
+  journal={SPARS},
+  year={2005},
+  _volume={5},
+  _pages={75--78},
+  _publisher={Citeseer}
+}
+
+
+@inproceedings{chan2000harmonics,
+  title={Harmonics load signature recognition by wavelets transforms},
+  author={Chan, WL and So, A.T.P. and Lai, LL},
+  booktitle={Proceedings of the IEEE International Conference on Electric Utility Deregulation and Restructuring and Power Technologies},
+  year={2000},
+  _pages={666--671},
+  _organization={IEEE}
+}
+
+@inproceedings{chang2008load,
+  title={Load recognition for different loads with the same real power and reactive power in a non-intrusive load-monitoring system},
+  author={Chang, H. and Lin, C. and Yang, H.},
+  booktitle={Proceedings of the 12th International Conference on Computer Supported Cooperative Work in Design},
+   year={2008},
+  _pages={1122--1127},
+  _organization={IEEE}
+}
+
+@article{chang2008load2,
+  title={Load identification in neural networks for a non-intrusive monitoring of industrial electrical loads},
+  author={Chang, H.H. and Yang, H.T. and Lin, C.L.},
+  journal={Computer Supported Cooperative Work in Design IV},
+  year={2008},
+  _pages={664--674},
+  _publisher={Springer}
+}
+
+@inproceedings{chang2010newmethod,
+author={Chang, H.and Lin, C},
+booktitle={Proceedings of the IEEE 7th International Conference on e-Business Engineering (ICEBE)},
+title={A new method for load identification of nonintrusive energy management system in smart home},
+year={2010},
+_month={nov.},
+_pages={351 -357},
+_doi={10.1109/ICEBE.2010.24},
+}
+
+@inproceedings{chen2013non,
+  title={Non-Intrusive occupancy monitoring using smart meters},
+  author={Chen, D. and Barker, S. and Subbaswamy, A. and Irwin, D. and Shenoy, P.},
+  booktitle={Proceedings of the 5th ACM Workshop on Embedded Systems For Energy-Efficient Buildings},
+  year={2013},
+  _pages={1--8},
+  _organization={ACM}
+}
+
+@inproceedings{chen2013novel,
+  title={A novel system for extracting useful correlation in smart home environment},
+  author={Chen, Y. and Peng, W. and Lee, W.},
+  booktitle={Proceedings of the IEEE 13th International Conference on Data Mining Workshops (ICDMW)},
+  year={2013},
+  _pages={357--364},
+  _organization={IEEE}
+}
+
+@incollection{chen2014mining,
+  title={Mining correlation patterns among appliances in smart home environment},
+  author={Chen, Y. and Chen, C. and Peng, W. and Lee, W.},
+  booktitle={Advances in Knowledge Discovery and Data Mining},
+  year={2014},
+  _pages={222--233},
+  _publisher={Springer}
+}
+
+@article{chow1989complexity,
+  title={The complexity of dynamic programming},
+  author={Chow, C. and Tsitsiklis, J. N.},
+  journal={Journal of Complexity},
+  year={1989},
+  _volume={5},
+  _number={4},
+  _pages={466--488},
+  _publisher={Elsevier}
+}
+
+
+@inproceedings{cole1998data,
+  title={Data extraction for effective non-intrusive identification of residential power loads},
+  author={Cole, A.I. and Albicki, A.},
+  booktitle={Proceedings of the IEEE Instrumentation and Measurement Technology Conference(IMTC)},
+  year={1998},
+  _volume={2},
+  _pages={812--815},
+  _organization={IEEE}
+}
+
+@inproceedings{cole1998algorithm,
+  title={Algorithm for nonintrusive identification of residential appliances},
+  author={Cole, A.I. and Albicki, A.},
+  booktitle={Proceedings of the IEEE International Symposium on Circuits and Systems(ISCAS)},
+  year={1998},
+  _volume={3},
+  _pages={338--341},
+  _organization={IEEE}
+}
+
+@inproceedings{collins2012smart,
+  title={Smart energy monitoring and management system for industrial applications},
+  author={Collins, K and Mallick, M and Volpe, G and Morsi, WG},
+  booktitle={Proceedings of the IEEE Electrical Power and Energy Conference (EPEC)},
+  year={2012},
+  _pages={92--97},
+  _organization={IEEE}
+}
+
+@article{cook2010learning,
+  title={Learning setting-generalized activity models for smart spaces},
+  author={Cook, D.},
+  journal={IEEE Intelligent Systems},
+  year={2010},
+  _number={99},
+  _pages={1--1},
+  _publisher={IEEE}
+}
+
+@article{cook2011sensor,
+  title={Sensor selection to support practical use of health-monitoring smart environments},
+  author={Cook, D.J. and Holder, L.B.},
+  journal={Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+  year={2011},
+  _publisher={Wiley Online Library}
+}
+
+@article{cook2012smart,
+  title={How smart is your home?},
+  author={Cook, D.J.},
+  journal={Science},
+  year={2012},
+  _volume={335},
+  _number={6076},
+  _pages={1579--1581},
+  _publisher={American Association for the Advancement of Science}
+}
+
+@article{cook2013CASAS,
+author = {Cook, D. J. and Crandall, A. S. and Thomas, B. L. and Krishnan, N.C.},
+title = {CASAS: a smart home in a box},
+journal ={Computer},
+year = {2013},
+_volume = {46},
+_number = {7},
+_issn = {0018-9162},
+_pages = {62-69},
+_doi = {http://doi.ieeecomputersociety.org/10.1109/MC.2012.328},
+_publisher = {IEEE Computer Society},
+_address = {Los Alamitos, CA, USA},
+}
+
+@inproceedings{cox2006transient,
+  title={Transient event detection for nonintrusive load monitoring and demand side management using voltage distortion},
+  author={Cox, R. and Leeb, S.B. and Shaw, S.R. and Norford, L.K.},
+  booktitle={Proceedings of the 21st Annual IEEE Applied Power Electronics Conference and Exposition},
+   year={2006},
+  _pages={7--pp},
+  _organization={IEEE}
+}
+
+@inproceedings{dai2011multi,
+  title={Multi-granular demand forecasting in smarter water},
+  author={Dai, J. and Li, M. and Sahu, S. and Naphade, M. and Chen, F.},
+  booktitle={Proceedings of the 13th International Conference on Ubiquitous Computing},
+  year={2011},
+  _pages={595--596},
+  _organization={ACM}
+}
+
+@article{davies2007source,
+  title={Source separation using single channel ICA},
+  author={Davies, M. E. and James, C. J.},
+  journal={Signal Processing},
+  year={2007},
+  _volume={87},
+  _number={8},
+  _pages={1819--1832},
+  _publisher={Elsevier}
+}
+
+@inproceedings{dong2013deep,
+  title={Deep sparse coding based recursive disaggregation model for water conservation},
+  author={Dong, H. and Wang, B. and Lu, C.},
+  booktitle={Proceedings of the 23rd international Joint Conference on Artificial Intelligence},
+  year={2013},
+  _pages={2804--2810},
+  _organization={AAAI Press}
+}
+
+@inproceedings{dong2013dynamical,
+  title={A dynamical systems approach to energy disaggregation},
+  author={Dong, R. and Ratliff, L. and Ohlsson, H. and Sastry, S.},
+  booktitle={Proceedings of the IEEE 52nd Annual Conference on Decision and Control (CDC)},
+  year={2013},
+  _pages={6335--6340},
+  _organization={IEEE}
+}
+
+@inproceedings{duan2004neural,
+  title={Neural network approach for estimation of load composition},
+  author={Duan, J. and Czarkowski, D. and Zabar, Z.},
+  booktitle={Proceedings of the International Symposium on Circuits and Systems(ISCAS)},
+  year={2004},
+  _volume={5},
+  _pages={V--988},
+  _organization={IEEE}
+}
+
+@article{drenker1999nonintrusive,
+  title={Nonintrusive monitoring of electric loads},
+  author={Drenker, S. and Kader, A.},
+  journal={IEEE Computer Applications in Power},
+  year={1999},
+  _volume={12},
+  _number={4},
+  _pages={47--51},
+  _publisher={IEEE}
+}
+
+@inbook{eebook,
+    author={Hambley, A.R.},
+    title={Electrical engineering principles and applications},
+    year={2006}
+    chapter={III},
+    _edition={5th},
+    _pages={98},
+    _publisher={Prentice Hall},
+    _ISBN={9780132130066},
+}
+
+@article{farinaccio1999using,
+  title={Using a pattern recognition approach to disaggregate the total electricity consumption in a house into the major end-uses},
+  author={Farinaccio, L. and Zmeureanu, R.},
+  journal={Energy and Buildings},
+  year={1999},
+  _volume={30},
+  _number={3},
+  _pages={245--259},
+  _publisher={Elsevier}
+}
+
+
+@article{figueiredo2014electrical,
+  title={Electrical signal source separation via nonnegative tensor factorization using on site measurements in a smart home},
+  author={Figueiredo, M. and Ribeiro, B. and de Almeida, A.},
+  journal={ IEEE Transactions on Instrumentation and Measurement},
+  year={2014},
+  _volume={63},
+  _number={2},
+  _pages={364--373},
+  _publisher={IEEE}
+}
+
+@article{froehlich2011disaggregated,
+  title={Disaggregated end-use energy sensing for the smart grid},
+  author={Froehlich, J. and Larson, E. and Gupta, S. and Cohn, G. and Reynolds, M. and Patel, S.},
+  journal={IEEE Pervasive Computing},
+  year={2011},
+   _volume={10},
+  _number={1},
+  _pages={28--39},
+  _publisher={IEEE}
+}
+
+@inproceedings{giri_study_2012,
+title = {A study on the feasibility of automated data labeling and training using an {EMF} sensor in {NILM} platforms},
+booktitle = {Proceedings of the 2012 International {EG-ICE} Workshop on Intelligent Computing},
+author = {Giri, S. and Berges, M.},
+year = {2012}, 
+_month = {Jul.},
+_address = {Herrsching, Germany}
+}	
+
+@inproceedings{gonccalves2011unsupervised,
+  title={Unsupervised disaggregation of appliances using aggregated consumption data},
+  author={Gon{\c{c}}alves, H. and Ocneanu, A. and Berg{\'e}s, M.},
+  year={2011}
+  booktitle={Proceedings of The 1st KDD Workshop on Data Mining Applications in Sustainability (SustKDD)},
+  _address={San Diego, CA}
+}
+
+@inproceedings{gupta2010electrisense,
+  title={ElectriSense: single-point sensing using EMI for electrical event detection and classification in the home},
+  author={Gupta, S. and Reynolds, M.S. and Patel, S.N.},
+  booktitle={Proceedings of the 12th ACM International Conference on Ubiquitous computing},
+  year={2010},
+  _pages={139--148},
+  _organization={ACM}
+}
+
+@article{hart1992,
+  author = {Hart, G.},
+  title = {Nonintrusive appliance load monitoring},
+  journal = {Proceedings of the {IEEE}},
+  year = {1992},
+  _volume = {80},
+  _number = {2},
+  _pages = {1870--1891}
+}
+
+@inproceedings{hampden2012closure,
+  address ={Pittsburg, U.S.A.},
+  title={Closure Rules for Energy Load Disaggregation},
+  author={Kuhns, H. and Roberts, M. and Bastami, B.},
+  year={2012},
+  _month= {May},
+  _note={\url{http://www.ices.cmu.edu/psii/nilm/abstracts/kuhns_LoadIQ_NILM2012_abstract.pdf}}
+}
+
+@inproceedings{huang2013designing,
+  title={Designing customized energy services based on disaggregation of heating usage},
+  author={Huang, D. and Thottan, M. and Feather, F.},
+  booktitle={Proceedings of the IEEE Innovative Smart Grid Technologies (ISGT)},
+  year={2013},
+  _pages={1--6},
+  _organization={IEEE}
+}
+
+@article{kearns1990complexity,
+  title={Computational complexity of machine learning},
+  author={Kearns, M.J.},
+  year={1990},
+  _publisher={MIT Press, Cambridge, MA, USA.}
+}
+
+@article{khan1997multiprocessor,
+  title={A multiprocessor for transient event detection},
+  author={Khan, U.A. and Leeb, S.B. and Lee, M.C.},
+  journal={IEEE Transactions on Power Delivery},
+  year={1997},
+  _volume={12},
+  _number={1},
+  _pages={51--60},
+  _publisher={IEEE}
+}
+
+@article{kolda2009tensor,
+  title={Tensor decompositions and applications},
+  author={Kolda, T.G. and Bader, B.W.},
+  journal={SIAM review},
+  year={2009},
+  _volume={51},
+  _number={3},
+  _pages={455--500},
+  _publisher={SIAM}
+}
+
+@article{jain1999data,
+  title={Data clustering: a review},
+  author={Jain, A.K. and Murty, M.N. and Flynn, P.J.},
+  journal={ACM computing surveys (CSUR)},
+  year={1999},
+  _volume={31},
+  _number={3},
+  _pages={264--323},
+  _publisher={ACM}
+}
+
+@inproceedings{jin2011time,
+  title={A time-frequency approach for event detection in non-intrusive load monitoring},
+  author={Jin, Y. and Tebekaemi, E. and Berges, M. and Soibelman, L.},
+  booktitle={Proceedings of SPIE},
+  year={2011}
+  _volume={8050},
+  _pages={80501U},
+}
+
+@INPROCEEDINGS{jin2011robust,
+author={Jin, Y and Tebekaemi, E. and Berges, M. and Soibelman, L.},
+booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+title={Robust adaptive event detection in non-intrusive load monitoring for energy aware smart facilities},
+year={2011},
+_month={May},
+_pages={4340 -4343},
+_ISSN={1520-6149}
+}
+
+@article{johnson2012bayesian,
+  title={Bayesian nonparametric hidden semi-Markov models},
+  author={Johnson, M.J. and A.S.},
+  journal={CoRR},
+  year={2012},
+  _volume={abs/1203.3485},
+  _ee={http://arxiv.org/abs/1203.3485},
+  _bibsource={DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{kaggle2013energy,
+  year={2013},
+  author={Blekin}
+  note={\url{http://www.kaggle.com/c/belkin-energy-disaggregation-competition/forums/t/5672/unsupervised-learning-on-test-set/30317}}
+   _month={Jul.},
+}
+
+@article{kelly2012disaggregating,
+  title={Disaggregating multi-state appliances from smart meter data},
+  author={Kelly, J. and Knottenbelt, W.},
+  journal={SIGMETRICS},
+  year={2012}
+}
+
+@article{kelly2014metadata,
+  title={Metadata for Energy Disaggregation},
+  author={Kelly, J. and Knottenbelt, W.},
+  year={2014}, 
+  _journal={arXiv preprint arXiv:1403.5946},
+}
+
+@inproceedings{kim2011unsupervised,
+  title={Unsupervised disaggregation of low frequency power measurements},
+  author={Kim, H. and Marwah, M. and Arlitt, M. and Lyon, G. and Han, J.},
+  booktitle={Proceedings of the SIAM International Conference on Data Mining},
+   year={2011}, 
+  pages={747--758},
+}
+
+@inproceedings{kim2009viridiscope,
+  title={ViridiScope: design and implementation of a fine grained power monitoring system for homes},
+  author={Kim, Y. and Schmid, T. and Charbiwala, Z.M. and Srivastava, M.B.},
+  booktitle={Proceedings of the 11th International Conference on Ubiquitous computing},
+  year={2009},
+  _pages={245--254},
+  _organization={ACM}
+}
+
+@inproceedings{kolter2010redd,
+  title={REDD: a public data set for energy disaggregation research},
+  author={Kolter, J.Z. and Johnson, M.J.},
+  booktitle={Proceedings of the Workshop on Data Mining Applications in Sustainability (SIGKDD)},
+  year={2011}, 
+  _address={San Diego, CA}
+}
+
+@inproceedings{kolter2012aistat,
+  title={Approximate inference in additive
+factorial HMMs with application to energy disaggregation},
+  author={Kolter, J.Z. and Jaakkola, T},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2012},
+  _volume={22},
+  _pages={1472-1482},
+}
+
+@inproceedings{kolter2010sparse,
+  title={Energy disaggregation via discriminative sparse coding},
+  author={Kolter, J.Z. and Batra, S. and Ng, A.Y.},
+  booktitle={Proceedings of Neural Information Processing Systems},
+  year={2010}
+}
+
+@inproceedings{lai2012database,
+  address ={Pittsburg, U.S.A.},
+  title={Database establishment for machine learning in NILM},
+  author={Lai, P.H. and Trayer, M. and Ramakrishna, S. and Li, Y.},
+  year={2012},
+  _month= {May},
+  _note={\url{http://www.ices.cmu.edu/psii/nilm/abstracts/lai_Samsung_NILM2012_abstract.pdf}}
+}
+
+@article{laughman2003power,
+  title={Power signature analysis},
+  author={Laughman, C. and Lee, K. and Cox, R. and Shaw, S. and Leeb, S. and Norford, L. and Armstrong, P.},
+  journal={IEEE Power and Energy Magazine},
+  year={2003},
+  _volume={1},
+  _number={2},
+  _pages={56--63},
+  _publisher={IEEE}
+}
+
+@article{lam2007novel,
+  title={A Novel Method to Construct Taxonomy Electrical Appliances Based on Load Signatures},
+  author={Lam, H.Y. and Fung, G.S.K. and Lee, W.K.},
+  journal={IEEE Transactions on Consumer Electronics},
+  year={2007},
+  _volume={53},
+  _number={2},
+  _pages={653--660},
+  _publisher={IEEE}
+}
+
+@ARTICLE{lee1999blindsource,
+    author = {Lee, T.W. and Lewicki, M.S. and Girolami, M. and Sejnowski, T.J.},
+    title = {Blind source separation of more sources than mixtures using overcomplete representations},
+    journal = {IEEE Signal Processing Letters},
+    year = {1999},
+    _pages = {87--90}
+}
+
+@inproceedings{lee2004exploration,
+  title={Exploration on load signatures},
+  author={Lee, W.K. and Fung, G.S.K. and Lam, H.Y. and Chan, F.H.Y. and Lucente, M.},
+  booktitle={International conference on electrical Engineering (ICEE)},
+  year={2004}
+}
+
+@article{leeb1995transient,
+  title={Transient event detection in spectral envelope estimates for nonintrusive load monitoring},
+  author={Leeb, S.B. and Shaw, S.R. and Kirtley Jr, J.L.},
+  journal={IEEE Transactions on Power Delivery},
+  year={1995},
+  _volume={10},
+  _number={3},
+  _pages={1200--1210},
+  _publisher={IEEE}
+}
+
+@article{lee2005estimation,
+  title={Estimation of variable-speed-drive power consumption from harmonic content},
+  author={Lee, K.D. and Leeb, S.B. and Norford, L.K. and Armstrong, P.R. and Holloway, J. and Shaw, S.R.},
+  journal={IEEE Transactions on Energy Conversion},
+  year={2005},
+  _volume={20},
+  _number={3},
+  _pages={566--574},
+  _publisher={IEEE}
+}
+
+@phdthesis{leeb1993PhdThesis,
+    author = {Leeb, S.B.},
+    title = {A conjoint pattern recognition approach to nonintrusive load monitoring},
+    year={1993}, 
+    school= {Massachusetts Institute of Technology},
+    _address= {Boston, MA},
+    }
+
+@phdthesis{lee2003PhdThesis,
+    author = {Lee, K.D.},
+    title = {Electric load information system based on non-intrusive power monitoring},
+    year ={2003}, 
+    school = {Massachusetts Institute of Technology},
+    _address = {Boston, MA}
+    }
+
+@inproceedings{lee2014personalized,
+  title={Personalized Energy Auditor: Estimating personal electricity usage},
+  author={Lee, S. and Ahn, D. and Lee, S. and Ha, R. and Cha, H.},
+  booktitle={IEEE International Conference on Pervasive Computing and Communications (PerCom)},
+  year={2014},
+  _pages={44--49},
+  _organization={IEEE}
+}
+
+@article{lewicki2000learning,
+  title={Learning overcomplete representations},
+  author={Lewicki, M. and Sejnowski, T.},
+  journal={Neural computation},
+  year={2000},
+  _volume={12},
+  _number={2},
+  _pages={337--365},
+  _publisher={MIT Press}
+}
+
+@article{li2009coordinate,
+  title={Coordinate descent optimization for l1 minimization with application to compressed sensing; a greedy algorithm},
+  author={Li, Y and Osher, S},
+  journal={Inverse Problem Imaging},
+  year={2009}, 
+  _volume={3},
+  _number={3},
+  _pages={487--503},
+}
+
+@article{liang2010load,
+  title={Load Signature Study Part I: Basic Concept, Structure, and Methodology},
+  author={Liang, J. and Ng, S. and Kendall, G. and Cheng, J.},
+  journal={IEEE Transactions on Power Delivery},
+   year={2010},
+  _volume={25},
+  _number={2},
+  _pages={551--560},
+  _publisher={IEEE}
+}
+
+@article{liang2010load2,
+  title={Load Signature Study Part II: Disaggregation Framework, Simulation, and Applications},
+  author={Liang, J. and Ng, S.K.K. and Kendall, G. and Cheng, J.W.M.},
+  journal={IEEE Transactions on Power Delivery},
+  year={2010},
+  _volume={25},
+  _number={2},
+  _pages={561--569},
+  _publisher={IEEE}
+}
+
+@inproceedings{lukaszewski2013methods, 
+author={Lukaszewski, R. and Liszewski, K. and Winiecki, W.}, 
+booktitle={Proceedings of the IEEE 7th International Conference on Intelligent Data Acquisition and Advanced Computing Systems (IDAACS)}, 
+title={Methods of electrical appliances identification in systems monitoring electrical energy consumption}, 
+year={2013}, 
+_month={Sep.}, 
+_volume={01}, 
+_pages={10-14}, 
+}
+
+@article{luo2002monitoring,
+  title={Monitoring HVAC equipment electrical loads from a centralized location- methods and field test results},
+  author={Luo, D. and Norford, L.K. and Leeb, SB and Shaw, SR},
+  year={2002}, 
+  _journal={ASHRAE Transactions},
+  _volume={108},
+  _number={1},
+  _pages={841--857},
+}
+
+@inproceedings{makonin2013ampds,
+    author = {Makonin, S. and Popowich, F. and Bartram, L. and Gill, B. and Bajic, I.V.},
+    booktitle = {Proceedings of the IEEE Electrical Power and Energy Conference (EPEC)},
+    title = {{AMPds: A public dataset for load disaggregation and eco-feedback research}},
+    year = {2013}, 
+    _date-added = {2013-06-09 16:27:19 +0000},
+    _date-modified = {2013-06-17 23:42:14 +0000},
+    _pages = {1--6},
+    }
+
+@article{marceau2000nonintrusive,
+  title={Nonintrusive load disaggregation computer program to estimate the energy consumption of major end uses in residential buildings},
+  author={Marceau, M.L. and Zmeureanu, R.},
+  journal={Energy Conversion and Management},
+  year={2000},
+  _volume={41},
+  _number={13},
+  _pages={1389--1403},
+  _publisher={Elsevier}
+}
+
+
+@article{margossian1994deriving,
+  title={Deriving end-use load profiles without end-use metering: results of recent validation studies},
+  author={Margossian, B.},
+  journal={Quantum Consult Inc.},
+  year={1994}
+}
+
+@article{matthews2008auto,
+  title={Automatically disaggregating the total electrical load in residential buildings: a profile of the required solution},
+  author={Matthews, H.S. and Soibelman, L. and Berges, M. and Goldman, E.},
+  journal={Proceedings of the Intelligent Computing in Engineering (ICE08)},
+  year={2008}, 
+  _pages={381--389},
+}
+
+@inproceedings{mambayashi1997noise,
+  title={Noise measurements of the residential power line},
+  author={Mambayashi, G.},
+  booktitle={Proceedings of the IEEE International Symposium on Power Line Communications and Its Applications},
+  year={1997}
+}
+
+@inproceedings{milioudis2013event,
+  title={Event detection for load disaggregation in smart metering},
+  author={Milioudis, A.N. and Andreou, G.T. and Katsanou, V.N. and Sgouras, K.I. and Labridis, D.P.},
+  booktitle={Proceedings of the IEEE/PES Innovative Smart Grid Technologies Europe (ISGT EUROPE)},
+  year={2013},
+  _pages={1-5},
+  _publisher={IEEE}
+}
+
+@inproceedings{monacchi2014greend,
+  title={GREEND: an energy consumption dataset of households in Italy and Austria},
+  author={Monacchi, A. and Egarter, D. and Elmenreich, W. and D'Alessandro, S. and Tonello, A.M.},
+  booktitle={Proceedings of the IEEE International Conference on Smart Grid Communications},
+   year={2014},
+  _pages={511--516},
+  _organization={IEEE}
+}
+
+@inproceedings{nakano2007non,
+  title={Non-intrusive electric appliances load monitoring system using harmonic pattern recognition-trial application to commercial building},
+  author={Nakano, Y. and Murata, H.},
+  booktitle={Proceedings of the International Conference on Electrical Engineering},
+  year={2007}
+  _address={Hong Kong, China}
+}
+
+@article{norford1996non,
+  title={Non-intrusive electrical load monitoring in commercial buildings based on steady-state and transient load-detection algorithms},
+  author={Norford, L.K. and Leeb, S.B.},
+  journal={Energy and Buildings},
+  year={1996},
+  _volume={24},
+  _number={1},
+  _pages={51--64},
+  _publisher={Elsevier}
+}
+
+@inproceedings{roos1994using,
+  title={Using neural networks for non-intrusive monitoring of industrial electrical loads},
+  author={Roos, J.G. and Lane, I.E. and Botha, E.C. and Hancke, G.P.},
+  booktitle={Proceedings of the IEEE 10th Anniversary Advanced Technologies in Instrumentation and Measurement Technology},
+  year={1994},
+  _pages={1115--1118},
+  _organization={IEEE}
+}
+
+@article{onoda2000applying,
+  title={Applying support vector machines and boosting to a non-intrusive monitoring system for household electric appliances with inverters},
+  author={Onoda, T. and R{\"a}tsch, G. and M{\"u}ller, K.R.},
+  year={2000},
+  _publisher={Citeseer}
+}
+
+@incollection{onoda2000applying2,
+  title={Applying kernel based subspace classification to a non-intrusive monitoring for household electric appliances},
+  author={Murata, H. and Onoda, T.},
+  booktitle={Artificial Neural Networks?ICANN},
+  _pages={692--698},
+  year={2001},
+  _publisher={Springer}
+}
+
+@article{pardo2002temperature,
+  title={Temperature and seasonality influences on Spanish electricity load},
+  author={Pardo, A. and Meneu, V. and Valor, E.},
+  journal={Energy Economics},
+  year={2002},
+  _volume={24},
+  _number={1},
+  _pages={55--70},
+  _publisher={Elsevier}
+}
+
+@inproceedings{parson2012nonintrusive,
+  address ={Toronto, Canada},
+  title={Non-intrusive load monitoring using prior models of general appliance types},
+  author={Parson,O. and Ghosh, S. and Weal, M. and Rogers, A.},
+  booktitle = {Proceedings of the 26th AAAI Conference on Artificial Intelligence},
+  year={2012},
+  _month={Jul}
+}
+
+@inproceedings{patel2007flick,
+  title={At the flick of a switch: detecting and classifying unique electrical events on the residential power line},
+  author={Patel, S.N. and Robertson, T. and Kientz, J.A. and Reynolds, M.S. and Abowd, G.D.},
+  booktitle={Proceedings of the 9th International Conference on Ubiquitous computing},
+  year={2007},
+  _pages={271--288},
+  _organization={Springer-Verlag}
+}
+
+@book{pihala1998non,
+  title={Non-intrusive appliance load monitoring system based on a modern kWh-meter},
+  author={Pihala, H.},
+  year={1998},
+  _publisher={Technical Research Centre of Finland}
+}
+
+@article{powers1991using,
+  author = {Powers,J. and Margossian,B. and Smith,B.},
+  title = {Using a rule-based algorithm to disaggregate end use load profiles from premise-level data},
+  journal = {Computer Applications in Power},
+  year = {1991},
+  _volume = {4},
+  _number = {2},
+  _pages = {42-47}
+}
+
+@inproceedings{prudenzi2002neuron,
+  title={A neuron nets based procedure for identifying domestic appliances pattern-of-use from energy recordings at meter panel},
+  author={Prudenzi, A.},
+  booktitle={Proceedings of the IEEE Power Engineering Society Winter Meeting},
+  year={2002},
+  _volume={2},
+  _pages={941--946},
+  _organization={IEEE}
+}
+
+@inproceedings{rollins2014using,
+  title={Using rule mining to understand appliance energy consumption patterns},
+  author={Rollins, S. and Banerjee, N.},
+  booktitle={Proceedings of the IEEE International Conference on Pervasive Computing and Communications (PerCom)},
+  year={2014},
+  _pages={29--37},
+  _organization={IEEE}
+}
+
+@incollection{schmidt2006nonnegative,
+  title={Nonnegative matrix factor 2-D deconvolution for blind single channel source separation},
+  author={Schmidt, M.N. and M{\o}rup, M.},
+  booktitle={Independent Component Analysis and Blind Signal Separation},
+  year={2006},
+  _pages={700--707},
+  _publisher={Springer}
+}
+
+@inproceedings{shao2012temporal,
+  title={A Temporal Motif Mining Approach to Unsupervised Energy Disaggregation},
+  author={Shao, H. and Marwah, M. and Ramakrishnan, N.},
+  booktitle = {Proceedings of the 1st International Workshop on Non-Intrusive Load Monitoring},
+  year={2012},
+  _month= {May},
+  _address ={Pittsburg, U.S.A.},
+  _note={\url{http://www.ices.cmu.edu/psii/nilm/abstracts/shao_VT_NILM2012_abstract.pdf}}
+}
+
+@inproceedings{shao2013temporal,
+  address ={Bellevue, U.S.A.},
+  title={A Temporal Motif Mining Approach to Unsupervised Energy Disaggregation: Applications to Residential and Commercial Buildings},
+  author={Shao, H. and Marwah, M. and Ramakrishnan, N.},
+  year={2013},
+  _month= July,
+ 
+}
+@phdthesis{shaw2000PhdThesis,
+    author = {Shaw, S.R.},
+    title = {System identification techniques and modeling for nonintrusive load diagnositics},
+    year ={2000}
+    school = {Massachusetts Institute of Technology},
+    _address = {Boston, MA},
+    }
+
+@article{shaw2007kalman,
+  title={A kalman-filter spectral envelope preprocessor},
+  author={Shaw, S.R. and Laughman, C.R.},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2007},
+  _volume={56},
+  _number={5},
+  _pages={2010--2017},
+  _publisher={IEEE}
+}
+
+@article{shaw2008nonintrusive,
+  title={Nonintrusive load monitoring and diagnostics in power systems},
+  author={Shaw, S.R. and Leeb, S.B. and Norford, L.K. and Cox, R.W.},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2008},
+  _volume={57},
+  _number={7},
+  _pages={1445--1454},
+  _publisher={IEEE}
+}
+
+@article{smaragdis2006probabilistic,
+  title={A probabilistic latent variable model for acoustic modeling},
+  author={Smaragdis, P. and Raj, B. and Shashanka, M.},
+  journal={Advances in Models for Acoustic Processing Workshop(NIPS)},
+  year={2006}
+  _volume={148},
+}
+
+@inproceedings{song2014short,
+  title={Short paper: Time-dependent power load disaggregation with applications to daily activity monitoring},
+  author={Song, H. and Kalogridis, G. and Fan, Z.},
+  booktitle={Proceedings of the IEEE World Forum on the Internet of Things (WF-IoT)},
+  year={2014},
+  _pages={183--184},
+  _organization={IEEE}
+}
+
+@article{srinivasan2006neural,
+  title={Neural-network-based signature recognition for harmonic source identification},
+  author={Srinivasan, D. and Ng, WS and Liew, AC},
+  journal={IEEE Transactions on Power Delivery},
+  year={2006},
+  _volume={21},
+  _number={1},
+  _pages={398--405},
+  _publisher={IEEE}
+}
+
+@inproceedings{srinivasan2013fixturefinder,
+  title={Fixturefinder: Discovering the existence of electrical and water fixtures},
+  author={Srinivasan, V. and Stankovic, J. and Whitehouse, K.},
+  booktitle={Proceedings of the 12th International Conference on Information Processing in Sensor Networks},
+  year={2013},
+  _pages={115--128},
+  _organization={ACM}
+}
+
+@article{su2011feature,
+  title={Feature selection of non-intrusive load monitoring system using STFT and wavelet transform},
+  author={Su, Y. and Lian, K. and Chang, H.},
+  journal={Proceedings of the IEEE 8th International Conference on e-Business Engineering},
+  year={2011},
+  _pages={293-298},
+  _publisher={IEEE}
+}
+
+
+@article{sultanem1991using,
+  title={Using appliance signatures for monitoring residential loads at meter panel level},
+  author={Sultanem, F.},
+  journal={IEEE Transactions on Power Delivery},
+  year={1991},
+  _volume={6},
+  _number={4},
+  _pages={1380--1385},
+  _publisher={IEEE}
+}
+
+@inproceedings{suzuki2008nonintrusive,
+  title={Nonintrusive appliance load monitoring based on integer programming},
+  author={Suzuki, K. and Inagaki, S. and Suzuki, T. and Nakamura, H. and Ito, K.},
+  booktitle={Proceedings of the IEEE SICE Annual Conference},
+  year={2008},
+  _pages={2742--2747},
+  _organization={IEEE}
+}
+
+@article{hassan2014empirical,
+  title={An empirical investigation of VI trajectory based load signatures for non-intrusive load monitoring},
+  author={Hassan, T. and Javed, F. and Arshad, N.},
+  journal={IEEE Transactions on Smart Grid}, 
+  year={2014},
+  _publisher={IEEE}
+}
+
+@inproceedings{uttama2013sustainable,
+  title={Sustainable energy consumption monitoring in residential settings},
+  author={Uttama-Nambi, S.N. and Papaioannou, T.G. and Chakraborty, D. and Aberer, K. and others},
+  booktitle={Proceedings of the 2nd IEEE INFOCOM Workshop on Communications and Control for Smart Energy Systems (CCSES)},
+  year={2013}, 
+  _number={EPFL-CONF-183771},
+}
+
+@inproceedings{vogiatzis2013real,
+  title={Real-time and low cost energy disaggregation of coarse meter data},
+  author={Vogiatzis, E. and Kalogridis, G. and Denic, S.Z.},
+  booktitle={Proceedings of the 4th IEEE/PES Innovative Smart Grid Technologies Europe},
+  year={2013},
+  _pages={1--5},
+  _organization={IEEE}
+}
+
+@article{wichakool2009modeling,
+  title={Modeling and estimating current harmonics of variable electronic loads},
+  author={Wichakool, W. and Avestruz, A.T. and Cox, R.W. and Leeb, S.B.},
+  journal={IEEE Transactions on Power Electronics},
+  year={2009},
+  _volume={24},
+  _number={12},
+  _pages={2803--2811},
+  _publisher={IEEE}
+}
+
+@inproceedings{wang2012signal,
+  title={Signal disaggregation via sparse coding with featured discriminative dictionary},
+  author={Wang, B. and Chen, F. and Dong, H. and Boedihardjo, A.P. and Lu, C.},
+  booktitle={Proceedings of the International Conference on Data Mining},
+  year={2012}, 
+  _pages={1134--1139},
+}
+
+@article{wang2013heirarchical,
+  title={A hierarchical probabilistic model for low sample rate home-use energy disaggregation},
+  author={Wang, B. and Dong, H. and Boedihardjo, A. and Lu, C.},
+  booktitle={SIAM International Conference on Data Mining},
+  year={2013}, 
+}
+
+@inproceedings{wu2012low,
+  title={Low-cost appliance state sensing for energy disaggregation},
+  author={Wu, T. and Srivastava, M.},
+  booktitle={Proceedings of the 4th ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings},
+  year={2012},
+  _pages={53--55},
+  _organization={ACM}
+}
+
+@article{wytock2014contextually,
+ address={Quebec, Canada},
+ title={Contextually supervised source separation with application to energy disaggregation},
+ author={Wytock, M. and Kolter, J.Z.},
+ booktitle = {Proceedings of the 28th AAAI Conference on Artificial Intelligence},
+ year={2014},
+ _month= {Jul.},
+}
+
+@article{yamagami1996non,
+  title={Non-intrusive submetering of residential gas appliances},
+  author={Yamagami, S. and Nakamura, H. and Meier, A.},
+  journal={ACEE Summer Study on Energy Efficiency in Buildings},
+  year={1996}, 
+  _volume={1},
+  _pages={265--273},
+}
+
+@inproceedings{yang2007design,
+  title={Design a neural network for features selection in non-intrusive monitoring of industrial electrical loads},
+  author={Yang, H. and Chang, H. and Lin, C.},
+  booktitle={Proceedings of the 11th International Conference on Computer Supported Cooperative Work in Design},
+   year={2007},
+  _pages={1022--1027},
+  _organization={IEEE}
+}
+
+@article{zeifman2011nonintrusive,
+  title={Nonintrusive appliance load monitoring: review and outlook},
+  author={Zeifman, M. and Roth, K.},
+  journal={IEEE Transactions on Consumer Electronics},
+  year={2011},
+  _volume={57},
+  _number={1},
+  _pages={76--84},
+  _publisher={IEEE}
+}
+
+@inproceedings{zeifman2011viterbi,
+  title={Viterbi algorithm with sparse transitions (VAST) for nonintrusive load monitoring},
+  author={Zeifman, M. and Roth, K.},
+  booktitle={IEEE Symposium on Computational Intelligence Applications In Smart Grid (CIASG)},
+  year={2011},
+  _pages={1--8},
+  _organization={IEEE}
+}
+
+@article{zeifman2012disaggregation,
+  title={Disaggregation of home energy display data using probabilistic approach},
+  author={Zeifman, M.},
+  journal={IEEE Transactions on Consumer Electronics},
+  year={2012},
+  _volume={58},
+  _number={1},
+  _pages={23--31},
+  _publisher={IEEE}
+}
+
+@inproceedings{zeifman2013automatic,
+  title={Automatic recognition of major end-uses in disaggregation of home energy display data},
+  author={Zeifman, M. and Roth, K. and Stefan, J.},
+  booktitle={IEEE International Conference on Consumer Electronics (ICCE)},
+  year={2013}, 
+  _pages={104--105}, 
+}
+
+@article{zhang2014training,
+  title={Training-free non-intrusive load monitoring of electric vehicle charging with low sampling rate},
+  author={Zhang, Z. and Son, J.H. and Li, Y. and Trayer, M. and Pi, Z. and Hwang, D.Y. and Moon, J.K.},
+  year={2014}, 
+  _journal={arXiv preprint arXiv:1404.5020},
+}
+
+@article{zmeureanuuse,
+  title={Use of soft computing techniques for the evaluation of energy performance of equipments in buildings},
+  author={Zmeureanu, R. and Farinaccio, L.},
+  journal={Department of Building, Civil and Environmental Engineering Concordia University},
+  _address={Montreal, Quebec, CANADA}
+}
+
+@article{zoha2012survey,
+  title={Non-intrusive load monitoring approaches for disaggregated energy sensing: A survey},
+  author={Zoha, A. and Gluhak, A. and Imran, M.A. and Rajasegarar, S.},
+  journal={Sensors},
+  year={2012},
+  _volume={12},
+  _number={12},
+  _pages={16838--16866},
+  _publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@article{book2014us, 
+title={Buildings Energy Data Book}, 
+journal={Energy Efficiency and Renewable Energy},
+year={2014},
+_publisher={U.S. Department of Energy}
+_link={http://buildingsdatabook.eren.doe.gov/TableView.aspx?table=1.1.3}
+}
+
+
+@online{meterTED,
+  author = {TED},
+  title = {CT products},
+  year = 2010,
+  url = {http://www.theenergydetective.com},
+}
+
+@online{meterPico,
+  author = {Pico Technology},
+  title = {TA041},
+  _year = 2010,
+  url = {http://www.picotechnologies.com}
+}
+
+@online{meterNI,
+  author = {National Instruments},
+  title = {NI-9239},
+  _year = 2010,
+  url = {http://sine.ni.com/nips/cds/view/p/lang/en/nid/208797}
+}
+
+@online{meterTrend,
+  author = {TrendPoint},
+  title = {Power Meter},
+  _year = 2010,
+  url = {http://www.trendpoint.com/branch-circuit-monitoring/enersure/},
+}
+
+@online{meterEMF,
+  author = {AlphaLab},
+  title = {EMF meter},
+  _year = 2010,
+  url = {https://www.trifield.com/content/trifield-meter/},
+}
+
+@online{meterSound,
+  author = {Lego Engineering},
+  title = {Mindstorms},
+  _year = 2010,
+  url = {http://www.legoengineering.com/nxt-sensors/},
+}
+
+@online{meterLight,
+  author = {Extech Instruments},
+  title = {Light Sensor},
+  _year = 2010,
+  url = {http://www.extech.com/instruments/product.asp?catid=10&prodid=55},
+}
+
+@online{meterTemp,
+  author = {Amprobe},
+  title = {Temperature Meter},
+  _year = 2010,
+  url = {http://www.amprobe.com/amprobe/usen/hvac-tools/humidity/amp-thwd-3.htm?pid=73368},
+}

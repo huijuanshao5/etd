@@ -1,0 +1,236 @@
+%
+% PROJECT: <ETD> Electronic Thesis and Dissertation Initiative
+%   TITLE: LaTeX report template for ETDs in LaTeX
+%  AUTHOR: Neill Kipp, nkipp@vt.edu
+%     URL: http://etd.vt.edu/latex/
+% SAVE AS: etd.tex
+% REVISED: September 6, 1997 [GMc 8/30/10]
+% 
+
+% Instructions: Remove the data from this document and replace it with your own,
+% keeping the style and formatting information intact.  More instructions
+% appear on the Web site listed above.
+% 03/03/2015, this line is commented by Huijuan for the figure problems 
+%\documentclass[12pt,dvips]{report}
+\documentclass[12pt,pdf]{report}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1in}
+
+% Uncomment for double-spaced document.
+% \renewcommand{\baselinestretch}{2}
+
+% \usepackage{epsf}
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{aaai}
+\usepackage{color}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+%\usepackage{graphicx}
+%\usepackage{epsfig}
+%\usepackage{epstopdf}
+\usepackage[cmex10]{amsmath}
+\usepackage{algcompatible}
+%\usepackage{algorithm}% http://ctan.org/pkg/algorithm
+%\usepackage{algorithmic}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{multirow}
+\usepackage{amsthm}
+%\usepackage{url}
+\usepackage{mdwlist}
+%\usepackage{float}
+%\usepackage{xkcd}
+\usepackage{cite}
+\usepackage[sort&compress]{natbib}
+%\usepackage{achicago}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+
+\usepackage{algorithmicx}
+\usepackage{algorithm} % http://ctan.org/pkg/algorithms
+%\usepackage[noend]{algpseudocode} 
+\newcommand{\argmin}{\arg\!\min}
+%\usepackage[noend]{algpseudocode} % http://ctan.org/pkg/algorithmicx
+\algrenewcommand\alglinenumber[1]{\tiny #1:}
+
+\begin{document}
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+\begin{center}
+
+% TITLE
+{\Large 
+Temporal Mining Approaches for Smart Buildings Research
+}
+
+\vfill
+
+Huijuan Shao
+
+\vfill
+
+Preliminary proposal submitted to the Faculty of the \\
+Virginia Polytechnic Institute and State University \\
+in partial fulfillment of the requirements for the degree of
+
+\vfill
+
+Doctor of Philosophy \\
+in \\
+Computer Science
+
+\vfill
+
+Naren Ramakrishnan, Chair \\
+B. Aditya Prakash \\
+Chang-Tien Lu \\
+Anil Vullkanti \\
+Manish Marwah
+
+\vfill
+
+Aug. 19, 2015 \\
+Arlington, Virginia
+
+\vfill
+
+Keywords: Computer Science
+\\
+Copyright 2015, Huijuan Shao
+
+\end{center}
+
+\pagebreak
+
+\thispagestyle{empty}
+\begin{center}
+
+{\large Temporal Mining Approaches for Smart Buildings Research }
+
+\vfill
+Huijuan Shao
+\vfill
+(ABSTRACT)
+\vfill
+\end{center}
+With the advent of modern sensor technologies, 
+significant opportunities have opened up to help conserve energy in 
+residential and commercial buildings. 
+This research proposal focuses on three sub-problems. 
+The first is energy disaggregation, i.e., 
+separating the energy usage 
+of each circuit or each electric device in a building 
+using only aggregate electricity usage information from 
+the whole house meter. 
+The second sub-problem is to model 
+daily life activity in a building with a view to 
+automatically shutdown or startup units like the HVAC based on 
+occupancy estimations. 
+The last problem, non-invasive indoor activities tracking, aims to 
+predict the locations of people inside a building. 
+All these problems are approached using the methods of 
+temporal data mining. 
+Motif mining with constraints is exploited to distinguish devices with multiple states 
+thus tackle the energy disaggregation problem.
+Time-gap constrained episode mining is used to detect 
+activity patterns followed by the use of a mixture of episode generating HMM (EGH) model 
+to predict home occupancy.  
+Finally, the mixture EGH
+model can also help predict the location of a person to 
+address non-invasive indoor activities tracking. 
+
+\vfill
+
+% GRANT INFORMATION
+
+That this work received support from the HP labs is purely
+coincidental.
+
+\pagebreak
+
+% Dedication and Acknowledgments are both optional
+% \chapter*{Dedication}
+% \chapter*{Acknowledgments}
+
+\tableofcontents
+\pagebreak
+
+\listoffigures
+\pagebreak
+
+\listoftables
+\pagebreak
+
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+
+
+\include{sec/introduction}
+
+\chapter{Survey of Energy Disaggregation}
+\markright{Huijuan Shao \hfill Chapter 1. Survey of Energy Disaggregation\hfill}
+\input{surveysec/introduction.tex}
+\input{surveysec/basic.tex}
+\input{surveysec/problem.tex}
+\input{surveysec/features.tex}
+\input{surveysec/algorithms.tex}
+\input{surveysec/supervised.tex}
+\input{surveysec/unsupervised.tex}
+\input{surveysec/evaluation.tex}
+\input{surveysec/setup.tex}
+\input{surveysec/ongoing.tex}
+\input{surveysec/conclusion.tex}
+
+\include{sec/disagg}
+%%%for survey paper
+
+\chapter{Proposal: Occupancy Prediction}
+\markright{Huijuan Shao \hfill Chapter 4. Proposal: Occupancy Prediction \hfill}
+\input{adlsec/abstract.tex}
+\input{adlsec/introduction.tex}
+\input{adlsec/related.tex}
+\input{adlsec/formulation.tex}
+\input{adlsec/algorithm.tex}
+\input{adlsec/result.tex}
+\input{adlsec/conclusion.tex}
+\input{adlsec/appendix.tex}
+
+\input{sec/proposal.tex}
+
+% If you are using BibTeX, uncomment the following:
+%\thebibliography
+%\bibliographystyle{abbrv}
+%\bibliography{references}
+%\bigskip
+%
+% Otherwise, uncomment the following:
+%\chapter*{Bibliography}
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+
+%\appendix
+
+% In LaTeX, each appendix is a "chapter"
+% \chapter{Program Source}
+
+%\bibliographystyle{aaai}
+%\bibliography{references}
+%\bigskip
+
+\end{document}

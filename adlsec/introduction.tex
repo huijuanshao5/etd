@@ -1,69 +1,68 @@
 \section{Introduction}
 
-Modeling activity of daily life (ADL) has become a burgeoning research topic 
-since people demand a comfortable life lifestyle at home
+Modeling activity of daily life (ADL) has become a burgeoning research topic, 
+since people demand a comfortable life at home
 at a lower cost. 
-Since HVAC consumes $\sim$53\% of the total electrical usage 
-by heating and cooling spaces%\cite{energydatabook2011} 
+Since heating and cooling spaces consumes $\sim$53\% of the total electrical usage 
+by heating and cooling spaces %\cite{energydatabook2011} 
 of an average household, 
-automating the operation HVAC devices to save energy is important. 
+automating the operation of HVAC devices to save energy is important. 
 One of the crucial components required to achieve this goal is 
 to model and predict the occupancy of a home. 
 Supervised learning approaches on the analysis of indoor temperature~\cite{kleiminger2014predicting}, 
-smart phone's GPS data~\cite{koehler2013therml}, 
+smart phones' GPS data~\cite{koehler2013therml}, 
 electricity consumption~\cite{erickson2010occupancy} and 
-sensor data by tracking the indoor activities~\cite{scott2011preheat,alrazgan2011learning} 
+sensor data by tracking indoor activities~\cite{scott2011preheat,alrazgan2011learning} 
 are effective ways to approach this prediction problem. 
-Prediction with sensor data is broadly researched. 
-By capturing daily activities like room occupancy of the house, 
+Prediction of occupancy using sensor data has been broadly researched. 
+By capturing daily activities, like room occupancy of the house, 
 usage of electrical devices, 
-usage of water system, etc. using sensors, 
+and usage of water systems using sensors, 
 researchers have modeled occupancy~\cite{mahmoud2013behavioural,erickson2010occupancy,beltran2014optimal} 
-and used these results to automate the control of HVAC system. 
+and used these results to automate the control of the HVAC system. 
 
 Although the supervised learning kNN~\cite{scott2011preheat}, 
 neural network~\cite{mahmoud2013behavioural} and Markov model~\cite{erickson2010occupancy} 
 are effective, 
-the detailed household activities represented as a time series is not fully utilized. 
-Daily activities such as waking up, cooking, washing, commuting to work/school and back, etc. 
+the detailed household activities represented as a time series are not fully utilized. 
+Daily activities such as waking up, cooking, washing, and commuting to work/school and back 
 have different patterns based on the day. 
 For instance, the schedule on a working day is significantly different from that of a weekend 
 or a holiday. 
-Thus, this scenario leads itself to an episode mining analysis, 
+Thus, this scenario leads itself to episode mining analysis, 
 which can be used to predict household occupancy. 
-Following this strategy of episode mining for occupancy prediction has three advantages. 
+Using this strategy of episode mining for occupancy prediction has three advantages. 
 First, episode mining, a temporal mining approach, mines according to the time 
 distribution for each type of activity. 
 Second, it builds the activity scenario and connects the episode with 
 a probabilistic hidden Markov model (HMM). 
-As opposed to previous models, 
+Unlike previous models, 
 the time and order of each kind of activity are fully utilized. 
-Third, the algorithm predicts according to the scenarios-based probabilistic model episode 
-generative HMM (EGH). The prediction accuracy improves compares to the existing models. 
+Third, the algorithm predicts according to the scenario-based probabilistic model episode 
+generative HMM (EGH). The prediction accuracy is better than the existing models. 
 
-Our contributions can be highlighted in the form of the three questions below. 
+This work's contributions can be highlighted in the form of the three questions below. 
 \begin{enumerate}
 \item How can we mine for meaningful scenarios? 
 Episode mining can mine many frequent episodes, but not all the episodes are useful 
 for occupancy prediction. 
 By narrowing the episodes according to the start state, 
-end time, event dwelling time and gap between two activities, 
+end time, event dwelling time and the gap between two activities, 
 we can interpret these episodes and provide insight as to 
 which episodes are informative. 
 \item How can we predict the occupancy more accurately?
-Our dataset comprises of detailed information of the various activities of a household 
+Our dataset comprises detailed information of the various activities of a household 
 tracked as a time series on a daily basis. 
 Thus our episodes have rich detailed information based on occupancy and 
-un-occupancy of the household. 
+unoccupancy of the household. 
 Since we are mining episodes from this data, 
 the accuracy of occupancy prediction improves significantly. 
 \item  Can it help save electric usage at home?
-The prediction occurs at least 15-minutes ahead of a person 
+The prediction occurs at least 15 minutes ahead of a person 
 leaving or coming back. 
-By connecting this prediction result to an automatic controlling system 
-over HVAC, the HVAC can be operated ahead. 
+By connecting this prediction result to an automatic HVAC controlling system, the HVAC can be turned on or off  ahead of the occupancy change. 
 Since the HVAC does not work during occupancy, 
-it saves electric usage. 
+this saves electric usage. 
 \end{enumerate}
 
 \iffalse

@@ -1,0 +1,6 @@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3 in]{figs/nnsystem_chang2008load2.pdf}
+\caption{Adaptive Neural Network (Courtesy:\cite{chang2008load2})}
+\label{fig_nnsystem_chang2008load2}
+\end{figure}

@@ -1,0 +1,603 @@
+\relax 
+\citation{eebook}
+\citation{hart1992}
+\citation{wichakool2009modeling}
+\citation{shao2012temporal}
+\@input{sec/introduction.aux}
+\citation{book2014us}
+\citation{book2014us}
+\citation{hart1992}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Survey of Energy Disaggregation}{3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{3}}
+\citation{hart1992}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}What is Energy Disaggregation?}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces  (a) Aggregate power. (b) Disaggregated information about devices and their power usage patterns.}}{4}}
+\newlabel{fig_energyDisaggDefinition}{{2.1}{4}}
+\citation{hart1992}
+\citation{shaw2000PhdThesis}
+\citation{srinivasan2006neural}
+\citation{lam2007novel}
+\citation{chan2000harmonics}
+\citation{chan2000harmonics}
+\citation{patel2007flick}
+\citation{kim2011unsupervised}
+\citation{shaw2000PhdThesis}
+\citation{patel2007flick}
+\citation{roos1994using}
+\citation{baranski2004genetic}
+\citation{kolter2010sparse}
+\citation{nakano2007non}
+\citation{suzuki2008nonintrusive}
+\citation{baranski2004detecting}
+\citation{zeifman2011viterbi}
+\citation{gonccalves2011unsupervised}
+\citation{kim2011unsupervised}
+\citation{kolter2012aistat}
+\citation{parson2012nonintrusive}
+\citation{shao2013temporal}
+\citation{lam2007novel,johnson2012bayesian}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Challenges}{5}}
+\citation{norford1996non}
+\citation{zeifman2011nonintrusive}
+\citation{liang2010load}
+\citation{zoha2012survey}
+\citation{dai2011multi}
+\citation{froehlich2011disaggregated}
+\citation{schmidt2006nonnegative}
+\citation{blumensath2005shift,davies2007source,lewicki2000learning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Scope of This Survey}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Organization}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}A Primer on AC power}{7}}
+\newlabel{sec:basic}{{2.2}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Electricity Transmission}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Circuits and Devices}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Electricity generation and transmission to residential and commercial buildings.}}{8}}
+\newlabel{fig_powerconnection}{{2.2}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Voltage and Current}{8}}
+\citation{eebook}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a circuit in (a) residential building and (b) commercial building.}}{9}}
+\newlabel{fig_residentialCommercialBG}{{2.3}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Three phase power waveform.}}{9}}
+\newlabel{fig_threephase}{{2.4}{9}}
+\newlabel{eq_sinusoidal}{{2.1}{9}}
+\citation{hart1992}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces AC Circuit of basic loads: resistor, inductor, and capacitor (courtesy: \cite  {eebook}).}}{10}}
+\newlabel{fig_threebasicloads}{{2.5}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Real Power and Reactive Power}{10}}
+\newlabel{sec_pvCalculation}{{2.2.4}{10}}
+\newlabel{eq_insPower}{{2.4}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Real and reactive power for different devices (courtesy: \cite  {hart1992}).}}{11}}
+\newlabel{fig_realReactive_hart1992}{{2.6}{11}}
+\newlabel{eq_powerTriangle}{{2.5b}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Power Triangle.}}{11}}
+\newlabel{fig_powerTriangle}{{2.7}{11}}
+\citation{anderson2012blued}
+\citation{hart1992}
+\citation{hart1992}
+\newlabel{eq_devicePowerValue}{{2.6a}{12}}
+\newlabel{eq_devicePowerValue1}{{2.6b}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Harmonics}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Circuit 4 (a) Current Waveform and (b) Harmonics.}}{12}}
+\newlabel{fig_harmonicsexample}{{2.8}{12}}
+\citation{liang2010load}
+\citation{kolter2012aistat}
+\citation{gonccalves2011unsupervised,wytock2014contextually}
+\citation{kim2011unsupervised,kolter2012aistat,parson2012nonintrusive,johnson2012bayesian,shao2013temporal}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Definition of Energy Disaggregation}{13}}
+\newlabel{sec:problem}{{2.3}{13}}
+\citation{chan2000harmonics}
+\newlabel{eq_powerObj}{{2.8}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Technology Timeline}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Energy Disaggregation Definition Example.}}{15}}
+\newlabel{fig_timeline}{{2.9}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Disaggregation Features}{15}}
+\newlabel{sec:features}{{2.4}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Category of (a) AC Power Features and (b) Non-AC Power Features. }}{15}}
+\newlabel{fig_ACPowerFeatures}{{2.10}{15}}
+\citation{hart1992,powers1991using,farinaccio1999using,marceau2000nonintrusive,baranski2004genetic,baranski2004detecting}
+\citation{hart1992,laughman2003power,drenker1999nonintrusive}
+\citation{milioudis2013event}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}AC Power Features}{16}}
+\newlabel{eq_realpowerhighfreq}{{2.9}{16}}
+\citation{anderson2012blued}
+\citation{sultanem1991using}
+\citation{shaw2000PhdThesis}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces (a) Transient and Steady State of a Sinusoidal Current from a Refrigerator. Transient Shapes for a Refrigerator (b) Real Power and (c) Instantaneous Real Power.}}{17}}
+\newlabel{fig_realTransient}{{2.11}{17}}
+\citation{suzuki2008nonintrusive}
+\citation{duan2004neural}
+\citation{cox2006transient}
+\citation{srinivasan2006neural}
+\citation{hassan2014empirical}
+\citation{lam2007novel}
+\citation{su2011feature}
+\citation{chan2000harmonics}
+\citation{liang2010load}
+\citation{laughman2003power,lee2005estimation,srinivasan2006neural,akbar2007modified,matthews2008auto,wichakool2009modeling}
+\citation{srinivasan2006neural}
+\citation{lee2003PhdThesis,lee2005estimation}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Current waveform of (a) a refrigerator and (b) an air compressor. The current and voltage of (c) a refrigerator and (c) an air compressor. The V-I trajectories of (e) a refrigerator and (f) an air compressor. }}{19}}
+\newlabel{fig_waveformTraj}{{2.12}{19}}
+\citation{srinivasan2006neural}
+\citation{leeb1995transient,laughman2003power}
+\citation{wichakool2009modeling}
+\citation{wichakool2009modeling}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces The eigenvalue of a circuit and dining room light. }}{20}}
+\newlabel{fig_eigenValue}{{2.13}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces Harmonics Feature of (a) a refrigerator and (b) an air compressor (c) real and imaginary part of odd number of harmonics of a refrigerator. }}{20}}
+\newlabel{fig_harmonicsFeature}{{2.14}{20}}
+\citation{patel2007flick}
+\citation{gupta2010electrisense}
+\citation{patel2007flick}
+\citation{gupta2010electrisense}
+\citation{kaggle2013energy}
+\citation{shao2013temporal}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Switching-function for VSDs disaggregation (Courtesy:\cite  {wichakool2009modeling}).}}{21}}
+\newlabel{fig_switchingfun}{{2.15}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Features Beyond Current and Voltage}{21}}
+\citation{kim2011unsupervised}
+\citation{kim2011unsupervised}
+\citation{kim2011unsupervised}
+\citation{chen2013novel}
+\citation{chen2014mining}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces (a) Baseline noise with newly added noise. (b) Noise Feature of a device.}}{22}}
+\newlabel{fig_LCDTVNoise}{{2.16}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Day of Week of Feature.}}{22}}
+\newlabel{fig_timeofday}{{2.17}{22}}
+\citation{giri_study_2012}
+\citation{kim2009viridiscope}
+\citation{pardo2002temperature}
+\citation{cook2011sensor}
+\citation{srinivasan2013fixturefinder}
+\citation{wu2012low}
+\citation{uttama2013sustainable}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Disaggregation Algorithms}{23}}
+\newlabel{sec:algorithms}{{2.5}{23}}
+\citation{cox2006transient}
+\citation{wichakool2009modeling}
+\citation{chan2000harmonics}
+\citation{cox2006transient}
+\citation{wichakool2009modeling}
+\citation{jin2011robust}
+\citation{chan2000harmonics}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Pre-processing: Event Types and Feature Extraction Algorithms}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{Event types of device features}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{Feature extraction algorithms}{24}}
+\citation{hart1992}
+\citation{roos1994using}
+\citation{patel2007flick}
+\citation{onoda2000applying}
+\citation{onoda2000applying2}
+\citation{nakano2007non}
+\citation{berges2010enhancing}
+\citation{baranski2004genetic}
+\citation{powers1991using}
+\citation{froehlich2011disaggregated}
+\citation{berges2009learning}
+\citation{berges2009learning}
+\citation{shaw2000PhdThesis}
+\citation{zeifman2011viterbi}
+\citation{anderson2012event}
+\citation{baranski2004detecting}
+\citation{dong2013dynamical}
+\citation{suzuki2008nonintrusive}
+\citation{kolter2010sparse}
+\citation{figueiredo2014electrical}
+\citation{gonccalves2011unsupervised}
+\citation{kim2011unsupervised}
+\citation{kolter2012aistat}
+\citation{parson2012nonintrusive}
+\citation{shao2013temporal}
+\citation{lam2007novel}
+\citation{johnson2012bayesian}
+\citation{wytock2014contextually}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Pre-processing Algorithms on Vector Event Feature Extraction. }}{25}}
+\newlabel{tab_featureAlg}{{2.1}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Overview of Disaggregation Algorithms}{25}}
+\citation{roos1994using}
+\citation{baranski2003nonintrusive}
+\citation{duan2004neural}
+\citation{srinivasan2006neural}
+\citation{srinivasan2006neural}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Supervised Learning Algorithms}{26}}
+\@writefile{toc}{\contentsline {subsubsection}{Classification-Based}{26}}
+\newlabel{sec:supervised}{{2.5.3}{26}}
+\citation{chang2008load2}
+\citation{liang2010load}
+\citation{yang2007design}
+\citation{chang2008load}
+\citation{chang2010newmethod}
+\citation{onoda2000applying}
+\citation{onoda2000applying2}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces Neural Network Approach for Energy Disaggregation.}}{27}}
+\newlabel{fig_neuralNetwork}{{2.18}{27}}
+\citation{patel2007flick}
+\citation{froehlich2011disaggregated}
+\citation{mambayashi1997noise}
+\citation{nakano2007non}
+\citation{froehlich2011disaggregated}
+\citation{hampden2012closure}
+\citation{rollins2014using}
+\citation{zeifman2012disaggregation}
+\citation{zeifman2013automatic}
+\citation{berges2009learning}
+\citation{onoda2000applying}
+\citation{kearns1990complexity}
+\citation{gupta2010electrisense}
+\citation{shaw2000PhdThesis}
+\@writefile{toc}{\contentsline {subsubsection}{Nearest Neighbor-Based}{29}}
+\citation{shaw2000PhdThesis,lee2005estimation,berges2009learning,berges2010enhancing}
+\citation{shaw2000PhdThesis}
+\citation{shaw2008nonintrusive}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces Transient Shape Decomposition and KNN Seach}}{30}}
+\newlabel{fig_kNN}{{2.19}{30}}
+\citation{gupta2010electrisense}
+\citation{lee2005estimation}
+\citation{lee2005estimation}
+\citation{kolter2010redd}
+\citation{zeifman2011viterbi}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces PDFs of three neighboring by power draw appliances.}}{32}}
+\newlabel{fig_realPowerPDF}{{2.20}{32}}
+\@writefile{toc}{\contentsline {subsubsection}{Statistical Model-Based}{32}}
+\citation{jin2011robust,jin2011time}
+\citation{anderson2012event}
+\citation{berges2011user}
+\citation{luo2002monitoring}
+\citation{wang2013heirarchical}
+\citation{kim2011unsupervised}
+\citation{baranski2004detecting}
+\citation{chang2010newmethod}
+\citation{vogiatzis2013real}
+\@writefile{toc}{\contentsline {subsubsection}{Optimization-Based}{34}}
+\newlabel{eq_shannon}{{2.16}{34}}
+\citation{dong2013dynamical}
+\citation{abed1997blind}
+\citation{suzuki2008nonintrusive}
+\citation{zeifman2012disaggregation}
+\newlabel{eqn_dynmodel}{{2.17}{35}}
+\citation{baranski2004genetic}
+\citation{kolter2010sparse}
+\citation{Dong2013deep}
+\citation{figueiredo2014electrical}
+\newlabel{eq_sparsepretraining}{{2.21}{36}}
+\citation{figueiredo2014electrical}
+\citation{kolter2010sparse}
+\citation{kolda2009tensor}
+\citation{chow1989complexity}
+\citation{baranski2004detecting}
+\citation{suzuki2008nonintrusive}
+\citation{suzuki2008nonintrusive}
+\citation{bishop2006pattern}
+\citation{li2009coordinate}
+\citation{hart1992}
+\citation{gonccalves2011unsupervised}
+\citation{kim2011unsupervised,kolter2012aistat,parson2012nonintrusive}
+\citation{shao2012temporal}
+\citation{gonccalves2011unsupervised}
+\citation{lee1999blindsource}
+\citation{gonccalves2011unsupervised}
+\citation{jain1999data}
+\citation{kim2011unsupervised}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Unsupervised Learning Algorithms}{38}}
+\newlabel{sec:unsupervised}{{2.5.4}{38}}
+\@writefile{toc}{\contentsline {subsubsection}{Hierarchical clustering-based}{38}}
+\citation{kolter2012aistat}
+\@writefile{toc}{\contentsline {subsubsection}{FHMM-based}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces  Graphical model with $M$ devices. (a) FHMM and (b) Difference FHMM.}}{39}}
+\newlabel{fig_fhmm}{{2.21}{39}}
+\newlabel{eq_fhmm}{{2.25}{39}}
+\newlabel{eq_fhmm_em}{{2.26}{39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces AFAMAP Flowchart.}}{40}}
+\newlabel{fig_AFAMAP_boxDiagram}{{2.22}{40}}
+\newlabel{eq_afamapPrior}{{2.27}{40}}
+\newlabel{eq_onceatime}{{2.29}{40}}
+\citation{parson2012nonintrusive}
+\citation{huang2013designing}
+\citation{lukaszewski2013methods}
+\citation{bishop2006pattern}
+\citation{kim2011unsupervised}
+\citation{parson2012nonintrusive}
+\citation{shao2012temporal}
+\citation{shao2012temporal}
+\citation{kolter2012aistat}
+\@writefile{toc}{\contentsline {subsubsection}{Temporal mining-based}{42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces Motif Mining Example (\cite  {shao2012temporal}). }}{42}}
+\newlabel{fig_motifSample}{{2.23}{42}}
+\citation{kelly2012disaggregating}
+\citation{lam2007novel}
+\citation{kim2011unsupervised}
+\citation{johnson2012bayesian}
+\citation{wytock2014contextually}
+\@writefile{toc}{\contentsline {subsubsection}{Probabilistic graph-based}{43}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Semi-supervised Learning Algorithms}{43}}
+\@writefile{toc}{\contentsline {subsubsection}{Clustering-based}{43}}
+\@writefile{toc}{\contentsline {subsubsection}{HMM-based}{43}}
+\@writefile{toc}{\contentsline {subsubsection}{Optimization-based}{44}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Evaluation Metric}{44}}
+\newlabel{sec:evaluation}{{2.6}{44}}
+\citation{berges2009learning}
+\citation{chang2010newmethod}
+\citation{froehlich2011disaggregated}
+\citation{yang2007design}
+\citation{chang2008load}
+\citation{suzuki2008nonintrusive}
+\citation{berges2010enhancing}
+\citation{patel2007flick}
+\citation{nakano2007non}
+\citation{gonccalves2011unsupervised}
+\citation{zeifman2012disaggregation}
+\citation{kolter2012aistat}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Evaluation Based on Events}{45}}
+\newlabel{eq_eventEvaluation}{{2.32}{45}}
+\newlabel{eq_clusterEvaluation}{{2.33}{45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Evaluation Based on Time Series}{45}}
+\citation{kolter2012aistat}
+\citation{parson2012nonintrusive}
+\citation{kim2011unsupervised}
+\citation{shao2012temporal}
+\citation{liang2010load}
+\citation{giri_study_2012}
+\citation{kim2009viridiscope}
+\newlabel{eq_tsErrorRate}{{2.34}{46}}
+\newlabel{eq_tsEvaluationSqt}{{2.35}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Evaluation Based on Combinational Metrics}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.4}Data Collection and Public Data Sets}{46}}
+\newlabel{sec:setup}{{2.6.4}{46}}
+\citation{meterTED}
+\citation{meterPico}
+\citation{meterNI}
+\citation{meterTrend}
+\citation{meterEMF}
+\citation{meterSound}
+\citation{meterLight}
+\citation{meterTemp}
+\@writefile{toc}{\contentsline {subsubsection}{Meters}{47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces Four Types of Meters in a Building.}}{47}}
+\newlabel{fig_metersConnection}{{2.24}{47}}
+\@writefile{toc}{\contentsline {subsubsection}{Low frequency data and high frequency data}{47}}
+\citation{meterTED}
+\citation{berges2010enhancing}
+\citation{patel2007flick}
+\citation{baranski2003nonintrusive}
+\citation{berges2010enhancing}
+\citation{kolter2010redd}
+\citation{anderson2012blued}
+\citation{barker2012smart}
+\citation{makonin2013ampds}
+\citation{cook2013CASAS}
+\citation{batra2013different}
+\citation{monacchi2014greend}
+\citation{lai2012database}
+\citation{kelly2014metadata}
+\citation{barker2012smart}
+\citation{lai2012database}
+\@writefile{toc}{\contentsline {subsubsection}{Public datasets}{48}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Ongoing Research}{48}}
+\newlabel{sec:ongoing}{{2.7}{48}}
+\citation{chen2013non}
+\citation{song2014short}
+\citation{lee2014personalized}
+\citation{collins2012smart}
+\@writefile{toc}{\contentsline {section}{\numberline {2.8}Conclusion}{49}}
+\newlabel{sec:conclusion}{{2.8}{49}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Energy Disaggregation Algorithms Categories.}}{50}}
+\newlabel{tab_algSummary}{{2.2}{50}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Meters Used in Experiments.}}{51}}
+\newlabel{tab_meters}{{2.3}{51}}
+\@input{sec/disagg.aux}
+\citation{kleiminger2014smart}
+\citation{koehler2013therml}
+\citation{erickson2010occupancy}
+\citation{scott2011preheat,alrazgan2011learning}
+\citation{mahmoud2010occupancy,mahmoud2013behavioural,erickson2014occupancy,beltran2014optimal}
+\citation{scott2011preheat}
+\citation{mahmoud2010occupancy}
+\citation{erickson2014occupancy}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Proposal: Occupancy Prediction}{67}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Abstract}{67}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Introduction}{67}}
+\citation{scott2011preheat,alrazgan2011learning,mahmoud2010occupancy,mahmoud2013behavioural,erickson2014occupancy,beltran2014optimal}
+\citation{scott2011preheat}
+\citation{mahmoud2010occupancy,mahmoud2013behavioural}
+\citation{erickson2014occupancy}
+\citation{manna2013learning}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Related Work}{68}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Problem Formulation}{69}}
+\citation{mannila1997discovery}
+\citation{laxman2005discovering}
+\citation{patnaik2008inferring}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Constraint Episode Mining and Mixture EGH}{70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Time-gap Constraint Episode Mining}{70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of Duration-gap Constraint Episode.}}{70}}
+\newlabel{fig_durationgapconstraint}{{4.1}{70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Time-gap constraint episode mining example.}}{71}}
+\newlabel{fig_MingExample}{{4.2}{71}}
+\citation{laxman2005discovering}
+\citation{laxman2005discovering}
+\citation{laxman2005discovering}
+\citation{laxman2005discovering}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Episode Generating HMM}{72}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces States Transition of Episode Generating HMM (EGH).}}{72}}
+\newlabel{fig_egh}{{4.3}{72}}
+\citation{laxman2005discovering}
+\citation{laxman2008stream}
+\newlabel{theorem1}{{1}{73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Mixture EGH}{73}}
+\newlabel{eq_mixture}{{4.1}{73}}
+\newlabel{eq_likelihood}{{4.3}{73}}
+\citation{laxman2008stream}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Predict When the Target Event Occurs}{74}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Experiment Results}{74}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces  Target Event Occurs Time Prediction Algorithm}}{75}}
+\newlabel{alg22}{{1}{75}}
+\citation{scott2011preheat}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces  Study 10 Precision recall and f-measure comparison of three approaches. (a) person1 occupied 02/20/2014 (b) person1 unoccupied 02/20/2014 (c) person2 occupied 02/17/2014 (b) person2 unoccupied 02/17/2014}}{77}}
+\newlabel{fig_study10}{{4.4}{77}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces  Study 11 Precision recall and f-measure comparison of three approaches. (a) person2 occupied 02/04/2014 (b) person2 unoccupied 02/04/2013 }}{78}}
+\newlabel{fig_study11}{{4.5}{78}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusion}{78}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces  Study 14 Precision recall and f-measure comparison of three approaches. (a) person1 occupied 12/18/2014 (b) person1 unoccupied 12/18/2013 }}{79}}
+\newlabel{fig_study14}{{4.6}{79}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Appendix}{79}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Gap Constraint Episode Mining on Dwelling Events}}{80}}
+\newlabel{alg_episodeMiningConstraint}{{2}{80}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Gap Constraint Episode Mining on Dwelling Events - Part 2}}{81}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces EM Algorithm for mixture EGH}}{82}}
+\newlabel{alg3}{{4}{82}}
+\citation{srinivasan2010using,hnat2012doorjamb}
+\citation{srinivasan2010using}
+\citation{hnat2012doorjamb}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Proposal: Indoor Activities Tracking}{83}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Indoor Activities Tracking}{83}}
+\citation{hnat2012doorjamb}
+\bibstyle{abbrv}
+\bibdata{references}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Approach}{84}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Evaluation}{84}}
+\bibcite{book2014us}{{1}{}{{}}{{}}}
+\bibcite{abed1997blind}{{2}{}{{}}{{}}}
+\bibcite{srikant-agrawal}{{3}{}{{}}{{}}}
+\bibcite{akbar2007modified}{{4}{}{{}}{{}}}
+\bibcite{meterEMF}{{5}{}{{}}{{}}}
+\bibcite{alrazgan2011learning}{{6}{}{{}}{{}}}
+\bibcite{meterTemp}{{7}{}{{}}{{}}}
+\bibcite{anderson2012event}{{8}{}{{}}{{}}}
+\bibcite{anderson2012blued}{{9}{}{{}}{{}}}
+\bibcite{baranski2003nonintrusive}{{10}{}{{}}{{}}}
+\bibcite{baranski2004detecting}{{11}{}{{}}{{}}}
+\bibcite{baranski2004genetic}{{12}{}{{}}{{}}}
+\bibcite{barker2012smart}{{13}{}{{}}{{}}}
+\bibcite{batra2013different}{{14}{}{{}}{{}}}
+\bibcite{beltran2014optimal}{{15}{}{{}}{{}}}
+\bibcite{berges2009learning}{{16}{}{{}}{{}}}
+\bibcite{berges2010enhancing}{{17}{}{{}}{{}}}
+\bibcite{berges2011user}{{18}{}{{}}{{}}}
+\bibcite{bishop2006pattern}{{19}{}{{}}{{}}}
+\bibcite{kaggle2013energy}{{20}{}{{}}{{}}}
+\bibcite{blumensath2005shift}{{21}{}{{}}{{}}}
+\bibcite{chan2000harmonics}{{22}{}{{}}{{}}}
+\bibcite{chang2010newmethod}{{23}{}{{}}{{}}}
+\bibcite{chang2008load}{{24}{}{{}}{{}}}
+\bibcite{chang2008load2}{{25}{}{{}}{{}}}
+\bibcite{chen2013non}{{26}{}{{}}{{}}}
+\bibcite{chen2014mining}{{27}{}{{}}{{}}}
+\bibcite{chen2013novel}{{28}{}{{}}{{}}}
+\bibcite{motif1}{{29}{}{{}}{{}}}
+\bibcite{chow1989complexity}{{30}{}{{}}{{}}}
+\bibcite{collins2012smart}{{31}{}{{}}{{}}}
+\bibcite{cook2011sensor}{{32}{}{{}}{{}}}
+\bibcite{cook2013CASAS}{{33}{}{{}}{{}}}
+\bibcite{cox2006transient}{{34}{}{{}}{{}}}
+\bibcite{dai2011multi}{{35}{}{{}}{{}}}
+\bibcite{davies2007source}{{36}{}{{}}{{}}}
+\bibcite{Dong2013deep}{{37}{}{{}}{{}}}
+\bibcite{dong2013dynamical}{{38}{}{{}}{{}}}
+\bibcite{drenker1999nonintrusive}{{39}{}{{}}{{}}}
+\bibcite{duan2004neural}{{40}{}{{}}{{}}}
+\bibcite{meterSound}{{41}{}{{}}{{}}}
+\bibcite{erickson2014occupancy}{{42}{}{{}}{{}}}
+\bibcite{erickson2010occupancy}{{43}{}{{}}{{}}}
+\bibcite{farinaccio1999using}{{44}{}{{}}{{}}}
+\bibcite{figueiredo2014electrical}{{45}{}{{}}{{}}}
+\bibcite{froehlich2011disaggregated}{{46}{}{{}}{{}}}
+\bibcite{giri_study_2012}{{47}{}{{}}{{}}}
+\bibcite{gonccalves2011unsupervised}{{48}{}{{}}{{}}}
+\bibcite{gorur2010dirichlet}{{49}{}{{}}{{}}}
+\bibcite{gupta2010electrisense}{{50}{}{{}}{{}}}
+\bibcite{eebook}{{51}{}{{}}{{}}}
+\bibcite{hart1992}{{52}{}{{}}{{}}}
+\bibcite{hassan2014empirical}{{53}{}{{}}{{}}}
+\bibcite{hnat2012doorjamb}{{54}{}{{}}{{}}}
+\bibcite{huang2013designing}{{55}{}{{}}{{}}}
+\bibcite{meterLight}{{56}{}{{}}{{}}}
+\bibcite{meterNI}{{57}{}{{}}{{}}}
+\bibcite{jain1999data}{{58}{}{{}}{{}}}
+\bibcite{jin2011robust}{{59}{}{{}}{{}}}
+\bibcite{jin2011time}{{60}{}{{}}{{}}}
+\bibcite{johnson2012bayesian}{{61}{}{{}}{{}}}
+\bibcite{kearns1990complexity}{{62}{}{{}}{{}}}
+\bibcite{kelly2012disaggregating}{{63}{}{{}}{{}}}
+\bibcite{kelly2014metadata}{{64}{}{{}}{{}}}
+\bibcite{kim2011unsupervised}{{65}{}{{}}{{}}}
+\bibcite{kim2009viridiscope}{{66}{}{{}}{{}}}
+\bibcite{kleiminger2014smart}{{67}{}{{}}{{}}}
+\bibcite{koehler2013therml}{{68}{}{{}}{{}}}
+\bibcite{kolda2009tensor}{{69}{}{{}}{{}}}
+\bibcite{kolter2010sparse}{{70}{}{{}}{{}}}
+\bibcite{kolter2012aistat}{{71}{}{{}}{{}}}
+\bibcite{kolter2010redd}{{72}{}{{}}{{}}}
+\bibcite{hampden2012closure}{{73}{}{{}}{{}}}
+\bibcite{lai2012database}{{74}{}{{}}{{}}}
+\bibcite{lam2007novel}{{75}{}{{}}{{}}}
+\bibcite{laughman2003power}{{76}{}{{}}{{}}}
+\bibcite{laxman2005discovering}{{77}{}{{}}{{}}}
+\bibcite{vatsan-paper}{{78}{}{{}}{{}}}
+\bibcite{laxman2008stream}{{79}{}{{}}{{}}}
+\bibcite{lee2003PhdThesis}{{80}{}{{}}{{}}}
+\bibcite{lee2005estimation}{{81}{}{{}}{{}}}
+\bibcite{lee2014personalized}{{82}{}{{}}{{}}}
+\bibcite{lee1999blindsource}{{83}{}{{}}{{}}}
+\bibcite{leeb1995transient}{{84}{}{{}}{{}}}
+\bibcite{lewicki2000learning}{{85}{}{{}}{{}}}
+\bibcite{li2009coordinate}{{86}{}{{}}{{}}}
+\bibcite{liang2010load}{{87}{}{{}}{{}}}
+\bibcite{lukaszewski2013methods}{{88}{}{{}}{{}}}
+\bibcite{luo2002monitoring}{{89}{}{{}}{{}}}
+\bibcite{mahmoud2010occupancy}{{90}{}{{}}{{}}}
+\bibcite{mahmoud2013behavioural}{{91}{}{{}}{{}}}
+\bibcite{makonin2013ampds}{{92}{}{{}}{{}}}
+\bibcite{mambayashi1997noise}{{93}{}{{}}{{}}}
+\bibcite{manna2013learning}{{94}{}{{}}{{}}}
+\bibcite{mannila1997discovery}{{95}{}{{}}{{}}}
+\bibcite{marceau2000nonintrusive}{{96}{}{{}}{{}}}
+\bibcite{matthews2008auto}{{97}{}{{}}{{}}}
+\bibcite{milioudis2013event}{{98}{}{{}}{{}}}
+\bibcite{monacchi2014greend}{{99}{}{{}}{{}}}
+\bibcite{onoda2000applying2}{{100}{}{{}}{{}}}
+\bibcite{nakano2007non}{{101}{}{{}}{{}}}
+\bibcite{norford1996non}{{102}{}{{}}{{}}}
+\bibcite{onoda2000applying}{{103}{}{{}}{{}}}
+\bibcite{pardo2002temperature}{{104}{}{{}}{{}}}
+\bibcite{parson2012nonintrusive}{{105}{}{{}}{{}}}
+\bibcite{patel2007flick}{{106}{}{{}}{{}}}
+\bibcite{motifgoal}{{107}{}{{}}{{}}}
+\bibcite{patnaik2008inferring}{{108}{}{{}}{{}}}
+\bibcite{powers1991using}{{109}{}{{}}{{}}}
+\bibcite{rollins2014using}{{110}{}{{}}{{}}}
+\bibcite{roos1994using}{{111}{}{{}}{{}}}
+\bibcite{schmidt2006nonnegative}{{112}{}{{}}{{}}}
+\bibcite{scott2011preheat}{{113}{}{{}}{{}}}
+\bibcite{shao2012temporal}{{114}{}{{}}{{}}}
+\bibcite{shao2013temporal}{{115}{}{{}}{{}}}
+\bibcite{shaw2000PhdThesis}{{116}{}{{}}{{}}}
+\bibcite{shaw2008nonintrusive}{{117}{}{{}}{{}}}
+\bibcite{song2014short}{{118}{}{{}}{{}}}
+\bibcite{srinivasan2006neural}{{119}{}{{}}{{}}}
+\bibcite{srinivasan2010using}{{120}{}{{}}{{}}}
+\bibcite{srinivasan2013fixturefinder}{{121}{}{{}}{{}}}
+\bibcite{su2011feature}{{122}{}{{}}{{}}}
+\bibcite{sultanem1991using}{{123}{}{{}}{{}}}
+\bibcite{suzuki2008nonintrusive}{{124}{}{{}}{{}}}
+\bibcite{meterPico}{{125}{}{{}}{{}}}
+\bibcite{meterTED}{{126}{}{{}}{{}}}
+\bibcite{meterTrend}{{127}{}{{}}{{}}}
+\bibcite{uttama2013sustainable}{{128}{}{{}}{{}}}
+\bibcite{vogiatzis2013real}{{129}{}{{}}{{}}}
+\bibcite{wang2013heirarchical}{{130}{}{{}}{{}}}
+\bibcite{wichakool2009modeling}{{131}{}{{}}{{}}}
+\bibcite{wu2012low}{{132}{}{{}}{{}}}
+\bibcite{wytock2014contextually}{{133}{}{{}}{{}}}
+\bibcite{yang2007design}{{134}{}{{}}{{}}}
+\bibcite{motif2}{{135}{}{{}}{{}}}
+\bibcite{zeifman2012disaggregation}{{136}{}{{}}{{}}}
+\bibcite{zeifman2011nonintrusive}{{137}{}{{}}{{}}}
+\bibcite{zeifman2011viterbi}{{138}{}{{}}{{}}}
+\bibcite{zeifman2013automatic}{{139}{}{{}}{{}}}
+\bibcite{zoha2012survey}{{140}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers

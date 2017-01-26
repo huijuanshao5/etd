@@ -1,17 +1,20 @@
-\section{Evaluation Metric}
+\section{Evaluation Methodology}
 \label{sec:evaluation}
-To the best of our knowledge, there is no unified evaluation metric to evaluate the
-disaggregated results of energy disaggregation.
-Suppose we know the true power consumption value of each device, then there are two 
-metrics to evaluate the  device disaggregation results - event based and time 
-series based. In the event based metric, we check whether the 
-disaggregated turning on and off events are correctly classified for the target device. 
-The time series metric gauges whether the disaggregated power values of each device 
-is in the range of ground truth over a period of time. 
-
-For both event-based metric and time-series-based metric, 
-the disaggregation results can be measured through the confusion matrix, 
-F-measure, or simple error rate. 
+To the best of our knowledge, there is no universally
+accepted evaluation measure(s)
+to evaluate the 
+results of energy disaggregation algorithms.
+In the situation where we know the true power consumption value of each device, there are two broad classes of measurements to evaluate 
+device disaggregation results: event-based and time 
+series-based. In an event-based measure, we check whether the 
+inferred on/off events are correctly determined 
+for the target device. 
+The time series measure gauges whether the disaggregated 
+power values of each device 
+are in the range of ground truth over a period of time. 
+For both event-based and time series-based measures, 
+the disaggregation results can be measured through a confusion matrix, 
+F-measure, or a simple error rate. 
  
 %We introduce precision, recall, and F-measure to evaluate it.
 %In classification, true positive (TP) means the result is correct;
@@ -59,10 +62,10 @@ F-measure, or simple error rate.
 %real power and reactive identification events,
 %transient shape events and so on.
 
-\subsection{Evaluation Based on Events}
-Event-based evaluation metric, primarily on and off events, has been widely used in 
+\subsection{Evaluation based on Events}
+Event-based evaluation measures, primarily on and off events, have been widely used in 
 previous research work. 
-They are identified by real power and reactive power as stated in~\cite{berges2009learning} and~\cite{chang2010newmethod},
+They are identified by real power and reactive power as described in~\cite{berges2009learning} and~\cite{chang2010newmethod},
 by real power and transient shapes~\cite{froehlich2011disaggregated},
 by real power, reactive power and voltage-current trajectory~\cite{yang2007design},
 by just transient shapes~\cite{chang2008load},
@@ -73,21 +76,21 @@ or by analyzing the voltage noise~\cite{patel2007flick}.
 %the target is to improve the
 %event classification accuracy.
 
-Generally, the events classification rate is
-calculated as follows.
+Generally, the event classification rate is
+calculated using the following procedure.
 For each device,
-suppose there are totally $N$ on or off events 
+we suppose there are a total of $N$ on or off events 
 $\{E_1, ..., E_i, ..., E_N\}$ during
-a period of time,
-the corresponding predicted events are
+a period of time;
+assuming the corresponding predicted events are
 $\{\hat{E_1}, ..., \hat{E_i},...,\hat{E_N}\}$,
-and the the coverage range of these on or off events is
-given in Equation (\ref{eq_eventEvaluation}) in~\cite{nakano2007non}.
+then, according to ~\cite{nakano2007non}, the coverage range of these on or off events is
+given in Equation (\ref{eq_eventEvaluation}).
 \begin{equation}
 \label{eq_eventEvaluation}
 E_{coverage} = \frac{\sum_{i=1}^N (E_i - \hat{E_i})}{\sum E_i}
 \end{equation}
-Higher coverage for a device implies better prediction results.
+Higher coverage for a device thus implies better prediction results.
 
 %In order the improve the classification accuracy,
 %\cite{gupta2010electrisense} and \cite{onoda2000applying}
@@ -103,23 +106,23 @@ Higher coverage for a device implies better prediction results.
 %Accurage \equiv \frac{\sum_{i,q}\min\{\sum_p(X_i)_{pq}, \sum_p(B_i\hat{A}_i)_{pq} \}}{\sum_{p,q}\bar{X}_{p,q}}
 %\end{equation}
 
-Secondly, the disaggregation accuracy rate
+After this calculation, the disaggregation accuracy rate
 can be calculated by judging whether
 the disaggregated devices are classified as the
-right device or not.~\cite{gonccalves2011unsupervised} evaluates the classification results
-based on this criteria as given in Equation (\ref{eq_clusterEvaluation}).
+correct device. Reference~\cite{gonccalves2011unsupervised} evaluates performance
+based on this criteria, as given in Equation (\ref{eq_clusterEvaluation}).
 \begin{equation}
 \label{eq_clusterEvaluation}
 purity_m(\Omega, C) = \frac{1}{1/N_m}\sum_k \max_m |\omega_k \subset c_m|
 \end{equation}
 where $\Omega$ is the set of all ground truth device labels,
-$C$ is the disaggregated device labels set.
-Suppose there are $M$ number of clusters corresponding to $M$ devices,
-$N_m$ is the number of elements in cluster $m$.
-$\omega_k$ is the subset with the highest frequency in each $c_j=m$ cluster.
-Other than the aforementioned classification accuracy rate, 
-F-measure is also employed in~\cite{zeifman2012disaggregation} 
-to get the disaggregation result.
+and $C$ is the disaggregated device labels set.
+Let us suppose there are $M$ number of clusters corresponding to $M$ devices,
+$N_m$ is the number of elements in cluster $m$, 
+and $\omega_k$ is the subset with the highest frequency in each $c_j=m$ cluster.
+In addition to the classification accuracy rate discussed above, 
+the F-measure is also employed in~\cite{zeifman2012disaggregation} 
+to define the disaggregation performance.
 %We hypothesize that there are
 %ground truth event sets $\Omega$ and disaggregated event sets $C$.
 %Under this assumption,
@@ -158,24 +161,22 @@ to get the disaggregation result.
 %\cite{froehlich2011disaggregated} classify real and transient events rate.
 
 
-\subsection{Evaluation Based on Time Series}
-The time series metric compares the disaggregated power values with the ground 
+\subsection{Evaluation based on Time Series}
+The time series approach compares the disaggregated power values with the ground 
 truth power values at each point over a period of time.
-
-Using the time series,~\cite{kolter2012aistat} compares the
-disaggregated time series with the ground truth of each device given in
-Equation\ref{eq_tsErrorRate}.
+For instance, ~\cite{kolter2012aistat} compare the
+disaggregated time series with the ground truth of each device as:
 \begin{equation}
 \label{eq_tsErrorRate}
 \sqrt{(\sum_{t,m} \lVert y_t^{(m)}- \hat{y}_t^{(m)} \rVert_2^2)/(\sum_{t,m} \lVert y_t^{(m)}\rVert_2^2)}
 \end{equation}
 where $y_t$ is the true real power value at time $t$, 
-$\hat{y}$ is the disaggregated real power value. 
-Note that, the disaggregate error rate can be calculated over a
+and $\hat{y}$ is the disaggregated real power value. 
+Note that the disaggregate error rate can be calculated over a
 specific time range~\cite{kolter2012aistat}. 
 In addition,~\cite{parson2012nonintrusive} uses the square root 
-of error rate of all devices over a period of time to calculate 
-the disaggregation accuracy as in Equation (\ref{eq_tsEvaluationSqt}). 
+of the error rate of all devices over a period of time to calculate 
+the disaggregation accuracy, as shown in Equation (\ref{eq_tsEvaluationSqt}). 
 \begin{equation}
 \label{eq_tsEvaluationSqt}
 \sqrt{\frac{1}{T}\sum_t(y_t^{(m)}-\hat{y}_{\mu_t^m}^{(m)})^2}
@@ -190,8 +191,8 @@ $\mu_t^m$ is the average true power value of device $m$ at time $t$.
 %\end{equation}
 %where $n$ means the
 
-The third method to measure time series data is F-measure.~\cite{kim2011unsupervised} is 
-evaluated based on F-measure of time series.
+The third method to measure time series data is the
+F-measure~\cite{kim2011unsupervised}.
 %Suppose at time $t_i$, 
 %the disaggregated value is $\hat{y}$ and 
 %true value is $y$, 
@@ -209,9 +210,9 @@ evaluated based on F-measure of time series.
 %and the disaggregated value is also zero. 
 
 
-The fourth method is to evaluate by accumulating  
-the total energy over a period of time as~\cite{shao2012temporal}. Once again, F-measure is
-used to evaluate the performance of the algorithm. 
+The fourth method is to evaluate by accumulating  (and comparing)
+the total energy over a period of time, as in~\cite{shao2012temporal}. Once again, 
+the F-measure is used to evaluate the performance of the algorithm. 
 
 %Suppose there's ground truth time series $X$ with length T,
 %and the corresponding disaggregated time series is$ X^*$.
@@ -221,21 +222,21 @@ used to evaluate the performance of the algorithm.
 %true values $X_i(t)$ and another parameter $\theta$
 %as the noise.
 
-\subsection{Evaluation Based on Combinational Metrics} 
+\subsection{Evaluation based on Combinational Metrics} 
 Note that some papers propose several approaches to 
-evaluate the experimental results.~\cite{liang2010load} proposes three evaluation metrics,
-namely detection accuracy, disaggregation accuracy, and
+evaluate the experimental results.
+Reference~\cite{liang2010load} proposes three evaluation metrics; 
+detection accuracy, disaggregation accuracy, and
 overall accuracy. 
 The first one is the events classification accuracy.
-The last two metrics is similar to the standard F-measure metric that is commonly used
+The last two metrics are similar to the standard F-measure metric that is commonly used
 in machine learning algorithms.
 %? explain more
 
-\textbf{Summary of Evaluation Metric}
- 
-In conclusion, the evaluation in energy disaggregation 
-is not standardized, which makes it harder to compare different works 
-even with if the same data set is used. If the research community were to agree on one or
-two evaluation metrics, a fair comparison between several algorithms can be performed. 
-Moreover, researchers can work on improving the accuracy of their algorithms for the
-standardized evaluation metrics.
+%\textbf{Summary of Evaluation Metric}
+%In conclusion, the evaluation in energy disaggregation 
+%is not standardized, which makes it harder to compare different works 
+%even with if the same data set is used. If the research community were to agree on one or
+%two evaluation metrics, a fair comparison between several algorithms can be performed. 
+%Moreover, researchers can work on improving the accuracy of their algorithms for the
+%%standardized evaluation metrics.

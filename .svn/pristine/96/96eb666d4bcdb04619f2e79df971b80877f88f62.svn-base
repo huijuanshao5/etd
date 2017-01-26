@@ -1,0 +1,15 @@
+\begin{table}[h]%
+\tbl{Non-AC Power Features \label{tab_nonacpower}} {%
+\begin{tabular} {|l|l| }
+\hline
+Device-related Category & Non Device-related Category  \\
+\hline
+\hline
+electro-magnetic field & date, time, seasons  \\
+\hline
+correlation between devices &  weather \\
+\hline
+on/off duration & sound and lights \\
+\hline
+\end{tabular}}
+\end{table}

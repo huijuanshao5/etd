@@ -1,0 +1,25 @@
+%To extract the features or attribute of electrical devices,
+%some algorithms have been researched in feature selection
+%as shown in .
+%% to be updated ???
+\begin{table}[h]%
+\caption{Pre-processing Algorithms on Vector Event Feature Extraction. }
+\label{tab_featureAlg}
+\begin{center}
+\makebox[\textwidth]{
+\begin{tabular} {|l|l|l|l|l|l|l|l|}
+\hline
+Feature-identification Algorithm  & \rotatebox{90} {Startup of $I_{AC}$} & \rotatebox{90} {Harmonics of $|I_{AC}|$} &\rotatebox{90}{ $I_{AC}$}  & \rotatebox{90}{$I_{AC}$ transformation} & \rotatebox{90} {eigenvalues of $I_{AC}$} & \rotatebox{90} {$V_{AC}$} & \rotatebox{90} {voltage noise }  \\
+\hline
+Signal Processing\cite{cox2006transient}&&&&&&$\surd$& \\
+\hline
+Fourier Transform \cite{wichakool2009modeling}&&$\surd$&$\surd$&&&&\\
+%\hline
+%Goodness-of-fit\cite{jin2011robust}&&&&&$\surd$&&&$\surd$&\\
+\hline
+Wavelet Transforms\cite{chan2000harmonics}&&&$\surd$&&$\surd$&&\\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}%

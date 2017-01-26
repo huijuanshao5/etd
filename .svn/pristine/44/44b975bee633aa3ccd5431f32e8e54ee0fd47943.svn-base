@@ -1,0 +1,6 @@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3in]{figs/incandescentLamp.pdf}
+\caption{Incandescent Lamp Transient (courtesy: \cite{leeb1993PhdThesis}).}
+\label{fig_incadescentLamp}
+\end{figure}

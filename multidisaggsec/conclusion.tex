@@ -1,27 +1,27 @@
 \section{Conclusion}
-This chapter proposes an semi-supervised recursive multivariate piecewise motif mining approach 
+This chapter proposes a semi-supervised recursive multivariate piecewise motif mining approach 
 to electricity disaggregation. 
 %Before unsupervised disaggregation, 
-We use a period of time's data to find the features of individual devices, 
+We use data from a period of time to find the features of individual devices, 
 including the power level and standard deviation.
 Based on these features, 
 we recursively utilize multivariate motif mining to uncover devices 
-which draw power from both phases equally or unequally, 
-then separate devices from each phase with motif mining. 
-Large power devices are removed from two phases in the first a few rounds, 
-which brings the benefit of decreasing the noise caused by large power devices 
+that draw power from both phases equally or unequally, 
+then separate the devices from each phase using motif mining. 
+Devices that use a large amount of power are removed from the two phases in the first few rounds, 
+which brings the benefit of decreasing the noise caused by these devices 
 during the process of disaggregating from single phase. 
-Therefore more devices with small power consumption are separated 
-in the piecewise motif mining from single phase. 
-Also, this piecewise motif mining approach can identify
-continuously variable loads such as heatingOutdoor. 
-Besides, we apply motif mining approach to water disaggregation, 
-it can separate water use ends which has a steady water usage state such as shower device, 
-but cannot disaggregate those water use ends which consumes water variable for the whole 
-cycle like toilet. 
+Therefore more devices with smaller power consumption are separated 
+using the piecewise motif mining from a single phase. 
+In addition, this piecewise motif mining approach can identify
+continuously variable loads such as outdoor heating. 
+Furthermore, when we apply motif mining approach to water disaggregation, 
+it can separate water use ends that have steady water usage, such as a shower, 
+but cannot disaggregate those water use ends which consume water variably for the whole 
+cycle, like a toilet. 
 
 In the future, 
-on energy disaggregation we will use more features from the multiple phases' aggregated data, 
-such as startup shape of individual devices.
-For water disaggregation, we will explore on how to integrate the 
+for energy disaggregation we will use more features from the aggregated data from the multiple phases, 
+such as the startup shape of individual devices.
+For water disaggregation, we will explore how to integrate the 
 dynamic time warping with multivariate piecewise motif mining. 

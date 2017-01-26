@@ -1,0 +1,6 @@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3.3in]{figs/threebasicloads.pdf}
+\caption{AC Circuit of basic loads: resistor, inductor, and capacitor (courtesy: \cite{eebook}).}
+\label{fig_threebasicloads}
+\end{figure}

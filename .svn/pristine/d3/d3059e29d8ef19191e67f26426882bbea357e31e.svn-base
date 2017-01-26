@@ -1,0 +1,12 @@
+\begin{figure*}[ht]
+	\centering{
+    \begin{tabular}{cc}	
+	\includegraphics[width=0.4\textwidth,height=0.3\textheight]{figs/washerdryer.pdf} \hspace{1em}&
+    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{figs/refrigerator.eps} \tabularnewline
+    (a) & (b)\tabularnewline
+    \end{tabular}
+    }
+	\caption{Transient Shapes for Device %(courtesy: \cite{kolter2012aistat}) 
+and Real Power Spike.}
+	\label{fig_realTransient}
+\end{figure*}

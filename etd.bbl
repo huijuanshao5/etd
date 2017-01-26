@@ -1,5 +1,9 @@
 \begin{thebibliography}{100}
 
+\bibitem{energydatabook2011}
+Buildings energy data book.
+\newblock {\em Energy Efficiency and Renewable Energy}, 2011.
+
 \bibitem{book2014us}
 Buildings energy data book.
 \newblock {\em Energy Efficiency and Renewable Energy}, 2014.
@@ -21,6 +25,11 @@ M.~Akbar and D.~Khan.
   devices.
 \newblock In {\em Proceedings of the IEEE International Conference on
   Multitopic}, 2007.
+
+\bibitem{albadi2007demand}
+M.~H. Albadi and E.~El-Saadany.
+\newblock Demand response in electricity markets: An overview.
+\newblock In {\em 2007 IEEE power engineering society general meeting}, 2007.
 
 \bibitem{meterEMF}
 AlphaLab.
@@ -119,6 +128,12 @@ T.~Blumensath and M.~Davies.
 \newblock Shift-invariant sparse coding for single channel blind source
   separation.
 \newblock {\em SPARS}, 2005.
+
+\bibitem{carboni2016contextualising}
+D.~Carboni, A.~Gluhak, J.~A. McCann, and T.~H. Beach.
+\newblock Contextualising water use in residential settings: A survey of
+  non-intrusive techniques and approaches.
+\newblock {\em Sensors}, 16(5):738, 2016.
 
 \bibitem{chan2000harmonics}
 W.~Chan, A.~So, and L.~Lai.
@@ -237,14 +252,13 @@ J.~Duan, D.~Czarkowski, and Z.~Zabar.
 \newblock In {\em Proceedings of the International Symposium on Circuits and
   Systems(ISCAS)}, 2004.
 
+\bibitem{eMonitor}
+EnergyCircle.
+\newblock emonitor sensor.
+
 \bibitem{meterSound}
 L.~Engineering.
 \newblock Mindstorms.
-
-\bibitem{erickson2014occupancy}
-V.~Erickson, M.~Carreira-Perpi{\~n}{\'a}n, and A.~Cerpa.
-\newblock Occupancy modeling and prediction for building energy management.
-\newblock {\em ACM Transactions on Sensor Networks (TOSN)}, 2014.
 
 \bibitem{erickson2010occupancy}
 V.~Erickson and A.~Cerpa.
@@ -311,6 +325,12 @@ T.~Hassan, F.~Javed, and N.~Arshad.
   non-intrusive load monitoring.
 \newblock {\em IEEE Transactions on Smart Grid}, 2014.
 
+\bibitem{hatley2005energy}
+D.~D. Hatley, R.~J. Meador, S.~Katipamula, M.~R. Brambley, and C.~Wouden.
+\newblock Energy management and control system: Desired capabilities and
+  functionality.
+\newblock {\em Pacific Northwest National Laboratory, Richland, WA}, 2005.
+
 \bibitem{huang2013designing}
 D.~Huang, M.~Thottan, and F.~Feather.
 \newblock Designing customized energy services based on disaggregation of
@@ -349,11 +369,6 @@ M.~Johnson and A.S.
 \newblock Bayesian nonparametric hidden semi-markov models.
 \newblock {\em CoRR}, 2012.
 
-\bibitem{kearns1990complexity}
-M.~Kearns.
-\newblock Computational complexity of machine learning.
-\newblock 1990.
-
 \bibitem{kelly2012disaggregating}
 J.~Kelly and W.~Knottenbelt.
 \newblock Disaggregating multi-state appliances from smart meter data.
@@ -376,6 +391,12 @@ Y.~Kim, T.~Schmid, Z.~Charbiwala, and M.~Srivastava.
   monitoring system for homes.
 \newblock In {\em Proceedings of the 11th International Conference on
   Ubiquitous computing}, 2009.
+
+\bibitem{kiukkonen2010towards}
+N.~Kiukkonen, J.~Blom, O.~Dousse, D.~Gatica-Perez, and J.~Laurila.
+\newblock Towards rich mobile phone datasets: Lausanne data collection
+  campaign.
+\newblock {\em Proc. ICPS, Berlin}, 2010.
 
 \bibitem{kleiminger2014predicting}
 W.~Kleiminger, F.~Mattern, and S.~Santini.
@@ -412,6 +433,11 @@ J.~Kolter and M.~Johnson.
 \newblock In {\em Proceedings of the Workshop on Data Mining Applications in
   Sustainability (SIGKDD)}, 2011.
 
+\bibitem{krumm2011learning}
+J.~Krumm and A.~B. Brush.
+\newblock Learning time-based presence probabilities.
+\newblock In {\em Pervasive Computing}. 2011.
+
 \bibitem{hampden2012closure}
 H.~Kuhns, M.~Roberts, and B.~Bastami.
 \newblock Closure rules for energy load disaggregation.
@@ -438,6 +464,11 @@ S.~Laxman, P.~Sastry, and K.~Unnikrishnan.
 \newblock Discovering frequent episodes and learning hidden markov models: A
   formal connection.
 \newblock {\em IEEE Transactions on Knowledge and Data Engineering}, 2005.
+
+\bibitem{laxman2006survey}
+S.~Laxman and P.~S. Sastry.
+\newblock A survey of temporal data mining.
+\newblock {\em Sadhana}, 31(2):173--198, 2006.
 
 \bibitem{vatsan-paper}
 S.~Laxman, V.~Tankasali, and R.~White.
@@ -512,12 +543,6 @@ D.~Luo, L.~Norford, S.~Leeb, and S.~Shaw.
 \newblock Monitoring hvac equipment electrical loads from a centralized
   location- methods and field test results.
 \newblock 2002.
-
-\bibitem{mahmoud2010occupancy}
-S.~Mahmoud, A.~Lotfi, and C.~Langensiepen.
-\newblock Occupancy pattern extraction and prediction in an inhabited
-  intelligent environment using narx networks.
-\newblock In {\em Intelligent Environments}, 2010.
 
 \bibitem{mahmoud2013behavioural}
 S.~Mahmoud, A.~Lotfi, and C.~Langensiepen.
@@ -685,6 +710,11 @@ J.~Scott, A.~Brush, J.~Krumm, B.~Meyers, M.~Hazas, S.~Hodges, and N.~Villar.
 \newblock In {\em Proceedings of the 13th International Conference on
   Ubiquitous Computing}, 2011.
 
+\bibitem{seto2011meta}
+K.~C. Seto, M.~Fragkias, B.~G{\"u}neralp, and M.~K. Reilly.
+\newblock A meta-analysis of global urban land expansion.
+\newblock {\em PloS one}, 6(8):e23777, 2011.
+
 \bibitem{shao2012temporal}
 H.~Shao, M.~Marwah, and N.~Ramakrishnan.
 \newblock A temporal motif mining approach to unsupervised energy
@@ -776,6 +806,11 @@ E.~Vogiatzis, G.~Kalogridis, and S.~Denic.
 \newblock Real-time and low cost energy disaggregation of coarse meter data.
 \newblock In {\em Proceedings of the 4th IEEE/PES Innovative Smart Grid
   Technologies Europe}, 2013.
+
+\bibitem{vullers2010energy}
+R.~Vullers, R.~Schaijk, H.~Visser, J.~Penders, and C.~Hoof.
+\newblock Energy harvesting for autonomous wireless sensor networks.
+\newblock {\em IEEE Solid-State Circuits Magazine}, 2(2):29--38, 2010.
 
 \bibitem{wang2013heirarchical}
 B.~Wang, H.~Dong, A.~Boedihardjo, and C.~Lu.

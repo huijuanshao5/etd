@@ -1,0 +1,91 @@
+
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{Gap Constraint Episode Mining on Dwelling Events}
+\label{alg_episodeMiningConstraint_2e}
+%\begin{algorithmic} [1]
+\KwDate {event stream $s=<(E_1, t_1^{start}, t_1^{end}), ..., (E_n, t_n^{start}, t_n^{end})>$; 
+events set $E$;
+candidate of $N$-node episodes set C}
+\KwResult {The set F of frequent serial episodes in C}
+\For{ $A \in E$} {
+$waits(A)= \phi$
+}
+
+%\FOR{$\alpha \in C$}
+%\STATE $prev=\phi$
+%\FOR{ $1 \leq i \leq N$ }
+%\STATE Create $node$ with $node.visited=False$; $node.episode=\alpha$; $node.index=i$; $node.pre=pre$;$node.next=\phi$
+%\IF{$i=1$}
+%\STATE Add $node$ to $wait(\alpha[1])$
+%\ENDIF
+
+%\IF{$prev!= \phi$}
+%\STATE $prev.next=node$
+%\ENDIF
+%\ENDFOR
+%\ENDFOR
+
+%\FOR{$i=1:n$}
+%\FORALL{ $node \in waits(E_i)$ }
+%\STATE set $accpeted=false$
+%\STATE set $\alpha=node.episode$
+%\STATE set $j=node.index$
+%\STATE set $tlist=node.list$
+
+%\IF{$j<N$}
+%\FORALL{$tval \in tlist$}
+%\IF{$(t_i-tval.init) > \alpha.t_{high}[j]$}
+%\STATE remove $tval$ from $tlist$
+%\ENDIF
+
+%\IF{$j=1$}
+%\STATE update $accepted=true$
+%\STATE $tval.init=t_i$
+%\STATE add $tval$ to $tlist$
+%\IF{$node.visited=false$}
+%\STATE update $node.visited=true$
+%\STATE add $node.next$ to $waits(\alpha[j+1])$
+%\ENDIF
+%\ELSE
+%\FORALL{$prev_{tval} \in node.pre.tlist$}
+%\IF{$t_i-pre_{tval} \in (\alpha.t_{low}[j-1], \alpha_{high}[j-1])$}
+%\STATE Update $accepted=true$
+%\STATE update $tval.init=t_i$
+%\STATE add $tval$ to $tlist$
+%\IF{$node.visited=false$}
+%\STATE update $node.visited=true$
+%\IF{$node.index\leq N-1$}
+%\STATE add $node.next$ to $waits(\alpha[j+1])$
+%\ENDIF
+%\ENDIF
+%\ELSE
+%\IF{$t_i-prev_{tval} > \alpha.t_{high}[j-1]$}
+%\STATE remove $prev_{tval}$ from $node.prev.tlist$
+%\ENDIF
+%\ENDIF
+
+%\ENDFOR
+%\ENDIF
+
+%\ENDFOR
+%\ENDIF
+
+%\IF{$accepted=true$ and $node.index=N$}
+%\STATE update $\alpha.freq=\alpha.freq+1$
+%\STATE set $temp=node$
+%\WHILE{$temp!=\phi$}
+%\STATE update $temp.visited=false$
+%\IF{$temp.index!=1$}
+%\STATE remove $temp$ from $waits(\alpha[temp.index])$
+%\ENDIF
+%\STATE update $temp=temp.next$
+%\ENDWHILE
+%\ENDIF
+%\ENDFOR
+%\ENDFOR
+%\STATE Output $F=\{\alpha \in C \} $ such that $ \alpha.freq \req n\lamba_{min} $
+%\end{algorithmic}
+\end{algorithm}

@@ -1,0 +1,38 @@
+% algorithm 01
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{Trainng Algorithm}
+\label{alg1}
+\begin{algorithmic} [1]
+\REQUIRE training events stream, $S_t=<\hat{E_1}, ..., \hat{E_n}>$; 
+target event type Z; size of symbols $\varepsilon$ M; 
+window size  \textit{W} preceding the target event Z
+\ENSURE Generative model, $\Lambda_Z$ 
+
+\COMMENT{re-organize data}\\
+\STATE split data into each day
+\STATE rename the symbol based on 15-minutes chuck
+\STATE Initialize the partial stream $D_Z= \phi$ before $Z$
+
+\FOR{the data of each day}
+\IF{$\exists$ t that $\hat{E_t}=Z$}
+\STATE add $S_t=<\hat{E_{t-W}}, ..., \hat{E_{t-1}}>$ to $D_Z$
+\ENDIF
+\ENDFOR
+
+\COMMENT{build mixture episode generative HMM model}
+\FOR{$1<w<W$}
+\STATE mine the frequent episodes $\{\alpha_1, ..., \alpha_J\}$ 
+\ENDFOR
+
+\STATE connect each episode $\alpha_j $ with a HMM model EGH $\Lambda_{\alpha_j}$ 
+
+\STATE generate episode generative HMM (EGH) mixture model $F(\Lambda)= \sum_1^J \theta_j\Lambda_{\alpha_j}$, where $1 \leq j \leq J$  
+with EM algorithm
+
+\STATE Output $\Lambda_Z=\{  (\Lambda_{\alpha_j}, \theta_j ) , j=1,...,J \}$
+
+\end{algorithmic}
+\end{algorithm}

@@ -1,0 +1,12 @@
+\begin{figure*}[ht]
+	\centering{
+    \begin{tabular}{cc}	
+	\includegraphics[width=0.5\textwidth]{figs/kim2009viridiscope_sound.pdf} \hspace{1em}&
+    \includegraphics[width=0.5\textwidth]{figs/kim2009viridiscope_light.pdf} \tabularnewline
+    (a) & (b) \tabularnewline
+    \end{tabular}
+    }
+	\caption{(a) compressor detection by acoustic sensor and (b) refrigerator detection by light. (courtesy: \cite{kim2009viridiscope}).}
+	\label{fig_soundLightFeature}
+\end{figure*}
+

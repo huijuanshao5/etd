@@ -5,9 +5,8 @@ uses include urban contexts such as
 lighting, air conditioning, refrigeration, heating, and, powering
 appliances and gadgets but its penetration is pervasive across rural
 and industrial sectors.
-In 2014, the residential and commercial sector
-comprised nearly 40\% of all the electricity generated in the 
-U.S.~\cite{book2014us}.
+In 2013, the residential and commercial sector
+comprised nearly 40\% of all the electricity generated in the U.S.~\cite{energydatabook2011}.
 Furthermore, our dependence on electricity will continue to grow
 as emphasis shifts away from fossil fuel based vehicles to electric
 vehicles.
@@ -20,8 +19,8 @@ monthly electricity bills indicating aggregate usage, with no information on
 the breakdown of consumption by appliances/devices, time of day, or day of
 week (this is an area in great flux, however). Research has 
 shown that simply making such feedback available to users
-can reduce consumption by up to 50\%, although typical saving 
-are in the 9\% to 20\% range~\cite{book2014us}.
+can reduce consumption by up to 50\%, although typical savings
+are in the 9\% to 20\% range~\cite{energydatabook2011}.
 
 
 %In modern society, people prefer a comfortable life at home,
@@ -53,7 +52,7 @@ smart meters.
 Energy disaggregation is hence today a booming area offering both
 challenging problems for data analytics and having practical relevance in a
 number of areas including sensor networks and building analytics.
-Our goal in this chapter is to provide a comprehensive survey of recent
+Our goal in this paper is to provide a comprehensive survey of recent
 advances in the area of energy disaggregation with a focus on the data mining
 and machine learning algorithms used. 
 
@@ -63,7 +62,7 @@ and machine learning algorithms used.
 %% Since this research helps conserve various resources from all perspectives,
 %% it becomes more and more significant and popular in recent years.
 
-\subsection {What is Energy Disaggregation?}
+\subsection {Background}
 
 Hart~\cite{hart1992} first proposed the idea that power measurements at the
 main electric meter in a home can be used to deduce what appliances are
@@ -99,7 +98,8 @@ am to 12:00 noon. At other times, the refrigerator stays off.
    (a) & (b) \tabularnewline
     \end{tabular}
     }
-	\caption{ (a) Aggregate power. (b) Disaggregated information
+	\caption{ (a) Aggregate power input to a disaggregation
+algorithm. (b) Disaggregated information
 about devices and their power usage patterns.}
 	\label{fig_energyDisaggDefinition}
 \end{figure*}
@@ -117,6 +117,8 @@ Some features derivable from low frequency data are real power, reactive power,
 low-order harmonics, and time of day. In addition to the ones inferable from
 low frequency data, features from high frequency data include
 many more characteristics such as harmonics, and current or voltage waveforms.
+
+Another way to distinguish features is as transient vs steady state features.
 Transient state features are only available from high frequency data. 
 These features relate to transitory behavior seen in the current and voltage
 waveforms when a device is turned on or off. 
@@ -125,7 +127,7 @@ after a device has changed its state. These
 can be obtained from both low sampling frequency data and high sampling
 frequency data. 
 
-Another way to classify features is in terms of:
+Yet another way to classify features is in terms of
 AC power and non-AC power.
 AC power characteristics are related to
 current or voltage,
@@ -210,7 +212,7 @@ additional features are necessary to disambiguate among them.
 
 \item Many devices may turn on or off at the same time.
 A PC and printer likely turn on and off together, 
-thus making it difficult to separate them from the aggregated power.
+thus making it difficult to separate them from the aggregated power profile.
 
 \item Instead of having a discrete range of power
 levels, there are devices whose power consumption levels
@@ -242,8 +244,9 @@ is short before they come to steady states.
 Commercial buildings install more VSDs
 including heating, ventilation, and air conditioning (HVAC) systems, 
 variable-speed motor devices, and dimmable lighting. 
-Further, bank of lights typically connect into a circuit together and
+Further, banks of lights typically connect into a circuit together and
 are powered on/off at the same time.
+
 Generally, we face greater challenges in commercial buildings
 than in residential buildings.
 Norford and Leeb study non-intrusive load monitoring
@@ -260,7 +263,7 @@ make loads resistive, such as fluorescent lamp fixtures.
 %the possibility of case 2, case 3 and case 4 increases,
 %the harder it is to disaggregate all devices correctly.
 
-\subsection{Scope of This Survey}
+\subsection{Scope of this Survey}
 Our objective is to provide an introduction to this space for a data
 mining audience. While surveys exist on energy disaggregation,
 e.g.,~\cite{zeifman2011nonintrusive},~\cite{liang2010load}, and~\cite{zoha2012survey}, they are mostly aimed at an electrical engineering audience and are
@@ -277,7 +280,7 @@ Second, there are many problems that appear related at first glance,
 e.g., blind source separation~\cite{blumensath2005shift,davies2007source,lewicki2000learning} but are quite distinct from disaggregation. In the case of blind
 source separation, the goal is to separate sources from at least as many
 observations whereas in the case of disaggregation, only one aggregate signal
-is provided.
+is provided. We do not cover these areas here.
 
 \subsection{Organization}
 The contents of this survey are organized as follows.

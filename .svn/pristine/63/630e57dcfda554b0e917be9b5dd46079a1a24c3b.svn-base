@@ -1,0 +1,105 @@
+
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{Gap Constraint Episode Mining on Dwelling Events}
+\label{alg_episodeMiningConstraint_2e}
+\SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+\SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+
+%\begin{algorithmic} [1]
+\Input {event stream $s=<(E_1, t_1^{start}, t_1^{end}), ..., (E_n, t_n^{start}, t_n^{end})>$;
+events set $E$;
+candidate of $N$-node episodes set C}
+\Output {The set F of frequent serial episodes in C}
+\For{ $A \in E$} {
+$waits(A)= \phi$
+}
+
+\For{$\alpha \in C$} {
+	$prev=\phi$
+	\For{ $1 \leq i \leq N$ }{
+		\emph{create $node$}; \\
+		$node.visited=False$; $node.episode=\alpha$; $node.index=i$; $node.pre=pre$;$node.next=\phi$; \\
+		\If{$i=1$}{
+			$wait(\alpha[1]).add(node)$
+		}
+		\If{$prev!= \phi$}{
+			$prev.next=node$
+		}
+	}
+}
+% there are four for cycles 
+\For{$i=1:n$}{
+	\For{ $node \in waits(E_i)$}{
+	$accepted=false$;\\
+	$\alpha=node.episode$; \\
+	$j=node.index$; \\
+	$tlist=node.list$; \\
+	
+	\If{$j<N$}{
+		
+		\For{$tval \in tlist$}{
+			\If{$(t_i-tval.init) > \alpha.t_{high}[j]$}{
+				$tlist.delete(tval)$ \\
+				}
+		}
+	} % end of if j<N
+	\eIf{$j=1$} {
+		update $accepted=true$ \\
+		$tval.init=t_i$ \\
+		$tlist.add(tval)$ \\
+		\If{$node.visited=false$}{
+			update $node.visited=true$ \\
+			$waits(\alpha[j+1]).add(node.next)$ \\
+		}
+	}
+			%else
+			{
+				\For{$prev_{tval} \in node.pre.tlist$}{
+					\eIf{$t_i-pre_{tval} \in (\alpha.t_{low}[j-1], \alpha_{high}[j-1])$}{
+						Update $accepted=true$ \\
+						update $tval.init=t_i$ \\
+						$tlist.add(tval)$ \\
+						\If{$node.visited=false$}{ 
+							update $node.visited=true$ \\
+							\If{$node.index\leq N-1$}{
+								$waits(\alpha[j+1]).add(node.next)$ \\
+							}
+						}
+					}
+					%else
+					{
+						\If{$t_i-prev_{tval} > \alpha.t_{high}[j-1]$}{
+ 							$node.prev.tlist.remove(prev_{tval})$
+						}
+					}
+			%		}
+				} %forth for
+			} % else
+			
+			
+		%}% third for
+	}
+	\If{$accepted=true$ and $node.index=N$}{
+		update $\alpha.freq=\alpha.freq+1$ \\
+		set $temp=node$ \\
+		\While{$temp!=\phi$} {
+			update $temp.visited=false$ \\
+			\If{$temp.index!=1$}{
+		 		$waits(\alpha[temp.index]).remove(temp)$ \\
+			}
+			 update $temp=temp.next$
+		}%end of while
+	
+	}%second for
+} %first for
+\For{$\alpha \in C$}{
+	\If {$\alpha$.freq $>n*threshold$}{
+		$F.add(\alpha)$ \\
+	}
+}
+%\end{algorithmic}
+\end{algorithm}

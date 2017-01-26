@@ -1,93 +1,96 @@
 %\section{Identifying Devices by Algorithms}
 \section{Disaggregation Algorithms}
 \label{sec:algorithms}
-In most cases before energy disaggregation algorithms can be applied, a
-pre-processing phase, which comprises its own set of algorithms, is
-necessary.  
-It extracts features or transforms data
-from one domain to another, for example time to frequency.
-In this section, we will first introduce pre-processing algorithms,  
-give an overview of all disaggregation algorithms (supervised, unsupervised, semi-supervised), 
-and explain the algorithms'  advantages and disadvantages. 
-We also show computational cost. 
+In most cases, before energy disaggregation algorithms can be applied, a
+pre-processing phase is
+necessary, which comprises its own set of algorithms.  
+This phase extracts features or transforms data
+from one domain to another, for example from the time domain to the frequency domain.
+In this section, we first introduce pre-processing algorithms,  
+then give an overview of all disaggregation algorithms (supervised, unsupervised, semi-supervised), 
+and finally present the algorithms' advantages and disadvantages. 
 
-\subsection{Pre-processing: Event Types and Feature Extraction Algorithms}
-\subsubsection{Event types of device features}
+\subsection{Pre-processing Stages}
+\subsubsection{Event types}
 While conducting energy disaggregation, the events in a time series play an important part in identifying devices.
-These events can be classified into two categories viz. {\em point-event} or
+These events can be classified into two categories; {\em point event} or
 {\em vector event}.
 \begin{enumerate}
-\item{\textit{Point Event}}. 
-A point event is defined as an event that is determined by a single value from the input dataset and 
+\item{\textit{Point event}}. 
+A point event is defined as an event that is determined by a single value from the input dataset, and 
 this event is used to characterize a device.
 %If an individual data instance corresponding to an event is used to judge a device, 
-For instance, examples of point events include real power, reactive power, or
+Examples of point events include real power, reactive power, or
 power noise at any particular time. %  in a low frequency dataset. 
 
-\item{\textit{Vector Event}}. 
+\item{\textit{Vector event}}. 
 A vector event is defined as an event that is composed of several data points that characterize a device,
 instead of just one data point. 
-For instance, the waveform of current or voltage is a vector event 
-as it spans a period of time and cannot be captured by just one data point. When using vector events, if the raw data is transformed from the time domain to the frequency domain, 
-the extracted features are also treated as vector events. It a is common practice for current and voltage to be transformed into harmonics and 
-wavelets. These transformations' representations as vector events better capture the data and provide more useful information. 
+For instance, the waveform of current or voltage is a vector event.
+When using vector events, if the raw data is transformed from the time domain to the frequency domain, 
+the extracted features are also treated as vector events. It is common practice for current and voltage to be transformed into harmonics and 
+wavelets. These transformations are best captured as vector
+events.
 \end{enumerate}
 
 \subsubsection{Feature extraction algorithms}
-Point events are easily obtained from the raw dataset which, for example, provides real power or reactive power time series. 
-A commonly used event is obtained from the difference between two successive data points.
+Point events are easily obtained from the raw dataset, which may provide real power or reactive power as a time series. 
+A commonly used event definition is to rely
+on the difference between two successive data points.
 %We calculate the difference between the current value and the previous value to obtain event information. 
 %we can calculate the difference between the current and previous real power.
 If the difference is significant (above a threshold), a point event is generated. Otherwise, no event is recorded. 
 %Similarly, the reactive power event changes are easily obtained. 
 
-Since high frequency datasets provide rich information, it is quite common to extract vector events from them. 
-It is done in the following manner. After pre-processing a time series from the high frequency data, 
-we can obtain several features like the startup of current, current waveform, harmonics of current, 
-current transformation, eigenvalue of current, 
-voltage waveform, or voltage noises. 
+Since high-frequency datasets provide rich information; it is quite common to extract vector events from them. 
+After pre-processing a time series from the high-frequency data, 
+we can obtain several features, like the startup value of the current, the current waveform, the harmonics of the current, 
+the current transformation, the eigenvalue of the current, 
+the voltage waveform, or voltage noises. 
 Generally these pre-processing algorithms are classified into 
 three types: 
-{\em 1) basic signal processing, 2) Fourier transform, and 3) wavelet transform.}
-Basic signal processing is used to filter, shift or amplify a time series data. 
+{\em 1) Basic signal processing, 2) Fourier transforms, and 3) 
+Wavelet transforms.}
+Basic signal processing is used to filter, shift or amplify time series data. 
 %Given a time series data, basic signal processing 
 %operates to filter
 %can be conducted the following operations,  to filter,  shift, or amplify. 
-Fourier transform converts the time series data 
-from time domain to frequency domain, and  
-harmonics are acquired from the result of the Fourier transformation.  
-Wavelet transformation divides a time series into different 
-scale components and each component is assigned to a frequency range. 
-The features extracted by the wavelet transform are relatively stable.  
+A Fourier transform converts the time-series data 
+from the time domain to the frequency domain, and  
+harmonics are acquired from the result of the Fourier transform.  
+Wavelet transforms organize a time series into different 
+scale components, and each component is assigned to a frequency range. 
+Features extracted in this manner
+by the wavelet transform are relatively stable.  
 For instance, when a device is turned on, a corresponding sharp peak is generated 
 in the time domain which is not characteristic of the device's power signature. 
-But the use of wavelet transformation in the frequency domain will discard this transient information and be more consistent with the device's actual power signature.
+However, the use of wavelet transformation in the frequency domain will discard this transient information and be more consistent with the device's actual power signature.
 
 %Wavelet has the advantage of
 %not being influenced by sharp peaks which appear when some devices are turned on. 
 \input{tab/tab_featureAlg.tex}
-Table.\ref{tab_featureAlg} gives examples of several vector events using these 
+Table~\ref{tab_featureAlg} gives examples of several vector events using these 
 three types of pre-processing algorithms.
-Basic signal processing steps, low-pass filter, amplification and shifting 
+Basic signal processing steps, a low-pass filter, amplification and shifting 
 are used to extract the distorted voltage shapes in~\cite{cox2006transient}.
 In~\cite{wichakool2009modeling}, the Fourier transform of the waveform is applied to 
 find distinct coefficients for those VSDs. 
-The Fourier transform is also used in~\cite{jin2011robust} to extract the 
-harmonics features. 
-Wavelet transform is employed to identify harmonics features of devices 
+The Fourier transform is also used in~\cite{jin2011robust} to extract 
+harmonic features. 
+The wavelet transform is employed to identify harmonics features of devices 
 in~\cite{chan2000harmonics}. 
 
 \subsection{Overview of Disaggregation Algorithms}
-As the number and complexity of features used have increased, 
+As the number and complexity of the features used have increased, 
 %As more and more features are extracted from the recorded data,
 so has the complexity of the 
 disaggregation algorithms.
 %vary from simple
 %to complex.
-From a data mining or machine learning perspective,
-the algorithms are sorted into three categories:
+From a data mining perspective,
+algorithms can be sorted into three categories:
 supervised, unsupervised, and semi-supervised.
-Table \ref{tab_algSummary} lists the three categories.
+Table \ref{tab_algSummary} lists these three categories.
 \input{tab/tab_algSummary.tex}
 
 %So far, data mining algorithms focus on the
@@ -119,35 +122,27 @@ Table \ref{tab_algSummary} lists the three categories.
 %  based. Also, an algorithm could use both point and event features.}
 %\huijuanc{change as the following sentence.}  
 From an events perspective, 
-algorithms can be point-based, event-based or a combination of these two.    
-Point-based algorithms are dedicated to the processing of turning on and off
+algorithms can be point-based, vector-based or a combination of the two
+strategies.
+Point-based algorithms are dedicated to the processing of the turn-on and turn-off
 events of devices. 
 Vector-based algorithms treat the current, voltage or
-power value as ordered time series instead of
-picking up a single transition states. 
+power value as an ordered time series instead of
+focusing on a single transition state. 
 Point-based algorithms perform well on discrete steady-state
-devices, but perform poorly on the devices with vector features, 
-such as the variable speed devices (VSDs). 
+devices, but perform poorly on devices with vector features, 
+such as variable speed devices (VSDs). 
 
-\textbf{Comparison of Supervised and Unsupervised Algorithms}
+%\textbf{Comparison of Supervised and Unsupervised Algorithms}
 %\huijuanc{the following paragraph is added to compare the advantages and disadvantages of 
 %supervised and unsupervised algorithms.}
-We summarize the merits and shortcomings of supervised and 
-unsupervised learning algorithms for disaggregation from 
-the perspective of installation cost of meters, dataset size requirement for building models, 
-computational cost of operation process, and accuracy results of disaggregation. 
-
-Compared to unsupervised learning approaches, the \textit{advantages} of supervised learning algorithms are as follows:
-\begin{enumerate} 
-\item The disaggregation accuracy is higher when using the same dataset as input. 
-\item They require less data set to build a disaggregation model. 
-%\item Classification based techniques can make use of powerful algorithms to distinguish features belonging to different devices. 
-%The classification accuracy rate increases with multiple features. 
-\item  Once the model is trained, they usually have faster operation to obtain the output with same input. 
-%The test phase works very fast since each test instance needs to be compared against the pre-computed model.
-\end{enumerate}
-
-Compared to unsupervised learning algorithm, the main \textit{disadvantages} of supervised learning techniques lie in that the labelled data of each device is hard to get because the cost would be very high if installing meters to monitor each device.
+I summarize the merits and shortcomings of supervised and 
+unsupervised learning algorithms for disaggregation in terms of the installation cost of meters, dataset size requirements for building models, 
+the computational cost of operation process, and the accuracy results of disaggregation. 
+Compared to unsupervised learning approaches, the advantages of supervised learning algorithms are that the disaggregation accuracy is typically
+higher (for the same dataset), they require smaller data sizes, and
+have typically faster operation (in practice).
+Compared to unsupervised learning algorithms, the main disadvantages of supervised learning techniques lie in that the labelled data of each device is difficult to obtain due to the cost of meter installation.
 
 %\item The classification based techniques rely on the accuracy of  the extracted features of each device. 
 %However these features  are hard to access in practice because of the meters that capture these measurements have a very high installation cost.

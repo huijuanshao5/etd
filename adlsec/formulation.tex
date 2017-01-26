@@ -1,38 +1,38 @@
 \section{Problem Formulation}
-Before formalizing the problem statement, 
-we introduce several concepts and notations first. 
+Given $M$ time series, 
+each time series $X^{(m)}=X^{(m)}_1, ..., X^{(m)}_t, ..., X_T^{(m)}$ 
+represents a sequence of room occupancy of person $m$ inside 
+a home over $K$ days, 
+where $X_t\in s$ denotes that $X$ belongs to a finite room set $s$ at the sequence number of $t$, 
+and $m\in\{1,...,M\}$. 
+%Each $X$ is has a start time $X.start$ and an end time $X.end$.  
+Let $Z$ denote that the home is unoccupied and $Z\in s$.  %$Z=0$ if a house is unoccupied; $Z=1$ if the house is occupied.  
+%Its meaning equals to certain symbols from set $s$. 
+We predict whether person $m$ stays at home the rest of a day from time $T$,  i.e. during $T+1$, $T+2$, ..., $\Delta T$, 
+ 
+\begin{equation}
+\hat{Y}^{(m)}=\hat{Y}_{T+1}^{(m)},...,\hat{Y}^{(m)}_{T+\Delta T}
+\end{equation}
+where $Y_{T+\Delta t }^{(m)}=Z$ if person $m$ does not stay at home at time $T+\Delta t $;
+otherwise, $Y_{T+\Delta t}^{(m)} \neq Z$. 
+%The un-occupancy of the whole house is the intersection of un-occupancy of all people. 
+If any person $m$ stays at home $Y_{T+\Delta t}^{(m)} \neq Z$, then this house is occupied $Y_{T+ \Delta t} \neq Z$. 
 
-\textit{Episode} An episode is a pattern which can be explained meaningfully. For instance, we represent 'S' as sleep, 
-'K' as kitchen, and 'Z' as going out. 
-If an episode $S \rightarrow K \rightarrow Z$ is found, 
-the story is described as a person getting up, 
-going to the kitchen for breakfast, and then leaving the house. 
-An episode $\alpha$ is composed 
-of a series of ordered events
-$\alpha=\langle E_1,..,E_t,...E_n \rangle$, 
-where $E_t$ denotes that $E$ occurs at time $t$.  
-These events may be the point event or dwelling event. 
-The dwelling event
-has a start time $E.start$ and end time $E.end$. 
-In this chapter  $E$ denotes a dwelling event and 
-represents which room a person stays 
-inside the building i.e is \emph{occupied}. 
-For example we if $Z$ is used to show a room to be unoccupied. 
-$Z.start$ means when the person goes out of home and 
-$Z.end$ means when the person comes back. 
 
-\textit{EGH} Episode generative HMM model is a 
-type of HMM model which connects each episode $\alpha$ 
-with a special HMM model $\Lambda_\alpha$. 
-The uniqueness of the EGH is that 
-the transition matrix and 
-emission matrix is only decided by a noise parameter $\eta$. 
-The value of $\eta$ is computed based on the frequency of the 
-corresponding episode $\alpha$. 
+\iffalse
+Given $M$ time series, 
+each time series $X^{(m)}=X^{(m)}_1, ..., X^{(m)}_t, ..., X_T^{(m)}$ 
+represents a sequence of room occupancy of person $m$ inside 
+a home over $K$ days, 
+where $X_t\in s$ denotes that $X$ belongs to a finite room set $s$ at the sequence number of $t$. 
+Each $X$ is has a start time $X.start$ and an end time $X.end$.  
+Let $Z$ denote that the home is unoccupied. 
+It equals to certain symbols from set $s$. 
+Also, given a time gap from current time $\Delta t$, 
+predict whether $Z$ appears at time  $T+\Delta t$
 
-We formulate the occupancy prediction problem as one of 
+ formulate the occupancy prediction problem as one of 
 episode mining and event type time prediction problem. 
-
 \textit{Problem Statement} Given a sequence of the room occupation 
 events stream \textit{s} with finite events symbols $\varepsilon$, 
 and the target un-occupancy event \textit{Z}, can we
@@ -43,15 +43,6 @@ predict when
 the person leaves $Z.{start}$, 
 and when the person comes back $Z.{end}$.?
 
-Next, 
-we first discuss the time-gap constraint episode mining 
-model and the mixture model, 
-and how to predict the target event in section 4. 
-Then, 
-in section 5 we will show 
-the experimental results. 
-
-\iffalse
 The training phase is to mine the frequent episodes and connect it with HMM model
 as described in \cite{laxman2008stream}. We modify the constraints during episode mining
 and keeps the connections between the frequent episodes and HMM the same. 

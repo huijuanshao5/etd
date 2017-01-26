@@ -1,0 +1,179 @@
+\section{Experiment Results}
+We have conducted experiments on three datasets. 
+The data is obtained by monitoring two adults' 24-hour activities at home through RFID.
+The monitored events denote when the person is at which room. 
+For instance, we may know at 7:00am person 1 is in the kitchen. 
+
+There are totally three datasets, Study 10 from 02/10/2014 to 02/21/2014, 
+Study 11 from 01/29/2014 to 02/07/2014, 
+and Study 14 from 12/09/2013 to 12/21/2013. 
+
+
+Firstly, we define the occupancy at home. 
+Sometimes, the person goes out for several minutes then comes back. 
+This type of un-occupancy event is \textit{not} what we concern. 
+Note that our goal is to turn on or off the HVAC 30 minutes earlier. 
+We define the unoccupied as follows: 
+1). the person leaves the outside-front or outside-back for more than 30 minutes.
+2). the person stays in the living room or dining room for more than 9 hours without 
+any other activities.
+3). the gap between any two events is more than 30 minutes. 
+
+Secondly we preprocess the data by deleting those invalid events, 
+where the end time happens earlier than the start time. 
+Then we sort the events according to the start time. 
+Another data cleaning is that we delete the events whose duration is less than 
+2 minutes. This is very important preprocessing. 
+A person may walk in the hallway or between the dining room and 
+the kitchen very frequently. 
+What we are concerned with is that where the person really is. 
+If the person dwells in an exact room for less than 2 minutes, 
+that means he/she just passes by the room, 
+but does not to stay there to do something for long time. 
+
+After cleaning all the data, 
+we apply three approaches, kNN, PDF based and mixture EGH time prediction model. 
+Similar to \cite{scott2011preheat},
+we organize one day's date into 96 15-minutes intervals with mixture EGH model. 
+Then we split the test date into three phases: 
+(1) before getting up, (2) after getting up and before going out, 
+(3) after going out and before coming back. 
+Thus our problem becomes to predict when the person going out 
+and when the person comes back. 
+Corresponding to these four phases, we adopt three different approaches. 
+For stage (1), the probability density function of going out and combing back event is calculated. 
+For stage (2), a duration-constraint episode mining and episode generative HMM is applied. 
+For stage (3), the probability density function of backing time based on 
+the time-constrains going out time is computed. 
+
+The results are shown in Figure~\ref{fig_study10}, Figure~\ref{fig_study11}, and Figure~\ref{fig_study14}. 
+Each of these figures include four sub-figures. 
+Each sub-figure describes the occupancy or un-occupancy 
+precision, recall, and f-measure 
+results of a person on a certain day. 
+The blue represents the EGH mixture model. 
+The green represents the PDF model. 
+The red means the kNN model. 
+The x-axis means the number of known 15-minutes chunks of partial day. 
+For instance, at $x=20$, 
+we already know the $20*15$ minutes' data, 
+we need to predict whether the left $76$ 15-minutes 
+the person is inside home or not. 
+The y-axis denotes the precision value, recall value and f-measure value 
+from top to down. 
+ 
+Figure~\ref{fig_study10} (a) and (b) in study 10 shows the person1 occupancy and un-occupancy results. 
+mixEGH has the highest precision, recall and measure on the test day 02/20/2014 
+for both occupancy and un-occupancy. 
+The other two approaches are competitive and kNN performs better than PDF 
+after the person comes back home after slot 72. 
+Looking into the original data, we find that person1 actually comes later than usual 
+in the training dataset. 
+%In such case, mixture EGH performs best.  
+%Figure \ref{fig_study10} (c) and (d) gives the occupancy and un-occupancy results 
+%of person2 on 02/17/2014. 
+In such case, EGH mixture model performs best from the perspective of precision, recall and f-measure. 
+
+In Study 11, mixtureEGH performs better if adjusting coefficient of mixture EGH model. 
+Figure~\ref{fig_study11} (a) and (b) in study 11 shows the occupancy and un-occupancy 
+comparison results of person2 on 02/04/2014.
+kNN performs the best from the perspective of precision. 
+The precision of mixture EGH is very interesting. 
+It's very low before the person2 gets up ,and grows high after the person2 leaves home, 
+and becomes competitive with kNN after the person2 comes back. 
+The reason lies in that, 
+person2 slept late that day after 12:00am. 
+Before sleep, person2 stayed in the kitchen for some time. 
+The frequent episode $KZ$ usually happens in the morning time 
+instead of midnight. 
+The mixture EGH performance is not good before person2 gets up. 
+kNN performs best because kNN approach doesn't consider the 
+actual place inside the room and it averages the occupancy status in the past 
+most similar 5 days. 
+Even if the person slept late, 
+he/she still got up regularly.  
+%Figure \ref{fig_study11} (c) and (d) gives the occupancy and un-occupancy results 
+%of person2 on 02/05/2014. 
+EGH mixture model performs competitive with kNN. 
+
+
+In Study 14, Figure~\ref{fig_study14} (a) and (b) describe the case of person1 on 12/18/2013. 
+Similar to Figure \ref{fig_study11} (a) and (b), 
+mixture EGH model doesn't perform well before the person1 gets up 
+and the reason keeps the same. 
+The person1 slept late and some confused episodes are generated. 
+%Figure \ref{fig_study14} (c) and (d) describe the case of person1 on 12/19/2013. 
+%kNN performs better. MixtureEGH doesn't perform well because 12/19, 02/20 the person went out again after coming back and staying home for some time. However the training data don't include such case. 
+
+
+Generally speaking, the mixtureEGH helps predict when a person 
+leaves home during the period of sleeping and leaving home and its 
+performance is competitive to the kNN approach. 
+
+
+%%%%%Study10
+%%%other option is person1, 02/19/2014, 
+\begin{figure*}[h]
+	\centering{
+		\begin{tabular}{ccc}		
+		\includegraphics[width=0.5\textwidth]{adlfigs/study10person12014-02-20occupied.png} &
+		\includegraphics[width=0.5\textwidth]{adlfigs/study10person12014-02-20unoccupied.png}\tabularnewline
+		(a) & (b)\tabularnewline
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study10person22014-02-17occupied.png} &
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study10person22014-02-17unoccupied.png} \tabularnewline
+		%(c) & (d)\tabularnewline
+		\end{tabular}
+		}
+	\caption{
+	Study 10 Precision recall and f-measure comparison of three approaches.
+(a) person1 occupied 02/20/2014 (b) person1 unoccupied 02/20/2014 
+(c) person2 occupied 02/17/2014 (b) person2 unoccupied 02/17/2014}
+	\label{fig_study10}
+\end{figure*}
+
+
+%%%%%%% study11
+
+\begin{figure*}[h]
+	\centering{
+		\begin{tabular}{ccc}		
+		\includegraphics[width=0.5\textwidth]{adlfigs/study11person22014-02-04occupied.png} &
+		\includegraphics[width=0.5\textwidth]{adlfigs/study11person22014-02-04unoccupied.png}\tabularnewline
+		(a) & (b)\tabularnewline
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study11person22014-02-05occupied.png} &
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study11person22014-02-05unoccupied.png} \tabularnewline
+		%(c) & (d)\tabularnewline
+		\end{tabular}
+		}
+	\caption{
+	Study 11 Precision recall and f-measure comparison of three approaches.
+(a) person2 occupied 02/04/2014 (b) person2 unoccupied 02/04/2013 
+%(c) person1 occupied 02/05/2014 (b) person2 unoccupied 02/05/2013
+}
+	\label{fig_study11}
+\end{figure*}
+
+%%%%%%
+
+%%%%%%% study14
+\begin{figure*}[h]
+	\centering{
+		\begin{tabular}{ccc}		
+		\includegraphics[width=0.5\textwidth]{adlfigs/study14person12013-12-18occupied.png} &
+		\includegraphics[width=0.5\textwidth]{adlfigs/study14person12013-12-18unoccupied.png}\tabularnewline
+		(a) & (b)\tabularnewline
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study14person12013-12-19occupied.png} &
+		%\includegraphics[width=0.5\textwidth]{adlfigs/study14person12013-12-19unoccupied.png} \tabularnewline
+		%(c) & (d)\tabularnewline
+		\end{tabular}
+		}
+	\caption{
+	Study 14 Precision recall and f-measure comparison of three approaches.
+(a) person1 occupied 12/18/2014 (b) person1 unoccupied 12/18/2013 
+%(c) person1 occupied 12/19/2014 (b) person1 unoccupied 12/19/2013
+}
+	\label{fig_study14}
+\end{figure*}
+
+
+%%%%%%%%%%

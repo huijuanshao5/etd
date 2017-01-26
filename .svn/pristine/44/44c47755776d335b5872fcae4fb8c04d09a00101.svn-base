@@ -1,0 +1,27 @@
+\section{Conclusion}
+Residential occupancy prediction is a hot research topic on controlling the HVAC. 
+The accuracy of occupancy prediction influences the comfortability of persons inside 
+the home and energy saving. 
+
+In this paper, we propose the mixture EGH model and compare it with two other 
+benchmark models, probability density function and kNN approach. 
+The results show that it generally performs better than kNN to predict the 
+occupancy and un-occupancy states in the workdays. 
+The mixture model predicts well for the period of after person getting up and before person 
+going out. 
+The coefficient of the episode generative HMM models helps 
+predict the exact leaving time. 
+However in the case of abnormal events, 
+kNN performs good because it can average the 
+historical data. 
+Even if there is an abnormal day, 
+kNN can leverage it. 
+
+In the future work, we will improve the occupancy accuracy by exploring generating the 
+mixture EGH prediction parameters automatically. 
+So far, the hand adjust of parameters is needed for better performance of EGH.
+Further, we will continue on the holiday occupancy prediction. 
+The occupant and un-occupancy patterns for these days are completely different. 
+For some days, the person never goes out. 
+Therefore the occupancy prediction can only be obtained from 
+the date information. 

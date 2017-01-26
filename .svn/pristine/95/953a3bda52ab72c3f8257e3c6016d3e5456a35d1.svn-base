@@ -1,0 +1,69 @@
+% algorithm 03
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{algorithm}
+\caption{EM Algorithm for mixture EGH}
+\label{alg3}
+\begin{algorithmic} [1]
+\REQUIRE day episode matrix, 
+each element $e_{ij}$ records for each day whether an episode $j$ happens in day $i$;
+frequent episodes $F=\{\alpha_1, ..., \alpha_J\}$;
+symbol set $\varepsilon$;
+threshold $\gamma$
+
+\ENSURE the parameters for mixture EGH $\Lambda_Z=\{  (\Lambda_{\alpha_j}, \theta_j ) , j=1,...,J \}$
+
+
+\STATE calculate the number of episodes J, and number of days K
+\STATE calculate all $\eta$s' threshold value $mThreshold= \frac{M}{M+1}$
+
+\COMMENT{initialize all the thetas to be $\frac{1}{J}$}
+\COMMENT{calculate the total frequency for each episode over training time series}
+\COMMENT{ calculate the $eta$ value}
+\FOR{$0 \leq j \leq J$}
+\STATE $\theta[j]= 1/J$
+\STATE $episodeFreq[j] = \sum_i^K e_{ij}$
+\ENDFOR
+
+\STATE select those frequent episodes starting with 'S' and ending with 'Z' and separate these 
+episodes by workday or holiday
+
+\COMMENT {calculate $eta$ for each episode} 
+\FOR{$0 \leq j \leq J$}
+\STATE $\eta[j]= 1-episodeLen[j]*episodeLen/T$
+\ENDFOR
+
+\COMMENT{likelihood prediction of each episode $j$ in the $k$th day}
+
+\FOR{$0 \leq i \leq K$}
+\FOR{$0 \leq j \leq J$}
+\STATE $likelihood_{ij} = \frac{1-\eta[j]}{\eta[j]/M} ^ {episodeLen[j]*e_{ij}}$
+\ENDFOR
+\ENDFOR
+
+\COMMENT{calculate the obj value based on J, K, $likelihood_{ij}$ and $\theta$}
+\WHILE{$newObj- obj > \gamma$}
+\STATE $\theta_{new}=[]$
+\FOR{$0 \le l \le J$}
+\STATE $temp=0$
+\FOR{$0 \le j \le K$}
+%\COMMENT{calcuate the new likelihood with Bayes rules}
+\STATE $temp = temp+ \frac{\theta_l*likelihood_{il}}{ \sum_0^J { \theta_j*likelihood_{ij}}}$
+
+\ENDFOR
+\STATE $\theta_{new}[l] = temp/K $
+\ENDFOR
+
+\STATE calculate the newObj
+\IF{$newObj-obj > \gamma$}
+\STATE $obj=newObj$
+\STATE $\theta_{new} = \theta$
+\ENDIF
+
+\ENDWHILE
+
+\STATE Output $\Lambda_Z=\{  (\Lambda_{\alpha_j}, \theta_j ) , j=1,...,J \}$
+
+\end{algorithmic}
+\end{algorithm}

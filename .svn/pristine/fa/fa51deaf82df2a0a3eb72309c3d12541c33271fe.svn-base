@@ -1,0 +1,26 @@
+%combination of two
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=3 in]{figs/fig_acpower.pdf}
+%\caption{Category of AC Power Features}
+%\label{fig_ACPowerFeatures}
+%\end{figure}
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=3.5in]{figs/NonPowerFeatures.pdf}
+%\caption{Category of AC Power Features}
+%\label{fig_NonACPowerFeatures}
+%\end{figure}
+
+\begin{figure*}[h]
+	\centering{
+    \begin{tabular}{cc}
+    	\includegraphics[width=0.45\textwidth]{figs/fig_acpower.pdf} \hspace{1em}&	
+	\includegraphics[width=0.55\textwidth]{figs/NonPowerFeatures.pdf} \tabularnewline
+    \end{tabular}
+    }
+	\caption{Category of (a) AC Power Features and (b) Non-AC Power Features. }
+	\label{fig_ACPowerFeatures}
+\end{figure*}
+	

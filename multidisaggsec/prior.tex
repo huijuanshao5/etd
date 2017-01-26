@@ -1,30 +1,27 @@
 \section{Prior Work}
-Though electricity disaggregation has been researched over decade, 
-researches on water disaggregation just emerges in recent years. 
-Supervised, semi-supervised and unsupervised learning approaches have been intensively
-studied in electricity disaggregation. In contrast, the research on water disaggregated 
-is still limited to supervised disaggregation so far. 
-
 %%% electricity disaggregation prior work
-Electricity disaggregation uses the electricity consumption level at main entry into a building or house 
+Electricity disaggregation uses the electricity consumption level at the main entry into a building or house 
 to infer whether a device inside the building is on or off. 
-The features used includes initial real power and reactive power~\cite{hart1992}. 
-With advances in electrical meter technology and availability of less expensive meters, 
-more and more features are used, such as 
+The features used include initial real power and reactive power~\cite{hart1992} from a dataset which is recorded in 
+a low-frequency range. 
+With advances in electrical meter technology and the availability of less expensive meters, 
+more and more features are being extracted from the high-frequency data set and used for disaggregation, such as 
 the transient state generated when a device turns on or off~\cite{shaw2000PhdThesis},
-the raw current waveform~\cite{srinivasan2006neural}, voltage waveform~\cite{lam2007novel}, 
+the raw current waveform~\cite{srinivasan2006neural}, the voltage waveform~\cite{lam2007novel}, 
 the transform of the current waveform~\cite{chan2000harmonics}, 
-harmonics of non-linear devices~\cite{chan2000harmonics}. 
+and harmonics of non-linear devices~\cite{chan2000harmonics}. 
 Even on-AC power features such as power line noises~\cite{patel2007flick}
 are exploited jointly with AC power features like  
 time of day, and device correlations~\cite{kim2011unsupervised}
-in modern systems. 
+in modern systems.
 
 %Algorithms applicable to energy disaggregation
 %can be categorized into supervised learning algorithms, 
-Nowadays, 
-unsupervised learning and semi-supervised learning algorithms 
-become the research trend.
+Increasingly,  
+research is being focused on unsupervised learning and semi-supervised learning algorithms because  
+these algorithms do not require the power consumption of 
+each device,   
+and the power or water usages of individual devices are very difficult to obtain. 
 %The applied data mining algorithms are composed of
 %supervised learning algorithms, unsupervised learning algorithms
 %and semi-supervised learning algorithms.
@@ -40,63 +37,77 @@ become the research trend.
 %been drawn from integer programming~\cite{suzuki2008nonintrusive}, 
 %dynamic programming~\cite{baranski2004detecting}, and
 %the Viterbi algorithm~\cite {zeifman2011viterbi}.
-Unsupervised learning algorithms
-have only been recently used in
- the last few years, such as include
+It is only in
+ the last few years that 
+unsupervised learning algorithms
+have been used, including
 hierarchical clustering~\cite{gonccalves2011unsupervised},
 factorial hidden Markov models (FHMMs)~\cite{kim2011unsupervised},
-additive factorial approximate MAP (AFAMAP)~\cite{kolter2012aistat}, 
-difference FHMM~\cite{parson2012nonintrusive}, 
+additive factorial approximate MAPs (AFAMAP)~\cite{kolter2012aistat}, 
+difference FHMMs~\cite{parson2012nonintrusive}, 
 and motif mining~\cite{shao2013temporal}.
 Semi-supervised learning 
 algorithms~\cite{lam2007novel,johnson2012bayesian} have also
 been proposed.
-
-The field of energy disaggregation has evolved
-over the last twenty years. While
-some applications have achieved
-qualified success, there are several challenging
-problems to be addressed before energy disaggregation can be
-used more widely. Some of these problems include:
-
+In this chapter, we assume the number of devices 
+and the number of power level states of each device 
+are known. Hence, we formalize the disaggregation 
+as a semi-supervised problem and 
+provide solutions to the following three challenging problems.
+%The field of energy disaggregation has evolved
+%over the last twenty years. While
+%some applications have achieved
+%qualified success, there are several challenging
+%problems to be addressed before energy disaggregation can be
+%used more widely. Some of these problems include:
 \begin{enumerate}
-\item The number of devices is typically unknown and can only be
-approximately estimated based on background information.
-
-\item The number of power level states of each device is unknown.
+%\item The number of devices is typically unknown and can only be
+%approximately estimated based on background information.
+%\item The number of power level states of each device is unknown.
 %Some devices such as lights may have only two steady states, viz. on and off.
 %Other devices  have several steady states.
 %For example, a microwave can operate in the states of defrost,
 %heat with low power, or heat with high power. Estimating
 %the exact number of states of a device is a hard problem.
-
-\item Several devices may share the same real power and
-it is hard to distinguish these devices with only the recorded aggregated
+\item Several devices may have the same real power, and
+it is difficult to distinguish these devices using only the recorded aggregated
 power time stamp.
 %For example, a light and a monitor could consume the same amount of real
 %power (e.g., around 38W). With more devices that share the same real power,
 %additional features are necessary to disambiguate among them.
-
 \item Many devices may turn on or off at the same time.
 %A PC and printer likely turn on and off together,
 %thus making it difficult to separate them from the aggregated power profile.
-
 \item Instead of having a discrete range of power
 levels, there are devices whose power consumption levels
    vary gradually, e.g.,
   variable speed devices (VSD) and lights with dimmers.
-Once their power usage is aggregated with that from other devices, the
-disaggregation problem becomes increasingly difficult.
-
+Once their power usage is aggregated with that from other devices,
+disaggregation becomes increasingly difficult.
 %\item Some devices are always on and seldom operated by
 %users. Because the operations on these devices are
 %rare, it is hard to identify these devices from prior historical data.
 \end{enumerate}
+Since obtaining a low-frequency dataset is more practical in real buildings, 
+we focus mainly on real power, which can be easily extracted 
+from a low-frequency dataset.  
+%In this paper, we use the low frequency dataset therefore
+%only the real power feature is used. 
+%We assume that the number of devices and their real power 
+%levels are known in advance. 
+%We formalize this energy disaggregation as a semi-supervised problem
+%and provide solutions to the above three sub-problems 2-5. 
 
-In this chapter, we assume  the number of devices and their real power 
-levels are known in advance. We formalize this energy disaggregation as a semi-supervised problem
-and provide solutions to the above three sub-problems 2-5. 
-
+%Though electricity disaggregation has been researched over decade, 
+%researches on water disaggregation just emerges in recent years. 
+%Supervised, semi-supervised and unsupervised learning approaches have been intensively
+%studied in electricity disaggregation. In contrast, 
+Water use disaggregation has emerged in recent years, and so far 
+the applied algorithms are 
+limited to supervised learning algorithms~\cite{carboni2016contextualising}. 
+This chapter proposes water disaggregation as a semi-supervised learning algorithm 
+by presuming that we know the number of water use ends and the water usage level of each 
+water user end.  
 
 %%%%water disaggregation prior work
 \begin{comment}

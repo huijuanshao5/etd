@@ -1,16 +1,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Pre-processing Algorithms on Vector Event Feature Extraction. }}{27}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Energy Disaggregation Algorithms Categories.}}{52}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Meters Used in Experiments.}}{53}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pre-processing algorithms with vector event feature extraction. }}{31}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Categories of energy disaggregation algorithms.}}{56}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Meters Used in Experiments.}}{57}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparing Motif mining against AFAMAP on the REDD dataset.}}{66}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Evaluation measures for commercial building disaggregation.}}{67}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparing Motif mining against AFAMAP on the REDD dataset.}}{70}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Evaluation measures for commercial building disaggregation.}}{71}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Power Levels, Standard Deviation of Power Levels, On/off Duration, Connected Phases and Disaggregation Results of Electricity Devices on Study10.}}{77}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Water Flow Rate Levels of Water End Uses and Disaggregation Results}}{81}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Power Levels, Standard Deviation of Power Levels, On/off Duration, Connected Phases and Disaggregation Results of Electricity Devices from Study10.}}{80}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Water Flow Rate Levels of Water End Uses.}}{83}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Datasets summary.}}{92}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Precision Recall F-measure Comparison of Individual and Whole House Occupancy Prediction.}}{94}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Precision Recall F-measure of Individual and Whole House Occupancy Prediction on Study 14.}}{95}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Datasets summary.}}{93}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Precision Recall F-measure Comparison of Individual and Whole House Occupancy Prediction in Study 14.}}{94}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Precision Recall F-measure of Individual and Whole House Occupancy Prediction in Study 14.}}{96}
 \addvspace {10\p@ }
